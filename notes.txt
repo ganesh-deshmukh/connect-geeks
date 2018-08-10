@@ -1,0 +1,15 @@
+Technolgies used in project
+small social network called geeksnetwork
+profiles education and experience
+post comments
+MERN stack
+postman
+passportjs
+ES6
+Node Expressjs
+React, Redux
+MongoDB 
+Bootstrap v4
+Git
+Heroku cloud
+
