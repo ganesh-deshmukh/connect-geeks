@@ -1,0 +1,7 @@
+crate backend
+test with postman- REST API
+front end part
+implement frontend in react
+implement redux
+create post build script
+deploy

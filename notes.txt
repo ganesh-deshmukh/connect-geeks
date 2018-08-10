@@ -2,6 +2,12 @@ Technolgies used in project
 small social network called geeksnetwork
 profiles education and experience
 post comments
+authentication and authorization
+login-sign
+create profile 
+github repo
+stack overflow account
+posts and blogs 
 MERN stack
 postman
 passportjs
