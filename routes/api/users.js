@@ -3,6 +3,9 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/test", (req, res) => res.json({ msg: "Posts Works" }));
+// @route       GET request to api/users/test
+// @description Tests users route
+// @access      Public, without login
+router.get("/test", (req, res) => res.json({ msg: "Users Works" }));
 
 module.exports = router;
