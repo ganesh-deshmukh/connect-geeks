@@ -1,0 +1,19 @@
+{
+  "name": "find-geeks",
+  "version": "1.0.0",
+  "description": "social media for developers, quite same as Linkedin.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganeshdeshmukh1612/connect-geeks.git"
+  },
+  "author": "Ganesh Ashok Deshmukh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ganeshdeshmukh1612/connect-geeks/issues"
+  },
+  "homepage": "https://github.com/ganeshdeshmukh1612/connect-geeks#readme"
+}
