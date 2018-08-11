@@ -4,7 +4,8 @@
   "description": "social media for developers, quite same as Linkedin.",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
