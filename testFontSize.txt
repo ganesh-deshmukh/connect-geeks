@@ -1,0 +1,14 @@
+Script started on 2018-08-11 09:49:44+0530
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ ls
+[0m[01;34mnode_modules[0m  package.json       README.md        steps.txt         update.txt
+notes.txt     package-lock.json  steps_taken.txt  testFontSize.txt
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ npm 0[K-v
+6.3.0
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ node -v
+v10.6.0
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ whoami
+gd
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ exit
+exit
+
+Script done on 2018-08-11 09:50:32+0530

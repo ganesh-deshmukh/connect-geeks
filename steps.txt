@@ -1,0 +1,102 @@
+gd@gd10:~/Desktop/find-geeks$ npm initThis utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fieldsand exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (find-geeks)
+version: (1.0.0)
+description: social media for developers, quite same as Linkedin.
+entry point: (index.js) server.js
+test command:
+git repository: (https://github.com/ganeshdeshmukh1612/connect-geeks.git)
+keywords:
+author: Ganesh Ashok Deshmukh
+license: (ISC) MIT
+About to write to /home/gd/Desktop/find-geeks/package.json:
+
+{
+  "name": "find-geeks",
+  "version": "1.0.0",
+  "description": "social media for developers, quite same as Linkedin.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganeshdeshmukh1612/connect-geeks.git"
+  },
+  "author": "Ganesh Ashok Deshmukh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ganeshdeshmukh1612/connect-geeks/issues"
+  },
+  "homepage": "https://github.com/ganeshdeshmukh1612/connect-geeks#readme"
+}
+
+
+Is this OK? (yes)
+gd@gd10:~/Desktop/find-geeks$ npm i express mongoose passport passport-jwt jsonwebtoken body-parser bcryptjs valid
+ator
+npm ERR! code ERR_STREAM_WRITE_AFTER_END
+npm ERR! write after end
+npm ERR! code ERR_STREAM_WRITE_AFTER_END
+npm ERR! write after end
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gd/.npm/_logs/2018-08-11T03_50_45_458Z-debug.log
+gd@gd10:~/Desktop/find-geeks$ sudo npm i express mongoose passport passport-jwt jsonwebtoken body-parser bcryptjsvalidator
+[sudo] password for gd:
+npm ERR! code ERR_STREAM_WRITE_AFTER_END
+npm ERR! write after end
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gd/.npm/_logs/2018-08-11T03_51_31_333Z-debug.log
+gd@gd10:~/Desktop/find-geeks$ ^C
+gd@gd10:~/Desktop/find-geeks$ ^C
+gd@gd10:~/Desktop/find-geeks$ npm -v
+5.10.0
+gd@gd10:~/Desktop/find-geeks$ node -v
+v10.6.0
+gd@gd10:~/Desktop/find-geeks$ sudo npm i -g npm
+/usr/local/bin/npm -> /usr/local/lib/node_modules/npm/bin/npm-cli.js
+/usr/local/bin/npx -> /usr/local/lib/node_modules/npm/bin/npx-cli.js
++ npm@6.3.0
+added 272 packages from 147 contributors, removed 439 packages and updated 21 packages in 18.085s
+gd@gd10:~/Desktop/find-geeks$ sudo npm i express mongoose passport passport-jwt jsonwebtoken body-parser bcryptjsvalidator
+npm notice created a lockfile as package-lock.json. You should commit this file.
++ passport-jwt@4.0.0
++ passport@0.4.0
++ bcryptjs@2.4.3
++ body-parser@1.18.3
++ jsonwebtoken@8.3.0
++ validator@10.5.0
++ express@4.16.3
++ mongoose@5.2.7
+added 96 packages from 74 contributors and audited 218 packages in 4.208s
+found 0 vulnerabilities
+
+gd@gd10:~/Desktop/find-geeks$ npm -v
+6.3.0
+gd@gd10:~/Desktop/find-geeks$Script started on 2018-08-11 09:39:09+0530
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ ls[K[Kls
+[0m[01;34mnode_modules[0m  notes.txt  package.json  package-lock.json  README.md  steps_taken.txt  steps.txt  update.txt
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ exit
+exit
+
+Script done on 2018-08-11 09:39:21+0530
+Script started on 2018-08-11 10:21:08+0530
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ 
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ 
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ exit
+exit
+
+Script done on 2018-08-11 10:21:14+0530
+Script started on 2018-08-11 10:26:29+0530
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ exitwhoami[2Pexit[Ksudo npm 0=[K[Ki -D nodemon
+[sudo] password for gd: 
+[?25l[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] | loadIdealTree:loadAllDepsIntoIdealTree: [7msill[0m [35minstall[0m loadIdealTree[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m nodemon@1.18.3 checking installable status[0m[K[[90m..................[0m] - fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] - fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m micromatch@3.1.10 checking installable status[0m[K[[90m..................[0m] / loadDep:to-regex: [7msill[0m [35mresolveWithNewModule[0m snapdragon@0.8.2 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m repeat-string@1.6.1 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m source-map@0.5.7 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m cache-base@1.0.1 checking installable status[0m[K[[90m..................[0m] - fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m assign-symbols@1.0.0 checking installable status[0m[K[[90m..................[0m] | fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m is-descriptor@0.1.6 checking installable status[0m[K[[90m..................[0m] - fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m is-data-descriptor@1.0.0 checking installable sta[0m[K[[90m..................[0m] / loadDep:kind-of: [7msill[0m [35mresolveWithNewModule[0m is-descriptor@1.0.2 checking installable status[0m[K[[90m..................[0m] | loadDep:to-regex: [7msill[0m [35mresolveWithNewModule[0m ret@0.1.15 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m is-windows@1.0.2 checking installable status[0m[K[[90m..................[0m] | loadDep:readable-stream: [7msill[0m [35mresolveWithNewModule[0m nan@2.10.0 checking installable status[0m[K[[90m..................[0m] - fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m nan@2.10.0 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m brace-expansion@1.1.11 checking installable statu[0m[K[[7m [27m[90m.................[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ps-tree@1.1.0 checking installable status[0m[K[[7m   [27m[90m...............[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m abbrev@1.1.1 checking installable status[0m[K[[7m   [27m[90m...............[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m string-width@2.1.1 checking installable status[0m[K[[7m   [27m[90m...............[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m execa@0.7.0 checking installable status[0m[K[[7m   [27m[90m...............[0m] | fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m shebang-regex@1.0.0 checking installable status[0m[K[[7m   [27m[90m...............[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ci-info@1.1.3 checking installable status[0m[K[[7m   [27m[90m...............[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m got@6.7.1 checking installable status[0m[K[[7m   [27m[90m...............[0m] | fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m rc@1.2.8 checking installable status[0m[K[[7m      [27m[90m............[0m] \ loadExtraneous: [7msill[0m [35mresolveWithNewModule[0m minimist@1.2.0 checking installable status[0m[K[[7m      [27m[90m............[0m] \ loadExtraneous: [7msill[0m [35mresolveWithNewModule[0m minimist@1.2.0 checking installable status[0m[K[[7m      [27m[90m............[0m] \ loadExtraneous: [7msill[0m [35mresolveWithNewModule[0m minimist@1.2.0 checking installable status[0m[K[[7m      [27m[90m............[0m] | diffTrees: [7msill[0m [35minstall[0m generateActionsToTake[0m[K[[7m       [27m[90m...........[0m] | postinstall: [7msill[0m [35minstall[0m executeActions[0m[K[[7m       [27m[90m...........[0m] | extract:nodemon: [34;40mverb[0m [35mlock[0m using /home/gd/.npm/_locks/staging-83bf9d4cf94054bd.lock for /h[0m[K[[7m       [27m[90m...........[0m] | extract:nodemon: [34;40mverb[0m [35mlock[0m using /home/gd/.npm/_locks/staging-83bf9d4cf94054bd.lock for /h[0m[K[[7m           [27m[90m.......[0m] - extract:nanomatch: [7msill[0m [35mextract[0m nanomatch@^1.2.9 extracted to /home/gd/Desktop/find-geeks/[0m[K[[7m            [27m[90m......[0m] \ extract:nodemon: [7msill[0m [35mextract[0m nodemon@latest extracted to /home/gd/Desktop/find-geeks/node[0m[K[[7m            [27m[90m......[0m] \ extract:nodemon: [7msill[0m [35mextract[0m nodemon@latest extracted to /home/gd/Desktop/find-geeks/node[0m[K[[7m            [27m[90m......[0m] \ extract:nodemon: [7msill[0m [35mextract[0m nodemon@latest

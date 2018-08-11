@@ -1,0 +1,801 @@
+Script started on 2018-08-11 09:33:01+0530
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ sudo apt-get update && sudo apt g[K[K-get upgrade
+[sudo] password for gd: 
+
+0% [Working]
+0% [Connecting to archive.ubuntu.com]
+0% [Connecting to in.archive.ubuntu.com (91.189.88.152)] [Connecting to security.ubuntu.com (91.189.88.161)] [Con
+                                                                                                                 
+Hit:1 https://deb.nodesource.com/node_8.x bionic InRelease
+
+0% [Connecting to in.archive.ubuntu.com (91.189.88.149)] [Connecting to security.ubuntu.com (91.189.88.149)] [Con
+0% [1 InRelease gpgv 4,622 B] [Connecting to in.archive.ubuntu.com (91.189.88.149)] [Connecting to security.ubunt
+                                                                                                                 
+Ign:2 https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0 InRelease
+
+0% [1 InRelease gpgv 4,622 B] [Connecting to in.archive.ubuntu.com (91.189.88.149)] [Connecting to security.ubunt
+0% [Connecting to in.archive.ubuntu.com (91.189.88.161)] [Connecting to security.ubuntu.com (91.189.88.149)] [Con
+                                                                                                                 
+Ign:3 http://dl.google.com/linux/chrome/deb stable InRelease
+
+0% [Connecting to in.archive.ubuntu.com (91.189.88.161)] [Connecting to security.ubuntu.com (91.189.88.162)] [Con
+                                                                                                                 
+Get:4 http://packages.microsoft.com/repos/vscode stable InRelease [2,802 B]
+
+0% [Connecting to in.archive.ubuntu.com (91.189.88.161)] [Connecting to security.ubuntu.com (91.189.88.162)] [Con
+0% [Connecting to in.archive.ubuntu.com (91.189.88.161)] [Connecting to security.ubuntu.com (91.189.88.162)] [Con
+0% [4 InRelease gpgv 2,802 B] [Connecting to in.archive.ubuntu.com (91.189.88.161)] [Connecting to security.ubunt
+                                                                                                                 
+Hit:5 https://dl.yarnpkg.com/debian stable InRelease
+
+0% [4 InRelease gpgv 2,802 B] [Connecting to in.archive.ubuntu.com (91.189.88.161)] [Connecting to security.ubunt
+0% [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.ubuntu.com (91.189.88.1
+0% [5 InRelease gpgv 13.3 kB] [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to secur
+0% [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.ubuntu.com (91.189.91.2
+                                                                                                                 
+Get:6 https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0 Release [3,457 B]
+
+                                                                                                                 
+Get:7 http://packages.microsoft.com/repos/vscode stable/main amd64 Packages [58.4 kB]
+
+0% [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.ubuntu.com (91.189.91.2
+0% [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.ubuntu.com (91.189.91.2
+0% [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.ubuntu.com (91.189.88.1
+0% [7 Packages store 0 B] [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.
+                                                                                                                 
+Get:8 http://dl.google.com/linux/chrome/deb stable Release [1,189 B]
+
+0% [7 Packages store 0 B] [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.
+0% [7 Packages store 0 B] [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.
+0% [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.ubuntu.com (2001:67c:15
+0% [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.ubuntu.com (2001:67c:15
+                                                                                                                 
+Get:9 http://dl.google.com/linux/chrome/deb stable Release.gpg [819 B]
+
+0% [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.ubuntu.com (2001:67c:15
+0% [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.ubuntu.com (2001:67c:15
+0% [9 Release.gpg gpgv 1,189 B] [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to sec
+                                                                                                                 
+Get:10 https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0 Release.gpg [801 B]
+
+0% [9 Release.gpg gpgv 1,189 B] [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to sec
+0% [9 Release.gpg gpgv 1,189 B] [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to sec
+0% [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.ubuntu.com (2001:67c:15
+0% [10 Release.gpg gpgv 3,457 B] [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to se
+0% [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.ubuntu.com (2001:67c:15
+0% [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.ubuntu.com (2001:67c:15
+                                                                                                                 
+Get:11 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,385 B]
+
+0% [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.ubuntu.com (2001:67c:15
+                                                                                                                 
+Get:12 https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0/multiverse amd64 Packages [2,805 B]
+
+0% [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.ubuntu.com (2001:67c:15
+0% [11 Packages store 0 B] [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security
+0% [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.ubuntu.com (2001:67c:15
+0% [12 Packages store 0 B] [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security
+0% [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.ubuntu.com (2001:67c:15
+0% [Connecting to in.archive.ubuntu.com (2001:67c:1360:8001::17)] [Connecting to security.ubuntu.com (2001:67c:15
+0% [Waiting for headers] [Waiting for headers] [Waiting for headers] [Connecting to ppa.launchpad.net (91.189.95.
+0% [Waiting for headers] [Waiting for headers] [Waiting for headers] [Connecting to ppa.launchpad.net (91.189.95.
+                                                                                                                 
+Hit:13 http://in.archive.ubuntu.com/ubuntu bionic InRelease
+
+                                                                                                                 
+Hit:14 http://archive.ubuntu.com/ubuntu bionic InRelease
+
+0% [Waiting for headers] [Connecting to ppa.launchpad.net (91.189.95.83)] [Connecting to download.sublimetext.com
+                                                                                                                 
+Get:15 http://security.ubuntu.com/ubuntu bionic-security InRelease [83.2 kB]
+
+0% [Waiting for headers] [15 InRelease 6,830 B/83.2 kB 8%] [Connecting to ppa.launchpad.net (91.189.95.83)] [Conn
+0% [13 InRelease gpgv 242 kB] [Waiting for headers] [15 InRelease 6,830 B/83.2 kB 8%] [Connecting to ppa.launchpa
+0% [Waiting for headers] [15 InRelease 14.0 kB/83.2 kB 17%] [Connecting to ppa.launchpad.net (91.189.95.83)] [Con
+0% [14 InRelease gpgv 242 kB] [Waiting for headers] [15 InRelease 14.0 kB/83.2 kB 17%] [Connecting to ppa.launchp
+0% [Waiting for headers] [15 InRelease 14.0 kB/83.2 kB 17%] [Connecting to ppa.launchpad.net (91.189.95.83)] [Con
+0% [Waiting for headers] [15 InRelease 14.0 kB/83.2 kB 17%] [Connecting to ppa.launchpad.net (91.189.95.83)] [Con
+                                                                                                                 
+Get:16 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+
+0% [16 InRelease 1,148 B/88.7 kB 1%] [15 InRelease 14.0 kB/83.2 kB 17%] [Connecting to ppa.launchpad.net (91.189.
+                                                                                                                 
+Hit:17 http://ppa.launchpad.net/openjdk-r/ppa/ubuntu bionic InRelease
+
+0% [16 InRelease 4,028 B/88.7 kB 5%] [15 InRelease 42.5 kB/83.2 kB 51%] [Connected to download.sublimetext.com (1
+0% [17 InRelease gpgv 15.4 kB] [16 InRelease 4,028 B/88.7 kB 5%] [15 InRelease 42.5 kB/83.2 kB 51%] [Connected to
+0% [16 InRelease 4,028 B/88.7 kB 5%] [15 InRelease 48.2 kB/83.2 kB 58%] [Connected to download.sublimetext.com (1
+0% [16 InRelease 4,028 B/88.7 kB 5%] [Connected to download.sublimetext.com (104.236.0.104)]         13.5 kB/s 6s
+0% [15 InRelease gpgv 83.2 kB] [16 InRelease 4,028 B/88.7 kB 5%] [Connected to download.sublimetext.com (104.236.
+0% [16 InRelease 5,468 B/88.7 kB 6%] [Connected to download.sublimetext.com (104.236.0.104)]         13.5 kB/s 7s
+0% [16 InRelease 5,468 B/88.7 kB 6%] [Waiting for headers] [Connected to download.sublimetext.com (104.236.0.104)
+0% [16 InRelease 5,468 B/88.7 kB 6%] [Waiting for headers] [Connected to download.sublimetext.com (104.236.0.104)
+0% [16 InRelease 6,908 B/88.7 kB 8%] [Waiting for headers] [Connected to download.sublimetext.com (104.236.0.104)
+                                                                                                                 
+Get:18 http://security.ubuntu.com/ubuntu bionic-security/main amd64 DEP-11 Metadata [204 B]
+
+0% [16 InRelease 15.5 kB/88.7 kB 18%] [Waiting for headers]                                          13.5 kB/s 6s
+0% [18 Components-amd64 store 0 B] [16 InRelease 15.5 kB/88.7 kB 18%] [Waiting for headers]          13.5 kB/s 6s
+0% [16 InRelease 15.5 kB/88.7 kB 18%] [Waiting for headers] [Waiting for headers]                    13.5 kB/s 6s
+0% [16 InRelease 15.5 kB/88.7 kB 18%] [Waiting for headers] [Waiting for headers]                    13.5 kB/s 6s
+0% [16 InRelease 15.5 kB/88.7 kB 18%] [Waiting for headers] [Waiting for headers]                    13.5 kB/s 6s
+0% [16 InRelease 15.5 kB/88.7 kB 18%] [Waiting for headers] [Waiting for headers]                    13.5 kB/s 6s
+0% [16 InRelease 15.5 kB/88.7 kB 18%] [Waiting for headers] [Waiting for headers]                    13.5 kB/s 6s
+0% [16 InRelease 15.5 kB/88.7 kB 18%] [Waiting for headers] [Waiting for headers]                    13.5 kB/s 6s
+0% [16 InRelease 15.5 kB/88.7 kB 18%] [Waiting for headers] [Waiting for headers]                    13.5 kB/s 6s
+0% [16 InRelease 15.5 kB/88.7 kB 18%] [Waiting for headers] [Waiting for headers]                    13.9 kB/s 6s
+0% [16 InRelease 15.5 kB/88.7 kB 18%] [Waiting for headers] [Waiting for headers]                    13.9 kB/s 6s
+0% [16 InRelease 15.5 kB/88.7 kB 18%] [Waiting for headers] [Waiting for headers]                    13.9 kB/s 6s
+                                                                                                                 
+Hit:19 https://download.sublimetext.com apt/stable/ InRelease
+
+0% [16 InRelease 15.5 kB/88.7 kB 18%] [Waiting for headers]                                          13.9 kB/s 6s
+                                                                                                                 
+Get:20 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 DEP-11 Metadata [5,800 B]
+
+0% [16 InRelease 15.5 kB/88.7 kB 18%] [20 Components-amd64 1,222 B/5,800 B 21%]                      13.9 kB/s 6s
+                                                                                                                 
+0% [19 InRelease gpgv 2,562 B] [16 InRelease 15.5 kB/88.7 kB 18%] [20 Components-amd64 1,222 B/5,800 B 21%]
+0% [16 InRelease 15.5 kB/88.7 kB 18%] [20 Components-amd64 1,222 B/5,800 B 21%]                      13.9 kB/s 6s
+0% [16 InRelease 15.5 kB/88.7 kB 18%] [20 Components-amd64 1,222 B/5,800 B 21%]                      13.9 kB/s 6s
+0% [16 InRelease 15.5 kB/88.7 kB 18%] [20 Components-amd64 1,222 B/5,800 B 21%]                      13.9 kB/s 6s
+0% [16 InRelease 17.0 kB/88.7 kB 19%] [Waiting for headers]                                          13.9 kB/s 6s
+0% [20 Components-amd64 store 0 B] [16 InRelease 17.0 kB/88.7 kB 19%] [Waiting for headers]          13.9 kB/s 6s
+0% [16 InRelease 17.0 kB/88.7 kB 19%] [Waiting for headers]                                          13.9 kB/s 6s
+                                                                                                                 
+Get:21 http://security.ubuntu.com/ubuntu bionic-security/universe DEP-11 48x48 Icons [6,960 B]
+
+0% [16 InRelease 18.4 kB/88.7 kB 21%] [21 icons-48x48 6,960 B/6,960 B 100%]                          13.9 kB/s 5s
+0% [16 InRelease 18.4 kB/88.7 kB 21%]                                                                13.9 kB/s 5s
+                                                                                                                 
+Get:22 http://security.ubuntu.com/ubuntu bionic-security/universe DEP-11 64x64 Icons [8,060 B]
+
+0% [16 InRelease 18.4 kB/88.7 kB 21%] [22 icons-64x64 5,480 B/8,060 B 68%]                           13.9 kB/s 5s
+                                                                                                                 
+0% [21 icons-48x48 store 0 B] [16 InRelease 18.4 kB/88.7 kB 21%] [22 icons-64x64 5,480 B/8,060 B 68%]
+0% [16 InRelease 18.4 kB/88.7 kB 21%] [22 icons-64x64 5,480 B/8,060 B 68%]                           13.9 kB/s 5s
+0% [16 InRelease 21.3 kB/88.7 kB 24%]                                                                13.9 kB/s 4s
+0% [22 icons-64x64 store 0 B] [16 InRelease 21.3 kB/88.7 kB 24%]                                     13.9 kB/s 4s
+0% [16 InRelease 21.3 kB/88.7 kB 24%]                                                                13.9 kB/s 4s
+0% [16 InRelease 37.1 kB/88.7 kB 42%]                                                                13.9 kB/s 3s
+0% [16 InRelease 55.9 kB/88.7 kB 63%]                                                                13.9 kB/s 2s
+0% [Working]                                                                                         13.9 kB/s 0s
+0% [16 InRelease gpgv 88.7 kB] [Connecting to in.archive.ubuntu.com (91.189.88.149)]                 13.9 kB/s 0s
+0% [Connecting to in.archive.ubuntu.com (91.189.88.149)]                                       13.9 kB/s 2min 10s
+0% [Connecting to in.archive.ubuntu.com (91.189.88.162)]                                       13.9 kB/s 2min 10s
+0% [Waiting for headers]                                                                       13.9 kB/s 2min 10s
+0% [Waiting for headers]                                                                       15.2 kB/s 1min 59s
+                                                                                                                 
+Get:23 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+
+0% [23 InRelease 1,136 B/74.6 kB 2%]                                                            15.2 kB/s 2min 4s
+0% [23 InRelease 14.0 kB/74.6 kB 19%]                                                           15.2 kB/s 2min 3s
+0% [23 InRelease 32.6 kB/74.6 kB 44%]                                                           15.2 kB/s 2min 2s
+0% [23 InRelease 55.4 kB/74.6 kB 74%]                                                           15.2 kB/s 2min 0s
+0% [23 InRelease 55.4 kB/74.6 kB 74%]                                                           15.2 kB/s 2min 0s
+0% [Working]                                                                                   15.2 kB/s 1min 59s
+0% [23 InRelease gpgv 74.6 kB]                                                                 15.2 kB/s 1min 59s
+32% [Waiting for headers]                                                                      15.2 kB/s 1min 59s
+                                                                                                                 
+Get:24 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [277 kB]
+
+32% [24 Packages 1,219 B/277 kB 0%]                                                            15.2 kB/s 1min 59s
+32% [24 Packages 1,219 B/277 kB 0%]                                                            15.2 kB/s 1min 59s
+32% [24 Packages 1,219 B/277 kB 0%]                                                            15.2 kB/s 1min 59s
+32% [24 Packages 1,219 B/277 kB 0%]                                                            15.2 kB/s 1min 59s
+32% [24 Packages 1,219 B/277 kB 0%]                                                            15.2 kB/s 1min 59s
+32% [24 Packages 1,219 B/277 kB 0%]                                                            15.2 kB/s 1min 59s
+32% [24 Packages 1,219 B/277 kB 0%]                                                            15.2 kB/s 1min 59s
+32% [24 Packages 1,219 B/277 kB 0%]                                                            11.8 kB/s 2min 34s
+32% [24 Packages 1,219 B/277 kB 0%]                                                            11.8 kB/s 2min 34s
+32% [24 Packages 1,219 B/277 kB 0%]                                                            11.8 kB/s 2min 34s
+32% [24 Packages 1,219 B/277 kB 0%]                                                            11.8 kB/s 2min 34s
+32% [24 Packages 2,647 B/277 kB 1%]                                                            11.8 kB/s 2min 34s
+32% [24 Packages 2,647 B/277 kB 1%]                                                            11.8 kB/s 2min 34s
+32% [24 Packages 2,647 B/277 kB 1%]                                                            11.8 kB/s 2min 34s
+32% [24 Packages 2,647 B/277 kB 1%]                                                            11.8 kB/s 2min 34s
+32% [24 Packages 2,647 B/277 kB 1%]                                                            11.8 kB/s 2min 34s
+32% [24 Packages 2,647 B/277 kB 1%]                                                            11.8 kB/s 2min 34s
+32% [24 Packages 2,647 B/277 kB 1%]                                                            11.8 kB/s 2min 34s
+32% [24 Packages 2,647 B/277 kB 1%]                                                            11.8 kB/s 2min 34s
+32% [24 Packages 2,647 B/277 kB 1%]                                                           237 B/s 2h 8min 10s
+32% [24 Packages 9,787 B/277 kB 4%]                                                           237 B/s 2h 7min 40s
+32% [24 Packages 11.2 kB/277 kB 4%]                                                           237 B/s 2h 7min 34s
+32% [24 Packages 21.2 kB/277 kB 8%]                                                           237 B/s 2h 6min 52s
+32% [24 Packages 21.2 kB/277 kB 8%]                                                           237 B/s 2h 6min 52s
+32% [24 Packages 21.2 kB/277 kB 8%]                                                           237 B/s 2h 6min 52s
+33% [24 Packages 44.1 kB/277 kB 16%]                                                          237 B/s 2h 5min 15s
+33% [24 Packages 44.1 kB/277 kB 16%]                                                          237 B/s 2h 5min 15s
+33% [24 Packages 44.1 kB/277 kB 16%]                                                          237 B/s 2h 5min 15s
+33% [24 Packages 44.1 kB/277 kB 16%]                                                          237 B/s 2h 5min 15s
+33% [24 Packages 49.8 kB/277 kB 18%]                                                          237 B/s 2h 4min 51s
+33% [24 Packages 49.8 kB/277 kB 18%]                                                          237 B/s 2h 4min 51s
+33% [24 Packages 49.8 kB/277 kB 18%]                                                           7,842 B/s 3min 46s
+33% [24 Packages 49.8 kB/277 kB 18%]                                                           7,842 B/s 3min 46s
+33% [24 Packages 49.8 kB/277 kB 18%]                                                           7,842 B/s 3min 46s
+35% [24 Packages 89.8 kB/277 kB 32%]                                                           7,842 B/s 3min 41s
+35% [24 Packages 89.8 kB/277 kB 32%]                                                           7,842 B/s 3min 41s
+35% [24 Packages 89.8 kB/277 kB 32%]                                                           7,842 B/s 3min 41s
+36% [24 Packages 122 kB/277 kB 44%]                                                            7,842 B/s 3min 37s
+37% [24 Packages 137 kB/277 kB 49%]                                                            7,842 B/s 3min 35s
+37% [24 Packages 151 kB/277 kB 55%]                                                            7,842 B/s 3min 33s
+38% [24 Packages 168 kB/277 kB 61%]                                                            7,842 B/s 3min 31s
+38% [24 Packages 185 kB/277 kB 67%]                                                            7,842 B/s 3min 29s
+39% [24 Packages 205 kB/277 kB 74%]                                                            7,842 B/s 3min 26s
+40% [24 Packages 224 kB/277 kB 81%]                                                                 29.0 kB/s 55s
+41% [24 Packages 248 kB/277 kB 90%]                                                                 29.0 kB/s 54s
+42% [Working]                                                                                       29.0 kB/s 53s
+42% [24 Packages store 0 B] [Connecting to in.archive.ubuntu.com (91.189.88.161)]                   29.0 kB/s 53s
+42% [Connecting to in.archive.ubuntu.com (91.189.88.161)]                                           29.0 kB/s 53s
+                                                                                                                 
+Get:25 http://in.archive.ubuntu.com/ubuntu bionic-updates/main i386 Packages [252 kB]
+
+42% [25 Packages 14.1 kB/252 kB 6%]                                                                 29.0 kB/s 52s
+47% [25 Packages 144 kB/252 kB 57%]                                                                 29.0 kB/s 48s
+51% [Working]                                                                                       29.0 kB/s 44s
+51% [25 Packages store 0 B] [Waiting for headers]                                                   29.0 kB/s 44s
+51% [Waiting for headers]                                                                           29.0 kB/s 44s
+                                                                                                                 
+Get:26 http://in.archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [105 kB]
+
+51% [26 Translation-en 1,219 B/105 kB 1%]                                                           29.0 kB/s 44s
+55% [Waiting for headers]                                                                           29.0 kB/s 41s
+55% [26 Translation-en store 0 B] [Waiting for headers]                                             29.0 kB/s 41s
+55% [Waiting for headers]                                                                           29.0 kB/s 41s
+                                                                                                                 
+Get:27 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 DEP-11 Metadata [138 kB]
+
+55% [27 Components-amd64 2,647 B/138 kB 2%]                                                         29.0 kB/s 40s
+60% [Working]                                                                                       29.0 kB/s 36s
+60% [27 Components-amd64 store 0 B] [Waiting for headers]                                           29.0 kB/s 36s
+60% [Waiting for headers]                                                                           29.0 kB/s 36s
+                                                                                                                 
+Get:28 http://in.archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 48x48 Icons [31.4 kB]
+
+60% [28 icons-48x48 1,221 B/31.4 kB 4%]                                                             29.0 kB/s 36s
+62% [Working]                                                                                       29.0 kB/s 35s
+62% [28 icons-48x48 store 0 B] [Waiting for headers]                                                29.0 kB/s 35s
+62% [Waiting for headers]                                                                           29.0 kB/s 35s
+                                                                                                                 
+Get:29 http://in.archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 64x64 Icons [53.7 kB]
+
+62% [29 icons-64x64 2,649 B/53.7 kB 5%]                                                             29.0 kB/s 35s
+64% [Working]                                                                                       29.0 kB/s 33s
+64% [29 icons-64x64 store 0 B] [Waiting for headers]                                                29.0 kB/s 33s
+64% [Waiting for headers]                                                                           29.0 kB/s 33s
+                                                                                                                 
+Get:30 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [158 kB]
+
+64% [30 Packages 1,219 B/158 kB 1%]                                                                 29.0 kB/s 33s
+70% [Working]                                                                                       29.0 kB/s 27s
+70% [30 Packages store 0 B] [Waiting for headers]                                                   29.0 kB/s 27s
+70% [Waiting for headers]                                                                           29.0 kB/s 27s
+                                                                                                                 
+Get:31 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe i386 Packages [158 kB]
+
+70% [31 Packages 2,647 B/158 kB 2%]                                                                 29.0 kB/s 27s
+75% [Working]                                                                                       29.0 kB/s 22s
+75% [31 Packages store 0 B] [Waiting for headers]                                                   29.0 kB/s 22s
+75% [Waiting for headers]                                                                           29.0 kB/s 22s
+                                                                                                                 
+Get:32 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe Translation-en [71.4 kB]
+
+76% [32 Translation-en 1,220 B/71.4 kB 2%]                                                          29.0 kB/s 22s
+78% [Working]                                                                                       29.0 kB/s 19s
+78% [32 Translation-en store 0 B] [Waiting for headers]                                             29.0 kB/s 19s
+78% [Waiting for headers]                                                                           29.0 kB/s 19s
+                                                                                                                 
+Get:33 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 DEP-11 Metadata [149 kB]
+
+78% [33 Components-amd64 2,647 B/149 kB 2%]                                                         29.0 kB/s 19s
+84% [Working]                                                                                       29.0 kB/s 14s
+84% [33 Components-amd64 store 0 B] [Waiting for headers]                                           29.0 kB/s 14s
+84% [Waiting for headers]                                                                           29.0 kB/s 14s
+                                                                                                                 
+Get:34 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe DEP-11 48x48 Icons [163 kB]
+
+84% [34 icons-48x48 1,219 B/163 kB 1%]                                                              29.0 kB/s 14s
+90% [Working]                                                                                        29.0 kB/s 9s
+90% [34 icons-48x48 store 0 B] [Waiting for headers]                                                 29.0 kB/s 9s
+90% [Waiting for headers]                                                                            29.0 kB/s 9s
+                                                                                                                 
+Get:35 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe DEP-11 64x64 Icons [260 kB]
+
+90% [35 icons-64x64 1,219 B/260 kB 0%]                                                               29.0 kB/s 9s
+99% [Working]                                                                                        29.0 kB/s 0s
+99% [35 icons-64x64 store 0 B] [Waiting for headers]                                                 29.0 kB/s 0s
+100% [Waiting for headers]                                                                           29.0 kB/s 0s
+                                                                                                                 
+Get:36 http://in.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 DEP-11 Metadata [2,464 B]
+
+100% [36 Components-amd64 1,223 B/2,464 B 50%]                                                       29.0 kB/s 0s
+100% [Working]                                                                                       29.0 kB/s 0s
+100% [36 Components-amd64 store 0 B] [Waiting for headers]                                           29.0 kB/s 0s
+100% [Waiting for headers]                                                                           29.0 kB/s 0s
+                                                                                                                 
+Get:37 http://in.archive.ubuntu.com/ubuntu bionic-backports/universe amd64 DEP-11 Metadata [5,100 B]
+
+100% [37 Components-amd64 1,222 B/5,100 B 24%]                                                       29.0 kB/s 0s
+100% [Working]                                                                                       29.0 kB/s 0s
+100% [37 Components-amd64 store 0 B]                                                                 29.0 kB/s 0s
+100% [Working]                                                                                       29.0 kB/s 0s
+                                                                                                                 
+Fetched 2,165 kB in 48s (45.6 kB/s)
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 2%
+
+Reading package lists... 2%
+
+Reading package lists... 4%
+
+Reading package lists... 4%
+
+Reading package lists... 5%
+
+Reading package lists... 5%
+
+Reading package lists... 5%
+
+Reading package lists... 5%
+
+Reading package lists... 5%
+
+Reading package lists... 5%
+
+Reading package lists... 5%
+
+Reading package lists... 5%
+
+Reading package lists... 19%
+
+Reading package lists... 23%
+
+Reading package lists... 23%
+
+Reading package lists... 40%
+
+Reading package lists... 40%
+
+Reading package lists... 44%
+
+Reading package lists... 50%
+
+Reading package lists... 50%
+
+Reading package lists... 50%
+
+Reading package lists... 50%
+
+Reading package lists... 50%
+
+Reading package lists... 50%
+
+Reading package lists... 50%
+
+Reading package lists... 50%
+
+Reading package lists... 51%
+
+Reading package lists... 51%
+
+Reading package lists... 52%
+
+Reading package lists... 52%
+
+Reading package lists... 52%
+
+Reading package lists... 52%
+
+Reading package lists... 52%
+
+Reading package lists... 52%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 53%
+
+Reading package lists... 54%
+
+Reading package lists... 54%
+
+Reading package lists... 54%
+
+Reading package lists... 54%
+
+Reading package lists... 54%
+
+Reading package lists... 54%
+
+Reading package lists... 54%
+
+Reading package lists... 54%
+
+Reading package lists... 54%
+
+Reading package lists... 54%
+
+Reading package lists... 54%
+
+Reading package lists... 54%
+
+Reading package lists... 71%
+
+Reading package lists... 71%
+
+Reading package lists... 89%
+
+Reading package lists... 89%
+
+Reading package lists... 97%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Reading package lists... 0%
+
+Reading package lists... 100%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree       
+
+
+Reading state information... 0%
+
+Reading state information... 0%
+
+Reading state information... Done
+
+
+Calculating upgrade... 0%
+
+Calculating upgrade... 50%
+
+Calculating upgrade... Done
+
+The following packages were automatically installed and are no longer required:
+  chromium-codecs-ffmpeg-extra libopencore-amrnb0 libopencore-amrwb0
+Use 'sudo apt autoremove' to remove them.
+The following packages will be upgraded:
+  gir1.2-gmenu-3.0 gnome-menus libgnome-menu-3-0 mongodb-org mongodb-org-mongos mongodb-org-server
+  mongodb-org-shell mongodb-org-tools python3-distupgrade ubuntu-release-upgrader-core
+  ubuntu-release-upgrader-gtk
+11 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 56.1 MB of archives.
+After this operation, 762 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+
+0% [Working]
+            
+Get:1 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 ubuntu-release-upgrader-gtk all 1:18.04.22 [9,364 B]
+
+0% [1 ubuntu-release-upgrader-gtk 4,004 B/9,364 B 43%] [Waiting for headers]
+                                                                            
+2% [Waiting for headers]
+                        
+Get:2 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 ubuntu-release-upgrader-core all 1:18.04.22 [24.4 kB]
+
+2% [2 ubuntu-release-upgrader-core 1,147 B/24.4 kB 5%] [Waiting for headers]
+                                                                            
+Get:3 https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0/multiverse amd64 mongodb-org-shell amd64 4.0.1 [9,710 kB]
+
+2% [2 ubuntu-release-upgrader-core 24.0 kB/24.4 kB 99%] [3 mongodb-org-shell 0 B/9,710 kB 0%]
+                                                                                             
+5% [3 mongodb-org-shell 609 kB/9,710 kB 6%]
+                                           
+Get:4 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 python3-distupgrade all 1:18.04.22 [105 kB]
+
+5% [4 python3-distupgrade 784 B/105 kB 1%] [3 mongodb-org-shell 609 kB/9,710 kB 6%]
+                                                                                   
+7% [Waiting for headers] [3 mongodb-org-shell 785 kB/9,710 kB 8%]
+                                                                 
+Get:5 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgnome-menu-3-0 amd64 3.13.3-11ubuntu1.1 [43.1 kB]
+
+7% [5 libgnome-menu-3-0 1,199 B/43.1 kB 3%] [3 mongodb-org-shell 851 kB/9,710 kB 9%]
+                                                                                    
+9% [Waiting for headers] [3 mongodb-org-shell 995 kB/9,710 kB 10%]
+                                                                  
+Get:6 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gir1.2-gmenu-3.0 amd64 3.13.3-11ubuntu1.1 [3,724 B]
+
+9% [6 gir1.2-gmenu-3.0 2,084 B/3,724 B 56%] [3 mongodb-org-shell 995 kB/9,710 kB 10%]
+                                                                                     
+11% [3 mongodb-org-shell 995 kB/9,710 kB 10%]
+                                             
+Get:7 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gnome-menus amd64 3.13.3-11ubuntu1.1 [11.1 kB]
+
+11% [7 gnome-menus 935 B/11.1 kB 8%] [3 mongodb-org-shell 995 kB/9,710 kB 10%]
+                                                                              
+13% [3 mongodb-org-shell 995 kB/9,710 kB 10%]
+13% [3 mongodb-org-shell 1,571 kB/9,710 kB 16%]
+14% [3 mongodb-org-shell 1,931 kB/9,710 kB 20%]
+15% [3 mongodb-org-shell 2,665 kB/9,710 kB 27%]
+16% [3 mongodb-org-shell 3,579 kB/9,710 kB 37%]
+17% [3 mongodb-org-shell 4,174 kB/9,710 kB 43%]
+18% [3 mongodb-org-shell 4,718 kB/9,710 kB 49%]
+19% [3 mongodb-org-shell 5,330 kB/9,710 kB 55%]
+19% [3 mongodb-org-shell 5,702 kB/9,710 kB 59%]
+21% [3 mongodb-org-shell 6,576 kB/9,710 kB 68%]
+21% [3 mongodb-org-shell 7,195 kB/9,710 kB 74%]
+22% [3 mongodb-org-shell 7,800 kB/9,710 kB 80%]                                                    1,254 kB/s 38s
+23% [3 mongodb-org-shell 8,253 kB/9,710 kB 85%]                                                    1,254 kB/s 38s
+24% [3 mongodb-org-shell 8,883 kB/9,710 kB 91%]                                                    1,254 kB/s 37s
+25% [3 mongodb-org-shell 9,410 kB/9,710 kB 97%]                                                    1,254 kB/s 37s
+27% [Working]                                                                                      1,254 kB/s 36s
+                                                                                                                 
+Get:8 https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0/multiverse amd64 mongodb-org-server amd64 4.0.1 [15.5 MB]
+
+27% [8 mongodb-org-server 0 B/15.5 MB 0%]                                                          1,254 kB/s 36s
+28% [8 mongodb-org-server 523 kB/15.5 MB 3%]                                                       1,254 kB/s 36s
+29% [8 mongodb-org-server 1,280 kB/15.5 MB 8%]                                                     1,254 kB/s 35s
+30% [8 mongodb-org-server 2,071 kB/15.5 MB 13%]                                                    1,254 kB/s 35s
+31% [8 mongodb-org-server 2,615 kB/15.5 MB 17%]                                                    1,254 kB/s 34s
+31% [8 mongodb-org-server 3,164 kB/15.5 MB 20%]                                                    1,254 kB/s 34s
+32% [8 mongodb-org-server 3,713 kB/15.5 MB 24%]                                                    1,254 kB/s 33s
+33% [8 mongodb-org-server 4,568 kB/15.5 MB 30%]                                                    1,254 kB/s 33s
+34% [8 mongodb-org-server 5,163 kB/15.5 MB 33%]                                                    1,254 kB/s 32s
+35% [8 mongodb-org-server 5,756 kB/15.5 MB 37%]                                                    1,200 kB/s 33s
+36% [8 mongodb-org-server 6,369 kB/15.5 MB 41%]                                                    1,200 kB/s 33s
+37% [8 mongodb-org-server 6,988 kB/15.5 MB 45%]                                                    1,200 kB/s 32s
+38% [8 mongodb-org-server 7,569 kB/15.5 MB 49%]                                                    1,200 kB/s 32s
+38% [8 mongodb-org-server 7,900 kB/15.5 MB 51%]                                                    1,200 kB/s 31s
+39% [8 mongodb-org-server 8,536 kB/15.5 MB 55%]                                                    1,200 kB/s 31s
+40% [8 mongodb-org-server 9,058 kB/15.5 MB 59%]                                                    1,200 kB/s 30s
+41% [8 mongodb-org-server 9,913 kB/15.5 MB 64%]                                                    1,200 kB/s 30s
+42% [8 mongodb-org-server 10.4 MB/15.5 MB 67%]                                                     1,200 kB/s 29s
+43% [8 mongodb-org-server 11.2 MB/15.5 MB 72%]                                                     1,200 kB/s 29s
+44% [8 mongodb-org-server 11.7 MB/15.5 MB 76%]                                                     1,200 kB/s 28s
+44% [8 mongodb-org-server 12.3 MB/15.5 MB 80%]                                                     1,200 kB/s 28s
+45% [8 mongodb-org-server 13.0 MB/15.5 MB 84%]                                                     1,202 kB/s 27s
+46% [8 mongodb-org-server 13.6 MB/15.5 MB 88%]                                                     1,202 kB/s 27s
+47% [8 mongodb-org-server 14.0 MB/15.5 MB 91%]                                                     1,202 kB/s 26s
+48% [8 mongodb-org-server 14.5 MB/15.5 MB 94%]                                                     1,202 kB/s 26s
+49% [8 mongodb-org-server 15.2 MB/15.5 MB 99%]                                                     1,202 kB/s 25s
+51% [Working]                                                                                      1,202 kB/s 25s
+                                                                                                                 
+Get:9 https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0/multiverse amd64 mongodb-org-mongos amd64 4.0.1 [8,677 kB]
+
+51% [9 mongodb-org-mongos 16.0 kB/8,677 kB 0%]                                                     1,202 kB/s 25s
+52% [9 mongodb-org-mongos 736 kB/8,677 kB 8%]                                                      1,202 kB/s 24s
+53% [9 mongodb-org-mongos 1,342 kB/8,677 kB 15%]                                                   1,202 kB/s 24s
+54% [9 mongodb-org-mongos 1,945 kB/8,677 kB 22%]                                                   1,202 kB/s 23s
+54% [9 mongodb-org-mongos 2,388 kB/8,677 kB 28%]                                                   1,202 kB/s 23s
+55% [9 mongodb-org-mongos 2,840 kB/8,677 kB 33%]                                                   1,202 kB/s 23s
+56% [9 mongodb-org-mongos 3,569 kB/8,677 kB 41%]                                                   1,202 kB/s 22s
+57% [9 mongodb-org-mongos 4,111 kB/8,677 kB 47%]                                                   1,202 kB/s 22s
+57% [9 mongodb-org-mongos 4,599 kB/8,677 kB 53%]                                                   1,149 kB/s 22s
+58% [9 mongodb-org-mongos 5,219 kB/8,677 kB 60%]                                                   1,149 kB/s 22s
+59% [9 mongodb-org-mongos 5,869 kB/8,677 kB 68%]                                                   1,149 kB/s 21s
+60% [9 mongodb-org-mongos 6,631 kB/8,677 kB 76%]                                                   1,149 kB/s 20s
+61% [9 mongodb-org-mongos 7,355 kB/8,677 kB 85%]                                                   1,149 kB/s 20s
+62% [9 mongodb-org-mongos 7,942 kB/8,677 kB 92%]                                                   1,149 kB/s 19s
+62% [9 mongodb-org-mongos 8,174 kB/8,677 kB 94%]                                                   1,149 kB/s 19s
+65% [Waiting for headers]                                                                          1,149 kB/s 19s
+                                                                                                                 
+Get:10 https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0/multiverse amd64 mongodb-org-tools amd64 4.0.1 [22.0 MB]
+
+65% [10 mongodb-org-tools 13.7 kB/22.0 MB 0%]                                                      1,149 kB/s 19s
+66% [10 mongodb-org-tools 708 kB/22.0 MB 3%]                                                       1,149 kB/s 18s
+67% [10 mongodb-org-tools 1,280 kB/22.0 MB 6%]                                                     1,149 kB/s 18s
+68% [10 mongodb-org-tools 1,859 kB/22.0 MB 8%]                                                     1,149 kB/s 17s
+68% [10 mongodb-org-tools 2,424 kB/22.0 MB 11%]                                                    1,149 kB/s 17s
+69% [10 mongodb-org-tools 2,963 kB/22.0 MB 13%]                                                    1,149 kB/s 16s
+70% [10 mongodb-org-tools 3,616 kB/22.0 MB 16%]                                                    1,236 kB/s 14s
+70% [10 mongodb-org-tools 3,813 kB/22.0 MB 17%]                                                    1,236 kB/s 14s
+71% [10 mongodb-org-tools 4,141 kB/22.0 MB 19%]                                                    1,236 kB/s 14s
+73% [10 mongodb-org-tools 5,441 kB/22.0 MB 25%]                                                    1,236 kB/s 13s
+73% [10 mongodb-org-tools 5,670 kB/22.0 MB 26%]                                                    1,236 kB/s 13s
+74% [10 mongodb-org-tools 6,436 kB/22.0 MB 29%]                                                    1,236 kB/s 12s
+75% [10 mongodb-org-tools 7,161 kB/22.0 MB 32%]                                                    1,236 kB/s 12s
+76% [10 mongodb-org-tools 7,782 kB/22.0 MB 35%]                                                    1,236 kB/s 11s
+77% [10 mongodb-org-tools 8,228 kB/22.0 MB 37%]                                                    1,236 kB/s 11s
+77% [10 mongodb-org-tools 8,805 kB/22.0 MB 40%]                                                    1,236 kB/s 10s
+78% [10 mongodb-org-tools 9,296 kB/22.0 MB 42%]                                                    1,236 kB/s 10s
+80% [10 mongodb-org-tools 10.3 MB/22.0 MB 47%]                                                      1,236 kB/s 9s
+80% [10 mongodb-org-tools 10.9 MB/22.0 MB 49%]                                                      1,206 kB/s 9s
+81% [10 mongodb-org-tools 11.5 MB/22.0 MB 52%]                                                      1,206 kB/s 8s
+82% [10 mongodb-org-tools 12.1 MB/22.0 MB 55%]                                                      1,206 kB/s 8s
+83% [10 mongodb-org-tools 12.6 MB/22.0 MB 57%]                                                      1,206 kB/s 7s
+84% [10 mongodb-org-tools 13.3 MB/22.0 MB 60%]                                                      1,206 kB/s 7s
+85% [10 mongodb-org-tools 13.9 MB/22.0 MB 63%]                                                      1,206 kB/s 6s
+85% [10 mongodb-org-tools 14.1 MB/22.0 MB 64%]                                                      1,206 kB/s 6s
+86% [10 mongodb-org-tools 15.1 MB/22.0 MB 68%]                                                      1,206 kB/s 5s
+87% [10 mongodb-org-tools 15.7 MB/22.0 MB 71%]                                                      1,206 kB/s 5s
+88% [10 mongodb-org-tools 16.3 MB/22.0 MB 74%]                                                      1,206 kB/s 4s
+89% [10 mongodb-org-tools 16.9 MB/22.0 MB 77%]                                                      1,206 kB/s 4s
+90% [10 mongodb-org-tools 17.5 MB/22.0 MB 79%]                                                      1,206 kB/s 3s
+91% [10 mongodb-org-tools 18.1 MB/22.0 MB 82%]                                                      1,204 kB/s 3s
+92% [10 mongodb-org-tools 18.7 MB/22.0 MB 85%]                                                      1,204 kB/s 2s
+92% [10 mongodb-org-tools 19.3 MB/22.0 MB 88%]                                                      1,204 kB/s 2s
+93% [10 mongodb-org-tools 19.9 MB/22.0 MB 90%]                                                      1,204 kB/s 1s
+94% [10 mongodb-org-tools 20.5 MB/22.0 MB 93%]                                                      1,204 kB/s 1s
+95% [10 mongodb-org-tools 20.9 MB/22.0 MB 95%]                                                      1,204 kB/s 0s
+95% [10 mongodb-org-tools 21.2 MB/22.0 MB 96%]                                                      1,204 kB/s 0s
+98% [Waiting for headers]                                                                           1,204 kB/s 0s
+                                                                                                                 
+Get:11 https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0/multiverse amd64 mongodb-org amd64 4.0.1 [3,518 B]
+
+98% [11 mongodb-org 3,518 B/3,518 B 100%]                                                           1,204 kB/s 0s
+100% [Working]                                                                                      1,204 kB/s 0s
+                                                                                                                 
+Fetched 56.1 MB in 47s (1,203 kB/s)
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 206222 files and directories currently installed.)
+Preparing to unpack .../00-ubuntu-release-upgrader-gtk_1%3a18.04.22_all.deb ...
+Unpacking ubuntu-release-upgrader-gtk (1:18.04.22) over (1:18.04.21) ...
+Preparing to unpack .../01-ubuntu-release-upgrader-core_1%3a18.04.22_all.deb ...
+Unpacking ubuntu-release-upgrader-core (1:18.04.22) over (1:18.04.21) ...
+Preparing to unpack .../02-python3-distupgrade_1%3a18.04.22_all.deb ...
+Unpacking python3-distupgrade (1:18.04.22) over (1:18.04.21) ...
+Preparing to unpack .../03-libgnome-menu-3-0_3.13.3-11ubuntu1.1_amd64.deb ...
+Unpacking libgnome-menu-3-0:amd64 (3.13.3-11ubuntu1.1) over (3.13.3-11ubuntu1) ...
+Preparing to unpack .../04-gir1.2-gmenu-3.0_3.13.3-11ubuntu1.1_amd64.deb ...
+Unpacking gir1.2-gmenu-3.0:amd64 (3.13.3-11ubuntu1.1) over (3.13.3-11ubuntu1) ...
+Preparing to unpack .../05-gnome-menus_3.13.3-11ubuntu1.1_amd64.deb ...
+Unpacking gnome-menus (3.13.3-11ubuntu1.1) over (3.13.3-11ubuntu1) ...
+Preparing to unpack .../06-mongodb-org-shell_4.0.1_amd64.deb ...
+Unpacking mongodb-org-shell (4.0.1) over (4.0.0) ...
+Preparing to unpack .../07-mongodb-org-server_4.0.1_amd64.deb ...
+Unpacking mongodb-org-server (4.0.1) over (4.0.0) ...
+Preparing to unpack .../08-mongodb-org-mongos_4.0.1_amd64.deb ...
+Unpacking mongodb-org-mongos (4.0.1) over (4.0.0) ...
+Preparing to unpack .../09-mongodb-org-tools_4.0.1_amd64.deb ...
+Unpacking mongodb-org-tools (4.0.1) over (4.0.0) ...
+Preparing to unpack .../10-mongodb-org_4.0.1_amd64.deb ...
+Unpacking mongodb-org (4.0.1) over (4.0.0) ...
+Setting up mongodb-org-shell (4.0.1) ...
+Setting up mongodb-org-mongos (4.0.1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Setting up libgnome-menu-3-0:amd64 (3.13.3-11ubuntu1.1) ...
+Processing triggers for man-db (2.8.3-2) ...
+Setting up gnome-menus (3.13.3-11ubuntu1.1) ...
+Setting up mongodb-org-tools (4.0.1) ...
+Setting up python3-distupgrade (1:18.04.22) ...
+Setting up mongodb-org-server (4.0.1) ...
+Setting up gir1.2-gmenu-3.0:amd64 (3.13.3-11ubuntu1.1) ...
+Setting up ubuntu-release-upgrader-core (1:18.04.22) ...
+Setting up mongodb-org (4.0.1) ...
+Setting up ubuntu-release-upgrader-gtk (1:18.04.22) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ exit
+exit
+
+Script done on 2018-08-11 09:37:04+0530
+Script started on 2018-08-11 09:37:27+0530
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ la[Ks
+[0m[01;34mnode_modules[0m  notes.txt  package.json  package-lock.json  README.md  steps_taken.txt  steps.txt  update.txt
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ exit
+exit
+
+Script done on 2018-08-11 09:37:38+0530
+`
