@@ -83,117 +83,1582 @@ found 0 vulnerabilities
 gd@gd10:~/Desktop/find-geeks$ npm -v
 6.3.0
 gd@gd10:~/Desktop/find-geeks$Script started on 2018-08-11 09:39:09+0530
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ ls[K[Kls
-[0m[01;34mnode_modules[0m  notes.txt  package.json  package-lock.json  README.md  steps_taken.txt  steps.txt  update.txt
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ exit
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ lsls
+node_modules  notes.txt  package.json  package-lock.json  README.md  steps_taken.txt  steps.txt  update.txt
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ exit
 exit
 
 Script done on 2018-08-11 09:39:21+0530
 Script started on 2018-08-11 10:21:08+0530
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ 
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ 
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ exit
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ 
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ 
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ exit
 exit
 
 Script done on 2018-08-11 10:21:14+0530
 Script started on 2018-08-11 10:26:29+0530
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ exitwhoami[2Pexit[Ksudo npm 0=[K[Ki -D nodemon
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ exitwhoami[2Pexitsudo npm 0=i -D nodemon
 [sudo] password for gd: 
-[?25l[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] / rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m 8273bc31e9c35619[0m[K[[90m..................[0m] | loadIdealTree:loadAllDepsIntoIdealTree: [7msill[0m [35minstall[0m loadIdealTree[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m nodemon@1.18.3 checking installable status[0m[K[[90m..................[0m] - fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] - fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m minimatch@3.0.4 checking installable status[0m[K[[90m..................[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m micromatch@3.1.10 checking installable status[0m[K[[90m..................[0m] / loadDep:to-regex: [7msill[0m [35mresolveWithNewModule[0m snapdragon@0.8.2 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m repeat-string@1.6.1 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m source-map@0.5.7 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m cache-base@1.0.1 checking installable status[0m[K[[90m..................[0m] - fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m assign-symbols@1.0.0 checking installable status[0m[K[[90m..................[0m] | fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m is-descriptor@0.1.6 checking installable status[0m[K[[90m..................[0m] - fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m is-data-descriptor@1.0.0 checking installable sta[0m[K[[90m..................[0m] / loadDep:kind-of: [7msill[0m [35mresolveWithNewModule[0m is-descriptor@1.0.2 checking installable status[0m[K[[90m..................[0m] | loadDep:to-regex: [7msill[0m [35mresolveWithNewModule[0m ret@0.1.15 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m is-windows@1.0.2 checking installable status[0m[K[[90m..................[0m] | loadDep:readable-stream: [7msill[0m [35mresolveWithNewModule[0m nan@2.10.0 checking installable status[0m[K[[90m..................[0m] - fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m nan@2.10.0 checking installable status[0m[K[[90m..................[0m] \ fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m brace-expansion@1.1.11 checking installable statu[0m[K[[7m [27m[90m.................[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ps-tree@1.1.0 checking installable status[0m[K[[7m   [27m[90m...............[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m abbrev@1.1.1 checking installable status[0m[K[[7m   [27m[90m...............[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m string-width@2.1.1 checking installable status[0m[K[[7m   [27m[90m...............[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m execa@0.7.0 checking installable status[0m[K[[7m   [27m[90m...............[0m] | fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m shebang-regex@1.0.0 checking installable status[0m[K[[7m   [27m[90m...............[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m ci-info@1.1.3 checking installable status[0m[K[[7m   [27m[90m...............[0m] / fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m got@6.7.1 checking installable status[0m[K[[7m   [27m[90m...............[0m] | fetchMetadata: [7msill[0m [35mresolveWithNewModule[0m rc@1.2.8 checking installable status[0m[K[[7m      [27m[90m............[0m] \ loadExtraneous: [7msill[0m [35mresolveWithNewModule[0m minimist@1.2.0 checking installable status[0m[K[[7m      [27m[90m............[0m] \ loadExtraneous: [7msill[0m [35mresolveWithNewModule[0m minimist@1.2.0 checking installable status[0m[K[[7m      [27m[90m............[0m] \ loadExtraneous: [7msill[0m [35mresolveWithNewModule[0m minimist@1.2.0 checking installable status[0m[K[[7m      [27m[90m............[0m] | diffTrees: [7msill[0m [35minstall[0m generateActionsToTake[0m[K[[7m       [27m[90m...........[0m] | postinstall: [7msill[0m [35minstall[0m executeActions[0m[K[[7m       [27m[90m...........[0m] | extract:nodemon: [34;40mverb[0m [35mlock[0m using /home/gd/.npm/_locks/staging-83bf9d4cf94054bd.lock for /h[0m[K[[7m       [27m[90m...........[0m] | extract:nodemon: [34;40mverb[0m [35mlock[0m using /home/gd/.npm/_locks/staging-83bf9d4cf94054bd.lock for /h[0m[K[[7m           [27m[90m.......[0m] - extract:nanomatch: [7msill[0m [35mextract[0m nanomatch@^1.2.9 extracted to /home/gd/Desktop/find-geeks/[0m[K[[7m            [27m[90m......[0m] \ extract:nodemon: [7msill[0m [35mextract[0m nodemon@latest extracted to /home/gd/Desktop/find-geeks/node[0m[K[[7m            [27m[90m......[0m] \ extract:nodemon: [7msill[0m [35mextract[0m nodemon@latest extracted to /home/gd/Desktop/find-geeks/node[0m[K[[7m            [27m[90m......[0m] \ extract:nodemon: [7msill[0m [35mextract[0m nodemon@latest extracted to /home/gd/Desktop/find-geeks/node[0m[K[[7m            [27m[90m......[0m] \ extract:nodemon: [7msill[0m [35mextract[0m nodemon@latest extracted to /home/gd/Desktop/find-geeks/node[0m[K[[7m            [27m[90m......[0m] \ finalize:atob: [7msill[0m [35mfinalize[0m /home/gd/Desktop/find-geeks/node_modules/atob[0m[K[[7m            [27m[90m......[0m] / finalize:isarray: [7msill[0m [35mfinalize[0m /home/gd/Desktop/find-geeks/node_modules/fsevents/node_mod[0m[K[[7m            [27m[90m......[0m] \ finalize:rimraf: [7msill[0m [35mfinalize[0m /home/gd/Desktop/find-geeks/node_modules/fsevents/node_modu[0m[K[[7m            [27m[90m......[0m] / finalize:anymatch: [7msill[0m [35mfinalize[0m /home/gd/Desktop/find-geeks/node_modules/anymatch[0m[K[[7m            [27m[90m......[0m] \ refresh-package-json:nodemon: [32;40mtiming[0m [35maction:finalize[0m Completed in 160ms[0m[K[[7m            [27m[90m......[0m] \ refresh-package-json:nodemon: [32;40mtiming[0m [35maction:finalize[0m Completed in 160ms[0m[K[[7m            [27m[90m......[0m] \ refresh-package-json:needle: [7msill[0m [35mrefresh-package-json[0m /home/gd/Desktop/find-geeks/node_mo[0m[K[[7m            [27m[90m......[0m] \ refresh-package-json:needle: [7msill[0m [35mrefresh-package-json[0m /home/gd/Desktop/find-geeks/node_mo[0m[K[[7m            [27m[90m......[0m] / install:nodemon: [7msill[0m [35mdoSerial[0m install 588[0m[K[K[?25h
+[?25l[..................] / rollbackFailedOptional: verb npm-session 8273bc31e9c35619
+[..................] / rollbackFailedOptional: verb npm-session 8273bc31e9c35619
+[..................] / rollbackFailedOptional: verb npm-session 8273bc31e9c35619
+[..................] / rollbackFailedOptional: verb npm-session 8273bc31e9c35619
+[..................] / rollbackFailedOptional: verb npm-session 8273bc31e9c35619
+[..................] / rollbackFailedOptional: verb npm-session 8273bc31e9c35619
+[..................] / rollbackFailedOptional: verb npm-session 8273bc31e9c35619
+[..................] / rollbackFailedOptional: verb npm-session 8273bc31e9c35619
+[..................] / rollbackFailedOptional: verb npm-session 8273bc31e9c35619
+[..................] / rollbackFailedOptional: verb npm-session 8273bc31e9c35619
+[..................] / rollbackFailedOptional: verb npm-session 8273bc31e9c35619
+[..................] / rollbackFailedOptional: verb npm-session 8273bc31e9c35619
+[..................] / rollbackFailedOptional: verb npm-session 8273bc31e9c35619
+[..................] | loadIdealTree:loadAllDepsIntoIdealTree: sill install loadIdealTree
+[..................] \ fetchMetadata: sill resolveWithNewModule nodemon@1.18.3 checking installable status
+[..................] - fetchMetadata: sill resolveWithNewModule minimatch@3.0.4 checking installable status
+[..................] \ fetchMetadata: sill resolveWithNewModule minimatch@3.0.4 checking installable status
+[..................] \ fetchMetadata: sill resolveWithNewModule minimatch@3.0.4 checking installable status
+[..................] \ fetchMetadata: sill resolveWithNewModule minimatch@3.0.4 checking installable status
+[..................] \ fetchMetadata: sill resolveWithNewModule minimatch@3.0.4 checking installable status
+[..................] \ fetchMetadata: sill resolveWithNewModule minimatch@3.0.4 checking installable status
+[..................] \ fetchMetadata: sill resolveWithNewModule minimatch@3.0.4 checking installable status
+[..................] / fetchMetadata: sill resolveWithNewModule minimatch@3.0.4 checking installable status
+[..................] / fetchMetadata: sill resolveWithNewModule minimatch@3.0.4 checking installable status
+[..................] - fetchMetadata: sill resolveWithNewModule minimatch@3.0.4 checking installable status
+[..................] / fetchMetadata: sill resolveWithNewModule micromatch@3.1.10 checking installable status
+[..................] / loadDep:to-regex: sill resolveWithNewModule snapdragon@0.8.2 checking installable status
+[..................] \ fetchMetadata: sill resolveWithNewModule repeat-string@1.6.1 checking installable status
+[..................] \ fetchMetadata: sill resolveWithNewModule source-map@0.5.7 checking installable status
+[..................] \ fetchMetadata: sill resolveWithNewModule cache-base@1.0.1 checking installable status
+[..................] - fetchMetadata: sill resolveWithNewModule assign-symbols@1.0.0 checking installable status
+[..................] | fetchMetadata: sill resolveWithNewModule is-descriptor@0.1.6 checking installable status
+[..................] - fetchMetadata: sill resolveWithNewModule is-data-descriptor@1.0.0 checking installable sta
+[..................] / loadDep:kind-of: sill resolveWithNewModule is-descriptor@1.0.2 checking installable status
+[..................] | loadDep:to-regex: sill resolveWithNewModule ret@0.1.15 checking installable status
+[..................] \ fetchMetadata: sill resolveWithNewModule is-windows@1.0.2 checking installable status
+[..................] | loadDep:readable-stream: sill resolveWithNewModule nan@2.10.0 checking installable status
+[..................] - fetchMetadata: sill resolveWithNewModule nan@2.10.0 checking installable status
+[..................] \ fetchMetadata: sill resolveWithNewModule brace-expansion@1.1.11 checking installable statu
+[ .................] / fetchMetadata: sill resolveWithNewModule ps-tree@1.1.0 checking installable status
+[   ...............] / fetchMetadata: sill resolveWithNewModule abbrev@1.1.1 checking installable status
+[   ...............] / fetchMetadata: sill resolveWithNewModule string-width@2.1.1 checking installable status
+[   ...............] / fetchMetadata: sill resolveWithNewModule execa@0.7.0 checking installable status
+[   ...............] | fetchMetadata: sill resolveWithNewModule shebang-regex@1.0.0 checking installable status
+[   ...............] / fetchMetadata: sill resolveWithNewModule ci-info@1.1.3 checking installable status
+[   ...............] / fetchMetadata: sill resolveWithNewModule got@6.7.1 checking installable status
+[   ...............] | fetchMetadata: sill resolveWithNewModule rc@1.2.8 checking installable status
+[      ............] \ loadExtraneous: sill resolveWithNewModule minimist@1.2.0 checking installable status
+[      ............] \ loadExtraneous: sill resolveWithNewModule minimist@1.2.0 checking installable status
+[      ............] \ loadExtraneous: sill resolveWithNewModule minimist@1.2.0 checking installable status
+[      ............] | diffTrees: sill install generateActionsToTake
+[       ...........] | postinstall: sill install executeActions
+[       ...........] | extract:nodemon: verb lock using /home/gd/.npm/_locks/staging-83bf9d4cf94054bd.lock for /h
+[       ...........] | extract:nodemon: verb lock using /home/gd/.npm/_locks/staging-83bf9d4cf94054bd.lock for /h
+[           .......] - extract:nanomatch: sill extract nanomatch@^1.2.9 extracted to /home/gd/Desktop/find-geeks/
+[            ......] \ extract:nodemon: sill extract nodemon@latest extracted to /home/gd/Desktop/find-geeks/node
+[            ......] \ extract:nodemon: sill extract nodemon@latest extracted to /home/gd/Desktop/find-geeks/node
+[            ......] \ extract:nodemon: sill extract nodemon@latest extracted to /home/gd/Desktop/find-geeks/node
+[            ......] \ extract:nodemon: sill extract nodemon@latest extracted to /home/gd/Desktop/find-geeks/node
+[            ......] \ finalize:atob: sill finalize /home/gd/Desktop/find-geeks/node_modules/atob
+[            ......] / finalize:isarray: sill finalize /home/gd/Desktop/find-geeks/node_modules/fsevents/node_mod
+[            ......] \ finalize:rimraf: sill finalize /home/gd/Desktop/find-geeks/node_modules/fsevents/node_modu
+[            ......] / finalize:anymatch: sill finalize /home/gd/Desktop/find-geeks/node_modules/anymatch
+[            ......] \ refresh-package-json:nodemon: timing action:finalize Completed in 160ms
+[            ......] \ refresh-package-json:nodemon: timing action:finalize Completed in 160ms
+[            ......] \ refresh-package-json:needle: sill refresh-package-json /home/gd/Desktop/find-geeks/node_mo
+[            ......] \ refresh-package-json:needle: sill refresh-package-json /home/gd/Desktop/find-geeks/node_mo
+[            ......] / install:nodemon: sill doSerial install 588
+
+[?25h
 > nodemon@1.18.3 postinstall /home/gd/Desktop/find-geeks/node_modules/nodemon
 > node bin/postinstall || exit 0
 
-[32mLove nodemon? You can now support the project via the open collective:[22m[39m
- > [96m[1mhttps://opencollective.com/nodemon/donate[0m
+Love nodemon? You can now support the project via the open collective:
+ > https://opencollective.com/nodemon/donate
 
-[?25l[[7m            [27m[90m......[0m] / postinstall: [7msill[0m [35mlifecycle[0m nodemon@1.18.3~postinstall: Returned: code: 0  signal: null[0m[K[[7m            [27m[90m......[0m] / postinstall: [7msill[0m [35mlifecycle[0m nodemon@1.18.3~postinstall: Returned: code: 0  signal: null[0m[K[[7m            [27m[90m......[0m] - postinstall: [7msill[0m [35mlifecycle[0m nodemon@1.18.3~postinstall: Returned: code: 0  signal: null[0m[K[[7m            [27m[90m......[0m] | postinstall: [7msill[0m [35mlifecycle[0m nodemon@1.18.3~postinstall: Returned: code: 0  signal: null[0m[K[[7m            [27m[90m......[0m] | postinstall: [7msill[0m [35mlifecycle[0m nodemon@1.18.3~postinstall: Returned: code: 0  signal: null[0m[K[K[?25h[37;40mnpm[0m [0m[30;43mWARN[0m [0m[35moptional[0m SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules/fsevents):
-[0m[37;40mnpm[0m [0m[30;43mWARN[0m [0m[35mnotsup[0m SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
-[0m
-[?25l[[7m            [27m[90m......[0m] / postinstall: [30;43mWARN[0m [35mnotsup[0m SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1[0m[K[[7m            [27m[90m......[0m] / postinstall: [30;43mWARN[0m [35mnotsup[0m SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1[0m[K[K[?25h+ nodemon@1.18.3
+[?25l[            ......] / postinstall: sill lifecycle nodemon@1.18.3~postinstall: Returned: code: 0  signal: null
+[            ......] / postinstall: sill lifecycle nodemon@1.18.3~postinstall: Returned: code: 0  signal: null
+[            ......] - postinstall: sill lifecycle nodemon@1.18.3~postinstall: Returned: code: 0  signal: null
+[            ......] | postinstall: sill lifecycle nodemon@1.18.3~postinstall: Returned: code: 0  signal: null
+[            ......] | postinstall: sill lifecycle nodemon@1.18.3~postinstall: Returned: code: 0  signal: null
+
+[?25hnpm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+[?25l[            ......] / postinstall: WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1
+[            ......] / postinstall: WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1
+
+[?25h+ nodemon@1.18.3
 added 22 packages from 28 contributors and audited 1573 packages in 5.569s
-found [92m0[0m vulnerabilities
+found 0 vulnerabilities
 
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ nodemon -v
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ nodemon -v
 nodemon: command not found
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ [H[2J]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ git add .
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ git commit -m "comm[K[K[K[Ks[Kfinished with setup required"
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ [H[2J]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ git add .
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ git commit -m "commsfinished with setup required"
 [master 2de025f] finished with setup required
  5 files changed, 4186 insertions(+), 1 deletion(-)
  create mode 100644 package-lock.json
  create mode 100644 steps.txt
  create mode 100644 testFontSize.txt
  create mode 100644 update.txt
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ gi [Kt push -u origin master
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ gi t push -u origin master
 Counting objects: 10, done.
 Delta compression using up to 4 threads.
-Compressing objects:  10% (1/10)   Compressing objects:  20% (2/10)   Compressing objects:  30% (3/10)   Compressing objects:  40% (4/10)   Compressing objects:  50% (5/10)   Compressing objects:  60% (6/10)   Compressing objects:  70% (7/10)   Compressing objects:  80% (8/10)   Compressing objects:  90% (9/10)   Compressing objects: 100% (10/10)   Compressing objects: 100% (10/10), done.
-Writing objects:  10% (1/10)   Writing objects:  20% (2/10)   Writing objects:  30% (3/10)   Writing objects:  40% (4/10)   Writing objects:  60% (6/10)   Writing objects:  70% (7/10)   Writing objects:  80% (8/10)   Writing objects:  90% (9/10)   Writing objects: 100% (10/10)   Writing objects: 100% (10/10), 32.42 KiB | 2.95 MiB/s, done.
+Compressing objects:  10% (1/10)   
+Compressing objects:  20% (2/10)   
+Compressing objects:  30% (3/10)   
+Compressing objects:  40% (4/10)   
+Compressing objects:  50% (5/10)   
+Compressing objects:  60% (6/10)   
+Compressing objects:  70% (7/10)   
+Compressing objects:  80% (8/10)   
+Compressing objects:  90% (9/10)   
+Compressing objects: 100% (10/10)   
+Compressing objects: 100% (10/10), done.
+Writing objects:  10% (1/10)   
+Writing objects:  20% (2/10)   
+Writing objects:  30% (3/10)   
+Writing objects:  40% (4/10)   
+Writing objects:  60% (6/10)   
+Writing objects:  70% (7/10)   
+Writing objects:  80% (8/10)   
+Writing objects:  90% (9/10)   
+Writing objects: 100% (10/10)   
+Writing objects: 100% (10/10), 32.42 KiB | 2.95 MiB/s, done.
 Total 10 (delta 4), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/4)   [Kremote: Resolving deltas:  25% (1/4)   [Kremote: Resolving deltas: 100% (4/4)   [Kremote: Resolving deltas: 100% (4/4), done.[K
+remote: Resolving deltas:   0% (0/4)   
+remote: Resolving deltas:  25% (1/4)   
+remote: Resolving deltas: 100% (4/4)   
+remote: Resolving deltas: 100% (4/4), done.
 To github.com:ganeshdeshmukh1612/connect-geeks.git
    b2f55fb..2de025f  master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ pus[K[K[Kexit
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ pusexit
 exit
 
 Script done on 2018-08-11 10:29:18+0530
 Script started on 2018-08-11 10:29:44+0530
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ exitgit push -u origin masterexit[K[Knode server.js [K[K[K[K
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ exitgit push -u origin masterexitnode server.js 
 Server is running at port no `{$port}`
 ^C
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ exit
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ exit
 exit
 
 Script done on 2018-08-11 10:40:03+0530
 Script started on 2018-08-11 10:46:31+0530
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ alias push="git push -u origin master"
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ push[Kh
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ alias push="git push -u origin master"
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ pushh
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 Everything up-to-date
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ np [Km start
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ np m start
 
 > find-geeks@1.0.0 start /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[nodemon] 1.18.3
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Server is running at port no `{$port}`
+^C
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ git addd . .git add .
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ git commit -m "added start command as 'np=odemon server.js;'"
+[master 8aee894] added start command as 'nodemon server.js'
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects:  33% (1/3)   
+Compressing objects:  66% (2/3)   
+Compressing objects: 100% (3/3)   
+Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   
+Writing objects:  66% (2/3)   
+Writing objects: 100% (3/3)   
+Writing objects: 100% (3/3), 348 bytes | 174.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)   
+remote: Resolving deltas:  50% (1/2)   
+remote: Resolving deltas: 100% (2/2)   
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:ganeshdeshmukh1612/connect-geeks.git
+   1700fbf..8aee894  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ [H[2J]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ git add .
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ git commit - mm "added ke'keys.js' for autheconnecting romemote-MLab DB"
+[master f2d7e20] added 'keys.js' for connecting remote-MLab DB
+ 1 file changed, 4 insertions(+)
+ create mode 100644 config/keys.js
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ [H[2J]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ git push - uu origin amaster
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects:  33% (1/3)   
+Compressing objects:  66% (2/3)   
+Compressing objects: 100% (3/3)   
+Compressing objects: 100% (3/3), done.
+Writing objects:  25% (1/4)   
+Writing objects:  50% (2/4)   
+Writing objects:  75% (3/4)   
+Writing objects: 100% (4/4)   
+Writing objects: 100% (4/4), 449 bytes | 449.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   
+remote: Resolving deltas: 100% (1/1)   
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:ganeshdeshmukh1612/connect-geeks.git
+   8aee894..f2d7e20  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ [H[2J]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ [H[2J]0;gd@gd10: ~/Desktop/find-geeksgd@gd10:~/Desktop/find-geeks$ nodemongnopm np m run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[nodemon] 1.18.3
+[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:19918) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no `{$port}`
+MongoDB connected
+^C
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
 > nodemon server.js
 
 [33m[nodemon] 1.18.3[39m
 [33m[nodemon] to restart at any time, enter `rs`[39m
 [33m[nodemon] watching: *.*[39m
 [32m[nodemon] starting `node server.js`[39m
+(node:20084) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
 Server is running at port no `{$port}`
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:20100) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+	[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:20264) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:458
+      throw new TypeError('Router.use() requires a middleware function but got a ' + gettype(fn))
+      ^
+
+TypeError: Router.use() requires a middleware function but got a Object
+    at Function.use (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:458:13)
+    at Function.<anonymous> (/home/gd/Desktop/find-geeks/node_modules/express/lib/application.js:220:21)
+    at Array.forEach (<anonymous>)
+    at Function.use (/home/gd/Desktop/find-geeks/node_modules/express/lib/application.js:217:7)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:32:5)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:6
+app.get("/test", (req, res) => {
+^
+
+ReferenceError: app is not defined
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:6
+app.get("/test", (req, res) => {
+^
+
+ReferenceError: app is not defined
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+rs
 ^C
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ git addd .[K[K[K .[K[K[K[K[K[K[K[K[Kgit add .
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ git commit -m "added start command as 'np=[K[Kodemon server.js;[K'"
-[master 8aee894] added start command as 'nodemon server.js'
- 1 file changed, 1 insertion(+), 1 deletion(-)
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ push
-Counting objects: 3, done.
-Delta compression using up to 4 threads.
-Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
-Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 348 bytes | 174.00 KiB/s, done.
-Total 3 (delta 2), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/2)   [Kremote: Resolving deltas:  50% (1/2)   [Kremote: Resolving deltas: 100% (2/2)   [Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
-To github.com:ganeshdeshmukh1612/connect-geeks.git
-   1700fbf..8aee894  master -> master
-Branch 'master' set up to track remote branch 'master' from 'origin'.
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ [H[2J]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ git add .
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ git commit - m[K[Km "added ke[K[K'keys.js' for authe[K[K[K[K[Kconnecting rom[K[Kemote-MLab DB"
-[master f2d7e20] added 'keys.js' for connecting remote-MLab DB
- 1 file changed, 4 insertions(+)
- create mode 100644 config/keys.js
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ [H[2J]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ git push - u[K[Ku origin a[Kmaster
-Counting objects: 4, done.
-Delta compression using up to 4 threads.
-Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
-Writing objects:  25% (1/4)   Writing objects:  50% (2/4)   Writing objects:  75% (3/4)   Writing objects: 100% (4/4)   Writing objects: 100% (4/4), 449 bytes | 449.00 KiB/s, done.
-Total 4 (delta 1), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
-To github.com:ganeshdeshmukh1612/connect-geeks.git
-   8aee894..f2d7e20  master -> master
-Branch 'master' set up to track remote branch 'master' from 'origin'.
-]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ [H[2J]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ [H[2J]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ nodemong[K[K[K[K[K[K[K[Kno[Kpm [K[K[K[Knp [Km run server
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ npm run server
 
 > find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
 > nodemon server.js
 
 [33m[nodemon] 1.18.3[39m
-[33m[n
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^L^C
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ [H[2J]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:26701) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:26739) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:26774) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:43:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:26899) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:26921) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:27498) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ [H[2J]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:27652) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:27674) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/profile.js:4:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:5:17)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/profile.js:4:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:5:17)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/posts.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:27894) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+` [32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/posts.js:9
+  });
+   ^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/posts.js:9
+  });
+   ^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/posts.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/posts.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/posts.js:16:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:28033) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:28068) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:28088) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:6:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:7:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:28226) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502
+  this.stack.push(layer);
+             ^
+
+TypeError: Cannot read property 'push' of undefined
+    at Function.route (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:502:14)
+    at Function.proto.(anonymous function) [as get] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:509:22)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:7:8)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:28264) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:28672) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:28697) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:28722) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:28751) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+(node:28784) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server is running at
