@@ -5,3 +5,27 @@ implement frontend in react
 implement redux
 create post build script
 deploy
+##########################################
+Technolgies used in project
+
+small social network called find-geeks
+#sections.
+profiles education and experience
+post comments
+authentication and authorization
+login-sign
+create profile 
+github repo
+stack overflow account
+posts and blogs 
+MERN stack
+postman
+passportjs
+ES6
+Node Expressjs
+React, Redux
+MongoDB 
+Bootstrap v4
+Git
+Heroku cloud
+

@@ -15,8 +15,21 @@ router.get("/test", (req, res) => res.json({ msg: "Users Works" }));
 // @route       GET request to api/users/register
 // @description new registration of user.
 // @access      Public, without login first register
+
 router.post("/register", (req, res) => {
-  User.findOne({ email: req.body.email });
+  User.findOne({ email: req.body.email }).then(user => {
+    if (user) {
+      return res.status(400).json({ email: "Email value exists already." });
+    } else {
+      // create user
+      const newUser = new User({
+        name: req.body.name,
+        email: req.body.email,
+        // avator: avator,
+        password: req.body.password
+      });
+    }
+  });
 });
 
 module.exports = router;

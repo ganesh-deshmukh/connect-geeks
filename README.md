@@ -13,4 +13,6 @@ by importing express,calling express by variable app, app.get, listening to requ
 8.create router as 'const router = express.Router();
 |-> don't forget parenthesis, otherwise it throws error of "TypeError: Cannot read property 'push' of undefined"
 9.create models for each route eg.for user(auth0) and profile(all details of user).
-10.Model name convention is same as classes in Java- start with Capital letter and singular. 11.
+10.Model name convention is same as classes in Java- start with Capital letter and singular.
+11.Added route for registration.
+12.Add bodyparser to accept data from front-end. 13.
