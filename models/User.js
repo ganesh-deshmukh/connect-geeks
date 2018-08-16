@@ -18,8 +18,8 @@ const UserSchema = new Schema({
   },
   avatar: {
     // if avator present at server then it returns otherwise it uses default placeholder.
-    type: String,
-    required: true
+    type: String
+    // required: true
   },
   date: {
     type: Date,
