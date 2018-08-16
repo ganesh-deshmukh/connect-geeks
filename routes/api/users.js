@@ -3,6 +3,7 @@
 const express = require("express");
 const router = express.Router();
 const gravator = require("gravator");
+const bcrypt = require("bcryptjs");
 
 // Load User Model to check existing email is used for registration or not?
 const User = require("../../models/User");
@@ -33,6 +34,15 @@ router.post("/register", (req, res) => {
         email: req.body.email,
         avator,
         password: req.body.password
+      });
+      // gensalt(noOfSalts_of_Iterations,(err,salt_result)=>{})
+      bcrypt.genSalt(10, (err, salt) => {
+        // hash(plaintext,salt,callback(err,resultant ciphertext))
+        bcrypt.hash(newUser.password, salt, (err, hash) => {
+          if (err) {
+            throw err;
+          }
+        });
       });
     }
   });

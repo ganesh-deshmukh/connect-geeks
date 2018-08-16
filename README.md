@@ -15,4 +15,7 @@ by importing express,calling express by variable app, app.get, listening to requ
 9.create models for each route eg.for user(auth0) and profile(all details of user).
 10.Model name convention is same as classes in Java- start with Capital letter and singular.
 11.Added route for registration.
-12.Add bodyparser to accept data from front-end. 13.
+12.Add bodyparser to accept data from front-end.
+13.Add avator from npm-gravator.
+14.store password in encrypted form using "genSalt()" for round of salts value=10;
+15.then create hash using that salt. 16.
