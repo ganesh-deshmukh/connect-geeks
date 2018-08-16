@@ -42,6 +42,16 @@ router.post("/register", (req, res) => {
           if (err) {
             throw err;
           }
+          //assign salted hash to password
+          newUser.password = hash;
+
+          // Save new password in datebase, overriding plaintext;
+          newUser
+            .save()
+            .then(user => res.json(user) // if yes,then send it as argument in brackets. (user)
+            .catch(err =>
+              console.log("Error occured in saving hash password in DB\n")
+            );
         });
       });
     }

@@ -1877,4 +1877,137 @@ Error: listen EADDRINUSE :::5000
     at Module._compile (internal/modules/cjs/loader.js:689:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
     at Module.load (internal/modules/cjs/loader.js:599:32)
-    at tryModuleLoad (internal/module
+    at tryModuleLoad (internal/moduleScript started on 2018-08-16 21:00:23+0530
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ exitnpm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::5000
+    at Server.setupListenHandle [as _listen2] (net.js:1335:14)
+    at listenInCluster (net.js:1383:12)
+    at Server.listen (net.js:1470:7)
+    at Function.listen (/home/gd/Desktop/find-geeks/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:44:5)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+Emitted 'error' event at:
+    at emitErrorNT (net.js:1362:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:745:11)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::5000
+    at Server.setupListenHandle [as _listen2] (net.js:1335:14)
+    at listenInCluster (net.js:1383:12)
+    at Server.listen (net.js:1470:7)
+    at Function.listen (/home/gd/Desktop/find-geeks/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:44:5)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+Emitted 'error' event at:
+    at emitErrorNT (net.js:1362:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:745:11)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::5000
+    at Server.setupListenHandle [as _listen2] (net.js:1335:14)
+    at listenInCluster (net.js:1383:12)
+    at Server.listen (net.js:1470:7)
+    at Function.listen (/home/gd/Desktop/find-geeks/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:44:5)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+Emitted 'error' event at:
+    at emitErrorNT (net.js:1362:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:745:11)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ ^C
+]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ [H[2J]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ [H[2J]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:54
+            );
+            ^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C]0;gd@gd10: ~/Desktop/find-geeks[01;32mgd@gd10[00m:[01;34m~/Desktop/find-geeks[00m$ exit
+exit
+
+Script done on 2018-08-16 21:37:00+0530
