@@ -18,4 +18,7 @@ by importing express,calling express by variable app, app.get, listening to requ
 12.Add bodyparser to accept data from front-end.
 13.Add avator from npm-gravator.
 14.store password in encrypted form using "genSalt()" for round of salts value=10;
-15.then create hash using that salt. 16.
+
+15.then create hash using that salt.
+
+16.If 'unhandled error: listen EADDR_IN_USE:::5000' occurs then run 'killall node'

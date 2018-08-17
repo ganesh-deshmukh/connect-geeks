@@ -23,6 +23,7 @@ router.post("/register", (req, res) => {
     if (user) {
       return res.status(400).json({ email: "Email value exists already." });
     } else {
+      console.log("user not found");
       const avator = gravator.url(req.body.email, {
         s: "200", //Size of gravator in pixels
         r: "pg", //rating,
@@ -35,6 +36,7 @@ router.post("/register", (req, res) => {
         avator,
         password: req.body.password
       });
+
       // gensalt(noOfSalts_of_Iterations,(err,salt_result)=>{})
       bcrypt.genSalt(10, (err, salt) => {
         // hash(plaintext,salt,callback(err,resultant ciphertext))
@@ -48,7 +50,7 @@ router.post("/register", (req, res) => {
           // Save new password in datebase, overriding plaintext;
           newUser
             .save()
-            .then(user => res.json(user) // if yes,then send it as argument in brackets. (user)
+            .then(user => res.json(user)) // if yes,then send it as argument in brackets. (user)
             .catch(err =>
               console.log("Error occured in saving hash password in DB\n")
             );
