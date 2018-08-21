@@ -4,6 +4,7 @@ const express = require("express");
 const router = express.Router();
 const gravatar = require("gravatar");
 const bcrypt = require("bcryptjs");
+const keys = require("../../config/keys");
 
 // Load User Model to check existing email is used for registration or not?
 const User = require("../../models/User");
@@ -77,8 +78,26 @@ router.post("/login", (req, res) => {
     // if user's email-id is found then match it's password-hash with local-database
     bcrypt.compare(password, user.password).then(isMatch => {
       if (isMatch) {
-        // user pswd matched
-        res.json({ msg: "Success" });
+        // user pswd matched => then return JWT token back for authentication
+        // res.json({ msg: "Success" });
+
+        const payload = { it: user.id, name: user.name, avatar: user.avatar };
+        // created JWT token
+
+        // now sign toke
+        // json.sign(payload, secreteKey, expire-time, callback );
+
+        json.sign(
+          payload,
+          keys.secreteOrKey,
+          { expiresIn: 1800 },
+          (err, token) => {
+            res.json({
+              success: true,
+              token: "Bearer " + token
+            });
+          }
+        );
       } else {
         // pswd doesn't matched
         return res.status(400).json({ password: "Password didn't match" });

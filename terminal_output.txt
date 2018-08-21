@@ -2970,3 +2970,1248 @@ ReferenceError: req is not defined
 [31m[nodemon] app crashed - waiting for file changes before starting...[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:72
+User.findOne({ email: req.body.email }).then(user => {
+                      ^
+
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:72:23)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::5000
+    at Server.setupListenHandle [as _listen2] (net.js:1335:14)
+    at listenInCluster (net.js:1383:12)
+    at Server.listen (net.js:1470:7)
+    at Function.listen (/home/gd/Desktop/find-geeks/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:44:5)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+Emitted 'error' event at:
+    at emitErrorNT (net.js:1362:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:745:11)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+gd@gd10:~/Desktop/find-geeks$ e 
+gd@gd10:~/Desktop/find-geeks$ exit
+exit
+
+Script done on 2018-08-21 20:32:56+0530
+Script started on 2018-08-21 20:33:31+0530
+gd@gd10:~/Desktop/find-geeks$ noexitnpm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::5000
+    at Server.setupListenHandle [as _listen2] (net.js:1335:14)
+    at listenInCluster (net.js:1383:12)
+    at Server.listen (net.js:1470:7)
+    at Function.listen (/home/gd/Desktop/find-geeks/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:44:5)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+Emitted 'error' event at:
+    at emitErrorNT (net.js:1362:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:745:11)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+gd@gd10:~/Desktop/find-geeks$ ^C
+gd@gd10:~/Desktop/find-geeks$ ^C
+gd@gd10:~/Desktop/find-geeks$ sudo lsof -l   t -i  :5000
+[sudo] password for gd: 
+31211
+gd@gd10:~/Desktop/find-geeks$ sudo kill 31211
+gd@gd10:~/Desktop/find-geeks$ npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::5000
+    at Server.setupListenHandle [as _listen2] (net.js:1335:14)
+    at listenInCluster (net.js:1383:12)
+    at Server.listen (net.js:1470:7)
+    at Function.listen (/home/gd/Desktop/find-geeks/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:44:5)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+Emitted 'error' event at:
+    at emitErrorNT (net.js:1362:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:745:11)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::5000
+    at Server.setupListenHandle [as _listen2] (net.js:1335:14)
+    at listenInCluster (net.js:1383:12)
+    at Server.listen (net.js:1470:7)
+    at Function.listen (/home/gd/Desktop/find-geeks/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:44:5)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+Emitted 'error' event at:
+    at emitErrorNT (net.js:1362:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:745:11)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+gd@gd10:~/Desktop/find-geeks$ sudo lsof -lnpm run serversudo lsof -l   ti :5000
+[sudo] password for gd: 
+5100
+gd@gd10:~/Desktop/find-geeks$ sudo pkill 5100
+gd@gd10:~/Desktop/find-geeks$ npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::5000
+    at Server.setupListenHandle [as _listen2] (net.js:1335:14)
+    at listenInCluster (net.js:1383:12)
+    at Server.listen (net.js:1470:7)
+    at Function.listen (/home/gd/Desktop/find-geeks/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:44:5)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+Emitted 'error' event at:
+    at emitErrorNT (net.js:1362:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:745:11)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+gd@gd10:~/Desktop/find-geeks$ exit
+exit
+
+Script done on 2018-08-21 22:26:00+0530
+Script started on 2018-08-21 22:26:23+0530
+gd@gd10:~/Desktop/find-geeks$ npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::5000
+    at Server.setupListenHandle [as _listen2] (net.js:1335:14)
+    at listenInCluster (net.js:1383:12)
+    at Server.listen (net.js:1470:7)
+    at Function.listen (/home/gd/Desktop/find-geeks/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:44:5)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+Emitted 'error' event at:
+    at emitErrorNT (net.js:1362:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:745:11)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+gd@gd10:~/Desktop/find-geeks$ kill 
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+gd@gd10:~/Desktop/find-geeks$ killall
+Usage: killall [ -Z CONTEXT ] [ -u USER ] [ -y TIME ] [ -o TIME ] [ -eIgiqrvw ]
+               [ -s SIGNAL | -SIGNAL ] NAME...
+       killall -l, --list
+       killall -V, --version
+
+  -e,--exact          require exact match for very long names
+  -I,--ignore-case    case insensitive process name match
+  -g,--process-group  kill process group instead of process
+  -y,--younger-than   kill processes younger than TIME
+  -o,--older-than     kill processes older than TIME
+  -i,--interactive    ask for confirmation before killing
+  -l,--list           list all known signal names
+  -q,--quiet          don't print complaints
+  -r,--regexp         interpret NAME as an extended regular expression
+  -s,--signal SIGNAL  send this signal instead of SIGTERM
+  -u,--user USER      kill only process(es) running as USER
+  -v,--verbose        report if the signal was successfully sent
+  -V,--version        display version information
+  -w,--wait           wait for processes to die
+  -n,--ns PID         match processes that belong to the same namespaces
+                      as PID or 0 for all namespaces
+  -Z,--context REGEXP kill only process(es) having context
+                      (must precede other arguments)
+
+gd@gd10:~/Desktop/find-geeks$ history
+ 1003  sudo npm install -g node@8.9.0
+ 1004  sudo npm install -g npm@8.11.1
+ 1005  ls
+ 1006  cd portfolio/
+ 1007  ls
+ 1008  sudo rm -rf node_modules/
+ 1009  ls
+ 1010  npm install -g npm@8.11.1
+ 1011  sudo npm install -g npm@8.11.1
+ 1012  sudo apt purge npm
+ 1013  npm install -g npm@8.11.1
+ 1014  sudo npm install -g npm@8.11.1
+ 1015  sudo npm i node@lts
+ 1016  exit
+ 1017  ls
+ 1018  cd Desktop/
+ 1019  ls
+ 1020  sudo npm i node@lts 
+ 1021  sudo npm i -g node@lts 
+ 1022  ls
+ 1023  cd portfolio/portfolio/
+ 1024  ls
+ 1025  sudo npm i -g node@lts 
+ 1026  sudo npm install -g node@lts 
+ 1027  sudo npm install -g npm@8.11.1 
+ 1028  sudo npm install -g npm@8.9.0
+ 1029  code .
+ 1030  npm install -g npm@8.11.1
+ 1031  exit
+ 1032  rm -rf node_modules
+ 1033  npm cache clean
+ 1034  sudo rm -rf node_modules
+ 1035  npm cache clean
+ 1036  npm -v
+ 1037  node -v
+ 1038  npm install node-sass
+ 1039  npm -v
+ 1040  node -v
+ 1041  history
+ 1042  npm install
+ 1043  npm scss
+ 1044  npm sass
+ 1045  npm run sass
+ 1046  node run sass
+ 1047  npm run sass
+ 1048  exit
+ 1049  npm run sass
+ 1050  touch node-scss-troubleshoot.sh
+ 1051  sudo bash node-scss-troubleshoot.sh 
+ 1052  sudo npm install --unsafe-perm -g node-sass
+ 1053  ls
+ 1054  npm run sass
+ 1055  sudo bash node-scss-troubleshoot.sh 
+ 1056  sudo rwx node_modules/
+ 1057  sudo rwx 777 node_modules/
+ 1058  sudo ugo 777 node_modules/
+ 1059  sudo chmod 777 node_modules/
+ 1060  ls
+ 1061  sudo chmod -R 777 node_modules/
+ 1062  bash node-scss-troubleshoot.sh 
+ 1063  sudo bash node-scss-troubleshoot.sh 
+ 1064  sudo rm -rf node_modules/
+ 1065  npm install node-sass@latest
+ 1066  npm run sass
+ 1067  code --disable-gpu
+ 1068  ls
+ 1069  ls
+ 1070  cd Desktop/portfolio/portfolio/
+ 1071  code --disable-gpu
+ 1072  node run sass
+ 1073  npm run sass
+ 1074  sudo rm -rf node_modules/
+ 1075  ls
+ 1076  npm install --save
+ 1077  npm run sass
+ 1078  node -v
+ 1079  npm -v
+ 1080  npm install node-sass
+ 1081  npm ls node-sass
+ 1082  npm -v
+ 1083  node -v
+ 1084  node -p process.versions
+ 1085  node -p process.platform
+ 1086  node -p process.arch
+ 1087  npm -v
+ 1088  node -v
+ 1089  node -p process.versions
+ 1090  node -p process.platform
+ 1091  node -p process.arch
+ 1092  npm ls node-sass
+ 1093  node -p "require('node-sass').info"
+ 1094  npm ls node-sass
+ 1095  npm run sass
+ 1096  npm install node-sass@4.5.3
+ 1097  npm install
+ 1098  npm run sass
+ 1099  ls
+ 1100  cat package.json 
+ 1101  npm run sass
+ 1102  ls
+ 1103  bash node-scss-troubleshoot.sh 
+ 1104  npm run sass
+ 1105  npm install -g node-sass
+ 1106  sudo npm install -g node-sass
+ 1107  node-sass
+ 1108  ls node-sass
+ 1109  node-sass -o ./scss/main.scss ./dist/css/
+ 1110  npm install -g node-sass
+ 1111  sudo npm install -g node-sass
+ 1112  sudo npm install -g node-sass sudo npm install node-sass --unsafe-perm
+ 1113  sudo npm install node-sass --unsafe-perm
+ 1114  node-sass -o ./scss/main.scss ./dist/css/
+ 1115  npm run sass
+ 1116  sudo apt-get install automake libtool 
+ 1117  git clone https://github.com/sass/libsass.git
+ 1118  git clone https://github.com/sass/sassc.git libsass/sassc
+ 1119  cd libsass
+ 1120  autoreconf --force --install
+ 1121  cd ..
+ 1122  cd libsass
+ 1123  autoreconf --force --install
+ 1124  ./configure   --disable-tests   --enable-shared   --prefix=/usr 
+ 1125  cd ..
+ 1126  make -C libsass -j5
+ 1127  git clone https://github.com/sass/libsass.git ~/libsass
+ 1128  echo "export SASS_LIBSASS_PATH=~/libsass" >> ~/.bashrc
+ 1129  source ~/.bashrc
+ 1130  git clone https://github.com/sass/sassc.git ~/sassc
+ 1131  cd ~/sassc
+ 1132  make
+ 1133  echo "export PATH=$PATH:~/sassc/bin/" >> ~/.bashrc
+ 1134  source ~/.bashrc
+ 1135  sassc -v
+ 1136  node-sass
+ 1137  sass
+ 1138  sudo apt install ruby-sass
+ 1139  node-scss
+ 1140  node-sass
+ 1141  find sass
+ 1142  exit
+ 1143  sudo npm install -g node-sass
+ 1144  gd@gd10:~/Desktop/portfolio/portfolio$ sudo npm install -g node-sass
+ 1145  [sudo] password for gd:
+ 1146  /usr/local/bin/node-sass -> /usr/local/lib/node_modules/node-sass/bin/node-sass
+ 1147  > node-sass@4.9.2 install /usr/local/lib/node_modules/node-sass
+ 1148  > node scripts/install.js
+ 1149  Unable to save binary /usr/local/lib/node_modules/node-sass/vendor/linux-x64-64 :{ Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/node-sass/vendor'
+ 1150  > node-sass@4.9.2 postinstall /usr/local/lib/node_modules/node-sass
+ 1151  > node scripts/build.js
+ 1152  Building: /usr/local/bin/node /usr/local/lib/node_modules/node-sass/node_modules/node-gyp/bin/node-gyp.js rebuild --verbose --libsass_ext= --libsass_cflags= --libsass_ldflags= --libsass_library=
+ 1153  gyp info it worked if it ends with ok
+ 1154  gyp verb cli [ '/usr/local/bin/node',
+ 1155  gyp verb cli   '/usr/local/lib/node_modules/node-sass/node_modules/node-gyp/bin/node-gyp.js',
+ 1156  gyp verb cli   'rebuild',
+ 1157  gyp verb cli   '--verbose',
+ 1158  gyp verb cli   '--libsass_ext=',
+ 1159  gyp verb cli   '--libsass_cflags=',
+ 1160  gyp verb cli   '--libsass_ldflags=',
+ 1161  gyp verb cli   '--libsass_library=' ]
+ 1162  gyp info using node-gyp@3.7.0
+ 1163  gyp info using node@10.6.0 | linux | x64
+ 1164  gyp verb command rebuild []
+ 1165  gyp verb command clean []
+ 1166  gyp verb clean removing "build" directory
+ 1167  gyp verb command configure []
+ 1168  sudo apt-get install gyp
+ 1169  sudo npm install -g node-sass
+ 1170  git clone --recursive https://github.com/sass/node-sass.git
+ 1171  cd node-sass
+ 1172  npm install
+ 1173  node scripts/build -f
+ 1174  ls
+ 1175  sudo npm install -g node-sass
+ 1176  ls
+ 1177  sudo rm -rf node_modules/ node-sass
+ 1178  ls
+ 1179  sudo rm -rf libsass/
+ 1180  ls
+ 1181  rm -rf node-sass@4.9.2 
+ 1182  ls
+ 1183  gem
+ 1184  gem install sass
+ 1185  sudo gem install sass
+ 1186  sass
+ 1187  sass ./scss/ ./dist/css/
+ 1188  sass ./scss/main.scss ./dist/css/main.css
+ 1189  ls
+ 1190  rm -rf node
+ 1191  ls
+ 1192  npm run sass
+ 1193  npm install -g node-sass
+ 1194  sudo npm install -g node-sass
+ 1195  ls
+ 1196  sass scss/main.scss dist/css/main.css
+ 1197  sass scss/* dist/css/
+ 1198  sass scss/* dist/css/*
+ 1199  npm run sass
+ 1200  sudo apt-get update && sudo apt-get upgrade && init 0
+ 1201  scss
+ 1202  ls
+ 1203  cd portfolio/
+ 1204  ls
+ 1205  sass
+ 1206  sass /scss/main.scss dist/css/main.css 
+ 1207  sass ./scss/main.scss dist/css/main.css 
+ 1208  sass ./scss/*  dist/css/* 
+ 1209  sass ./scss/main.scss dist/css/main.css 
+ 1210  sass ./scss/main.scss dist/css/main.css --watch sass:css
+ 1211  sass --watch ./scss/main.scss dist/css/main.css --watch sass:css
+ 1212  sass --watch ./scss/main.scss:dist/css/main.css
+ 1213  cd portfolio
+ 1214  ls
+ 1215  live-reload
+ 1216  git add .
+ 1217  git commit -m "added html and home page
+ 1218  git commit -m "added html and home page"
+ 1219  git push -u origin master
+ 1220  git status
+ 1221  exit
+ 1222  git add . && git commit -m "added background image and when it's true then it will display overlay on it"
+ 1223  git push -u origin master
+ 1224  git status
+ 1225  exit
+ 1226  git add .
+ 1227  git commit -m "added overlay with opacity 0.9"
+ 1228  git push -u origin master
+ 1229  exit
+ 1230  git add .
+ 1231  git push -u origin master
+ 1232  exit
+ 1233  git add .
+ 1234  git commit -m "added '_config.scss' file, and separated variables of sass"
+ 1235  git push -u origin master
+ 1236  git remote url
+ 1237  exit
+ 1238  git status
+ 1239  git add .
+ 1240  git commit -m "starting with menu button transition"
+ 1241  git push -u origin master
+ 1242  exit
+ 1243  git add .
+ 1244  git commit -m "added menu button of 3 lines in _menu.scss"
+ 1245  git push -u origin master
+ 1246  git status
+ 1247  git
+ 1248  git status
+ 1249  git pull
+ 1250  ls
+ 1251  git pull git@github.com:ganeshdeshmukh1612/portfolio.git
+ 1252  git pull git@github.com:ganeshdeshmukh1612/portfolio.git --force
+ 1253  git pull --force git@github.com:ganeshdeshmukh1612/portfolio.git
+ 1254  git pull origin master --allow-unrelated-histories
+ 1255  git pull origin master --allow-unrelated-histories --force
+ 1256  git remote add origin git pull origin master --allow-unrelated-histories
+ 1257  git remote add origin git@github.com:ganeshdeshmukh1612/portfolio.git
+ 1258  git pull origin master --allow-unrelated-histories
+ 1259  git merge origin origin/master
+ 1260  ... add and commit here...
+ 1261  git push origin master
+ 1262  git pull --rebase development
+ 1263  git pull origin master --allow-unrelated-histories
+ 1264  ls
+ 1265  git add .
+ 1266  git commit -m "done with setup on ubuntu with sass without `node-sass`"
+ 1267  git push -u --force origin master
+ 1268  git status
+ 1269  sass --watch ./scss/main.scss ./dist/css/main.css
+ 1270  sass --watch ./scss/main.scss:./dist/css/main.css
+ 1271  git add .
+ 1272  git commit -m "added toggle button as add show-class and remove show."
+ 1273  git add .
+ 1274  git commit -m "added toggle button as add show-class and remove show."
+ 1275  git push -u origin master
+ 1276  git status
+ 1277  exit
+ 1278  ls
+ 1279  git add .
+ 1280  git commit -m "added 'close' button and toggling to 'option-menu' button"
+ 1281  git push -u origin master
+ 1282  ls
+ 1283  touch .gitignore
+ 1284  ls
+ 1285  git add .
+ 1286  git commit -m "added '.gitignore' file with content 'node_modules'"
+ 1287  git push -u origin master
+ 1288  git status
+ 1289  exit
+ 1290  git add . 
+ 1291  git commit -m "added branding and navbar in menu via flex-column"
+ 1292  git add .
+ 1293  git commit -m "added dark-background to menu-navbar on clicking menu button"
+ 1294  git push -u origin master
+ 1295  git add .
+ 1296  git commit -m "removed bullet points from Navbar"
+ 1297  git add .
+ 1298  git commit -m "added functionality to toggle-button to show menus below button"
+ 1299  git push -u origin master
+ 1300  git add .
+ 1301  git commit -m "added portfolio image and pushed up by 110px"
+ 1302  git add .
+ 1303  git commit -m "added nav-items arrival-delay"
+ 1304  git add .
+ 1305  git commit -m "made navlinks bigger and decorated"
+ 1306  sass --watch ./scss/* ./dist/css/
+ 1307  sass --watch ./scss/*.scss ./dist/css/
+ 1308  npm install node-sass
+ 1309  node-sass
+ 1310  npm install -g npm@latest
+ 1311  npm install -g npm@lts
+ 1312  sudo npm install -g npm@lts
+ 1313  npm install
+ 1314  npm run sass
+ 1315  history
+ 1316  sass ./scss/main.scss ./dist/css/main.css
+ 1317  sass --watching ./scss/main.scss ./dist/css/main.css
+ 1318  sass --watch ./scss/main.scss ./dist/css/main.css
+ 1319  sass --watch ./scss/main.:./dist/css/main.css
+ 1320  sass --watch ./scss/main.css:./dist/css/main.css
+ 1321  sass --watch ./scss/main.scss:./dist/css/main.css
+ 1322  git add .
+ 1323  git commit -m "finished media query for medium-sized screens"
+ 1324  git push -u origin master
+ 1325  exit
+ 1326  git add .
+ 1327  git commit -m "added top-transition effect to menu on clicking menu-button"
+ 1328  git add .
+ 1329  git commit  -m "added bottom-up sliding effect to portrait background"
+ 1330  git add .
+ 1331  git commit -m "made current-link as highlighted"
+ 1332  git add .
+ 1333  git commit -m "highlighting links on hover"
+ 1334  git add .
+ 1335  git commit -m "set up for  media queries config file"
+ 1336  git push -u origin master
+ 1337  git status
+ 1338  exit
+ 1339  ls
+ 1340  history
+ 1341  sass --watch ./scss/main.:./dist/css/main.css
+ 1342  sass --watch ./scss/main.scss:./dist/css/main.css
+ 1343  exit
+ 1344  npm run sass
+ 1345  exit
+ 1346  sass --watch ./scss/main.scss:./dist/css/main.css
+ 1347  sass --watch scss/main.scss:dist/css/main.css
+ 1348  npm install -g sass
+ 1349  sudo npm install -g sass
+ 1350  sass scss/main.scss dist/css/main.css
+ 1351  sass --help
+ 1352  sass --watch  scss/main.scss dist/css/main.css
+ 1353  history
+ 1354  sass --watch ./scss/main.scss:./dist/css/main.css
+ 1355  exit
+ 1356  git add .
+ 1357  git commit -m 
+ 1358  git commit -m "added horizontal transition on mobile @media-query"
+ 1359  git push -u origin master
+ 1360  sass -v
+ 1361  sass --version
+ 1362  gem
+ 1363  gem -v
+ 1364  exit
+ 1365  sass scss/main.scss:dist/css/main.css
+ 1366  sass --watch  scss/main.scss:dist/css/main.css
+ 1367  sudo npm install node-sass@4.5.3
+ 1368  npm install node-sass@4.5.3
+ 1369  exit
+ 1370  git add .
+ 1371  git commit -m "added toggling color and white background for light-mode"
+ 1372  git push -u origin master
+ 1373  exit
+ 1374  git add .
+ 1375  git status
+ 1376  sass --watch  scss/main.scss:dist/css/main.css
+ 1377  exit
+ 1378  git add ..
+ 1379  git add .
+ 1380  git commit -m "added about me page html content"
+ 1381  git add .
+ 1382  git commit -m "added css to cards, i.e.to Work"
+ 1383  git add .
+ 1384  git commit -m "added 'css' to navbar and made thick-dark"
+ 1385  git add .
+ 1386  git commit -m "made footer sticky at bottom"
+ 1387  git add .
+ 1388  git commit -m "I have put in najara""
+ 1389  git commit -m "I have put in najara"
+ 1390  git add .
+ 1391  git commit -m "made mobile content as grid rows on one another"
+ 1392  git push -u origin master
+ 1393  sass --watch  scss/main.scss:dist/css/main.css
+ 1394  git add .
+ 1395  git commit -m "added work-page html and contents"
+ 1396  git add .
+ 1397  git commit -m "added css to mywork-page and to style to buttons"
+ 1398  git push -u origin master
+ 1399  git status
+ 1400  exit
+ 1401  git add .
+ 1402  git commit -m "added css to work page and responsive media querries"
+ 1403  git push -u origin master
+ 1404  git add .
+ 1405  git commit -m "added contact-me_google_form link"
+ 1406  git push -u origin master
+ 1407  git add .
+ 1408  git commit -m "added social media links on Home-page"
+ 1409  git push -u origin master
+ 1410  sass --watch  scss/main.scss:dist/css/main.css
+ 1411  git add .
+ 1412  git commit -m "fixed small-screens issues"
+ 1413  git push -u origin master
+ 1414  exit
+ 1415  touch solution.java
+ 1416  java -c
+ 1417  java -v
+ 1418  java -version
+ 1419  javac -version
+ 1420  java -version
+ 1421  ls
+ 1422  sudo apt install default-jdk
+ 1423  git add .
+ 1424  git commit -m "added java code"
+ 1425  git push -u origin master
+ 1426  git remote url
+ 1427  git remote get-url origin
+ 1428  init 0
+ 1429  git status
+ 1430  git add .
+ 1431  git commit -m "ready to host online"
+ 1432  git push -u origin master
+ 1433  git remote set-url
+ 1434  git status
+ 1435  ssh 
+ 1436  ssh  -l
+ 1437  ssh  -l ganeshdeshmukh1612
+ 1438  history 
+ 1439  sass --watch ./scss/main.scss:./dist/css/main.css
+ 1440  git add .
+ 1441  git commit -m "added responsiveness for mobile design for 'heading'"
+ 1442  git push -u origin master
+ 1443  touch notes.txt
+ 1444  git clone git@github.com:ganeshdeshmukh1612/connect-geeks.git
+ 1445  ls
+ 1446  cd connect-geeks/
+ 1447  ls
+ 1448  mv ../notes.txt notes.txt
+ 1449  ls
+ 1450  git add .
+ 1451  git commit -m "added nots.txt, contains technolgies used in project"
+ 1452  git push -u origin master
+ 1453  git add .
+ 1454  git commit -m "added steps_to_be_taken.txt"
+ 1455  git push -u origin master
+ 1456  node -v
+ 1457  npm -v
+ 1458  git add .
+ 1459  git commit -m "added User-settings and setup"
+ 1460  git add . 
+ 1461  git commit -m "added required extensions
+ 1462  git commit -m "added required extensions"
+ 1463  git push -u origin master
+ 1464  init 0
+ 1465  sudo apt-get update && sudo apt-get upgrade
+ 1466  exit
+ 1467  ls
+ 1468  exit
+ 1469  script -a update.txt 
+ 1470  exit
+ 1471  npm init
+ 1472  git add .
+ 1473  git commit -m "added package.json by 'npm init'"
+ 1474  npm i express mongoose passport passport-jwt jsonwebtoken body-parser bcryptjs validator
+ 1475  sudo npm i express mongoose passport passport-jwt jsonwebtoken body-parser bcryptjs validator
+ 1476  npm -v
+ 1477  node -v
+ 1478  sudo npm i -g npm
+ 1479  sudo npm i express mongoose passport passport-jwt jsonwebtoken body-parser bcryptjs validator
+ 1480  npm -v
+ 1481  script update.txt
+ 1482  exit
+ 1483  ls
+ 1484  exit
+ 1485  ls
+ 1486  npm -v
+ 1487  node -v
+ 1488  whoami
+ 1489  exit
+ 1490  push
+ 1491  exit
+ 1492  sudo npm i -D nodemon
+ 1493  nodemon -v
+ 1494  git add .
+ 1495  git commit -m "finished with setup required"
+ 1496  git push -u origin master
+ 1497  exit
+ 1498  ping localhost:5000//
+ 1499  ping localhost:5000
+ 1500  exit
+ 1501  node server
+ 1502  exit
+ 1503  script testFontSize.txt
+ 1504  man script
+ 1505  script -a steps.txt 
+ 1506  npm i -D nodemon
+ 1507  sudo npm i -D nodemon
+ 1508  script -a steps.txt 
+ 1509  script -aq steps.txt 
+ 1510  exit
+ 1511  git add .
+ 1512  git commit -m "connected to database successfully"
+ 1513  git add .
+ 1514  git commit -m "DeprecationWarning: current URL string parser is deprecated"
+ 1515  git commit -m "Removed warning DeprecationWarning: current URL string parser is deprecated"
+ 1516  git push -u origin master
+ 1517  git
+ 1518  git add .
+ 1519  sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[mGK]//g"
+ 1520  sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[mGK]//g"  steps.txt 
+ 1521  tr -dc '[[:print:]]\n'
+ 1522  tr -dc '[[:print:]]\n' steps.txt 
+ 1523  tr --help
+ 1524  sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[mGK]//g"  steps.txt | tr -dc '[[:print:]]\n' > steps.txt 
+ 1525  sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[mGK]//g"  steps.txt | tr -dc '[[:print:]]\n' > steps2.txt 
+ 1526  sed 's/^]0;//' steps2.txt 
+ 1527  sed 's/^]0;//' steps2.3.txt 
+ 1528  sed 's/^]0;//' steps2.txt 
+ 1529  sed 's/^]0;//' g' steps2.txt 
+ 1530  sed 's/^]0;//g' steps2.txt 
+ 1531  sed 's/^]0;//' g' steps2.txt 
+ 1532  sed -r  's/^]0;//g' steps2.txt 
+ 1533  sed 's/^]0;//' g' steps2.txt 
+ 1534  sed -r  's/^]0;//g' steps2.txt > steps4.txt
+ 1535  output
+ 1536  sed 's/^]0;// steps2.txt 
+ 1537  sed 's/^]0;//g' steps2.txt 
+ 1538  sed 's/^]0;//g'steps2.txt 
+ 1539  sed 's/^]0;//' steps2.txt 
+ 1540  sed 's/^]0;/ /' steps2.txt 
+ 1541  sed 's/^]0;/ /'/g'  steps2.txt 
+ 1542  sed 's/^]0;//g' steps2.txt 
+ 1543  sed 's/^]0;/ /g' steps2.txt 
+ 1544  sed 's/^];/ /g' steps2.txt 
+ 1545  git push -u origin master
+ 1546  npm installl
+ 1547  npm install
+ 1548  npm run server
+ 1549  exit
+ 1550  subl
+ 1551  exit
+ 1552  script -a steps.txt 
+ 1553  man script 
+ 1554  exit
+ 1555  git add .
+ 1556  git commit -m "created basic expressjs boilerplate code working file"
+ 1557  git push -u origin master
+ 1558  script -aq steps.txt 
+ 1559  git add .
+ 1560  git commit -m "added routes for 'users,posts,profiles'"
+ 1561  git push -u origin master
+ 1562  git add .
+ 1563  git -m "added description of routes"
+ 1564  git commit  -m "added description of routes"
+ 1565  alias push="git push -u origin master"
+ 1566  push
+ 1567  npm start
+ 1568  git add .
+ 1569  git commit -m "added start command as 'nodemon server.js'"
+ 1570  push
+ 1571  git add .
+ 1572  git commit -m "added 'keys.js' for connecting remote-MLab DB"
+ 1573  git push -u origin master
+ 1574  npm run server
+ 1575  exit
+ 1576  npm run server
+ 1577  exit
+ 1578  npm run server
+ 1579  git status
+ 1580  cd ..
+ 1581  ls
+ 1582  git add .
+ 1583  git commit -m "added code-vita questions and other TSC's docs"
+ 1584  git push -u origin master
+ 1585  git remote show origin 
+ 1586  exit
+ 1587  cd Desktop/dev/
+ 1588  ls
+ 1589  cd yarn-react-native/
+ 1590  ls
+ 1591  bash watchman.sh && bash avd-nexus.sh 
+ 1592  ls
+ 1593  cd share-places/
+ 1594  ls
+ 1595  yarn
+ 1596  npm upgrade --global yarn 
+ 1597  npm  install -g yarn@latest
+ 1598  sudo npm  install -g yarn@latest
+ 1599  yarn --version
+ 1600  yarn add global react-native
+ 1601  yarn add global react-native-cli
+ 1602  yarn start
+ 1603  git status
+ 1604  git add .
+ 1605  git commit -m "added User model in directory models:"
+ 1606  git push -u origin master
+ 1607  yarn
+ 1608  git status
+ 1609  script -a terminal_output.txt 
+ 1610  ls
+ 1611  npm run server
+ 1612  script -a terminal_output.txt 
+ 1613  npm run server
+ 1614  script -a terminal_output.txt 
+ 1615  npm run server.js 
+ 1616  ls
+ 1617  vat package.json 
+ 1618  cat package.json 
+ 1619  script -a terminal_output.txt 
+ 1620  npm run server
+ 1621  npm install body-parser
+ 1622  sudo npm install body-parser
+ 1623  npm run server
+ 1624  git add .
+ 1625  npm run server
+ 1626  npm install --save body-parser
+ 1627  sudo npm install --save body-parser
+ 1628  npm run server
+ 1629  npm link body-parser
+ 1630  npm run server
+ 1631  npm i gravator
+ 1632  npm run server
+ 1633  exit
+ 1634  git add .
+ 1635  git commit -m "added /register route with checking existing email exits or not"
+ 1636  git push -u origin master
+ 1637  git status
+ 1638  npm run server
+ 1639  man killall
+ 1640  ps
+ 1641  kill 11800
+ 1642  killall -p
+ 1643  exit
+ 1644  exi
+ 1645  exit
+ 1646  npm run server
+ 1647  exit
+ 1648  npm run server
+ 1649  exit
+ 1650  npm run server
+ 1651  script -a terminal_output.txt 
+ 1652  exxit
+ 1653  exit
+ 1654  git commit -am "added gravator with default=='mm'"
+ 1655  git push -u origin master
+ 1656  git status
+ 1657  git commit -am "Salt password hash created"
+ 1658  git status
+ 1659  git commit -am "added hashed password with user and saved in DB"
+ 1660  git push -u origin master
+ 1661  npm run server
+ 1662  exit
+ 1663  npm run server
+ 1664  exit
+ 1665  npm run server
+ 1666  sudo pkill node
+ 1667  killall node
+ 1668  npm run server
+ 1669  git status
+ 1670  history
+ 1671  mongo
+ 1672  mongod
+ 1673  sudo systemctl enable mongod.service 
+ 1674  sudo systemctl daemon-reload
+ 1675  mongod
+ 1676  mongo
+ 1677  mongod
+ 1678  sudo systemctl start mongodb
+ 1679  sudo systemctl enable mongodb.service
+ 1680  sudo systemctl unmask mongodb
+ 1681  sudo service mongodb enable
+ 1682  sudo service mongodb start
+ 1683  sudo systemctl unmask mongod
+ 1684  sudo service mongod start
+ 1685  sudo service mongod enable
+ 1686  mongod
+ 1687  mongo
+ 1688  exit
+ 1689  mongod
+ 1690  mongo
+ 1691  exit
+ 1692  mongo --version
+ 1693  sudo systemctl start mongod
+ 1694  sudo systemctl status mongod
+ 1695  exit
+ 1696  mongo --version
+ 1697  mongo
+ 1698  mongod
+ 1699  sudo systemctl start mongod
+ 1700  sudo systemctl enable  mongod
+ 1701  sudo systemctl start mongod
+ 1702  mongo
+ 1703  mongo ds225382.mlab.com:25382/findgeeks -u gdgeed -p gd@123
+ 1704  mongo ds225382.mlab.com:25382/findgeeks -u 
+ 1705  mongo ds225382.mlab.com:25382/findgeeks -u gdgeek -p gd%40123
+ 1706  mongo ds225382.mlab.com:25382/findgeeks -u gdgeek -p gd@123
+ 1707  exit
+ 1708  mongo --version
+ 1709  nc -w 3 -v ds225382 25382
+ 1710  mongo ds225382.mlab.com:25382/findgeeks -u gdgeek -p gd@123
+ 1711  sudo apt-get install -y mongodb-org=3.6.6 mongodb-org-server=3.6.6 mongodb-org-shell=3.6.6 mongodb-org-mongos=3.6.6 mongodb-org-tools=3.6.6
+ 1712  sudo service mongod stop
+ 1713  sudo apt-get purge mongodb-org*
+ 1714  sudo rm -r /var/log/mongodb
+ 1715  sudo rm -r /var/lib/mongodb
+ 1716  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
+ 1717  echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
+ 1718  echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
+ 1719  sudo apt-get update
+ 1720  sudo apt-get install -y mongodb-org=3.6.6 mongodb-org-server=3.6.6 mongodb-org-shell=3.6.6 mongodb-org-mongos=3.6.6 mongodb-org-tools=3.6.6
+ 1721  TERM=dump mongoError.txt
+ 1722  TERM=dump script  mongoError.txt
+ 1723  mongo --version
+ 1724  script -a mongoError.txt 
+ 1725  exit
+ 1726  npm run server
+ 1727  npm install
+ 1728  npm run server
+ 1729  exit
+ 1730  mongo
+ 1731  exit
+ 1732  git commit -am "solved bodyparser issue after uncommenting 'app.use' in 'server.js' file"
+ 1733  git push -u origin master
+ 1734  exit
+ 1735  git clone git@github.com:ganeshdeshmukh1612/shopping-cart-nodejs.git
+ 1736  ls
+ 1737  cd shopping-cart-nodejs/
+ 1738  ls
+ 1739  code .
+ 1740  exit
+ 1741  ls
+ 1742  npm install 
+ 1743  git status
+ 1744  npm install
+ 1745  npm start
+ 1746  ls
+ 1747  cat package.json 
+ 1748  npm run sass
+ 1749  sass --watch dist/css/:scss/
+ 1750  node-sass -w scss/ -o dist/css/ --recursive
+ 1751  npm install node-sass
+ 1752  node-sass -w scss/ -o dist/css/ --recursive
+ 1753  npm install
+ 1754  npm install -g  node-sass
+ 1755  sudo npm install -g  node-sass
+ 1756  sass
+ 1757  node-sass
+ 1758  npm run sass
+ 1759  git fetch origin
+ 1760  git reset --hard origin/master
+ 1761  git status
+ 1762  git commit -am "can't remove background text of portrait image"
+ 1763  git push -u origin master
+ 1764  sass --watch dist/css/:scss/
+ 1765  exi
+ 1766  exit
+ 1767  la
+ 1768  ls
+ 1769  yarn start
+ 1770  yarn install
+ 1771  npm install
+ 1772  ls
+ 1773  cd ..
+ 1774  ls
+ 1775  bash watchman.sh 
+ 1776  ls
+ 1777  cd share-places/
+ 1778  ls
+ 1779  ls ..
+ 1780  bash ../avd-nexus.sh 
+ 1781  npm  -v
+ 1782  exit
+ 1783  sudo lsof -i :8081
+ 1784  react-native init --verbose
+ 1785  echo fs.inotify.max_user_watches=582222 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+ 1786  exit
+ 1787  npm run android
+ 1788  npm install
+ 1789  yarn add
+ 1790  yarn install
+ 1791  yarn start
+ 1792  yarn add
+ 1793  npm start
+ 1794  ls
+ 1795  bash ../watchman.sh 
+ 1796  ls
+ 1797  npm start
+ 1798  npm install create-react-app
+ 1799  npm start
+ 1800  ls
+ 1801  cat ../avd-nexus.sh 
+ 1802  cat ../watchman.sh 
+ 1803  ls ..
+ 1804  bash ../watchman.sh 
+ 1805  bash ../avd-nexus.sh 
+ 1806  npm run android
+ 1807  exit
+ 1808  ls
+ 1809  npm start
+ 1810  exit
+ 1811  npm ls
+ 1812  touch versions.sh
+ 1813  exit
+ 1814  bash versions.sh 
+ 1815  npm ls react-native-scripts
+ 1816  npm ls react-native
+ 1817  npm ls expo
+ 1818  node -v
+ 1819  npm -v
+ 1820  yarn --version
+ 1821  watchman version
+ 1822  ls
+ 1823  exit
+ 1824  script
+ 1825  script -a versions.sh 
+ 1826  exit
+ 1827  npm ls
+ 1828  npm i -g react@16.4.1
+ 1829  sudo npm i -g react@16.4.1
+ 1830  npm install
+ 1831  ls
+ 1832  react-native -v
+ 1833  npm  i -g react-native@0.51.0
+ 1834  sudo npm  i -g react-native@0.51.0
+ 1835  npm install
+ 1836  ls
+ 1837  bash ../watchman.sh 
+ 1838  bash ../avd-nexus.sh 
+ 1839  ls
+ 1840  sudo npm install -g react@16.3.1 
+ 1841  npm install
+ 1842  bash ../watchman.sh 
+ 1843  bash ../avd-nexus.sh 
+ 1844  npm start
+ 1845  npm install npm@4
+ 1846  npm install
+ 1847  npm start
+ 1848  ls
+ 1849  cd ..
+ 1850  ls
+ 1851  cd ..
+ 1852  ls
+ 1853  mkdir august18
+ 1854  cd august18/
+ 1855  ls
+ 1856  react-native init sample
+ 1857  npm uninstall -g react-native
+ 1858  sudo npm uninstall -g react-native
+ 1859  npm uninstall -g react-native
+ 1860  sudo npm install -g react-native-cli
+ 1861  react-native init sample
+ 1862  cd sample/
+ 1863  ls
+ 1864  react native run-android
+ 1865  react-native run-android
+ 1866  s
+ 1867  npm uninstall -g react-native
+ 1868  npm install -g react-native-cli
+ 1869  npm uninstall -g react-native
+ 1870  react-native run-android
+ 1871  react-native run-android --stacktrace
+ 1872  javac --version
+ 1873  which java javac
+ 1874  java -showversion
+ 1875  sudo apt-cache search openjdk
+ 1876  java --version
+ 1877  sudo apt-get update
+ 1878  sudo apt-get upgrade
+ 1879  sudo apt-get install openjdk-9-jdk
+ 1880  javac -version
+ 1881  java --version
+ 1882  sudo apt-get install default-jre
+ 1883  sudo add-apt-repository ppa:webupd8team/java
+ 1884  sudo apt-get update
+ 1885  sudo apt-get install oracle-java8-installer
+ 1886  java -version
+ 1887  javac -version
+ 1888  react-native run-android
+ 1889  init 6
+ 1890  init 0
+ 1891  cd Desktop/
+ 1892  ls
+ 1893  cd dev/
+ 1894  ls
+ 1895  cd yarn-react-native/
+ 1896  ls
+ 1897  cd share-places/
+ 1898  code .
+ 1899  exit
+ 1900  npm install -g create-react-native-app
+ 1901  sudo npm install -g create-react-native-app
+ 1902  exit
+ 1903  create-react-native-app monday
+ 1904  cd monday/
+ 1905  yarn start
+ 1906  lw
+ 1907  ls
+ 1908  pwd
+ 1909  cd ..
+ 1910  ls
+ 1911  rm -r monday/ ../
+ 1912  sudo rm -r monday/ ../
+ 1913  ls
+ 1914  locate monday
+ 1915  ls
+ 1916  history 
+ 1917  ls
+ 1918  exit
+ 1919  ls
+ 1920  cd ..
+ 1921  ls
+ 1922  cd ..
+ 1923  ls
+ 1924  locate monday
+ 1925  sudo npm install -g create-react-native-app
+ 1926  script 
+ 1927  exi
+ 1928  history 
+ 1929  create-react-native-app insta
+ 1930  rm -rf insta/
+ 1931  create-react-native-app insta
+ 1932  exit
+ 1933  touch .gitignore
+ 1934  git add .
+ 1935  exit
+ 1936  echo "# insta-clone" >> README.md
+ 1937  git init
+ 1938  git add README.md
+ 1939  git commit -m "first commit"
+ 1940  git remote add origin git@github.com:ganeshdeshmukh1612/insta-clone.git
+ 1941  git push -u origin master
+ 1942  git add .
+ 1943  git commit -m "created react-native project using yarn"
+ 1944  git push -u origin master
+ 1945  exit
+ 1946  ls
+ 1947  bash ../avd-nexus.sh 
+ 1948  exit
+ 1949  git status
+ 1950  npm start
+ 1951  npm run server
+ 1952  npm install gravatar
+ 1953  sudo npm install gravatar
+ 1954  npm run server
+ 1955  TERM=dump script -a steps_taken.txt 
+ 1956  TERM=dump script -a terminal_output.txt 
+ 1957  npm run server
+ 1958  ls
+ 1959  git add .
+ 196
