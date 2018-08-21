@@ -5,6 +5,7 @@ const router = express.Router();
 const gravatar = require("gravatar");
 const bcrypt = require("bcryptjs");
 const keys = require("../../config/keys");
+const jwt = require("jsonwebtoken");
 
 // Load User Model to check existing email is used for registration or not?
 const User = require("../../models/User");
@@ -23,7 +24,7 @@ router.post("/register", (req, res) => {
     if (user) {
       return res.status(400).json({ email: "Email value exists already." });
     } else {
-      console.log("no user found");
+      console.log("no user found of this email in DB");
       const avatar = gravatar.url(req.body.email, {
         s: "200", //Size of gravatar in pixels
         r: "pg", //rating,
@@ -41,9 +42,7 @@ router.post("/register", (req, res) => {
       bcrypt.genSalt(10, (err, salt) => {
         // hash(plaintext,salt,callback(err,resultant ciphertext))
         bcrypt.hash(newUser.password, salt, (err, hash) => {
-          if (err) {
-            throw err;
-          }
+          if (err) throw err;
           //assign salted hash to password
           newUser.password = hash;
 
@@ -75,19 +74,20 @@ router.post("/login", (req, res) => {
       return res.status(404).json({ email: "User's email not found." });
     }
 
+    // else if do this..
+
     // if user's email-id is found then match it's password-hash with local-database
     bcrypt.compare(password, user.password).then(isMatch => {
       if (isMatch) {
         // user pswd matched => then return JWT token back for authentication
         // res.json({ msg: "Success" });
-
         const payload = { it: user.id, name: user.name, avatar: user.avatar };
-        // created JWT token
 
-        // now sign toke
+        // created JWT token
+        // now sign token
         // json.sign(payload, secreteKey, expire-time, callback );
 
-        json.sign(
+        jwt.sign(
           payload,
           keys.secreteOrKey,
           { expiresIn: 1800 },

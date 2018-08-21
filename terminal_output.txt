@@ -4214,4 +4214,101 @@ gd@gd10:~/Desktop/find-geeks$ history
  1957  npm run server
  1958  ls
  1959  git add .
- 196
+ 196Script started on 2018-08-22 00:34:36+0530
+gd@gd10:~/Desktop/find-geeks$ mv /var/lib/mongodb /var/lib/mongodb_backup
+mv: cannot move '/var/lib/mongodb' to '/var/lib/mongodb_backup': Permission denied
+gd@gd10:~/Desktop/find-geeks$ mkdir /var/lib/mongodb
+mkdir: cannot create directory ‘/var/lib/mongodb’: File exists
+gd@gd10:~/Desktop/find-geeks$ chmod 700 /var/lib/mongodb
+chmod: changing permissions of '/var/lib/mongodb': Operation not permitted
+gd@gd10:~/Desktop/find-geeks$ chown mongodb:daemon /var/lib/mongodb
+chown: changing ownership of '/var/lib/mongodb': Operation not permitted
+gd@gd10:~/Desktop/find-geeks$ systemctl restart mongodb or service mongod restart
+Failed to restart mongodb.service: Unit mongodb.service not found.
+Failed to restart or.service: Unit or.service not found.
+Failed to restart service.service: Unit service.service not found.
+Failed to restart restart.service: Unit restart.service not found.
+gd@gd10:~/Desktop/find-geeks$ systemctl restart mongodb or service mongod restart                           b
+Failed to restart mongodb.service: Unit mongodb.service not found.
+gd@gd10:~/Desktop/find-geeks$ ls /etc/systemd/system | grep mongo
+gd@gd10:~/Desktop/find-geeks$ sudo mongod
+[sudo] password for gd: 
+2018-08-22T00:36:03.659+0530 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2018-08-22T00:36:03.671+0530 I CONTROL  [initandlisten] MongoDB starting : pid=6779 port=27017 dbpath=/data/db 64-bit host=gd10
+2018-08-22T00:36:03.671+0530 I CONTROL  [initandlisten] db version v4.0.1
+2018-08-22T00:36:03.671+0530 I CONTROL  [initandlisten] git version: 54f1582fc6eb01de4d4c42f26fc133e623f065fb
+2018-08-22T00:36:03.671+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2018-08-22T00:36:03.671+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-08-22T00:36:03.671+0530 I CONTROL  [initandlisten] modules: none
+2018-08-22T00:36:03.671+0530 I CONTROL  [initandlisten] build environment:
+2018-08-22T00:36:03.671+0530 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-08-22T00:36:03.671+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-22T00:36:03.671+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-22T00:36:03.671+0530 I CONTROL  [initandlisten] options: {}
+2018-08-22T00:36:03.671+0530 I STORAGE  [initandlisten] exception in initAndListen: NonExistentPath: Data directory /data/db not found., terminating
+2018-08-22T00:36:03.671+0530 I CONTROL  [initandlisten] now exiting
+2018-08-22T00:36:03.671+0530 I CONTROL  [initandlisten] shutting down with code:100
+gd@gd10:~/Desktop/find-geeks$ sudo systemctl enable mongod
+gd@gd10:~/Desktop/find-geeks$ sudo service mongod sr  restara t
+gd@gd10:~/Desktop/find-geeks$ mongod
+2018-08-22T00:36:46.653+0530 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2018-08-22T00:36:46.663+0530 I CONTROL  [initandlisten] MongoDB starting : pid=6848 port=27017 dbpath=/data/db 64-bit host=gd10
+2018-08-22T00:36:46.663+0530 I CONTROL  [initandlisten] db version v4.0.1
+2018-08-22T00:36:46.663+0530 I CONTROL  [initandlisten] git version: 54f1582fc6eb01de4d4c42f26fc133e623f065fb
+2018-08-22T00:36:46.663+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2018-08-22T00:36:46.663+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-08-22T00:36:46.663+0530 I CONTROL  [initandlisten] modules: none
+2018-08-22T00:36:46.663+0530 I CONTROL  [initandlisten] build environment:
+2018-08-22T00:36:46.663+0530 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-08-22T00:36:46.663+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-22T00:36:46.663+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-22T00:36:46.663+0530 I CONTROL  [initandlisten] options: {}
+2018-08-22T00:36:46.663+0530 I STORAGE  [initandlisten] exception in initAndListen: NonExistentPath: Data directory /data/db not found., terminating
+2018-08-22T00:36:46.663+0530 I CONTROL  [initandlisten] now exiting
+2018-08-22T00:36:46.663+0530 I CONTROL  [initandlisten] shutting down with code:100
+gd@gd10:~/Desktop/find-geeks$ mongo
+MongoDB shell version v4.0.1
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: 4.0.1
+Server has startup warnings: 
+2018-08-22T00:36:43.878+0530 I STORAGE  [initandlisten] 
+2018-08-22T00:36:43.878+0530 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-08-22T00:36:43.878+0530 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-08-22T00:36:46.963+0530 I CONTROL  [initandlisten] 
+2018-08-22T00:36:46.963+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-22T00:36:46.964+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-22T00:36:46.964+0530 I CONTROL  [initandlisten] 
+---
+Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+and anyone you share the URL with. MongoDB may use this information to make product
+improvements and to suggest MongoDB products and deployment options to you.
+
+To enable free monitoring, run the following command: db.enableFreeMonitoring()
+To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+
+> m[3G[J[3Gshow dbs[3G[Jshow dbs[11G
+admin      0.000GB
+config     0.000GB
+findgeeks  0.000GB
+local      0.000GB
+> use findgeeks[3G[Juse findgeeks[16G
+switched to db findgeeks
+> db.[3G[Jdb[5G[3G[Jd[4G[3G[J[3Gshow collections[3G[Jshow collections[19G
+users
+> us[3G[Ju[4G[3G[J[3Gdb.user.find().pretty()[3G[Jdb.user.find().pretty()[26G
+> [3G[Jdb.user.find().pretty()[26G;[3G[Jdb.user.find().pretty();[27G
+> [3G[Jdb.user.find().pretty();[27G[3G[Jdb.user.find().pretty();[27G
+> [3G[Jdb.user.find().pretty();[27G[3G[Jdb.user.find().pretty();[26G[3G[Jdb.user.find().pretty[1;34m([0m);[25G[3G[Jdb.user.find().pretty([1;34m)[0m;[24G[3G[Jdb.user.find().pretty();[23G[3G[Jdb.user.find().pretty();[22G[3G[Jdb.user.find().pretty();[21G[3G[Jdb.user.find().pretty();[20G[3G[Jdb.user.find().pretty();[19G[3G[Jdb.user.find().pretty();[18G[3G[Jdb.user.find().pretty();[17G[3G[Jdb.user.find[1;34m([0m).pretty();[16G[3G[Jdb.user.find([1;34m{[0m).pretty();[17G[3G[Jdb.user.find[1;34m([0m{}).pretty();[18G[3G[Jdb.user.find[1;34m([0m{}4).pretty();[19G[3G[Jdb.user.find[1;34m([0m{}).pretty();[18G[3G[Jdb.user.find({}).pretty();[29G
+> cd[3G[Jc[4G[3G[J[3G
+[1]+  Stopped                 mongo
+gd@gd10:~/Desktop/find-geeks$ exit
+exit
+There are stopped jobs.
+gd@gd10:~/Desktop/find-geeks$ exit
+exit
+
+Script done on 2018-08-22 00:46:48+0530
