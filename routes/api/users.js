@@ -13,7 +13,6 @@ const User = require("../../models/User");
 // @access      Public, without login
 router.get("/test", (req, res) => res.json({ msg: "Users Works" }));
 
-//
 // @route       GET request to api/users/register
 // @description new registration of user.
 // @access      Public, without login first register
@@ -23,7 +22,7 @@ router.post("/register", (req, res) => {
     if (user) {
       return res.status(400).json({ email: "Email value exists already." });
     } else {
-      console.log("d found");
+      console.log("no user found");
       const avatar = gravatar.url(req.body.email, {
         s: "200", //Size of gravatar in pixels
         r: "pg", //rating,
@@ -50,13 +49,41 @@ router.post("/register", (req, res) => {
           // Save new password in datebase, overriding plaintext;
           newUser
             .save()
-            .then(user => res.json(user)) // if yes,then send it as argument in brackets. (user)
+            .then(user => res.json(user)) // if yes,then send it as argument in brackets.
             .catch(err =>
               console.log("Error occured in saving hash password in DB\n")
             );
         });
       });
     }
+  });
+});
+
+// @route       GET request to api/users/login
+// @description Login/signing-in registered user. return JWT token
+// @access      Public
+
+router.post("/login", (req, res) => {
+  const email = req.body.email;
+  const password = req.body.password;
+
+  // find user to match it's password
+  User.findOne({ email: req.body.email }).then(user => {
+    //check if no user
+    if (!user) {
+      return res.status(404).json({ email: "User's email not found." });
+    }
+
+    // if user's email-id is found then match it's password-hash with local-database
+    bcrypt.compare(password, user.password).then(isMatch => {
+      if (isMatch) {
+        // user pswd matched
+        res.json({ msg: "Success" });
+      } else {
+        // pswd doesn't matched
+        return res.status(400).json({ password: "Password didn't match" });
+      }
+    });
   });
 });
 

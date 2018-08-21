@@ -2011,3 +2011,962 @@ SyntaxError: missing ) after argument list
 exit
 
 Script done on 2018-08-16 21:37:00+0530
+Script started on 2018-08-21 19:45:23+0530
+gd@gd10:~/Desktop/find-geeks$ 
+gd@gd10:~/Desktop/find-geeks$ cls
+
+Command 'cls' not found, but there are 17 similar ones.
+
+gd@gd10:~/Desktop/find-geeks$ ^C
+gd@gd10:~/Desktop/find-geeks$ 
+gd@gd10:~/Desktop/find-geeks$ cat /var/log/mongodb/mongod.log 
+2018-08-17T09:55:37.562+0530 I CONTROL  [initandlisten] MongoDB starting : pid=9046 port=27017 dbpath=/var/lib/mongodb 64-bit host=gd10
+2018-08-17T09:55:37.562+0530 I CONTROL  [initandlisten] db version v3.6.6
+2018-08-17T09:55:37.562+0530 I CONTROL  [initandlisten] git version: 6405d65b1d6432e138b44c13085d0c2fe235d6bd
+2018-08-17T09:55:37.562+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2018-08-17T09:55:37.562+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-08-17T09:55:37.562+0530 I CONTROL  [initandlisten] modules: none
+2018-08-17T09:55:37.562+0530 I CONTROL  [initandlisten] build environment:
+2018-08-17T09:55:37.562+0530 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-08-17T09:55:37.562+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-17T09:55:37.562+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-17T09:55:37.562+0530 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { bindIp: "127.0.0.1", port: 27017 }, processManagement: { timeZoneInfo: "/usr/share/zoneinfo" }, storage: { dbPath: "/var/lib/mongodb", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "/var/log/mongodb/mongod.log" } }
+2018-08-17T09:55:37.562+0530 I STORAGE  [initandlisten] 
+2018-08-17T09:55:37.562+0530 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-08-17T09:55:37.562+0530 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-08-17T09:55:37.562+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3431M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-17T09:55:38.786+0530 I STORAGE  [initandlisten] WiredTiger message [1534479938:786355][9046:0x7f7bfe36b1c0], txn-recover: Set global recovery timestamp: 0
+2018-08-17T09:55:39.292+0530 I CONTROL  [initandlisten] 
+2018-08-17T09:55:39.292+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-17T09:55:39.292+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-17T09:55:39.292+0530 I CONTROL  [initandlisten] 
+2018-08-17T09:55:39.292+0530 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: f73e19b6-5568-4d37-8814-e0025c69b83e
+2018-08-17T09:55:39.500+0530 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
+2018-08-17T09:55:39.504+0530 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: ca51ce2c-d823-44e4-9a62-55d40fb99c70
+2018-08-17T09:55:39.761+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/diagnostic.data'
+2018-08-17T09:55:39.762+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-17T09:55:42.099+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:59800 #1 (1 connection now open)
+2018-08-17T09:55:42.119+0530 I NETWORK  [conn1] received client metadata from 127.0.0.1:59800 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.6" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "18.04" } }
+2018-08-17T10:00:39.762+0530 I STORAGE  [thread2] createCollection: config.system.sessions with generated UUID: bd3d416b-e33c-4899-a90d-7d9171cc591d
+2018-08-17T10:00:40.154+0530 I INDEX    [thread2] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2018-08-17T10:00:40.154+0530 I INDEX    [thread2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2018-08-17T10:00:40.156+0530 I INDEX    [thread2] build index done.  scanned 0 total records. 0 secs
+2018-08-17T10:00:40.156+0530 I COMMAND  [thread2] command config.$cmd command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:98 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_msg 394ms
+2018-08-17T10:25:04.514+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:60720 #2 (2 connections now open)
+2018-08-17T10:25:04.524+0530 I NETWORK  [conn2] received client metadata from 127.0.0.1:60720 conn2: { driver: { name: "nodejs", version: "3.1.1" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-30-generic" }, platform: "Node.js v10.6.0, LE, mongodb-core: 3.1.0" }
+2018-08-17T10:25:19.320+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:60726 #3 (3 connections now open)
+2018-08-17T10:25:19.339+0530 I NETWORK  [conn3] received client metadata from 127.0.0.1:60726 conn3: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.6" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "18.04" } }
+2018-08-17T10:37:57.222+0530 I NETWORK  [conn2] end connection 127.0.0.1:60720 (2 connections now open)
+2018-08-17T10:37:58.321+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:60860 #4 (3 connections now open)
+2018-08-17T10:37:58.329+0530 I NETWORK  [conn4] received client metadata from 127.0.0.1:60860 conn4: { driver: { name: "nodejs", version: "3.1.1" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-30-generic" }, platform: "Node.js v10.6.0, LE, mongodb-core: 3.1.0" }
+2018-08-17T10:38:16.142+0530 I NETWORK  [conn4] end connection 127.0.0.1:60860 (2 connections now open)
+2018-08-17T10:38:17.167+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:60868 #5 (3 connections now open)
+2018-08-17T10:38:17.176+0530 I NETWORK  [conn5] received client metadata from 127.0.0.1:60868 conn5: { driver: { name: "nodejs", version: "3.1.1" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-30-generic" }, platform: "Node.js v10.6.0, LE, mongodb-core: 3.1.0" }
+2018-08-17T10:49:22.725+0530 I NETWORK  [conn5] end connection 127.0.0.1:60868 (2 connections now open)
+2018-08-17T10:49:27.936+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:32956 #6 (3 connections now open)
+2018-08-17T10:49:27.943+0530 I NETWORK  [conn6] received client metadata from 127.0.0.1:32956 conn6: { driver: { name: "nodejs", version: "3.1.1" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-30-generic" }, platform: "Node.js v10.6.0, LE, mongodb-core: 3.1.0" }
+2018-08-17T11:09:05.311+0530 I NETWORK  [conn6] end connection 127.0.0.1:32956 (2 connections now open)
+2018-08-17T11:09:21.093+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:33436 #7 (3 connections now open)
+2018-08-17T11:09:21.100+0530 I NETWORK  [conn7] received client metadata from 127.0.0.1:33436 conn7: { driver: { name: "nodejs", version: "3.1.1" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-30-generic" }, platform: "Node.js v10.6.0, LE, mongodb-core: 3.1.0" }
+2018-08-17T11:11:19.275+0530 I NETWORK  [conn1] end connection 127.0.0.1:59800 (2 connections now open)
+2018-08-17T11:28:16.292+0530 I NETWORK  [conn7] end connection 127.0.0.1:33436 (1 connection now open)
+2018-08-17T11:28:22.767+0530 I NETWORK  [conn3] end connection 127.0.0.1:60726 (0 connections now open)
+2018-08-17T20:04:11.619+0530 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-08-17T20:04:12.833+0530 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-08-17T20:04:12.833+0530 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-08-17T20:04:17.210+0530 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-08-17T20:04:17.358+0530 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-08-17T20:04:20.105+0530 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-08-17T20:04:20.143+0530 I CONTROL  [signalProcessingThread] now exiting
+2018-08-17T20:04:20.143+0530 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-08-17T23:08:28.520+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-08-17T23:08:29.167+0530 I CONTROL  [initandlisten] MongoDB starting : pid=993 port=27017 dbpath=/var/lib/mongodb 64-bit host=gd10
+2018-08-17T23:08:29.167+0530 I CONTROL  [initandlisten] db version v3.6.6
+2018-08-17T23:08:29.167+0530 I CONTROL  [initandlisten] git version: 6405d65b1d6432e138b44c13085d0c2fe235d6bd
+2018-08-17T23:08:29.167+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2018-08-17T23:08:29.167+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-08-17T23:08:29.167+0530 I CONTROL  [initandlisten] modules: none
+2018-08-17T23:08:29.167+0530 I CONTROL  [initandlisten] build environment:
+2018-08-17T23:08:29.167+0530 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-08-17T23:08:29.167+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-17T23:08:29.167+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-17T23:08:29.167+0530 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { bindIp: "127.0.0.1", port: 27017 }, processManagement: { timeZoneInfo: "/usr/share/zoneinfo" }, storage: { dbPath: "/var/lib/mongodb", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "/var/log/mongodb/mongod.log" } }
+2018-08-17T23:08:29.203+0530 I -        [initandlisten] Detected data files in /var/lib/mongodb created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-17T23:08:29.203+0530 I STORAGE  [initandlisten] 
+2018-08-17T23:08:29.203+0530 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-08-17T23:08:29.203+0530 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-08-17T23:08:29.203+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3431M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-17T23:08:31.445+0530 I STORAGE  [initandlisten] WiredTiger message [1534527511:445736][993:0x7ff894a071c0], txn-recover: Main recovery loop: starting at 1/77184
+2018-08-17T23:08:31.563+0530 I STORAGE  [initandlisten] WiredTiger message [1534527511:563890][993:0x7ff894a071c0], txn-recover: Recovering log 1 through 2
+2018-08-17T23:08:31.865+0530 I STORAGE  [initandlisten] WiredTiger message [1534527511:865007][993:0x7ff894a071c0], txn-recover: Recovering log 2 through 2
+2018-08-17T23:08:31.923+0530 I STORAGE  [initandlisten] WiredTiger message [1534527511:923453][993:0x7ff894a071c0], txn-recover: Set global recovery timestamp: 0
+2018-08-17T23:08:34.867+0530 I CONTROL  [initandlisten] 
+2018-08-17T23:08:34.867+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-17T23:08:34.867+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-17T23:08:34.867+0530 I CONTROL  [initandlisten] 
+2018-08-17T23:08:35.156+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/diagnostic.data'
+2018-08-17T23:08:35.157+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-18T01:00:51.780+0530 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-08-18T01:00:51.780+0530 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-08-18T01:00:51.780+0530 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-08-18T01:00:51.780+0530 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-08-18T01:00:51.786+0530 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-08-18T01:00:57.667+0530 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-08-18T01:00:57.668+0530 I CONTROL  [signalProcessingThread] now exiting
+2018-08-18T01:00:57.668+0530 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-08-18T08:45:29.453+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-08-18T08:45:29.771+0530 I CONTROL  [initandlisten] MongoDB starting : pid=1007 port=27017 dbpath=/var/lib/mongodb 64-bit host=gd10
+2018-08-18T08:45:29.771+0530 I CONTROL  [initandlisten] db version v3.6.6
+2018-08-18T08:45:29.771+0530 I CONTROL  [initandlisten] git version: 6405d65b1d6432e138b44c13085d0c2fe235d6bd
+2018-08-18T08:45:29.771+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2018-08-18T08:45:29.771+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-08-18T08:45:29.771+0530 I CONTROL  [initandlisten] modules: none
+2018-08-18T08:45:29.771+0530 I CONTROL  [initandlisten] build environment:
+2018-08-18T08:45:29.771+0530 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-08-18T08:45:29.771+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-18T08:45:29.771+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-18T08:45:29.771+0530 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { bindIp: "127.0.0.1", port: 27017 }, processManagement: { timeZoneInfo: "/usr/share/zoneinfo" }, storage: { dbPath: "/var/lib/mongodb", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "/var/log/mongodb/mongod.log" } }
+2018-08-18T08:45:29.841+0530 I -        [initandlisten] Detected data files in /var/lib/mongodb created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-18T08:45:29.841+0530 I STORAGE  [initandlisten] 
+2018-08-18T08:45:29.841+0530 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-08-18T08:45:29.841+0530 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-08-18T08:45:29.841+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3431M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-18T08:45:31.908+0530 I STORAGE  [initandlisten] WiredTiger message [1534562131:908655][1007:0x7f9a412c81c0], txn-recover: Main recovery loop: starting at 2/21248
+2018-08-18T08:45:32.032+0530 I STORAGE  [initandlisten] WiredTiger message [1534562132:32797][1007:0x7f9a412c81c0], txn-recover: Recovering log 2 through 3
+2018-08-18T08:45:32.193+0530 I STORAGE  [initandlisten] WiredTiger message [1534562132:193001][1007:0x7f9a412c81c0], txn-recover: Recovering log 3 through 3
+2018-08-18T08:45:32.259+0530 I STORAGE  [initandlisten] WiredTiger message [1534562132:259660][1007:0x7f9a412c81c0], txn-recover: Set global recovery timestamp: 0
+2018-08-18T08:45:33.579+0530 I CONTROL  [initandlisten] 
+2018-08-18T08:45:33.579+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-18T08:45:33.579+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-18T08:45:33.579+0530 I CONTROL  [initandlisten] 
+2018-08-18T08:45:33.858+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/diagnostic.data'
+2018-08-18T08:45:33.858+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-18T08:53:49.256+0530 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-08-18T08:53:49.256+0530 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-08-18T08:53:49.257+0530 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-08-18T08:53:49.257+0530 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-08-18T08:53:49.261+0530 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-08-18T08:53:56.291+0530 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-08-18T08:53:56.292+0530 I CONTROL  [signalProcessingThread] now exiting
+2018-08-18T08:53:56.292+0530 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-08-18T09:06:48.937+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-08-18T09:06:52.255+0530 I CONTROL  [initandlisten] MongoDB starting : pid=967 port=27017 dbpath=/var/lib/mongodb 64-bit host=gd10
+2018-08-18T09:06:52.256+0530 I CONTROL  [initandlisten] db version v4.0.1
+2018-08-18T09:06:52.256+0530 I CONTROL  [initandlisten] git version: 54f1582fc6eb01de4d4c42f26fc133e623f065fb
+2018-08-18T09:06:52.256+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2018-08-18T09:06:52.256+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-08-18T09:06:52.256+0530 I CONTROL  [initandlisten] modules: none
+2018-08-18T09:06:52.256+0530 I CONTROL  [initandlisten] build environment:
+2018-08-18T09:06:52.256+0530 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-08-18T09:06:52.256+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-18T09:06:52.256+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-18T09:06:52.256+0530 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { bindIp: "127.0.0.1", port: 27017 }, processManagement: { timeZoneInfo: "/usr/share/zoneinfo" }, storage: { dbPath: "/var/lib/mongodb", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "/var/log/mongodb/mongod.log" } }
+2018-08-18T09:06:52.366+0530 I STORAGE  [initandlisten] Detected data files in /var/lib/mongodb created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-18T09:06:52.366+0530 I STORAGE  [initandlisten] 
+2018-08-18T09:06:52.366+0530 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-08-18T09:06:52.366+0530 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-08-18T09:06:52.366+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3431M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-18T09:06:55.667+0530 I STORAGE  [initandlisten] WiredTiger message [1534563415:667726][967:0x7f7c0cf26680], txn-recover: Main recovery loop: starting at 3/7936
+2018-08-18T09:06:55.785+0530 I STORAGE  [initandlisten] WiredTiger message [1534563415:785717][967:0x7f7c0cf26680], txn-recover: Recovering log 3 through 4
+2018-08-18T09:06:56.167+0530 I STORAGE  [initandlisten] WiredTiger message [1534563416:167691][967:0x7f7c0cf26680], txn-recover: Recovering log 4 through 4
+2018-08-18T09:06:56.230+0530 I STORAGE  [initandlisten] WiredTiger message [1534563416:230394][967:0x7f7c0cf26680], txn-recover: Set global recovery timestamp: 0
+2018-08-18T09:06:57.881+0530 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2018-08-18T09:06:58.760+0530 I CONTROL  [initandlisten] 
+2018-08-18T09:06:58.760+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-18T09:06:58.760+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-18T09:06:58.760+0530 I CONTROL  [initandlisten] 
+2018-08-18T09:06:59.728+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/diagnostic.data'
+2018-08-18T09:06:59.793+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-18T20:51:38.622+0530 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-08-18T20:51:38.622+0530 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-08-18T20:51:38.622+0530 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-08-18T20:51:38.622+0530 I CONTROL  [signalProcessingThread] Shutting down free monitoring
+2018-08-18T20:51:38.624+0530 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-08-18T20:51:39.875+0530 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-08-18T20:51:40.107+0530 I STORAGE  [signalProcessingThread] Downgrading WiredTiger datafiles.
+2018-08-18T20:51:45.269+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534605705:269146][967:0x7f7c0650a700], txn-recover: Main recovery loop: starting at 4/77312
+2018-08-18T20:51:45.394+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534605705:394848][967:0x7f7c0650a700], txn-recover: Recovering log 4 through 5
+2018-08-18T20:51:45.501+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534605705:501545][967:0x7f7c0650a700], txn-recover: Recovering log 5 through 5
+2018-08-18T20:51:45.568+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534605705:568934][967:0x7f7c0650a700], txn-recover: Set global recovery timestamp: 0
+2018-08-18T20:51:47.874+0530 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-08-18T20:51:47.874+0530 I CONTROL  [signalProcessingThread] now exiting
+2018-08-18T20:51:47.874+0530 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-08-18T22:06:52.529+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-08-18T22:06:52.728+0530 I CONTROL  [initandlisten] MongoDB starting : pid=989 port=27017 dbpath=/var/lib/mongodb 64-bit host=gd10
+2018-08-18T22:06:52.728+0530 I CONTROL  [initandlisten] db version v4.0.1
+2018-08-18T22:06:52.728+0530 I CONTROL  [initandlisten] git version: 54f1582fc6eb01de4d4c42f26fc133e623f065fb
+2018-08-18T22:06:52.728+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2018-08-18T22:06:52.728+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-08-18T22:06:52.728+0530 I CONTROL  [initandlisten] modules: none
+2018-08-18T22:06:52.728+0530 I CONTROL  [initandlisten] build environment:
+2018-08-18T22:06:52.728+0530 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-08-18T22:06:52.728+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-18T22:06:52.729+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-18T22:06:52.729+0530 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { bindIp: "127.0.0.1", port: 27017 }, processManagement: { timeZoneInfo: "/usr/share/zoneinfo" }, storage: { dbPath: "/var/lib/mongodb", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "/var/log/mongodb/mongod.log" } }
+2018-08-18T22:06:52.731+0530 I STORAGE  [initandlisten] Detected data files in /var/lib/mongodb created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-18T22:06:52.731+0530 I STORAGE  [initandlisten] 
+2018-08-18T22:06:52.731+0530 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-08-18T22:06:52.731+0530 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-08-18T22:06:52.731+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3431M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-18T22:06:55.541+0530 I STORAGE  [initandlisten] WiredTiger message [1534610215:541961][989:0x7f6216a88680], txn-recover: Main recovery loop: starting at 6/896
+2018-08-18T22:06:55.664+0530 I STORAGE  [initandlisten] WiredTiger message [1534610215:664214][989:0x7f6216a88680], txn-recover: Recovering log 6 through 7
+2018-08-18T22:06:56.030+0530 I STORAGE  [initandlisten] WiredTiger message [1534610216:30203][989:0x7f6216a88680], txn-recover: Recovering log 7 through 7
+2018-08-18T22:06:56.092+0530 I STORAGE  [initandlisten] WiredTiger message [1534610216:92058][989:0x7f6216a88680], txn-recover: Set global recovery timestamp: 0
+2018-08-18T22:06:58.103+0530 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2018-08-18T22:06:58.646+0530 I CONTROL  [initandlisten] 
+2018-08-18T22:06:58.646+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-18T22:06:58.646+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-18T22:06:58.646+0530 I CONTROL  [initandlisten] 
+2018-08-18T22:06:58.994+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/diagnostic.data'
+2018-08-18T22:06:59.031+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-19T01:08:49.512+0530 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-08-19T01:08:49.513+0530 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-08-19T01:08:49.513+0530 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-08-19T01:08:49.513+0530 I CONTROL  [signalProcessingThread] Shutting down free monitoring
+2018-08-19T01:08:49.514+0530 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-08-19T01:08:51.352+0530 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-08-19T01:08:51.736+0530 I STORAGE  [signalProcessingThread] Downgrading WiredTiger datafiles.
+2018-08-19T01:08:54.130+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534621134:130796][989:0x7f621006c700], txn-recover: Main recovery loop: starting at 7/29952
+2018-08-19T01:08:54.253+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534621134:253036][989:0x7f621006c700], txn-recover: Recovering log 7 through 8
+2018-08-19T01:08:54.354+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534621134:354521][989:0x7f621006c700], txn-recover: Recovering log 8 through 8
+2018-08-19T01:08:54.418+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534621134:418628][989:0x7f621006c700], txn-recover: Set global recovery timestamp: 0
+2018-08-19T01:08:56.448+0530 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-08-19T01:08:56.448+0530 I CONTROL  [signalProcessingThread] now exiting
+2018-08-19T01:08:56.448+0530 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-08-19T08:17:03.133+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-08-19T08:17:03.341+0530 I CONTROL  [initandlisten] MongoDB starting : pid=975 port=27017 dbpath=/var/lib/mongodb 64-bit host=gd10
+2018-08-19T08:17:03.341+0530 I CONTROL  [initandlisten] db version v4.0.1
+2018-08-19T08:17:03.341+0530 I CONTROL  [initandlisten] git version: 54f1582fc6eb01de4d4c42f26fc133e623f065fb
+2018-08-19T08:17:03.341+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2018-08-19T08:17:03.341+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-08-19T08:17:03.341+0530 I CONTROL  [initandlisten] modules: none
+2018-08-19T08:17:03.341+0530 I CONTROL  [initandlisten] build environment:
+2018-08-19T08:17:03.341+0530 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-08-19T08:17:03.341+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-19T08:17:03.341+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-19T08:17:03.341+0530 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { bindIp: "127.0.0.1", port: 27017 }, processManagement: { timeZoneInfo: "/usr/share/zoneinfo" }, storage: { dbPath: "/var/lib/mongodb", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "/var/log/mongodb/mongod.log" } }
+2018-08-19T08:17:03.342+0530 I STORAGE  [initandlisten] Detected data files in /var/lib/mongodb created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-19T08:17:03.342+0530 I STORAGE  [initandlisten] 
+2018-08-19T08:17:03.342+0530 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-08-19T08:17:03.342+0530 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-08-19T08:17:03.342+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3431M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-19T08:17:05.297+0530 I STORAGE  [initandlisten] WiredTiger message [1534646825:297676][975:0x7feb410d0680], txn-recover: Main recovery loop: starting at 9/896
+2018-08-19T08:17:05.421+0530 I STORAGE  [initandlisten] WiredTiger message [1534646825:421854][975:0x7feb410d0680], txn-recover: Recovering log 9 through 10
+2018-08-19T08:17:05.577+0530 I STORAGE  [initandlisten] WiredTiger message [1534646825:577688][975:0x7feb410d0680], txn-recover: Recovering log 10 through 10
+2018-08-19T08:17:05.642+0530 I STORAGE  [initandlisten] WiredTiger message [1534646825:642371][975:0x7feb410d0680], txn-recover: Set global recovery timestamp: 0
+2018-08-19T08:17:06.746+0530 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2018-08-19T08:17:07.178+0530 I CONTROL  [initandlisten] 
+2018-08-19T08:17:07.178+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-19T08:17:07.178+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-19T08:17:07.178+0530 I CONTROL  [initandlisten] 
+2018-08-19T08:17:07.498+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/diagnostic.data'
+2018-08-19T08:17:07.677+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-19T21:14:03.954+0530 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-08-19T21:14:06.010+0530 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-08-19T21:14:06.010+0530 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-08-19T21:14:06.031+0530 I CONTROL  [signalProcessingThread] Shutting down free monitoring
+2018-08-19T21:14:06.032+0530 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-08-19T21:14:06.040+0530 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-08-19T21:14:06.114+0530 I STORAGE  [signalProcessingThread] Downgrading WiredTiger datafiles.
+2018-08-19T21:14:08.239+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534693448:239710][975:0x7feb3a6b4700], txn-recover: Main recovery loop: starting at 10/98304
+2018-08-19T21:14:08.370+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534693448:370688][975:0x7feb3a6b4700], txn-recover: Recovering log 10 through 11
+2018-08-19T21:14:08.485+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534693448:485498][975:0x7feb3a6b4700], txn-recover: Recovering log 11 through 11
+2018-08-19T21:14:08.557+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534693448:557131][975:0x7feb3a6b4700], txn-recover: Set global recovery timestamp: 0
+2018-08-19T21:14:10.376+0530 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-08-19T21:14:10.376+0530 I CONTROL  [signalProcessingThread] now exiting
+2018-08-19T21:14:10.376+0530 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-08-19T22:30:24.631+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-08-19T22:30:25.314+0530 I CONTROL  [initandlisten] MongoDB starting : pid=1004 port=27017 dbpath=/var/lib/mongodb 64-bit host=gd10
+2018-08-19T22:30:25.314+0530 I CONTROL  [initandlisten] db version v4.0.1
+2018-08-19T22:30:25.314+0530 I CONTROL  [initandlisten] git version: 54f1582fc6eb01de4d4c42f26fc133e623f065fb
+2018-08-19T22:30:25.314+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2018-08-19T22:30:25.314+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-08-19T22:30:25.314+0530 I CONTROL  [initandlisten] modules: none
+2018-08-19T22:30:25.314+0530 I CONTROL  [initandlisten] build environment:
+2018-08-19T22:30:25.314+0530 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-08-19T22:30:25.314+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-19T22:30:25.314+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-19T22:30:25.314+0530 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { bindIp: "127.0.0.1", port: 27017 }, processManagement: { timeZoneInfo: "/usr/share/zoneinfo" }, storage: { dbPath: "/var/lib/mongodb", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "/var/log/mongodb/mongod.log" } }
+2018-08-19T22:30:25.316+0530 I STORAGE  [initandlisten] Detected data files in /var/lib/mongodb created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-19T22:30:25.316+0530 I STORAGE  [initandlisten] 
+2018-08-19T22:30:25.316+0530 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-08-19T22:30:25.316+0530 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-08-19T22:30:25.316+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3431M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-19T22:30:27.274+0530 I STORAGE  [initandlisten] WiredTiger message [1534698027:274242][1004:0x7fbe530d0680], txn-recover: Main recovery loop: starting at 12/896
+2018-08-19T22:30:27.413+0530 I STORAGE  [initandlisten] WiredTiger message [1534698027:413781][1004:0x7fbe530d0680], txn-recover: Recovering log 12 through 13
+2018-08-19T22:30:27.757+0530 I STORAGE  [initandlisten] WiredTiger message [1534698027:757863][1004:0x7fbe530d0680], txn-recover: Recovering log 13 through 13
+2018-08-19T22:30:27.816+0530 I STORAGE  [initandlisten] WiredTiger message [1534698027:816593][1004:0x7fbe530d0680], txn-recover: Set global recovery timestamp: 0
+2018-08-19T22:30:29.266+0530 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2018-08-19T22:30:30.099+0530 I CONTROL  [initandlisten] 
+2018-08-19T22:30:30.099+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-19T22:30:30.099+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-19T22:30:30.099+0530 I CONTROL  [initandlisten] 
+2018-08-19T22:30:30.634+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/diagnostic.data'
+2018-08-19T22:30:30.700+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-20T00:16:21.797+0530 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-08-20T00:16:22.359+0530 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-08-20T00:16:22.359+0530 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-08-20T00:16:22.371+0530 I CONTROL  [signalProcessingThread] Shutting down free monitoring
+2018-08-20T00:16:22.372+0530 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-08-20T00:16:24.359+0530 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-08-20T00:16:24.475+0530 I STORAGE  [signalProcessingThread] Downgrading WiredTiger datafiles.
+2018-08-20T00:16:26.609+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534704386:609725][1004:0x7fbe4c6b4700], txn-recover: Main recovery loop: starting at 13/20224
+2018-08-20T00:16:26.744+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534704386:744159][1004:0x7fbe4c6b4700], txn-recover: Recovering log 13 through 14
+2018-08-20T00:16:26.994+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534704386:994836][1004:0x7fbe4c6b4700], txn-recover: Recovering log 14 through 14
+2018-08-20T00:16:27.058+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534704387:58444][1004:0x7fbe4c6b4700], txn-recover: Set global recovery timestamp: 0
+2018-08-20T00:16:30.940+0530 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-08-20T00:16:30.940+0530 I CONTROL  [signalProcessingThread] now exiting
+2018-08-20T00:16:30.940+0530 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-08-20T00:22:25.498+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-08-20T00:22:25.921+0530 I CONTROL  [initandlisten] MongoDB starting : pid=1003 port=27017 dbpath=/var/lib/mongodb 64-bit host=gd10
+2018-08-20T00:22:25.921+0530 I CONTROL  [initandlisten] db version v4.0.1
+2018-08-20T00:22:25.921+0530 I CONTROL  [initandlisten] git version: 54f1582fc6eb01de4d4c42f26fc133e623f065fb
+2018-08-20T00:22:25.921+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2018-08-20T00:22:25.921+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-08-20T00:22:25.921+0530 I CONTROL  [initandlisten] modules: none
+2018-08-20T00:22:25.921+0530 I CONTROL  [initandlisten] build environment:
+2018-08-20T00:22:25.922+0530 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-08-20T00:22:25.922+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-20T00:22:25.922+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-20T00:22:25.922+0530 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { bindIp: "127.0.0.1", port: 27017 }, processManagement: { timeZoneInfo: "/usr/share/zoneinfo" }, storage: { dbPath: "/var/lib/mongodb", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "/var/log/mongodb/mongod.log" } }
+2018-08-20T00:22:25.926+0530 I STORAGE  [initandlisten] Detected data files in /var/lib/mongodb created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-20T00:22:25.926+0530 I STORAGE  [initandlisten] 
+2018-08-20T00:22:25.926+0530 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-08-20T00:22:25.926+0530 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-08-20T00:22:25.926+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3431M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-20T00:22:27.903+0530 I STORAGE  [initandlisten] WiredTiger message [1534704747:903032][1003:0x7f0090c14680], txn-recover: Main recovery loop: starting at 15/896
+2018-08-20T00:22:28.021+0530 I STORAGE  [initandlisten] WiredTiger message [1534704748:21786][1003:0x7f0090c14680], txn-recover: Recovering log 15 through 16
+2018-08-20T00:22:28.223+0530 I STORAGE  [initandlisten] WiredTiger message [1534704748:223402][1003:0x7f0090c14680], txn-recover: Recovering log 16 through 16
+2018-08-20T00:22:28.284+0530 I STORAGE  [initandlisten] WiredTiger message [1534704748:284664][1003:0x7f0090c14680], txn-recover: Set global recovery timestamp: 0
+2018-08-20T00:22:29.325+0530 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2018-08-20T00:22:30.231+0530 I CONTROL  [initandlisten] 
+2018-08-20T00:22:30.231+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-20T00:22:30.231+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-20T00:22:30.231+0530 I CONTROL  [initandlisten] 
+2018-08-20T00:22:30.980+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/diagnostic.data'
+2018-08-20T00:22:31.050+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-20T07:24:36.805+0530 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-08-20T07:24:38.107+0530 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-08-20T07:24:38.108+0530 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-08-20T07:24:39.376+0530 I CONTROL  [signalProcessingThread] Shutting down free monitoring
+2018-08-20T07:24:39.376+0530 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-08-20T07:24:40.001+0530 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-08-20T07:24:40.129+0530 I STORAGE  [signalProcessingThread] Downgrading WiredTiger datafiles.
+2018-08-20T07:24:46.363+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534730086:363639][1003:0x7f008a1f8700], txn-recover: Main recovery loop: starting at 16/11136
+2018-08-20T07:24:46.489+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534730086:489363][1003:0x7f008a1f8700], txn-recover: Recovering log 16 through 17
+2018-08-20T07:24:46.590+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534730086:590335][1003:0x7f008a1f8700], txn-recover: Recovering log 17 through 17
+2018-08-20T07:24:46.655+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534730086:655983][1003:0x7f008a1f8700], txn-recover: Set global recovery timestamp: 0
+2018-08-20T07:24:47.747+0530 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-08-20T07:24:47.747+0530 I CONTROL  [signalProcessingThread] now exiting
+2018-08-20T07:24:47.747+0530 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-08-20T07:56:16.781+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-08-20T07:56:16.922+0530 I CONTROL  [initandlisten] MongoDB starting : pid=1010 port=27017 dbpath=/var/lib/mongodb 64-bit host=gd10
+2018-08-20T07:56:16.922+0530 I CONTROL  [initandlisten] db version v4.0.1
+2018-08-20T07:56:16.922+0530 I CONTROL  [initandlisten] git version: 54f1582fc6eb01de4d4c42f26fc133e623f065fb
+2018-08-20T07:56:16.922+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2018-08-20T07:56:16.922+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-08-20T07:56:16.922+0530 I CONTROL  [initandlisten] modules: none
+2018-08-20T07:56:16.922+0530 I CONTROL  [initandlisten] build environment:
+2018-08-20T07:56:16.922+0530 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-08-20T07:56:16.922+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-20T07:56:16.922+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-20T07:56:16.922+0530 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { bindIp: "127.0.0.1", port: 27017 }, processManagement: { timeZoneInfo: "/usr/share/zoneinfo" }, storage: { dbPath: "/var/lib/mongodb", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "/var/log/mongodb/mongod.log" } }
+2018-08-20T07:56:16.945+0530 I STORAGE  [initandlisten] Detected data files in /var/lib/mongodb created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-20T07:56:16.945+0530 I STORAGE  [initandlisten] 
+2018-08-20T07:56:16.945+0530 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-08-20T07:56:16.945+0530 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-08-20T07:56:16.945+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3431M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-20T07:56:18.716+0530 I STORAGE  [initandlisten] WiredTiger message [1534731978:716385][1010:0x7ff024f23680], txn-recover: Main recovery loop: starting at 18/896
+2018-08-20T07:56:18.838+0530 I STORAGE  [initandlisten] WiredTiger message [1534731978:838315][1010:0x7ff024f23680], txn-recover: Recovering log 18 through 19
+2018-08-20T07:56:19.075+0530 I STORAGE  [initandlisten] WiredTiger message [1534731979:75709][1010:0x7ff024f23680], txn-recover: Recovering log 19 through 19
+2018-08-20T07:56:19.134+0530 I STORAGE  [initandlisten] WiredTiger message [1534731979:134334][1010:0x7ff024f23680], txn-recover: Set global recovery timestamp: 0
+2018-08-20T07:56:19.957+0530 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2018-08-20T07:56:20.751+0530 I CONTROL  [initandlisten] 
+2018-08-20T07:56:20.751+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-20T07:56:20.752+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-20T07:56:20.752+0530 I CONTROL  [initandlisten] 
+2018-08-20T07:56:21.113+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/diagnostic.data'
+2018-08-20T07:56:21.149+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-20T10:11:43.431+0530 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-08-20T10:11:48.380+0530 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-08-20T10:11:48.534+0530 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-08-20T10:12:03.315+0530 I CONTROL  [signalProcessingThread] Shutting down free monitoring
+2018-08-20T10:12:06.510+0530 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-08-20T10:12:11.994+0530 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-08-20T10:12:14.043+0530 I STORAGE  [signalProcessingThread] Downgrading WiredTiger datafiles.
+2018-08-20T10:12:36.719+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534740156:719545][1010:0x7ff01e507700], txn-recover: Main recovery loop: starting at 19/24064
+2018-08-20T10:12:36.974+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534740156:974743][1010:0x7ff01e507700], txn-recover: Recovering log 19 through 20
+2018-08-20T10:12:37.222+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534740157:222416][1010:0x7ff01e507700], txn-recover: Recovering log 20 through 20
+2018-08-20T10:12:37.287+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534740157:287389][1010:0x7ff01e507700], txn-recover: Set global recovery timestamp: 0
+2018-08-20T10:12:42.805+0530 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-08-20T10:12:42.805+0530 I CONTROL  [signalProcessingThread] now exiting
+2018-08-20T10:12:42.805+0530 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-08-20T15:59:25.754+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-08-20T15:59:26.183+0530 I CONTROL  [initandlisten] MongoDB starting : pid=987 port=27017 dbpath=/var/lib/mongodb 64-bit host=gd10
+2018-08-20T15:59:26.183+0530 I CONTROL  [initandlisten] db version v4.0.1
+2018-08-20T15:59:26.183+0530 I CONTROL  [initandlisten] git version: 54f1582fc6eb01de4d4c42f26fc133e623f065fb
+2018-08-20T15:59:26.183+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2018-08-20T15:59:26.183+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-08-20T15:59:26.183+0530 I CONTROL  [initandlisten] modules: none
+2018-08-20T15:59:26.183+0530 I CONTROL  [initandlisten] build environment:
+2018-08-20T15:59:26.183+0530 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-08-20T15:59:26.183+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-20T15:59:26.183+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-20T15:59:26.183+0530 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { bindIp: "127.0.0.1", port: 27017 }, processManagement: { timeZoneInfo: "/usr/share/zoneinfo" }, storage: { dbPath: "/var/lib/mongodb", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "/var/log/mongodb/mongod.log" } }
+2018-08-20T15:59:26.184+0530 I STORAGE  [initandlisten] Detected data files in /var/lib/mongodb created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-20T15:59:26.184+0530 I STORAGE  [initandlisten] 
+2018-08-20T15:59:26.184+0530 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-08-20T15:59:26.184+0530 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-08-20T15:59:26.184+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3431M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-20T15:59:28.429+0530 I STORAGE  [initandlisten] WiredTiger message [1534760968:429290][987:0x7f58696ea680], txn-recover: Main recovery loop: starting at 21/896
+2018-08-20T15:59:28.549+0530 I STORAGE  [initandlisten] WiredTiger message [1534760968:549796][987:0x7f58696ea680], txn-recover: Recovering log 21 through 22
+2018-08-20T15:59:28.896+0530 I STORAGE  [initandlisten] WiredTiger message [1534760968:896226][987:0x7f58696ea680], txn-recover: Recovering log 22 through 22
+2018-08-20T15:59:28.955+0530 I STORAGE  [initandlisten] WiredTiger message [1534760968:955851][987:0x7f58696ea680], txn-recover: Set global recovery timestamp: 0
+2018-08-20T15:59:37.329+0530 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2018-08-20T15:59:40.316+0530 I CONTROL  [initandlisten] 
+2018-08-20T15:59:40.316+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-20T15:59:40.316+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-20T15:59:40.316+0530 I CONTROL  [initandlisten] 
+2018-08-20T15:59:41.566+0530 I COMMAND  [initandlisten] command admin.system.roles command: find { find: "system.roles", $db: "admin" } planSummary: EOF keysExamined:0 docsExamined:0 cursorExhausted:1 numYields:0 nreturned:0 reslen:107 locks:{ Global: { acquireCount: { r: 6, w: 1, W: 3 } }, Database: { acquireCount: { r: 2, W: 1 } }, Collection: { acquireCount: { r: 2 } } } protocol:op_msg 103ms
+2018-08-20T15:59:41.566+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/diagnostic.data'
+2018-08-20T15:59:41.843+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-20T16:55:58.739+0530 I COMMAND  [PeriodicTaskRunner] task: UnusedLockCleaner took: 291ms
+2018-08-20T16:56:01.402+0530 I COMMAND  [LogicalSessionCacheRefresh] command config.$cmd command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:150 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } } } protocol:op_msg 1145ms
+2018-08-20T16:56:01.637+0530 I COMMAND  [ftdc] serverStatus was very slow: { after basic: 682, after asserts: 923, after backgroundFlushing: 965, after connections: 965, after dur: 965, after extra_info: 965, after freeMonitoring: 1017, after globalLock: 1129, after locks: 1271, after logicalSessionRecordCache: 1271, after network: 1468, after opLatencies: 1551, after opcounters: 1551, after opcountersRepl: 1551, after repl: 1551, after security: 1996, after storageEngine: 2299, after tcmalloc: 2299, after transactions: 2299, after wiredTiger: 2341, at end: 2631 }
+2018-08-20T19:06:25.942+0530 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-08-20T19:06:26.423+0530 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-08-20T19:06:26.423+0530 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-08-20T19:06:26.430+0530 I CONTROL  [signalProcessingThread] Shutting down free monitoring
+2018-08-20T19:06:26.430+0530 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-08-20T19:06:30.172+0530 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-08-20T19:06:30.258+0530 I STORAGE  [signalProcessingThread] Downgrading WiredTiger datafiles.
+2018-08-20T19:06:36.076+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534772196:76807][987:0x7f5862cce700], txn-recover: Main recovery loop: starting at 22/22784
+2018-08-20T19:06:36.211+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534772196:211529][987:0x7f5862cce700], txn-recover: Recovering log 22 through 23
+2018-08-20T19:06:36.366+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534772196:366463][987:0x7f5862cce700], txn-recover: Recovering log 23 through 23
+2018-08-20T19:06:36.434+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534772196:434636][987:0x7f5862cce700], txn-recover: Set global recovery timestamp: 0
+2018-08-20T19:06:37.568+0530 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-08-20T19:06:37.569+0530 I CONTROL  [signalProcessingThread] now exiting
+2018-08-20T19:06:37.569+0530 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-08-20T19:07:53.431+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-08-20T19:07:54.278+0530 I CONTROL  [initandlisten] MongoDB starting : pid=998 port=27017 dbpath=/var/lib/mongodb 64-bit host=gd10
+2018-08-20T19:07:54.278+0530 I CONTROL  [initandlisten] db version v4.0.1
+2018-08-20T19:07:54.278+0530 I CONTROL  [initandlisten] git version: 54f1582fc6eb01de4d4c42f26fc133e623f065fb
+2018-08-20T19:07:54.278+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2018-08-20T19:07:54.278+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-08-20T19:07:54.278+0530 I CONTROL  [initandlisten] modules: none
+2018-08-20T19:07:54.278+0530 I CONTROL  [initandlisten] build environment:
+2018-08-20T19:07:54.278+0530 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-08-20T19:07:54.278+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-20T19:07:54.278+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-20T19:07:54.278+0530 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { bindIp: "127.0.0.1", port: 27017 }, processManagement: { timeZoneInfo: "/usr/share/zoneinfo" }, storage: { dbPath: "/var/lib/mongodb", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "/var/log/mongodb/mongod.log" } }
+2018-08-20T19:07:54.281+0530 I STORAGE  [initandlisten] Detected data files in /var/lib/mongodb created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-20T19:07:54.281+0530 I STORAGE  [initandlisten] 
+2018-08-20T19:07:54.281+0530 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-08-20T19:07:54.281+0530 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-08-20T19:07:54.281+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3431M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-20T19:07:56.211+0530 I STORAGE  [initandlisten] WiredTiger message [1534772276:211812][998:0x7fdef190a680], txn-recover: Main recovery loop: starting at 24/896
+2018-08-20T19:07:56.348+0530 I STORAGE  [initandlisten] WiredTiger message [1534772276:348512][998:0x7fdef190a680], txn-recover: Recovering log 24 through 25
+2018-08-20T19:07:56.678+0530 I STORAGE  [initandlisten] WiredTiger message [1534772276:678539][998:0x7fdef190a680], txn-recover: Recovering log 25 through 25
+2018-08-20T19:07:56.743+0530 I STORAGE  [initandlisten] WiredTiger message [1534772276:743362][998:0x7fdef190a680], txn-recover: Set global recovery timestamp: 0
+2018-08-20T19:07:58.982+0530 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2018-08-20T19:07:59.424+0530 I CONTROL  [initandlisten] 
+2018-08-20T19:07:59.424+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-20T19:07:59.424+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-20T19:07:59.424+0530 I CONTROL  [initandlisten] 
+2018-08-20T19:07:59.758+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/diagnostic.data'
+2018-08-20T19:07:59.778+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-21T01:39:39.545+0530 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-08-21T01:39:39.545+0530 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-08-21T01:39:39.546+0530 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-08-21T01:39:40.267+0530 I CONTROL  [signalProcessingThread] Shutting down free monitoring
+2018-08-21T01:39:40.269+0530 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-08-21T01:39:40.271+0530 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-08-21T01:39:40.666+0530 I STORAGE  [signalProcessingThread] Downgrading WiredTiger datafiles.
+2018-08-21T01:39:45.414+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534795785:414597][998:0x7fdeeaeee700], txn-recover: Main recovery loop: starting at 25/54912
+2018-08-21T01:39:45.536+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534795785:536308][998:0x7fdeeaeee700], txn-recover: Recovering log 25 through 26
+2018-08-21T01:39:45.633+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534795785:633672][998:0x7fdeeaeee700], txn-recover: Recovering log 26 through 26
+2018-08-21T01:39:45.701+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534795785:701352][998:0x7fdeeaeee700], txn-recover: Set global recovery timestamp: 0
+2018-08-21T01:39:55.673+0530 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-08-21T01:39:55.673+0530 I CONTROL  [signalProcessingThread] now exiting
+2018-08-21T01:39:55.673+0530 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-08-21T10:29:45.339+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-08-21T10:29:45.656+0530 I CONTROL  [initandlisten] MongoDB starting : pid=991 port=27017 dbpath=/var/lib/mongodb 64-bit host=gd10
+2018-08-21T10:29:45.656+0530 I CONTROL  [initandlisten] db version v4.0.1
+2018-08-21T10:29:45.656+0530 I CONTROL  [initandlisten] git version: 54f1582fc6eb01de4d4c42f26fc133e623f065fb
+2018-08-21T10:29:45.656+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2018-08-21T10:29:45.656+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-08-21T10:29:45.656+0530 I CONTROL  [initandlisten] modules: none
+2018-08-21T10:29:45.656+0530 I CONTROL  [initandlisten] build environment:
+2018-08-21T10:29:45.656+0530 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-08-21T10:29:45.656+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-21T10:29:45.656+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-21T10:29:45.656+0530 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { bindIp: "127.0.0.1", port: 27017 }, processManagement: { timeZoneInfo: "/usr/share/zoneinfo" }, storage: { dbPath: "/var/lib/mongodb", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "/var/log/mongodb/mongod.log" } }
+2018-08-21T10:29:45.657+0530 I STORAGE  [initandlisten] Detected data files in /var/lib/mongodb created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-21T10:29:45.657+0530 I STORAGE  [initandlisten] 
+2018-08-21T10:29:45.657+0530 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-08-21T10:29:45.657+0530 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-08-21T10:29:45.657+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3431M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-21T10:29:47.641+0530 I STORAGE  [initandlisten] WiredTiger message [1534827587:641344][991:0x7fddf3de6680], txn-recover: Main recovery loop: starting at 27/896
+2018-08-21T10:29:47.785+0530 I STORAGE  [initandlisten] WiredTiger message [1534827587:785501][991:0x7fddf3de6680], txn-recover: Recovering log 27 through 28
+2018-08-21T10:29:48.000+0530 I STORAGE  [initandlisten] WiredTiger message [1534827588:931][991:0x7fddf3de6680], txn-recover: Recovering log 28 through 28
+2018-08-21T10:29:48.066+0530 I STORAGE  [initandlisten] WiredTiger message [1534827588:66808][991:0x7fddf3de6680], txn-recover: Set global recovery timestamp: 0
+2018-08-21T10:29:49.186+0530 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2018-08-21T10:29:49.668+0530 I CONTROL  [initandlisten] 
+2018-08-21T10:29:49.668+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-21T10:29:49.668+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-21T10:29:49.668+0530 I CONTROL  [initandlisten] 
+2018-08-21T10:29:50.022+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/diagnostic.data'
+2018-08-21T10:29:50.047+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-21T10:57:33.118+0530 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-08-21T10:57:33.118+0530 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-08-21T10:57:33.118+0530 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-08-21T10:57:33.119+0530 I CONTROL  [signalProcessingThread] Shutting down free monitoring
+2018-08-21T10:57:33.119+0530 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-08-21T10:57:33.908+0530 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-08-21T10:57:34.442+0530 I STORAGE  [signalProcessingThread] Downgrading WiredTiger datafiles.
+2018-08-21T10:57:40.953+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534829260:953441][991:0x7fdded3ca700], txn-recover: Main recovery loop: starting at 28/10240
+2018-08-21T10:57:41.077+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534829261:77236][991:0x7fdded3ca700], txn-recover: Recovering log 28 through 29
+2018-08-21T10:57:41.179+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534829261:179807][991:0x7fdded3ca700], txn-recover: Recovering log 29 through 29
+2018-08-21T10:57:41.244+0530 I STORAGE  [signalProcessingThread] WiredTiger message [1534829261:244746][991:0x7fdded3ca700], txn-recover: Set global recovery timestamp: 0
+2018-08-21T10:57:43.825+0530 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-08-21T10:57:43.825+0530 I CONTROL  [signalProcessingThread] now exiting
+2018-08-21T10:57:43.825+0530 I CONTROL  [signalProcessingThread] shutting down with code:0
+2018-08-21T14:44:13.738+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-08-21T14:44:13.935+0530 I CONTROL  [initandlisten] MongoDB starting : pid=986 port=27017 dbpath=/var/lib/mongodb 64-bit host=gd10
+2018-08-21T14:44:13.935+0530 I CONTROL  [initandlisten] db version v4.0.1
+2018-08-21T14:44:13.935+0530 I CONTROL  [initandlisten] git version: 54f1582fc6eb01de4d4c42f26fc133e623f065fb
+2018-08-21T14:44:13.935+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2n  7 Dec 2017
+2018-08-21T14:44:13.935+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-08-21T14:44:13.935+0530 I CONTROL  [initandlisten] modules: none
+2018-08-21T14:44:13.935+0530 I CONTROL  [initandlisten] build environment:
+2018-08-21T14:44:13.935+0530 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-08-21T14:44:13.935+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-08-21T14:44:13.935+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-08-21T14:44:13.935+0530 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { bindIp: "127.0.0.1", port: 27017 }, processManagement: { timeZoneInfo: "/usr/share/zoneinfo" }, storage: { dbPath: "/var/lib/mongodb", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "/var/log/mongodb/mongod.log" } }
+2018-08-21T14:44:13.936+0530 I STORAGE  [initandlisten] Detected data files in /var/lib/mongodb created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-08-21T14:44:13.936+0530 I STORAGE  [initandlisten] 
+2018-08-21T14:44:13.936+0530 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-08-21T14:44:13.936+0530 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-08-21T14:44:13.936+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3431M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-08-21T14:44:16.262+0530 I STORAGE  [initandlisten] WiredTiger message [1534842856:262185][986:0x7f58cf24b680], txn-recover: Main recovery loop: starting at 30/896
+2018-08-21T14:44:16.387+0530 I STORAGE  [initandlisten] WiredTiger message [1534842856:387394][986:0x7f58cf24b680], txn-recover: Recovering log 30 through 31
+2018-08-21T14:44:16.526+0530 I STORAGE  [initandlisten] WiredTiger message [1534842856:526554][986:0x7f58cf24b680], txn-recover: Recovering log 31 through 31
+2018-08-21T14:44:16.588+0530 I STORAGE  [initandlisten] WiredTiger message [1534842856:588083][986:0x7f58cf24b680], txn-recover: Set global recovery timestamp: 0
+2018-08-21T14:44:17.323+0530 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2018-08-21T14:44:17.695+0530 I CONTROL  [initandlisten] 
+2018-08-21T14:44:17.695+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-21T14:44:17.695+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-21T14:44:17.695+0530 I CONTROL  [initandlisten] 
+2018-08-21T14:44:17.914+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/var/lib/mongodb/diagnostic.data'
+2018-08-21T14:44:18.073+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-08-21T16:16:49.001+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53270 #1 (1 connection now open)
+2018-08-21T16:16:49.008+0530 I NETWORK  [conn1] received client metadata from 127.0.0.1:53270 conn1: { driver: { name: "nodejs", version: "3.1.1" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-32-generic" }, platform: "Node.js v10.6.0, LE, mongodb-core: 3.1.0" }
+2018-08-21T16:24:13.060+0530 I NETWORK  [conn1] end connection 127.0.0.1:53270 (0 connections now open)
+2018-08-21T16:31:59.464+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53582 #2 (1 connection now open)
+2018-08-21T16:31:59.474+0530 I NETWORK  [conn2] received client metadata from 127.0.0.1:53582 conn2: { driver: { name: "nodejs", version: "3.1.1" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-32-generic" }, platform: "Node.js v10.6.0, LE, mongodb-core: 3.1.0" }
+2018-08-21T16:32:11.033+0530 I NETWORK  [conn2] end connection 127.0.0.1:53582 (0 connections now open)
+2018-08-21T16:35:59.891+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53748 #3 (1 connection now open)
+2018-08-21T16:35:59.898+0530 I NETWORK  [conn3] received client metadata from 127.0.0.1:53748 conn3: { driver: { name: "nodejs", version: "3.1.1" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-32-generic" }, platform: "Node.js v10.6.0, LE, mongodb-core: 3.1.0" }
+2018-08-21T16:41:08.773+0530 I STORAGE  [conn3] createCollection: findgeeks.users with generated UUID: d33ae637-9c58-49d7-bece-c32f111ad726
+2018-08-21T16:41:09.026+0530 I COMMAND  [conn3] command findgeeks.users command: insert { insert: "users", ordered: true, lsid: { id: UUID("3d97a4bf-06a8-4624-a683-31d0d696b0eb") }, $db: "findgeeks" } ninserted:1 keysInserted:1 numYields:0 reslen:60 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_query 253ms
+2018-08-21T16:53:54.535+0530 I NETWORK  [conn3] end connection 127.0.0.1:53748 (0 connections now open)
+2018-08-21T16:53:55.499+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54184 #4 (1 connection now open)
+2018-08-21T16:53:55.505+0530 I NETWORK  [conn4] received client metadata from 127.0.0.1:54184 conn4: { driver: { name: "nodejs", version: "3.1.1" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-32-generic" }, platform: "Node.js v10.6.0, LE, mongodb-core: 3.1.0" }
+2018-08-21T19:23:30.110+0530 I NETWORK  [conn4] end connection 127.0.0.1:54184 (0 connections now open)
+2018-08-21T19:28:52.881+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55660 #5 (1 connection now open)
+2018-08-21T19:28:52.889+0530 I NETWORK  [conn5] received client metadata from 127.0.0.1:55660 conn5: { driver: { name: "nodejs", version: "3.1.1" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-32-generic" }, platform: "Node.js v10.6.0, LE, mongodb-core: 3.1.0" }
+2018-08-21T19:30:10.072+0530 I NETWORK  [conn5] end connection 127.0.0.1:55660 (0 connections now open)
+2018-08-21T19:30:11.136+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55714 #6 (1 connection now open)
+2018-08-21T19:30:11.145+0530 I NETWORK  [conn6] received client metadata from 127.0.0.1:55714 conn6: { driver: { name: "nodejs", version: "3.1.1" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-32-generic" }, platform: "Node.js v10.6.0, LE, mongodb-core: 3.1.0" }
+2018-08-21T19:39:11.305+0530 I NETWORK  [conn6] end connection 127.0.0.1:55714 (0 connections now open)
+2018-08-21T19:44:01.654+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55862 #7 (1 connection now open)
+2018-08-21T19:44:01.671+0530 I NETWORK  [conn7] received client metadata from 127.0.0.1:55862 conn7: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.1" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "18.04" } }
+2018-08-21T19:44:05.831+0530 I NETWORK  [conn7] end connection 127.0.0.1:55862 (0 connections now open)
+gd@gd10:~/Desktop/find-geeks$ mongo --host 127.0.0.1:27017
+MongoDB shell version v4.0.1
+connecting to: mongodb://127.0.0.1:27017/
+MongoDB server version: 4.0.1
+Server has startup warnings: 
+2018-08-21T14:44:13.936+0530 I STORAGE  [initandlisten] 
+2018-08-21T14:44:13.936+0530 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-08-21T14:44:13.936+0530 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-08-21T14:44:17.695+0530 I CONTROL  [initandlisten] 
+2018-08-21T14:44:17.695+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-08-21T14:44:17.695+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-08-21T14:44:17.695+0530 I CONTROL  [initandlisten] 
+---
+Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+and anyone you share the URL with. MongoDB may use this information to make product
+improvements and to suggest MongoDB products and deployment options to you.
+
+To enable free monitoring, run the following command: db.enableFreeMonitoring()
+To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+
+> show dbs[3G[Jshow dbs[11G
+admin      0.000GB
+config     0.000GB
+findgeeks  0.000GB
+local      0.000GB
+> use find [3G[Juse find[11Ggeeks[3G[Juse findgeeks[16G
+switched to db findgeeks
+> show collections[3G[Jshow collections[19G
+users
+> db.users.find();[3G[Jdb.users.find();[19G
+{ "_id" : ObjectId("5b7bf34c537abf2514061025"), "name" : "ganesh", "email" : "ganeshdeshmukh1612@gmail.com", "password" : "$2a$10$LHmznko51NCAMXGfRSk24eaC.4UU7WlOLIlP8YvV.Yi6CQUzn/oSK", "date" : ISODate("2018-08-21T11:11:08.575Z"), "__v" : 0 }
+{ "_id" : ObjectId("5b7bf624537abf2514061026"), "name" : "ganesh", "email" : "gads1612@gmail.com", "password" : "$2a$10$lvTQhpbfDZGRsGdmcINXieI2xOj1amlUFli3HMK.npLccF5/nuPZ2", "date" : ISODate("2018-08-21T11:23:16.790Z"), "__v" : 0 }
+{ "_id" : ObjectId("5b7bf67f83134f2823be2511"), "name" : "ganesh", "email" : "vaibhavdeshmukh2410@gmail.com", "avatar" : "//www.gravatar.com/avatar/18f31acad7301c559ae8468109de7e97?s=200&r=pg&d=mm", "password" : "$2a$10$LgMUaQizAeC4XFUgC/T3fuqOiSEBEF79kYjV2gChDz/gNb.HZanDC", "date" : ISODate("2018-08-21T11:24:47.337Z"), "__v" : 0 }
+{ "_id" : ObjectId("5b7bf71d83134f2823be2512"), "name" : "ganesh", "email" : "vaibhavdeshmukh1405@gmail.com", "avatar" : "//www.gravatar.com/avatar/afdbac9d7003ecdb05fa99d3c88c7973?s=200&r=pg&d=mm", "password" : "$2a$10$COOae0JE7Z/hEP6X8WoLeOx6sJx/Dumn8kFyoarmiCUkY1LA82JO.", "date" : ISODate("2018-08-21T11:27:25.140Z"), "__v" : 0 }
+{ "_id" : ObjectId("5b7bf75083134f2823be2513"), "name" : "ganesh", "email" : "vaibhavdeshmukh14@gmail.com", "avatar" : "//www.gravatar.com/avatar/d07b115eeb2043343a7a5c9f1b4e4661?s=200&r=pg&d=mm", "password" : "$2a$10$0KIxwRaG7l1GXKN0.HiyKeGbzrY.jM9Mr15o0mJCMBgu5JUamJtQa", "date" : ISODate("2018-08-21T11:28:16.420Z"), "__v" : 0 }
+{ "_id" : ObjectId("5b7bf84783134f2823be2514"), "name" : "ganesh", "email" : "techguyinfo@gmail.com", "avatar" : "//www.gravatar.com/avatar/db3dfd181580347568db62b054b3f5c6?s=200&r=pg&d=mm", "password" : "$2a$10$eqvZ1OU.3GbPFK1DKc/qWe/yY2rUa3hd5urIcQcEDUJRHGFRFic2K", "date" : ISODate("2018-08-21T11:32:23.394Z"), "__v" : 0 }
+> [3G[Jdb.users.find();[19G[3G[Jdb.users.find();[18G[3G[Jdb.users.find[1;34m([0m);[17G[3G[Jdb.users.find([1;34m{[0m);[18G[3G[Jdb.users.find[1;34m([0m{});[19G[3G[Jdb.users.find({});[21G
+{ "_id" : ObjectId("5b7bf34c537abf2514061025"), "name" : "ganesh", "email" : "ganeshdeshmukh1612@gmail.com", "password" : "$2a$10$LHmznko51NCAMXGfRSk24eaC.4UU7WlOLIlP8YvV.Yi6CQUzn/oSK", "date" : ISODate("2018-08-21T11:11:08.575Z"), "__v" : 0 }
+{ "_id" : ObjectId("5b7bf624537abf2514061026"), "name" : "ganesh", "email" : "gads1612@gmail.com", "password" : "$2a$10$lvTQhpbfDZGRsGdmcINXieI2xOj1amlUFli3HMK.npLccF5/nuPZ2", "date" : ISODate("2018-08-21T11:23:16.790Z"), "__v" : 0 }
+{ "_id" : ObjectId("5b7bf67f83134f2823be2511"), "name" : "ganesh", "email" : "vaibhavdeshmukh2410@gmail.com", "avatar" : "//www.gravatar.com/avatar/18f31acad7301c559ae8468109de7e97?s=200&r=pg&d=mm", "password" : "$2a$10$LgMUaQizAeC4XFUgC/T3fuqOiSEBEF79kYjV2gChDz/gNb.HZanDC", "date" : ISODate("2018-08-21T11:24:47.337Z"), "__v" : 0 }
+{ "_id" : ObjectId("5b7bf71d83134f2823be2512"), "name" : "ganesh", "email" : "vaibhavdeshmukh1405@gmail.com", "avatar" : "//www.gravatar.com/avatar/afdbac9d7003ecdb05fa99d3c88c7973?s=200&r=pg&d=mm", "password" : "$2a$10$COOae0JE7Z/hEP6X8WoLeOx6sJx/Dumn8kFyoarmiCUkY1LA82JO.", "date" : ISODate("2018-08-21T11:27:25.140Z"), "__v" : 0 }
+{ "_id" : ObjectId("5b7bf75083134f2823be2513"), "name" : "ganesh", "email" : "vaibhavdeshmukh14@gmail.com", "avatar" : "//www.gravatar.com/avatar/d07b115eeb2043343a7a5c9f1b4e4661?s=200&r=pg&d=mm", "password" : "$2a$10$0KIxwRaG7l1GXKN0.HiyKeGbzrY.jM9Mr15o0mJCMBgu5JUamJtQa", "date" : ISODate("2018-08-21T11:28:16.420Z"), "__v" : 0 }
+{ "_id" : ObjectId("5b7bf84783134f2823be2514"), "name" : "ganesh", "email" : "techguyinfo@gmail.com", "avatar" : "//www.gravatar.com/avatar/db3dfd181580347568db62b054b3f5c6?s=200&r=pg&d=mm", "password" : "$2a$10$eqvZ1OU.3GbPFK1DKc/qWe/yY2rUa3hd5urIcQcEDUJRHGFRFic2K", "date" : ISODate("2018-08-21T11:32:23.394Z"), "__v" : 0 }
+> [3G[Jdb.users.find({});[21G[3G[Jdb.users.find({});[20G[3G[Jdb.users.find({}).;[21G[3G[Jdb.users.find({}).p;[22G[3G[Jdb.users.find({}).pr;[23G[3G[Jdb.users.find({}).pre;[24G[3G[Jdb.users.find({}).pret;[25G[3G[Jdb.users.find({}).prett;[26G[3G[Jdb.users.find({}).pretty;[27G[3G[Jdb.users.find({}).pretty(;[28G[3G[Jdb.users.find({}).pretty();[29G[3G[Jdb.users.find({}).pretty();[30G
+{
+	"_id" : ObjectId("5b7bf34c537abf2514061025"),
+	"name" : "ganesh",
+	"email" : "ganeshdeshmukh1612@gmail.com",
+	"password" : "$2a$10$LHmznko51NCAMXGfRSk24eaC.4UU7WlOLIlP8YvV.Yi6CQUzn/oSK",
+	"date" : ISODate("2018-08-21T11:11:08.575Z"),
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5b7bf624537abf2514061026"),
+	"name" : "ganesh",
+	"email" : "gads1612@gmail.com",
+	"password" : "$2a$10$lvTQhpbfDZGRsGdmcINXieI2xOj1amlUFli3HMK.npLccF5/nuPZ2",
+	"date" : ISODate("2018-08-21T11:23:16.790Z"),
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5b7bf67f83134f2823be2511"),
+	"name" : "ganesh",
+	"email" : "vaibhavdeshmukh2410@gmail.com",
+	"avatar" : "//www.gravatar.com/avatar/18f31acad7301c559ae8468109de7e97?s=200&r=pg&d=mm",
+	"password" : "$2a$10$LgMUaQizAeC4XFUgC/T3fuqOiSEBEF79kYjV2gChDz/gNb.HZanDC",
+	"date" : ISODate("2018-08-21T11:24:47.337Z"),
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5b7bf71d83134f2823be2512"),
+	"name" : "ganesh",
+	"email" : "vaibhavdeshmukh1405@gmail.com",
+	"avatar" : "//www.gravatar.com/avatar/afdbac9d7003ecdb05fa99d3c88c7973?s=200&r=pg&d=mm",
+	"password" : "$2a$10$COOae0JE7Z/hEP6X8WoLeOx6sJx/Dumn8kFyoarmiCUkY1LA82JO.",
+	"date" : ISODate("2018-08-21T11:27:25.140Z"),
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5b7bf75083134f2823be2513"),
+	"name" : "ganesh",
+	"email" : "vaibhavdeshmukh14@gmail.com",
+	"avatar" : "//www.gravatar.com/avatar/d07b115eeb2043343a7a5c9f1b4e4661?s=200&r=pg&d=mm",
+	"password" : "$2a$10$0KIxwRaG7l1GXKN0.HiyKeGbzrY.jM9Mr15o0mJCMBgu5JUamJtQa",
+	"date" : ISODate("2018-08-21T11:28:16.420Z"),
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5b7bf84783134f2823be2514"),
+	"name" : "ganesh",
+	"email" : "techguyinfo@gmail.com",
+	"avatar" : "//www.gravatar.com/avatar/db3dfd181580347568db62b054b3f5c6?s=200&r=pg&d=mm",
+	"password" : "$2a$10$eqvZ1OU.3GbPFK1DKc/qWe/yY2rUa3hd5urIcQcEDUJRHGFRFic2K",
+	"date" : ISODate("2018-08-21T11:32:23.394Z"),
+	"__v" : 0
+}
+> [3G[J[3G^C
+bye
+gd@gd10:~/Desktop/find-geeks$ ^C
+gd@gd10:~/Desktop/find-geeks$ ^C
+gd@gd10:~/Desktop/find-geeks$ ^C
+gd@gd10:~/Desktop/find-geeks$ ^C
+gd@gd10:~/Desktop/find-geeks$ 
+gd@gd10:~/Desktop/find-geeks$ npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:67
+router.post('/login'(req,res)=>{
+            ^^^^^^^^
+
+SyntaxError: Unexpected string
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:67
+router.post('/login'(req,res)=>{
+            ^^^^^^^^
+
+SyntaxError: Unexpected string
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:67
+router.post('/login'(req,res)=>{
+            ^^^^^^^^
+
+SyntaxError: Unexpected string
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:72
+User.findOne({ email: email }).then(user => {
+                      ^
+
+ReferenceError: email is not defined
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:72:23)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:72
+User.findOne({ email: email }).then(user => {
+                      ^
+
+ReferenceError: email is not defined
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:72:23)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:72
+User.findOne({ email }).then(user => {
+               ^
+
+ReferenceError: email is not defined
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:72:16)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:72
+User.findOne({ email }).then(user => {
+               ^
+
+ReferenceError: email is not defined
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:72:16)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+gd@gd10:~/Desktop/find-geeks$ npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:72
+User.findOne({ email }).then(user => {
+               ^
+
+ReferenceError: email is not defined
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:72:16)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:72
+User.findOne({ email: req.body.email }).then(user => {
+                      ^
+
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:72:23)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:72
+User.findOne({ email }).then(user => {
+               ^
+
+ReferenceError: email is not defined
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:72:16)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:72
+User.findOne({ email: req.body.email }).then(user => {
+                      ^
+
+ReferenceError: req is not defined
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:72:23)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
