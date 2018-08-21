@@ -23,8 +23,8 @@ router.post("/register", (req, res) => {
     if (user) {
       return res.status(400).json({ email: "Email value exists already." });
     } else {
-      console.log("user not found");
-      const avator = gravatar.url(req.body.email, {
+      console.log("d found");
+      const avatar = gravatar.url(req.body.email, {
         s: "200", //Size of gravatar in pixels
         r: "pg", //rating,
         d: "mm" //default value= 'mm'
@@ -33,7 +33,7 @@ router.post("/register", (req, res) => {
       const newUser = new User({
         name: req.body.name,
         email: req.body.email,
-        avator,
+        avatar,
         password: req.body.password
       });
 
