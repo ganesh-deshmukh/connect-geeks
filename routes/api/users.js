@@ -6,6 +6,7 @@ const gravatar = require("gravatar");
 const bcrypt = require("bcryptjs");
 const keys = require("../../config/keys");
 const jwt = require("jsonwebtoken");
+const passport = require("passport");
 
 // Load User Model to check existing email is used for registration or not?
 const User = require("../../models/User");
@@ -85,17 +86,16 @@ router.post("/login", (req, res) => {
 
         // created JWT token
         // now sign token
-        // json.sign(payload, secreteKey, expire-time, callback );
+        // jwt.sign(payload, secreteKey, expire-time, callback );
+
+        // jwt.sign
 
         jwt.sign(
           payload,
           keys.secreteOrKey,
           { expiresIn: 1800 },
           (err, token) => {
-            res.json({
-              success: true,
-              token: "Bearer " + token
-            });
+            res.json({ success: true, token: "bearer " + token });
           }
         );
       } else {
@@ -105,5 +105,17 @@ router.post("/login", (req, res) => {
     });
   });
 });
+
+// @route       GET request to api/users/current  - current user with token
+// @description Return current user
+// @access      Private, can't go without login
+
+router.get(
+  "/current",
+  passport.authenticate("jwt", { session: false }),
+  (req, res) => {
+    res.json({ msg: "Success" });
+  }
+);
 
 module.exports = router;

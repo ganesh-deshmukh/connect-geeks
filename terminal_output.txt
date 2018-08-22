@@ -4312,3 +4312,434 @@ gd@gd10:~/Desktop/find-geeks$ exit
 exit
 
 Script done on 2018-08-22 00:46:48+0530
+Script started on 2018-08-22 06:52:36+0530
+gd@gd10:~/Desktop/find-geeks$ npnm    m run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/server.js:4
+const bodyParser = require("body-parser");
+      ^
+
+SyntaxError: Identifier 'bodyParser' has already been declared
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+no user found of this email in DB
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:98
+              s uccess: true,
+                ^^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:98
+              s uccess: true,
+                ^^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:98
+              s uccess: true,
+                ^^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:98
+              s uccess: true,
+                ^^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:98
+              s uccess: true,
+                ^^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:98
+              s uccess: true,
+                ^^^^^^
+
+SyntaxError: Unexpected identifier
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:120
+    res.json(("msg": "Success"));
+                   ^
+
+SyntaxError: Unexpected token :
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:120
+    res.json((msg: "Success"));
+                 ^
+
+SyntaxError: Unexpected token :
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/routes/api/users.js:120
+    res.json((msg: "Success"));
+                 ^
+
+SyntaxError: Unexpected token :
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+gd@gd10:~/Desktop/find-geeks$ npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+{ it: '5b7cbb5aa18fc60cbb0be9ed',
+  name: 'gd',
+  avatar:
+   '//www.gravatar.com/avatar/33c473d7e066045f9b446f22007d189e?s=200&r=pg&d=mm',
+  iat: 1534906998,
+  exp: 1534908798 }
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/config/passport.js:28
+        })
+         ^
+
+SyntaxError: Unexpected token )
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:40:1)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+no user found of this email in DB
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+no user found of this email in DB
+no user found of this email in DB
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+^C
+gd@gd10:~/Desktop/find-geeks$ snap install postman
+Download snap "postman" (42) from channel "stable"     /Download snap "postman" (42) from channel "stable"     -Download snap "postman" (42) from channel "stable"     \Download snap "postman" (42) from channel "stable"     |Download snap "postman" (42) from channel "stable"     /Download snap "postman" (42) from channel "stable"     -Download snap "postman" (42) from channel "stable"     \Download snap "postman" (42) from channel "stable"     |Download snap "postman" (42) from channel "stable"     /Download snap "postman" (42) from channel "stable"     -[?25l[7m[0mDownload snap "postman" (42) from c…   1% 8.54MB/s 15.7s[7m[0mDownload snap "postman" (42) from c…   1% 7.88MB/s 16.9s[7m[0mDownload snap "postman" (42) from c…   2% 7.23MB/s 18.4s[7m[0mDownload snap "postman" (42) from c…   2% 5.42MB/s 24.5s[7m[0mDownload snap "postman" (42) from c…   2% 4.33MB/s 30.6s[7mD[0mownload snap "postman" (42) from c…   2% 4.14MB/s 32.0s[7mD[0mownload snap "postman" (42) from c…   2% 4.56MB/s 28.9s[7mD[0mownload snap "postman" (42) from c…   3% 4.20MB/s 31.3s[7mD[0mownload snap "postman" (42) from c…   3% 3.74MB/s 35.2s[7mD[0mownload snap "postman" (42) from c…   3% 3.36MB/s 39.1s[7mD[0mownload snap "postman" (42) from c…   3% 3.20MB/s 41.0s[7mD[0mownload snap "postman" (42) from c…   3% 3.38MB/s 38.7s[7mD[0mownload snap "postman" (42) from c…   3% 3.55MB/s 36.7s[7mD[0mownload snap "postman" (42) from c…   3% 3.30MB/s 39.5s[7mD[0mownload snap "postman" (42) from c…   3% 3.08MB/s 42.3s[7mDo[0mwnload snap "postman" (42) from c…   4% 3.16MB/s 41.1s[7mDo[0mwnload snap "postman" (42) from c…   4% 3.27MB/s 39.6s[7mDo[0mwnload snap "postman" (42) from c…   4% 3.09MB/s 41.9s[7mDo[0mwnload snap "postman" (42) from c…   4% 2.92MB/s 44.2s[7mDo[0mwnload snap "postman" (42) from c…   4% 2.86MB/s 45.2s[7mDo[0mwnload snap "postman" (42) from c…   5% 3.00MB/s 42.8s[7mDo[0mwnload snap "postman" (42) from c…   5% 3.11MB/s 41.2s[7mDo[0mwnload snap "postman" (42) from c…   5% 3.07MB/s 41.6s[7mDow[0mnload snap "postman" (42) from c…   5% 3.03MB/s 42.0s[7mDow[0mnload snap "postman" (42) from c…   6% 2.98MB/s 42.7s[7mDow[0mnload snap "postman" (42) from c…   6% 2.97MB/s 42.7s[7mDow[0mnload snap "postman" (42) from c…   6% 2.96MB/s 42.8s[7mDow[0mnload snap "postman" (42) from c…   6% 2.95MB/s 42.9s[7mDow[0mnload snap "postman" (42) from c…   6% 2.93MB/s 43.1s[7mDow[0mnload snap "postman" (42) from c…   7% 2.91MB/s 43.3s[7mDow[0mnload snap "postman" (42) from c…   7% 2.89MB/s 43.5s[7mDow[0mnload snap "postman" (42) from c…   7% 2.88MB/s 43.5s[7mDow[0mnload snap "postman" (42) from c…   7% 2.87MB/s 43.7s[7mDown[0mload snap "postman" (42) from c…   7% 2.86MB/s 43.8s[7mDown[0mload snap "postman" (42) from c…   7% 2.78MB/s 45.0s[7mDown[0mload snap "postman" (42) from c…   7% 2.70MB/s 46.3s[7mDown[0mload snap "postman" (42) from c…   7% 2.65MB/s 47.2s[7mDown[0mload snap "postman" (42) from c…   8% 2.67MB/s 46.7s[7mDown[0mload snap "postman" (42) from c…   8% 2.77MB/s 44.8s[7mDown[0mload snap "postman" (42) from c…   8% 2.79MB/s 44.4s[7mDown[0mload snap "postman" (42) from c…   8% 2.72MB/s 45.5s[7mDown[0mload snap "postman" (42) from c…   8% 2.65MB/s 46.6s[7mDown[0mload snap "postman" (42) from c…   9% 2.62MB/s 47.1s[7mDown[0mload snap "postman" (42) from c…   9% 2.69MB/s 45.8s[7mDownl[0moad snap "postman" (42) from c…   9% 2.74MB/s 44.7s[7mDownl[0moad snap "postman" (42) from c…   9% 2.68MB/s 45.7s[7mDownl[0moad snap "postman" (42) from c…   9% 2.62MB/s 46.7s[7mDownl[0moad snap "postman" (42) from c…   9% 2.59MB/s 47.2s[7mDownl[0moad snap "postman" (42) from c…  10% 2.64MB/s 46.1s[7mDownl[0moad snap "postman" (42) from c…  10% 2.69MB/s 45.0s[7mDownl[0moad snap "postman" (42) from c…  10% 2.70MB/s 44.8s[7mDownl[0moad snap "postman" (42) from c…  11% 2.68MB/s 45.0s[7mDownlo[0mad snap "postman" (42) from c…  11% 2.70MB/s 44.7s[7mDownlo[0mad snap "postman" (42) from c…  11% 2.65MB/s 45.4s[7mDownlo[0mad snap "postman" (42) from c…  11% 2.60MB/s 46.3s[7mDownlo[0mad snap "postman" (42) from c…  11% 2.59MB/s 46.3s[7mDownlo[0mad snap "postman" (42) from c…  11% 2.61MB/s 45.9s[7mDownlo[0mad snap "postman" (42) from c…  11% 2.62MB/s 45.5s[7mDownlo[0mad snap "postman" (42) from c…  12% 2.63MB/s 45.4s[7mDownlo[0mad snap "postman" (42) from c…  12% 2.61MB/s 45.5s[7mDownlo[0mad snap "postman" (42) from c…  12% 2.61MB/s 45.6s[7mDownlo[0mad snap "postman" (42) from c…  12% 2.63MB/s 45.1s[7mDownloa[0md snap "postman" (42) from c…  13% 2.64MB/s 44.7s[7mDownloa[0md snap "postman" (42) from c…  13% 2.64MB/s 44.6s[7mDownloa[0md snap "postman" (42) from c…  13% 2.64MB/s 44.6s[7mDownloa[0md snap "postman" (42) from c…  13% 2.62MB/s 44.9s[7mDownloa[0md snap "postman" (42) from c…  13% 2.58MB/s 45.5s[7mDownloa[0md snap "postman" (42) from c…  13% 2.55MB/s 46.1s[7mDownloa[0md snap "postman" (42) from c…  13% 2.55MB/s 45.8s[7mDownloa[0md snap "postman" (42) from c…  14% 2.58MB/s 45.1s[7mDownloa[0md snap "postman" (42) from c…  14% 2.61MB/s 44.4s[7mDownloa[0md snap "postman" (42) from c…  14% 2.61MB/s 44.3s[7mDownload[0m snap "postman" (42) from c…  14% 2.62MB/s 44.1s[7mDownload[0m snap "postman" (42) from c…  15% 2.61MB/s 44.1s[7mDownload[0m snap "postman" (42) from c…  15% 2.61MB/s 44.1s[7mDownload[0m snap "postman" (42) from c…  15% 2.60MB/s 44.2s[7mDownload[0m snap "postman" (42) from c…  15% 2.61MB/s 43.9s[7mDownload[0m snap "postman" (42) from c…  15% 2.60MB/s 44.0s[7mDownload[0m snap "postman" (42) from c…  16% 2.60MB/s 43.9s[7mDownload[0m snap "postman" (42) from c…  16% 2.60MB/s 43.8s[7mDownload[0m snap "postman" (42) from c…  16% 2.59MB/s 43.8s[7mDownload [0msnap "postman" (42) from c…  16% 2.59MB/s 43.7s[7mDownload [0msnap "postman" (42) from c…  16% 2.57MB/s 44.1s[7mDownload [0msnap "postman" (42) from c…  16% 2.54MB/s 44.6s[7mDownload [0msnap "postman" (42) from c…  16% 2.51MB/s 45.0s[7mDownload [0msnap "postman" (42) from c…  17% 2.54MB/s 44.3s[7mDownload [0msnap "postman" (42) from c…  17% 2.55MB/s 44.0s[7mDownload [0msnap "postman" (42) from c…  17% 2.57MB/s 43.6s[7mDownload [0msnap "postman" (42) from c…  17% 2.58MB/s 43.3s[7mDownload [0msnap "postman" (42) from c…  18% 2.57MB/s 43.2s[7mDownload [0msnap "postman" (42) from c…  18% 2.57MB/s 43.3s[7mDownload s[0mnap "postman" (42) from c…  18% 2.57MB/s 43.1s[7mDownload s[0mnap "postman" (42) from c…  18% 2.57MB/s 43.1s[7mDownload s[0mnap "postman" (42) from c…  18% 2.56MB/s 43.1s[7mDownload s[0mnap "postman" (42) from c…  18% 2.56MB/s 43.0s[7mDownload s[0mnap "postman" (42) from c…  19% 2.57MB/s 42.8s[7mDownload s[0mnap "postman" (42) from c…  19% 2.56MB/s 42.8s[7mDownload s[0mnap "postman" (42) from c…  19% 2.56MB/s 42.7s[7mDownload s[0mnap "postman" (42) from c…  19% 2.56MB/s 42.6s[7mDownload s[0mnap "postman" (42) from c…  19% 2.56MB/s 42.5s[7mDownload s[0mnap "postman" (42) from c…  19% 2.55MB/s 42.5s[7mDownload sn[0map "postman" (42) from c…  20% 2.55MB/s 42.5s[7mDownload sn[0map "postman" (42) from c…  20% 2.55MB/s 42.5s[7mDownload sn[0map "postman" (42) from c…  20% 2.55MB/s 42.3s[7mDownload sn[0map "postman" (42) from c…  20% 2.55MB/s 42.1s[7mDownload sn[0map "postman" (42) from c…  20% 2.55MB/s 42.1s[7mDownload sn[0map "postman" (42) from c…  21% 2.55MB/s 42.1s[7mDownload sn[0map "postman" (42) from c…  21% 2.55MB/s 41.9s[7mDownload sn[0map "postman" (42) from c…  21% 2.55MB/s 41.9s[7mDownload sn[0map "postman" (42) from c…  21% 2.55MB/s 41.8s[7mDownload sn[0map "postman" (42) from c…  21% 2.54MB/s 41.7s[7mDownload sna[0mp "postman" (42) from c…  21% 2.54MB/s 41.7s[7mDownload sna[0mp "postman" (42) from c…  22% 2.54MB/s 41.6s[7mDownload sna[0mp "postman" (42) from c…  22% 2.54MB/s 41.5s[7mDownload sna[0mp "postman" (42) from c…  22% 2.54MB/s 41.4s[7mDownload sna[0mp "postman" (42) from c…  22% 2.54MB/s 41.3s[7mDownload sna[0mp "postman" (42) from c…  22% 2.54MB/s 41.3s[7mDownload sna[0mp "postman" (42) from c…  23% 2.53MB/s 41.2s[7mDownload sna[0mp "postman" (42) from c…  23% 2.53MB/s 41.2s[7mDownload sna[0mp "postman" (42) from c…  23% 2.53MB/s 41.0s[7mDownload sna[0mp "postman" (42) from c…  23% 2.53MB/s 41.0s[7mDownload snap[0m "postman" (42) from c…  23% 2.53MB/s 40.8s[7mDownload snap[0m "postman" (42) from c…  24% 2.53MB/s 40.8s[7mDownload snap[0m "postman" (42) from c…  24% 2.53MB/s 40.7s[7mDownload snap[0m "postman" (42) from c…  24% 2.52MB/s 40.7s[7mDownload snap[0m "postman" (42) from c…  24% 2.52MB/s 40.7s[7mDownload snap[0m "postman" (42) from c…  24% 2.52MB/s 40.5s[7mDownload snap[0m "postman" (42) from c…  24% 2.52MB/s 40.5s[7mDownload snap[0m "postman" (42) from c…  24% 2.50MB/s 40.8s[7mDownload snap[0m "postman" (42) from c…  24% 2.48MB/s 41.0s[7mDownload snap[0m "postman" (42) from c…  25% 2.49MB/s 40.7s[7mDownload snap [0m"postman" (42) from c…  25% 2.52MB/s 40.1s[7mDownload snap [0m"postman" (42) from c…  25% 2.51MB/s 40.3s[7mDownload snap [0m"postman" (42) from c…  25% 2.49MB/s 40.6s[7mDownload snap [0m"postman" (42) from c…  25% 2.47MB/s 40.9s[7mDownload snap [0m"postman" (42) from c…  26% 2.49MB/s 40.3s[7mDownload snap [0m"postman" (42) from c…  26% 2.51MB/s 39.8s[7mDownload snap [0m"postman" (42) from c…  26% 2.51MB/s 39.7s[7mDownload snap [0m"postman" (42) from c…  26% 2.51MB/s 39.6s[7mDownload snap [0m"postman" (42) from c…  27% 2.51MB/s 39.5s[7mDownload snap "[0mpostman" (42) from c…  27% 2.51MB/s 39.3s[7mDownload snap "[0mpostman" (42) from c…  27% 2.51MB/s 39.3s[7mDownload snap "[0mpostman" (42) from c…  27% 2.51MB/s 39.2s[7mDownload snap "[0mpostman" (42) from c…  27% 2.50MB/s 39.2s[7mDownload snap "[0mpostman" (42) from c…  27% 2.50MB/s 39.1s[7mDownload snap "[0mpostman" (42) from c…  28% 2.50MB/s 39.1s[7mDownload snap "[0mpostman" (42) from c…  28% 2.50MB/s 38.9s[7mDownload snap "[0mpostman" (42) from c…  28% 2.49MB/s 39.2s[7mDownload snap "[0mpostman" (42) from c…  28% 2.47MB/s 39.4s[7mDownload snap "[0mpostman" (42) from c…  28% 2.48MB/s 39.2s[7mDownload snap "[0mpostman" (42) from c…  28% 2.48MB/s 38.9s[7mDownload snap "p[0mostman" (42) from c…  29% 2.49MB/s 38.7s[7mDownload snap "p[0mostman" (42) from c…  29% 2.49MB/s 38.6s[7mDownload snap "p[0mostman" (42) from c…  29% 2.50MB/s 38.4s[7mDownload snap "p[0mostman" (42) from c…  29% 2.50MB/s 38.3s[7mDownload snap "p[0mostman" (42) from c…  29% 2.49MB/s 38.2s[7mDownload snap "p[0mostman" (42) from c…  30% 2.49MB/s 38.2s[7mDownload snap "p[0mostman" (42) from c…  30% 2.49MB/s 38.0s[7mDownload snap "p[0mostman" (42) from c…  30% 2.49MB/s 38.0s[7mDownload snap "p[0mostman" (42) from c…  30% 2.49MB/s 37.8s[7mDownload snap "p[0mostman" (42) from c…  30% 2.48MB/s 38.1s[7mDownload snap "p[0mostman" (42) from c…  30% 2.46MB/s 38.3s[7mDownload snap "p[0mostman" (42) from c…  30% 2.46MB/s 38.1s[7mDownload snap "po[0mstman" (42) from c…  31% 2.49MB/s 37.5s[7mDownload snap "po[0mstman" (42) from c…  31% 2.49MB/s 37.4s[7mDownload snap "po[0mstman" (42) from c…  31% 2.49MB/s 37.4s[7mDownload snap "po[0mstman" (42) from c…  31% 2.49MB/s 37.2s[7mDownload snap "po[0mstman" (42) from c…  32% 2.49MB/s 37.1s[7mDownload snap "po[0mstman" (42) from c…  32% 2.49MB/s 37.0s[7mDownload snap "po[0mstman" (42) from c…  32% 2.49MB/s 37.0s[7mDownload snap "po[0mstman" (42) from c…  32% 2.49MB/s 36.9s[7mDownload snap "pos[0mtman" (42) from c…  32% 2.48MB/s 36.9s[7mDownload snap "pos[0mtman" (42) from c…  32% 2.49MB/s 36.6s[7mDownload snap "pos[0mtman" (42) from c…  33% 2.49MB/s 36.5s[7mDownload snap "pos[0mtman" (42) from c…  33% 2.48MB/s 36.5s[7mDownload snap "pos[0mtman" (42) from c…  33% 2.49MB/s 36.4s[7mDownload snap "pos[0mtman" (42) from c…  33% 2.48MB/s 36.3s[7mDownload snap "pos[0mtman" (42) from c…  33% 2.48MB/s 36.2s[7mDownload snap "pos[0mtman" (42) from c…  34% 2.48MB/s 36.1s[7mDownload snap "pos[0mtman" (42) from c…  34% 2.48MB/s 36.0s[7mDownload snap "post[0mman" (42) from c…  34% 2.48MB/s 35.9s[7mDownload snap "post[0mman" (42) from c…  34% 2.48MB/s 35.8s[7mDownload snap "post[0mman" (42) from c…  34% 2.48MB/s 35.8s[7mDownload snap "post[0mman" (42) from c…  34% 2.48MB/s 35.7s[7mDownload snap "post[0mman" (42) from c…  35% 2.48MB/s 35.6s[7mDownload snap "post[0mman" (42) from c…  35% 2.47MB/s 35.8s[7mDownload snap "post[0mman" (42) from c…  35% 2.45MB/s 36.0s[7mDownload snap "post[0mman" (42) from c…  35% 2.45MB/s 35.8s[7mDownload snap "post[0mman" (42) from c…  35% 2.47MB/s 35.4s[7mDownload snap "post[0mman" (42) from c…  36% 2.48MB/s 35.1s[7mDownload snap "postm[0man" (42) from c…  36% 2.48MB/s 35.0s[7mDownload snap "postm[0man" (42) from c…  36% 2.48MB/s 34.9s[7mDownload snap "postm[0man" (42) from c…  36% 2.48MB/s 34.8s[7mDownload snap "postm[0man" (42) from c…  36% 2.48MB/s 34.7s[7mDownload snap "postm[0man" (42) from c…  37% 2.48MB/s 34.6s[7mDownload snap "postm[0man" (42) from c…  37% 2.48MB/s 34.5s[7mDownload snap "postm[0man" (42) from c…  37% 2.48MB/s 34.4s[7mDownload snap "postm[0man" (42) from c…  37% 2.48MB/s 34.3s[7mDownload snap "postm[0man" (42) from c…  37% 2.48MB/s 34.2s[7mDownload snap "postm[0man" (42) from c…  37% 2.48MB/s 34.1s[7mDownload snap "postma[0mn" (42) from c…  38% 2.48MB/s 34.0s[7mDownload snap "postma[0mn" (42) from c…  38% 2.47MB/s 33.9s[7mDownload snap "postma[0mn" (42) from c…  38% 2.48MB/s 33.8s[7mDownload snap "postma[0mn" (42) from c…  38% 2.47MB/s 33.7s[7mDownload snap "postma[0mn" (42) from c…  38% 2.47MB/s 33.6s[7mDownload snap "postma[0mn" (42) from c…  39% 2.47MB/s 33.5s[7mDownload snap "postma[0mn" (42) from c…  39% 2.47MB/s 33.4s[7mDownload snap "postma[0mn" (42) from c…  39% 2.47MB/s 33.3s[7mDownload snap "postma[0mn" (42) from c…  39% 2.46MB/s 33.5s[7mDownload snap "postma[0mn" (42) from c…  39% 2.45MB/s 33.7s[7mDownload snap "postma[0mn" (42) from c…  39% 2.45MB/s 33.6s[7mDownload snap "postman[0m" (42) from c…  39% 2.46MB/s 33.2s[7mDownload snap "postman[0m" (42) from c…  40% 2.46MB/s 33.1s[7mDownload snap "postman[0m" (42) from c…  40% 2.47MB/s 32.9s[7mDownload snap "postman[0m" (42) from c…  40% 2.47MB/s 32.8s[7mDownload snap "postman[0m" (42) from c…  40% 2.47MB/s 32.6s[7mDownload snap "postman[0m" (42) from c…  40% 2.47MB/s 32.5s[7mDownload snap "postman[0m" (42) from c…  41% 2.47MB/s 32.4s[7mDownload snap "postman[0m" (42) from c…  41% 2.47MB/s 32.3s[7mDownload snap "postman[0m" (42) from c…  41% 2.47MB/s 32.2s[7mDownload snap "postman"[0m (42) from c…  41% 2.47MB/s 32.1s[7mDownload snap "postman"[0m (42) from c…  41% 2.47MB/s 32.0s[7mDownload snap "postman"[0m (42) from c…  42% 2.47MB/s 31.9s[7mDownload snap "postman"[0m (42) from c…  42% 2.47MB/s 31.9s[7mDownload snap "postman"[0m (42) from c…  42% 2.46MB/s 32.0s[7mDownload snap "postman"[0m (42) from c…  42% 2.44MB/s 32.2s[7mDownload snap "postman"[0m (42) from c…  42% 2.44MB/s 32.1s[7mDownload snap "postman"[0m (42) from c…  42% 2.46MB/s 31.7s[7mDownload snap "postman"[0m (42) from c…  43% 2.46MB/s 31.4s[7mDownload snap "postman"[0m (42) from c…  43% 2.45MB/s 31.6s[7mDownload snap "postman"[0m (42) from c…  43% 2.44MB/s 31.7s[7mDownload snap "postman"[0m (42) from c…  43% 2.44MB/s 31.7s[7mDownload snap "postman" [0m(42) from c…  43% 2.46MB/s 31.1s[7mDownload snap "postman" [0m(42) from c…  44% 2.47MB/s 30.9s[7mDownload snap "postman" [0m(42) from c…  44% 2.47MB/s 30.8s[7mDownload snap "postman" [0m(42) from c…  44% 2.47MB/s 30.7s[7mDownload snap "postman" [0m(42) from c…  44% 2.47MB/s 30.6s[7mDownload snap "postman" [0m(42) from c…  44% 2.46MB/s 30.5s[7mDownload snap "postman" [0m(42) from c…  45% 2.47MB/s 30.4s[7mDownload snap "postman" ([0m42) from c…  45% 2.46MB/s 30.3s[7mDownload snap "postman" ([0m42) from c…  45% 2.46MB/s 30.3s[7mDownload snap "postman" ([0m42) from c…  45% 2.46MB/s 30.2s[7mDownload snap "postman" ([0m42) from c…  45% 2.46MB/s 30.0s[7mDownload snap "postman" ([0m42) from c…  45% 2.46MB/s 30.0s[7mDownload snap "postman" ([0m42) from c…  46% 2.46MB/s 29.9s[7mDownload snap "postman" ([0m42) from c…  46% 2.46MB/s 29.7s[7mDownload snap "postman" ([0m42) from c…  46% 2.46MB/s 29.6s[7mDownload snap "postman" ([0m42) from c…  46% 2.46MB/s 29.6s[7mDownload snap "postman" ([0m42) from c…  46% 2.46MB/s 29.4s[7mDownload snap "postman" (4[0m2) from c…  47% 2.46MB/s 29.3s[7mDownload snap "postman" (4[0m2) from c…  47% 2.46MB/s 29.3s[7mDownload snap "postman" (4[0m2) from c…  47% 2.46MB/s 29.2s[7mDownload snap "postman" (4[0m2) from c…  47% 2.46MB/s 29.0s[7mDownload snap "postman" (4[0m2) from c…  47% 2.46MB/s 28.9s[7mDownload snap "postman" (4[0m2) from c…  47% 2.46MB/s 28.8s[7mDownload snap "postman" (4[0m2) from c…  48% 2.46MB/s 28.8s[7mDownload snap "postman" (4[0m2) from c…  48% 2.46MB/s 28.7s[7mDownload snap "postman" (4[0m2) from c…  48% 2.46MB/s 28.6s[7mDownload snap "postman" (4[0m2) from c…  48% 2.46MB/s 28.5s[7mDownload snap "postman" (42[0m) from c…  48% 2.46MB/s 28.4s[7mDownload snap "postman" (42[0m) from c…  49% 2.46MB/s 28.2s[7mDownload snap "postman" (42[0m) from c…  49% 2.46MB/s 28.1s[7mDownload snap "postman" (42[0m) from c…  49% 2.46MB/s 28.0s[7mDownload snap "postman" (42[0m) from c…  49% 2.46MB/s 28.0s[7mDownload snap "postman" (42[0m) from c…  49% 2.46MB/s 27.9s[7mDownload snap "postman" (42[0m) from c…  49% 2.46MB/s 27.8s[7mDownload snap "postman" (42[0m) from c…  50% 2.46MB/s 27.7s[7mDownload snap "postman" (42[0m) from c…  50% 2.46MB/s 27.6s[7mDownload snap "postman" (42[0m) from c…  50% 2.46MB/s 27.5s[7mDownload snap "postman" (42)[0m from c…  50% 2.46MB/s 27.4s[7mDownload snap "postman" (42)[0m from c…  50% 2.46MB/s 27.3s[7mDownload snap "postman" (42)[0m from c…  50% 2.45MB/s 27.3s[7mDownload snap "postman" (42)[0m from c…  51% 2.46MB/s 27.1s[7mDownload snap "postman" (42)[0m from c…  51% 2.46MB/s 27.0s[7mDownload snap "postman" (42)[0m from c…  51% 2.45MB/s 27.0s[7mDownload snap "postman" (42)[0m from c…  51% 2.44MB/s 27.1s[7mDownload snap "postman" (42)[0m from c…  51% 2.43MB/s 27.2s[7mDownload snap "postman" (42)[0m from c…  51% 2.44MB/s 27.0s[7mDownload snap "postman" (42)[0m from c…  51% 2.44MB/s 26.8s[7mDownload snap "postman" (42)[0m from c…  52% 2.45MB/s 26.6s[7mDownload snap "postman" (42) [0mfrom c…  52% 2.45MB/s 26.3s[7mDownload snap "postman" (42) [0mfrom c…  52% 2.46MB/s 26.2s[7mDownload snap "postman" (42) [0mfrom c…  53% 2.46MB/s 26.1s[7mDownload snap "postman" (42) [0mfrom c…  53% 2.46MB/s 26.0s[7mDownload snap "postman" (42) [0mfrom c…  53% 2.45MB/s 26.0s[7mDownload snap "postman" (42) [0mfrom c…  53% 2.44MB/s 26.1s[7mDownload snap "postman" (42) [0mfrom c…  53% 2.44MB/s 26.2s[7mDownload snap "postman" (42) [0mfrom c…  53% 2.44MB/s 25.9s[7mDownload snap "postman" (42) [0mfrom c…  53% 2.45MB/s 25.7s[7mDownload snap "postman" (42) f[0mrom c…  54% 2.45MB/s 25.4s[7mDownload snap "postman" (42) f[0mrom c…  54% 2.45MB/s 25.4s[7mDownload snap "postman" (42) f[0mrom c…  54% 2.44MB/s 25.5s[7mDownload snap "postman" (42) f[0mrom c…  54% 2.44MB/s 25.5s[7mDownload snap "postman" (42) f[0mrom c…  54% 2.45MB/s 25.1s[7mDownload snap "postman" (42) f[0mrom c…  55% 2.45MB/s 25.0s[7mDownload snap "postman" (42) f[0mrom c…  55% 2.44MB/s 25.1s[7mDownload snap "postman" (42) f[0mrom c…  55% 2.44MB/s 25.1s[7mDownload snap "postman" (42) f[0mrom c…  55% 2.43MB/s 25.2s[7mDownload snap "postman" (42) f[0mrom c…  55% 2.44MB/s 24.9s[7mDownload snap "postman" (42) fr[0mom c…  56% 2.45MB/s 24.4s[7mDownload snap "postman" (42) fr[0mom c…  56% 2.45MB/s 24.5s[7mDownload snap "postman" (42) fr[0mom c…  56% 2.44MB/s 24.5s[7mDownload snap "postman" (42) fr[0mom c…  56% 2.43MB/s 24.6s[7mDownload snap "postman" (42) fr[0mom c…  56% 2.44MB/s 24.3s[7mDownload snap "postman" (42) fr[0mom c…  57% 2.45MB/s 23.9s[7mDownload snap "postman" (42) fr[0mom c…  57% 2.45MB/s 23.8s[7mDownload snap "postman" (42) fr[0mom c…  57% 2.45MB/s 23.7s[7mDownload snap "postman" (42) fr[0mom c…  57% 2.45MB/s 23.6s[7mDownload snap "postman" (42) fro[0mm c…  57% 2.45MB/s 23.6s[7mDownload snap "postman" (42) fro[0mm c…  57% 2.45MB/s 23.4s[7mDownload snap "postman" (42) fro[0mm c…  58% 2.45MB/s 23.4s[7mDownload snap "postman" (42) fro[0mm c…  58% 2.45MB/s 23.2s[7mDownload snap "postman" (42) fro[0mm c…  58% 2.45MB/s 23.1s[7mDownload snap "postman" (42) fro[0mm c…  58% 2.45MB/s 23.0s[7mDownload snap "postman" (42) fro[0mm c…  58% 2.45MB/s 23.0s[7mDownload snap "postman" (42) fro[0mm c…  58% 2.45MB/s 22.9s[7mDownload snap "postman" (42) fro[0mm c…  59% 2.45MB/s 22.8s[7mDownload snap "postman" (42) fro[0mm c…  59% 2.45MB/s 22.6s[7mDownload snap "postman" (42) from[0m c…  59% 2.45MB/s 22.5s[7mDownload snap "postman" (42) from[0m c…  59% 2.45MB/s 22.5s[7mDownload snap "postman" (42) from[0m c…  59% 2.45MB/s 22.4s[7mDownload snap "postman" (42) from[0m c…  60% 2.45MB/s 22.3s[7mDownload snap "postman" (42) from[0m c…  60% 2.45MB/s 22.2s[7mDownload snap "postman" (42) from[0m c…  60% 2.45MB/s 22.1s[7mDownload snap "postman" (42) from[0m c…  60% 2.45MB/s 22.0s[7mDownload snap "postman" (42) from[0m c…  60% 2.45MB/s 21.9s[7mDownload snap "postman" (42) from[0m c…  60% 2.45MB/s 21.8s[7mDownload snap "postman" (42) from[0m c…  61% 2.44MB/s 21.8s[7mDownload snap "postman" (42) from[0m c…  61% 2.44MB/s 21.7s[7mDownload snap "postman" (42) from [0mc…  61% 2.44MB/s 21.6s[7mDownload snap "postman" (42) from [0mc…  61% 2.44MB/s 21.5s[7mDownload snap "postman" (42) from [0mc…  61% 2.44MB/s 21.4s[7mDownload snap "postman" (42) from [0mc…  61% 2.44MB/s 21.4s[7mDownload snap "postman" (42) from [0mc…  62% 2.44MB/s 21.2s[7mDownload snap "postman" (42) from [0mc…  62% 2.44MB/s 21.1s[7mDownload snap "postman" (42) from [0mc…  62% 2.44MB/s 21.0s[7mDownload snap "postman" (42) from [0mc…  62% 2.44MB/s 20.9s[7mDownload snap "postman" (42) from [0mc…  62% 2.44MB/s 20.8s[7mDownload snap "postman" (42) from c[0m…  63% 2.44MB/s 20.7s[7mDownload snap "postman" (42) from c[0m…  63% 2.44MB/s 20.6s[7mDownload snap "postman" (42) from c[0m…  63% 2.44MB/s 20.5s[7mDownload snap "postman" (42) from c[0m…  63% 2.44MB/s 20.4s[7mDownload snap "postman" (42) from c[0m…  63% 2.44MB/s 20.3s[7mDownload snap "postman" (42) from c[0m…  63% 2.44MB/s 20.2s[7mDownload snap "postman" (42) from c[0m…  64% 2.44MB/s 20.1s[7mDownload snap "postman" (42) from c[0m…  64% 2.44MB/s 20.0s[7mDownload snap "postman" (42) from c[0m…  64% 2.44MB/s 19.9s[7mDownload snap "postman" (42) from c[0m…  64% 2.44MB/s 19.8s[7mDownload snap "postman" (42) from c…[0m  64% 2.44MB/s 19.7s[7mDownload snap "postman" (42) from c…[0m  65% 2.44MB/s 19.6s[7mDownload snap "postman" (42) from c…[0m  65% 2.44MB/s 19.5s[7mDownload snap "postman" (42) from c…[0m  65% 2.44MB/s 19.4s[7mDownload snap "postman" (42) from c…[0m  65% 2.44MB/s 19.3s[7mDownload snap "postman" (42) from c…[0m  65% 2.44MB/s 19.2s[7mDownload snap "postman" (42) from c…[0m  65% 2.44MB/s 19.1s[7mDownload snap "postman" (42) from c…[0m  66% 2.44MB/s 19.0s[7mDownload snap "postman" (42) from c…[0m  66% 2.44MB/s 18.9s[7mDownload snap "postman" (42) from c…[0m  66% 2.44MB/s 18.8s[7mDownload snap "postman" (42) from c… [0m 66% 2.44MB/s 18.7s[7mDownload snap "postman" (42) from c… [0m 66% 2.44MB/s 18.6s[7mDownload snap "postman" (42) from c… [0m 66% 2.43MB/s 18.7s[7mDownload snap "postman" (42) from c… [0m 66% 2.43MB/s 18.7s[7mDownload snap "postman" (42) from c… [0m 67% 2.43MB/s 18.6s[7mDownload snap "postman" (42) from c… [0m 67% 2.43MB/s 18.4s[7mDownload snap "postman" (42) from c… [0m 67% 2.43MB/s 18.3s[7mDownload snap "postman" (42) from c… [0m 67% 2.43MB/s 18.1s[7mDownload snap "postman" (42) from c… [0m 68% 2.44MB/s 17.9s[7mDownload snap "postman" (42) from c… [0m 68% 2.44MB/s 17.8s[7mDownload snap "postman" (42) from c…  [0m68% 2.44MB/s 17.7s[7mDownload snap "postman" (42) from c…  [0m68% 2.44MB/s 17.7s[7mDownload snap "postman" (42) from c…  [0m68% 2.44MB/s 17.5s[7mDownload snap "postman" (42) from c…  [0m68% 2.44MB/s 17.5s[7mDownload snap "postman" (42) from c…  [0m69% 2.44MB/s 17.3s[7mDownload snap "postman" (42) from c…  [0m69% 2.44MB/s 17.2s[7mDownload snap "postman" (42) from c…  [0m69% 2.44MB/s 17.1s[7mDownload snap "postman" (42) from c…  [0m69% 2.44MB/s 17.1s[7mDownload snap "postman" (42) from c…  [0m69% 2.44MB/s 16.9s[7mDownload snap "postman" (42) from c…  [0m70% 2.44MB/s 16.8s[7mDownload snap "postman" (42) from c…  7[0m0% 2.44MB/s 16.7s[7mDownload snap "postman" (42) from c…  7[0m0% 2.44MB/s 16.6s[7mDownload snap "postman" (42) from c…  7[0m0% 2.44MB/s 16.5s[7mDownload snap "postman" (42) from c…  7[0m0% 2.43MB/s 16.5s[7mDownload snap "postman" (42) from c…  7[0m1% 2.44MB/s 16.3s[7mDownload snap "postman" (42) from c…  7[0m1% 2.44MB/s 16.2s[7mDownload snap "postman" (42) from c…  7[0m1% 2.44MB/s 16.1s[7mDownload snap "postman" (42) from c…  7[0m1% 2.44MB/s 16.0s[7mDownload snap "postman" (42) from c…  7[0m1% 2.44MB/s 15.9s[7mDownload snap "postman" (42) from c…  7[0m1% 2.43MB/s 16.0s[7mDownload snap "postman" (42) from c…  7[0m1% 2.42MB/s 16.0s[7mDownload snap "postman" (42) from c…  71[0m% 2.43MB/s 15.9s[7mDownload snap "postman" (42) from c…  72[0m% 2.43MB/s 15.6s[7mDownload snap "postman" (42) from c…  72[0m% 2.44MB/s 15.4s[7mDownload snap "postman" (42) from c…  72[0m% 2.44MB/s 15.3s[7mDownload snap "postman" (42) from c…  73[0m% 2.44MB/s 15.2s[7mDownload snap "postman" (42) from c…  73[0m% 2.44MB/s 15.1s[7mDownload snap "postman" (42) from c…  73[0m% 2.44MB/s 15.0s[7mDownload snap "postman" (42) from c…  73[0m% 2.43MB/s 15.0s[7mDownload snap "postman" (42) from c…  73[0m% 2.43MB/s 14.9s[7mDownload snap "postman" (42) from c…  73%[0m 2.43MB/s 14.8s[7mDownload snap "postman" (42) from c…  73%[0m 2.43MB/s 14.7s[7mDownload snap "postman" (42) from c…  73%[0m 2.42MB/s 14.8s[7mDownload snap "postman" (42) from c…  74%[0m 2.42MB/s 14.7s[7mDownload snap "postman" (42) from c…  74%[0m 2.43MB/s 14.5s[7mDownload snap "postman" (42) from c…  74%[0m 2.43MB/s 14.3s[7mDownload snap "postman" (42) from c…  74%[0m 2.43MB/s 14.2s[7mDownload snap "postman" (42) from c…  75%[0m 2.43MB/s 14.1s[7mDownload snap "postman" (42) from c…  75%[0m 2.43MB/s 14.0s[7mDownload snap "postman" (42) from c…  75% [0m2.43MB/s 13.9s[7mDownload snap "postman" (42) from c…  75% [0m2.43MB/s 13.8s[7mDownload snap "postman" (42) from c…  75% [0m2.43MB/s 13.6s[7mDownload snap "postman" (42) from c…  76% [0m2.43MB/s 13.6s[7mDownload snap "postman" (42) from c…  76% [0m2.43MB/s 13.5s[7mDownload snap "postman" (42) from c…  76% [0m2.43MB/s 13.4s[7mDownload snap "postman" (42) from c…  76% [0m2.43MB/s 13.3s[7mDownload snap "postman" (42) from c…  76% [0m2.43MB/s 13.3s[7mDownload snap "postman" (42) from c…  76% [0m2.42MB/s 13.3s[7mDownload snap "postman" (42) from c…  76% [0m2.42MB/s 13.2s[7mDownload snap "postman" (42) from c…  77% [0m2.43MB/s 13.0s[7mDownload snap "postman" (42) from c…  77% 2[0m.43MB/s 12.7s[7mDownload snap "postman" (42) from c…  77% 2[0m.43MB/s 12.6s[7mDownload snap "postman" (42) from c…  77% 2[0m.43MB/s 12.6s[7mDownload snap "postman" (42) from c…  78% 2[0m.43MB/s 12.4s[7mDownload snap "postman" (42) from c…  78% 2[0m.43MB/s 12.3s[7mDownload snap "postman" (42) from c…  78% 2[0m.43MB/s 12.3s[7mDownload snap "postman" (42) from c…  78% 2[0m.43MB/s 12.2s[7mDownload snap "postman" (42) from c…  78% 2[0m.43MB/s 12.2s[7mDownload snap "postman" (42) from c…  78% 2[0m.43MB/s 12.0s[7mDownload snap "postman" (42) from c…  79% 2.[0m43MB/s 11.8s[7mDownload snap "postman" (42) from c…  79% 2.[0m43MB/s 11.7s[7mDownload snap "postman" (42) from c…  79% 2.[0m43MB/s 11.7s[7mDownload snap "postman" (42) from c…  79% 2.[0m43MB/s 11.5s[7mDownload snap "postman" (42) from c…  79% 2.[0m43MB/s 11.5s[7mDownload snap "postman" (42) from c…  80% 2.[0m43MB/s 11.4s[7mDownload snap "postman" (42) from c…  80% 2.[0m43MB/s 11.2s[7mDownload snap "postman" (42) from c…  80% 2.[0m43MB/s 11.2s[7mDownload snap "postman" (42) from c…  80% 2.[0m43MB/s 11.0s[7mDownload snap "postman" (42) from c…  80% 2.[0m43MB/s 11.0s[7mDownload snap "postman" (42) from c…  80% 2.4[0m3MB/s 10.9s[7mDownload snap "postman" (42) from c…  81% 2.4[0m3MB/s 10.7s[7mDownload snap "postman" (42) from c…  81% 2.4[0m3MB/s 10.6s[7mDownload snap "postman" (42) from c…  81% 2.4[0m3MB/s 10.6s[7mDownload snap "postman" (42) from c…  81% 2.4[0m2MB/s 10.6s[7mDownload snap "postman" (42) from c…  81% 2.4[0m2MB/s 10.6s[7mDownload snap "postman" (42) from c…  81% 2.4[0m2MB/s 10.6s[7mDownload snap "postman" (42) from c…  81% 2.4[0m2MB/s 10.4s[7mDownload snap "postman" (42) from c…  82% 2.4[0m3MB/s 10.1s[7mDownload snap "postman" (42) from c…  82% 2.4[0m3MB/s 10.0s[7mDownload snap "postman" (42) from c…  82% 2.43[0mMB/s 9.91s[7mDownload snap "postman" (42) from c…  82% 2.43[0mMB/s 9.81s[7mDownload snap "postman" (42) from c…  82% 2.43[0mMB/s 9.75s[7mDownload snap "postman" (42) from c…  83% 2.43[0mMB/s 9.58s[7mDownload snap "postman" (42) from c…  83% 2.43[0mMB/s 9.48s[7mDownload snap "postman" (42) from c…  83% 2.43[0mMB/s 9.39s[7mDownload snap "postman" (42) from c…  83% 2.43[0mMB/s 9.29s[7mDownload snap "postman" (42) from c…  83% 2.43[0mMB/s 9.18s[7mDownload snap "postman" (42) from c…  84% 2.43[0mMB/s 9.07s[7mDownload snap "postman" (42) from c…  84% 2.43[0mMB/s 9.00s[7mDownload snap "postman" (42) from c…  84% 2.43M[0mB/s 8.90s[7mDownload snap "postman" (42) from c…  84% 2.42M[0mB/s 8.87s[7mDownload snap "postman" (42) from c…  84% 2.43M[0mB/s 8.70s[7mDownload snap "postman" (42) from c…  85% 2.43M[0mB/s 8.58s[7mDownload snap "postman" (42) from c…  85% 2.43M[0mB/s 8.49s[7mDownload snap "postman" (42) from c…  85% 2.43M[0mB/s 8.40s[7mDownload snap "postman" (42) from c…  85% 2.42M[0mB/s 8.35s[7mDownload snap "postman" (42) from c…  85% 2.43M[0mB/s 8.23s[7mDownload snap "postman" (42) from c…  85% 2.43M[0mB/s 8.08s[7mDownload snap "postman" (42) from c…  86% 2.43M[0mB/s 7.98s[7mDownload snap "postman" (42) from c…  86% 2.43MB[0m/s 7.91s[7mDownload snap "postman" (42) from c…  86% 2.43MB[0m/s 7.82s[7mDownload snap "postman" (42) from c…  86% 2.43MB[0m/s 7.67s[7mDownload snap "postman" (42) from c…  86% 2.43MB[0m/s 7.59s[7mDownload snap "postman" (42) from c…  87% 2.43MB[0m/s 7.50s[7mDownload snap "postman" (42) from c…  87% 2.43MB[0m/s 7.43s[7mDownload snap "postman" (42) from c…  87% 2.42MB[0m/s 7.38s[7mDownload snap "postman" (42) from c…  87% 2.42MB[0m/s 7.28s[7mDownload snap "postman" (42) from c…  87% 2.42MB[0m/s 7.14s[7mDownload snap "postman" (42) from c…  87% 2.43MB[0m/s 6.97s[7mDownload snap "postman" (42) from c…  88% 2.43MB/[0ms 6.90s[7mDownload snap "postman" (42) from c…  88% 2.43MB/[0ms 6.77s[7mDownload snap "postman" (42) from c…  88% 2.43MB/[0ms 6.68s[7mDownload snap "postman" (42) from c…  88% 2.43MB/[0ms 6.61s[7mDownload snap "postman" (42) from c…  88% 2.42MB/[0ms 6.62s[7mDownload snap "postman" (42) from c…  88% 2.42MB/[0ms 6.61s[7mDownload snap "postman" (42) from c…  88% 2.42MB/[0ms 6.52s[7mDownload snap "postman" (42) from c…  89% 2.42MB/[0ms 6.41s[7mDownload snap "postman" (42) from c…  89% 2.42MB/[0ms 6.33s[7mDownload snap "postman" (42) from c…  89% 2.42MB/[0ms 6.23s[7mDownload snap "postman" (42) from c…  89% 2.42MB/[0ms 6.07s[7mDownload snap "postman" (42) from c…  89% 2.42MB/s[0m 5.98s[7mDownload snap "postman" (42) from c…  90% 2.42MB/s[0m 5.80s[7mDownload snap "postman" (42) from c…  90% 2.42MB/s[0m 5.75s[7mDownload snap "postman" (42) from c…  90% 2.42MB/s[0m 5.61s[7mDownload snap "postman" (42) from c…  90% 2.42MB/s[0m 5.50s[7mDownload snap "postman" (42) from c…  90% 2.42MB/s[0m 5.44s[7mDownload snap "postman" (42) from c…  90% 2.42MB/s[0m 5.37s[7mDownload snap "postman" (42) from c…  91% 2.42MB/s[0m 5.21s[7mDownload snap "postman" (42) from c…  91% 2.42MB/s[0m 5.10s[7mDownload snap "postman" (42) from c…  91% 2.42MB/s[0m 5.00s[7mDownload snap "postman" (42) from c…  91% 2.42MB/s [0m4.90s[7mDownload snap "postman" (42) from c…  91% 2.42MB/s [0m4.79s[7mDownload snap "postman" (42) from c…  92% 2.42MB/s [0m4.70s[7mDownload snap "postman" (42) from c…  92% 2.42MB/s [0m4.59s[7mDownload snap "postman" (42) from c…  92% 2.42MB/s [0m4.51s[7mDownload snap "postman" (42) from c…  92% 2.42MB/s [0m4.40s[7mDownload snap "postman" (42) from c…  92% 2.42MB/s [0m4.29s[7mDownload snap "postman" (42) from c…  92% 2.42MB/s [0m4.19s[7mDownload snap "postman" (42) from c…  93% 2.42MB/s [0m4.11s[7mDownload snap "postman" (42) from c…  93% 2.42MB/s [0m4.02s[7mDownload snap "postman" (42) from c…  93% 2.42MB/s 3[0m.89s[7mDownload snap "postman" (42) from c…  93% 2.42MB/s 3[0m.80s[7mDownload snap "postman" (42) from c…  93% 2.41MB/s 3[0m.79s[7mDownload snap "postman" (42) from c…  93% 2.41MB/s 3[0m.80s[7mDownload snap "postman" (42) from c…  93% 2.41MB/s 3[0m.74s[7mDownload snap "postman" (42) from c…  94% 2.41MB/s 3[0m.63s[7mDownload snap "postman" (42) from c…  94% 2.41MB/s 3[0m.46s[7mDownload snap "postman" (42) from c…  94% 2.41MB/s 3[0m.30s[7mDownload snap "postman" (42) from c…  94% 2.42MB/s 3[0m.15s[7mDownload snap "postman" (42) from c…  95% 2.42MB/s 3[0m.07s[7mDownload snap "postman" (42) from c…  95% 2.42MB/s 2.[0m91s[7mDownload snap "postman" (42) from c…  95% 2.42MB/s 2.[0m83s[7mDownload snap "postman" (42) from c…  95% 2.42MB/s 2.[0m72s[7mDownload snap "postman" (42) from c…  95% 2.42MB/s 2.[0m62s[7mDownload snap "postman" (42) from c…  95% 2.42MB/s 2.[0m53s[7mDownload snap "postman" (42) from c…  96% 2.42MB/s 2.[0m46s[7mDownload snap "postman" (42) from c…  96% 2.41MB/s 2.[0m37s[7mDownload snap "postman" (42) from c…  96% 2.42MB/s 2.[0m26s[7mDownload snap "postman" (42) from c…  96% 2.41MB/s 2.[0m19s[7mDownload snap "postman" (42) from c…  96% 2.41MB/s 2.[0m20s[7mDownload snap "postman" (42) from c…  96% 2.40MB/s 2.[0m20s[7mDownload snap "postman" (42) from c…  96% 2.41MB/s 2.[0m02s[7mDownload snap "postman" (42) from c…  97% 2.42MB/s 1.7[0m3s[7mDownload snap "postman" (42) from c…  97% 2.41MB/s 1.7[0m3s[7mDownload snap "postman" (42) from c…  97% 2.41MB/s 1.7[0m4s[7mDownload snap "postman" (42) from c…  97% 2.41MB/s 1.6[0m2s[7mDownload snap "postman" (42) from c…  97% 2.41MB/s 1.5[0m3s[7mDownload snap "postman" (42) from c…  98% 2.41MB/s 1.3[0m5s[7mDownload snap "postman" (42) from c…  98% 2.41MB/s 1.1[0m7s[7mDownload snap "postman" (42) from c…  98% 2.41MB/s 1.0[0m7s[7mDownload snap "postman" (42) from c…  98% 2.42MB/s 923m[0ms[7mDownload snap "postman" (42) from c…  99% 2.42MB/s 828m[0ms[7mDownload snap "postman" (42) from c…  99% 2.42MB/s 734m[0ms[7mDownload snap "postman" (42) from c…  99% 2.41MB/s 645m[0ms[7mDownload snap "postman" (42) from c…  99% 2.41MB/s 544m[0ms[7mDownload snap "postman" (42) from c…  99% 2.42MB/s 421m[0ms[7mDownload snap "postman" (42) from c…  99% 2.42MB/s 320m[0ms[7mDownload snap "postman" (42) from c… 100% 2.42MB/s 211m[0ms[7mDownload snap "postman" (42) from c… 100% 2.42MB/s 116m[0ms[7mDownload snap "postman" (42) from c… 100% 2.41MB/s  35m[0ms[7mDownload snap "postman" (42) from … 100% 2.41MB/s 874µs[0m[7mDownload snap "postman" (42) from … 100% 2.41MB/s 875µs[0m[7mDownload snap "postman" (42) from c… 100% 2.36MB/s 0.0ns[0m[7mDownload snap "postman" (42) from c… 100% 2.33MB/s 0.0ns[0m[7mDownload snap "postman" (42) from c… 100% 2.32MB/s 0.0ns[0m[7mDownload snap "postman" (42) from c… 100% 2.32MB/s 0.0ns[0m[7mDownload snap "postman" (42) from c… 100% 2.31MB/s 0.0ns[0m[7mDownload snap "postman" (42) from c… 100% 2.31MB/s 0.0ns[0m[7mDownload snap "postman" (42) from c… 100% 2.31MB/s 0.0ns[0m[7mDownload snap "postman" (42) from c… 100% 2.30MB/s 0.0ns[0m[7mDownload snap "postman" (42) from c… 100% 2.30MB/s 0.0ns[0m[7mDownload snap "postman" (42) from c… 100% 2.29MB/s 0.0ns[0m[7mDownload snap "postman" (42) from c… 100% 2.29MB/s 0.0ns[0m[7mDownload snap "postman" (42) from c… 100% 2.29MB/s 0.0ns[0m[7mDownload snap "postman" (42) from c… 100% 2.28MB/s 0.0ns[0m[7mDownload snap "postman" (42) from c… 100% 2.28MB/s 0.0ns[0m[7mDownload snap "postman" (42) from c… 100% 2.28MB/s 0.0ns[0mFetch and check assertions for snap "postman" (42)     \Fetch and check assertions for snap "postman" (42)     |Fetch and check assertions for snap "postman" (42)     /Fetch and check assertions for snap "postman" (42)     -Fetch and check assertions for snap "postman" (42)     \Fetch and check assertions for snap "postman" (42)     |Fetch and check assertions for snap "postman" (42)     /Fetch and check assertions for snap "postman" (42)     -Fetch and check assertions for snap "postman" (42)     \Mount snap "postman" (42)                              |Mount snap "postman" (42)                              /Mount snap "postman" (42)                              -Mount snap "postman" (42)                              \Mount snap "postman" (42)                              |Mount snap "postman" (42)                              /Mount snap "postman" (42)                              -Mount snap "postman" (42)                              \Mount snap "postman" (42)                              |Mount snap "postman" (42)                              /Mount snap "postman" (42)                              -Mount snap "postman" (42)                              \Mount snap "postman" (42)                              |Mount snap "postman" (42)                              /Mount snap "postman" (42)                              -Mount snap "postman" (42)                              \Mount snap "postman" (42)                              |Copy snap "postman" data                               /Setup snap "postman" (42) security profiles            -Setup snap "postman" (42) security profiles            \Setup snap "postman" (42) security profiles            |Setup snap "postman" (42) security profiles            /Setup snap "postman" (42) security profiles            -Setup snap "postman" (42) security profiles            \Setup snap "postman" (42) security profiles            |Setup snap "postman" (42) security profiles            /Setup snap "postman" (42) security profiles            -Setup snap "postman" (42) security profiles            \Setup snap "postman" (42) security profiles            |Run hook prepare-plug-desktop-legacy of snap "postman" /Run hook prepare-slot-desktop-legacy of snap "core"    -Connect postman:desktop-legacy to core:desktop-legacy  \Connect postman:desktop-legacy to core:desktop-legacy  |Connect postman:desktop-legacy to core:desktop-legacy  /Run hook prepare-plug-desktop of snap "postman"        -Connect postman:desktop-legacy to core:desktop-legacy  \Run hook prepare-slot-desktop of snap "core"           |Connect postman:desktop-legacy to core:desktop-legacy  /Connect postman:desktop-legacy to core:desktop-legacy  -Connect postman:desktop-legacy to core:desktop-legacy  \Connect postman:desktop-legacy to core:desktop-legacy  |Connect postman:desktop-legacy to core:desktop-legacy  /Connect postman:desktop to core:desktop                -Connect postman:desktop to core:desktop                \Connect postman:desktop to core:desktop                |Connect postman:desktop to core:desktop                /Connect postman:desktop to core:desktop                -Connect postman:desktop to core:desktop                \Connect postman:desktop to core:desktop                |Connect postman:desktop to core:desktop                /Connect postman:desktop to core:desktop                -Connect postman:desktop to core:desktop                \Connect postman:desktop to core:desktop                |Connect postman:desktop to core:desktop                /Connect postman:desktop to core:desktop                -Connect postman:desktop to core:desktop                \Connect postman:desktop to core:desktop                |Run hook connect-slot-desktop of snap "core"           /Run hook connect-slot-desktop of snap "core"           -Run hook connect-plug-desktop of snap "postman"        \Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Connect postman:browser-support to core:browser-support Run hook connect-slot-browser-support of snap "core"   |Run hook connect-plug-browser-support of snap "postman" Connect postman:x11 to core:x11                        /Connect postman:x11 to core:x11                        -Connect postman:x11 to core:x11                        \Connect postman:x11 to core:x11                        |Connect postman:x11 to core:x11                        /Connect postman:x11 to core:x11                        -Connect postman:x11 to core:x11                        \Connect postman:x11 to core:x11                        |Connect postman:x11 to core:x11                        /Connect postman:x11 to core:x11                        -Connect postman:x11 to core:x11                        \Connect postman:x11 to core:x11                        |Connect postman:x11 to core:x11                        /Connect postman:x11 to core:x11                        -Connect postman:x11 to core:x11                        \Connect postman:x11 to core:x11                        |Connect postman:x11 to core:x11                        /Connect postman:x11 to core:x11                        -Connect postman:x11 to core:x11                        \Connect postman:x11 to core:x11                        |Connect postman:x11 to core:x11                        /Connect postman:x11 to core:x11                        -Connect postman:x11 to core:x11                        \Connect postman:x11 to core:x11                        |Connect postman:x11 to core:x11                        /Connect postman:x11 to core:x11                        -Connect postman:x11 to core:x11                        \Connect postman:x11 to core:x11                        |Connect postman:x11 to core:x11                        /Connect postman:x11 to core:x11                        -Connect postman:x11 to core:x11                        \Connect postman:x11 to core:x11                        |Connect postman:x11 to core:x11                        /Connect postman:x11 to core:x11                        -Connect postman:x11 to core:x11                        \Connect postman:x11 to core:x11                        |Connect postman:x11 to core:x11                        /Connect postman:x11 to core:x11                        -Connect postman:x11 to core:x11                        \Connect postman:x11 to core:x11                        |Connect postman:x11 to core:x11                        /Connect postman:wayland to core:wayland                -Connect postman:wayland to core:wayland                \Connect postman:wayland to core:wayland                |Connect postman:wayland to core:wayland                /Connect postman:wayland to core:wayland                -Connect postman:wayland to core:wayland                \Connect postman:wayland to core:wayland                |Connect postman:wayland to core:wayland                /Run hook connect-slot-wayland of snap "core"           -Run hook connect-plug-wayland of snap "postman"        \Connect postman:network to core:network                |Connect postman:network to core:network                /Connect postman:network to core:network                -Connect postman:network to core:network                \Connect postman:network to core:network                |Connect postman:network to core:network                /Connect postman:network to core:network                -Connect postman:network to core:network                \Connect postman:network to core:network                |Connect postman:network to core:network                /Connect postman:network to core:network                -Connect postman:network to core:network                \Connect postman:network to core:network                |Connect postman:network to core:network                /Connect postman:network to core:network                -Connect postman:network to core:network                \Connect postman:network to core:network                |Connect postman:network to core:network                /Connect postman:network to core:network                -Connect postman:network to core:network                \Connect postman:network to core:network                |Connect postman:network to core:network                /Connect postman:network to core:network                -Connect postman:network to core:network                \Connect postman:network to core:network                |Connect postman:network to core:network                /Connect postman:network to core:network                -Connect postman:network to core:network                \Connect postman:network to core:network                |Connect postman:network to core:network                /Connect postman:network to core:network                -Connect postman:unity7 to core:unity7                  \Connect postman:unity7 to core:unity7                  |Connect postman:unity7 to core:unity7                  /Connect postman:unity7 to core:unity7                  -Connect postman:unity7 to core:unity7                  \Connect postman:unity7 to core:unity7                  |Connect postman:unity7 to core:unity7                  /Connect postman:unity7 to core:unity7                  -Connect postman:unity7 to core:unity7                  \Connect postman:unity7 to core:unity7                  |Connect postman:unity7 to core:unity7                  /Connect postman:unity7 to core:unity7                  -Connect postman:unity7 to core:unity7                  \Connect postman:unity7 to core:unity7                  |Connect postman:unity7 to core:unity7                  /Connect postman:unity7 to core:unity7                  -Connect postman:unity7 to core:unity7                  \Connect postman:unity7 to core:unity7                  |Connect postman:unity7 to core:unity7                  /Connect postman:unity7 to core:unity7                  -Connect postman:unity7 to core:unity7                  \Connect postman:unity7 to core:unity7                  |Connect postman:unity7 to core:unity7                  /Connect postman:unity7 to core:unity7                  -Connect postman:unity7 to core:unity7                  \Connect postman:unity7 to core:unity7                  |Connect postman:unity7 to core:unity7                  /Connect postman:unity7 to core:unity7                  -Connect postman:unity7 to core:unity7                  \Connect postman:unity7 to core:unity7                  |Connect postman:unity7 to core:unity7                  /Connect postman:unity7 to core:unity7                  -Connect postman:unity7 to core:unity7                  \Connect postman:unity7 to core:unity7                  |Connect postman:unity7 to core:unity7                  /Connect postman:unity7 to core:unity7                  -Connect postman:unity7 to core:unity7                  \Connect postman:unity7 to core:unity7                  |Connect postman:unity7 to core:unity7                  /Connect postman:unity7 to core:unity7                  -Connect postman:unity7 to core:unity7                  \Connect postman:unity7 to core:unity7                  |Connect postman:unity7 to core:unity7                  /Connect postman:unity7 to core:unity7                  -Connect postman:unity7 to core:unity7                  \Connect postman:unity7 to core:unity7                  |Connect postman:unity7 to core:unity7                  /Connect postman:opengl to core:opengl                  -Connect postman:opengl to core:opengl                  \Connect postman:opengl to core:opengl                  |Connect postman:opengl to core:opengl                  /Connect postman:opengl to core:opengl                  -Connect postman:opengl to core:opengl                  \Connect postman:opengl to core:opengl                  |Connect postman:opengl to core:opengl                  /Connect postman:opengl to core:opengl                  -Connect postman:opengl to core:opengl                  \Connect postman:opengl to core:opengl                  |Connect postman:opengl to core:opengl                  /Connect postman:opengl to core:opengl                  -Connect postman:opengl to core:opengl                  \Connect postman:opengl to core:opengl                  |Connect postman:opengl to core:opengl                  /Connect postman:opengl to core:opengl                  -Connect postman:opengl to core:opengl                  \Connect postman:opengl to core:opengl                  |Connect postman:opengl to core:opengl                  /Connect postman:opengl to core:opengl                  -Connect postman:opengl to core:opengl                  \Connect postman:opengl to core:opengl                  |Connect postman:opengl to core:opengl                  /Connect postman:opengl to core:opengl                  -Connect postman:opengl to core:opengl                  \Connect postman:opengl to core:opengl                  |Connect postman:opengl to core:opengl                  /Connect postman:opengl to core:opengl                  -Connect postman:opengl to core:opengl                  \Connect postman:opengl to core:opengl                  |Connect postman:opengl to core:opengl                  /Connect postman:opengl to core:opengl                  -Connect postman:opengl to core:opengl                  \Connect postman:opengl to core:opengl                  |Run hook connect-slot-opengl of snap "core"            /Run hook connect-plug-opengl of snap "postman"         -Connect postman:home to core:home                      \Connect postman:home to core:home                      |Connect postman:home to core:home                      /Connect postman:home to core:home                      -Connect postman:home to core:home                      \Connect postman:home to core:home                      |Connect postman:home to core:home                      /Connect postman:home to core:home                      -Connect postman:home to core:home                      \Connect postman:home to core:home                      |Connect postman:home to core:home                      /Connect postman:home to core:home                      -Connect postman:home to core:home                      \Connect postman:home to core:home                      |Connect postman:home to core:home                      /Connect postman:home to core:home                      -Connect postman:home to core:home                      \Connect postman:home to core:home                      |Connect postman:gsettings to core:gsettings            / Connect postman:gsettings to core:gsettings            -Connect postman:gsettings to core:gsettings            \Connect postman:gsettings to core:gsettings            |Connect postman:gsettings to core:gsettings            /Connect postman:gsettings to core:gsettings            -Connect postman:gsettings to core:gsettings            \Connect postman:gsettings to core:gsettings            |Connect postman:gsettings to core:gsettings            /Connect postman:gsettings to core:gsettings            -Connect postman:gsettings to core:gsettings            \Connect postman:gsettings to core:gsettings            |Connect postman:gsettings to core:gsettings            /Connect postman:gsettings to core:gsettings            -Connect postman:gsettings to core:gsettings            \Connect postman:gsettings to core:gsettings            |Connect postman:gsettings to core:gsettings            /Connect postman:gsettings to core:gsettings            -Connect postman:gsettings to core:gsettings            \Connect postman:gsettings to core:gsettings            |Connect postman:gsettings to core:gsettings            /Connect postman:gsettings to core:gsettings            -Connect postman:gsettings to core:gsettings            \Connect postman:gsettings to core:gsettings            |Connect postman:gsettings to core:gsettings            /Connect postman:gsettings to core:gsettings            -Connect postman:gsettings to core:gsettings            \Connect postman:gsettings to core:gsettings            |Connect postman:gsettings to core:gsettings            /Connect postman:gsettings to core:gsettings            -Connect postman:gsettings to core:gsettings            \Run hook connect-slot-gsettings of snap "core"         |Run hook connect-plug-gsettings of snap "postman"      /Setup snap "postman" aliases                           -Run install hook of "postman" snap if present          \Run configure hook of "postman" snap if present        |[0m[?25h[Kpostman 6.2.4 from 'snapcrafters' installed
+gd@gd10:~/Desktop/find-geeks$  npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+internal/modules/cjs/loader.js:583
+    throw err;
+    ^
+
+Error: Cannot find module '../../validation/register'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:581:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:507:25)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:131:31)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:6:15)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+^C
+gd@gd10:~/Desktop/find-geeks$ git add -a      commit -am 
+error: switch `m' requires a value
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. 

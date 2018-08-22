@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
-// const bodyParser = require("body-parser");
 const bodyParser = require("body-parser");
+const passport = require("passport");
 
 const users = require("./routes/api/users");
 const profile = require("./routes/api/profile");
@@ -32,7 +32,12 @@ mongoose
     console.log("Error occured.\n" + err);
   });
 
-app.get("/", (req, res) => res.send("app.get is working"));
+// app.get("/", (req, res) => res.send("app.get is working"));
+// Passport middleware after connect and before using routes
+app.use(passport.initialize());
+
+// Passport Config file
+require("./config/passport")(passport);
 
 // Use following routes from apis imported.
 app.use("/api/users", users);
