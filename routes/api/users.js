@@ -43,7 +43,10 @@ router.post("/register", (req, res) => {
       bcrypt.genSalt(10, (err, salt) => {
         // hash(plaintext,salt,callback(err,resultant ciphertext))
         bcrypt.hash(newUser.password, salt, (err, hash) => {
-          if (err) throw err;
+          if (err) {
+            console.log("error in bcrypt.hash()");
+            throw err;
+          }
           //assign salted hash to password
           newUser.password = hash;
 
@@ -72,7 +75,7 @@ router.post("/login", (req, res) => {
   User.findOne({ email: req.body.email }).then(user => {
     //check if no user
     if (!user) {
-      return res.status(404).json({ email: "User's email not found." });
+      return res.status(404).json({ email: "User's email   found." });
     }
 
     // else if do this..
@@ -86,16 +89,19 @@ router.post("/login", (req, res) => {
 
         // created JWT token
         // now sign token
-        // jwt.sign(payload, secreteKey, expire-time, callback );
+        // jwt.sign(payload, secretKey, expire-time, callback );
 
         // jwt.sign
 
         jwt.sign(
           payload,
           keys.secretOrKey,
-          { expiresIn: 1800 },
+          { expiresIn: 3600 },
           (err, token) => {
-            res.json({ success: true, token: "bearer " + token });
+            res.json({
+              success: true,
+              token: "Bearer " + token
+            });
           }
         );
       } else {
@@ -114,7 +120,7 @@ router.get(
   "/current",
   passport.authenticate("jwt", { session: false }),
   (req, res) => {
-    res.json(req.user);
+    res.json({ msg: "Success" });
   }
 );
 

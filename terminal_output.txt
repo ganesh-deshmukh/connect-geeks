@@ -4804,4 +4804,99 @@ SyntaxError: missing ) after argument list
     at createScript (vm.js:246:10)
     at Object.runInThisContext (vm.js:298:10)
     at Module._compile (internal/modules/cjs/loader.js:657:28)
-    at Object.Module._
+    at Object.Module._Script started on 2018-08-22 12:36:21+0530
+gd@gd10:~/Desktop/find-geeks$ npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+no user found of this email in DB
+/home/gd/Desktop/find-geeks/routes/api/users.js:46
+          if (err) throw err;
+                   ^
+
+Error: Illegal arguments: undefined, string
+    at _async (/home/gd/Desktop/find-geeks/node_modules/bcryptjs/dist/bcrypt.js:214:46)
+    at Object.bcrypt.hash (/home/gd/Desktop/find-geeks/node_modules/bcryptjs/dist/bcrypt.js:220:13)
+    at bcrypt.genSalt (/home/gd/Desktop/find-geeks/routes/api/users.js:45:16)
+    at Immediate.<anonymous> (/home/gd/Desktop/find-geeks/node_modules/bcryptjs/dist/bcrypt.js:153:21)
+    at runCallback (timers.js:696:18)
+    at tryOnImmediate (timers.js:667:5)
+    at processImmediate (timers.js:649:5)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+^C
+gd@gd10:~/Desktop/find-geeks$ mongo     npm install
+[?25l[[90m..................[0m] | rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m eabb486f795b41a7[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] / loadIdealTree:loadAllDepsIntoIdealTree: [7msill[0m [35minstall[0m loadIdealTree[0m[K[[7m [27m[90m.................[0m] \ fetchMetadata: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K[[7m [27m[90m.................[0m] \ fetchMetadata: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K[[7m [27m[90m.................[0m] \ fetchMetadata: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K[[7m [27m[90m.................[0m] \ fetchMetadata: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K[[7m [27m[90m.................[0m] \ fetchMetadata: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K[[7m  [27m[90m................[0m] / fetchMetadata: [7msill[0m [35mpacote[0m range manifest for validator@^9.4.1 fetched in 264ms[0m[K[[7m   [27m[90m...............[0m] | loadDep:vary: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as its been r[0m[K[[7m   [27m[90m...............[0m] | loadDep:yargs-parser: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as it[0m[K[[7m   [27m[90m...............[0m] | loadDep:is-arrayish: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as its[0m[K[[7m   [27m[90m...............[0m] | loadDep:sliced: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as its been[0m[K[[7m    [27m[90m..............[0m] | loadDep:to-regex: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as its be[0m[K[[7m    [27m[90m..............[0m] | loadDep:unset-value: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as its[0m[K[[7m    [27m[90m..............[0m] | loadDep:kind-of: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as its bee[0m[K[[7m    [27m[90m..............[0m] | loadDep:to-regex: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as its be[0m[K[[7m    [27m[90m..............[0m] | loadDep:strip-ansi: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as its[0m[K[[7m    [27m[90m..............[0m] | loadDep:ps-tree: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as its bee[0m[K[[7m     [27m[90m.............[0m] | loadDep:color-convert: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as i[0m[K[[7m     [27m[90m.............[0m] | loadDep:url-parse-lax: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as i[0m[K[[7m       [27m[90m...........[0m] / diffTrees: [7msill[0m [35minstall[0m generateActionsToTake[0m[K[K[?25h[37;40mnpm[0m [0m[30;43mWARN[0m [0m[35mcheckPermissions[0m Missing write access to /home/gd/Desktop/find-geeks/node_modules/validator
+[0m[37;40mnpm[0m [0m[31;40mERR![0m [0m[35mpath[0m /home/gd/Desktop/find-geeks/node_modules/validator
+[0m[37;40mnpm[0m [0m[31;40mERR![0m [0m[35mcode[0m EACCES
+[0m[37;40mnpm[0m [0m[31;40mERR![0m [0m[35merrno[0m -13
+[0m[37;40mnpm[0m [0m[31;40mERR![0m [0m[35msyscall[0m access
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Error: EACCES: permission denied, access '/home/gd/Desktop/find-geeks/node_modules/validator'
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m  { [Error: EACCES: permission denied, access '/home/gd/Desktop/find-geeks/node_modules/validator']
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m   stack:
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m    'Error: EACCES: permission denied, access \'/home/gd/Desktop/find-geeks/node_modules/validator\'',
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m   errno: -13,
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m   code: 'EACCES',
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m   syscall: 'access',
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m   path: '/home/gd/Desktop/find-geeks/node_modules/validator' }
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m 
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m The operation was rejected by your operating system.
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m It is likely you do not have the permissions to access this file as the current user
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m 
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m If you believe this might be a permissions issue, please double-check the
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m permissions of the file and its containing directories, or try running
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m the command again as root/Administrator (though this is not recommended).
+[0m
+[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m A complete log of this run can be found in:
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m     /home/gd/.npm/_logs/2018-08-22T07_08_11_266Z-debug.log
+[0mgd@gd10:~/Desktop/find-geeks$ npm installsnpm installunpm installdnpm installonpm install npm install
+[sudo] password for gd: 
+[?25l[[90m..................[0m] | rollbackFailedOptional: [34;40mverb[0m [35mnpm-session[0m be87e62ba9102ffb[0m[K[[90m..................[0m] - preinstall:find-geeks: [7msill[0m [35minstall[0m runPreinstallTopLevelLifecycles[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] | preinstall:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~preinstall: find-geeks@1.0.0[0m[K[[7m [27m[90m.................[0m] / loadIdealTree:loadAllDepsIntoIdealTree: [7msill[0m [35minstall[0m loadIdealTree[0m[K[[7m [27m[90m.................[0m] \ fetchMetadata: [7msill[0m [35minstall[0m loadAllDepsIntoIdealTree[0m[K[[7m  [27m[90m................[0m] | loadDep:safer-buffer: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as it[0m[K[[7m   [27m[90m...............[0m] | loadDep:statuses: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as its be[0m[K[[7m   [27m[90m...............[0m] | loadDep:pinkie: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as its been[0m[K[[7m   [27m[90m...............[0m] | loadDep:sliced: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as its been[0m[K[[7m    [27m[90m..............[0m] | loadDep:to-regex: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as its be[0m[K[[7m    [27m[90m..............[0m] | loadDep:split-string: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as it[0m[K[[7m    [27m[90m..............[0m] | loadDep:snapdragon-util: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as[0m[K[[7m    [27m[90m..............[0m] | loadDep:minimist: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as its be[0m[K[[7m    [27m[90m..............[0m] | loadDep:strip-ansi: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as its[0m[K[[7m    [27m[90m..............[0m] | loadDep:concat-map: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as its[0m[K[[7m     [27m[90m.............[0m] | loadDep:supports-color: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as[0m[K[[7m     [27m[90m.............[0m] | loadDep:prepend-http: [7msill[0m [35mremoveObsoleteDep[0m removing validator@10.5.0 from the tree as it[0m[K[[7m       [27m[90m...........[0m] / diffTrees: [7msill[0m [35minstall[0m generateActionsToTake[0m[K[[7m       [27m[90m...........[0m] / diffTrees: [7msill[0m [35minstall[0m generateActionsToTake[0m[K[[7m       [27m[90m...........[0m] - postinstall: [7msill[0m [35minstall[0m executeActions[0m[K[[7m       [27m[90m...........[0m] | extract:validator: [34;40mverb[0m [35mlock[0m using /home/gd/.npm/_locks/staging-83bf9d4cf94054bd.lock for[0m[K[[7m       [27m[90m...........[0m] | extract:validator: [34;40mverb[0m [35mlock[0m using /home/gd/.npm/_locks/staging-83bf9d4cf94054bd.lock for[0m[K[[7m       [27m[90m...........[0m] | extract:validator: [34;40mverb[0m [35mlock[0m using /home/gd/.npm/_locks/staging-83bf9d4cf94054bd.lock for[0m[K[[7m           [27m[90m.......[0m] - extract:validator: [7msill[0m [35mextract[0m validator@^9.4.1 extracted to /home/gd/Desktop/find-geeks/[0m[K[[7m           [27m[90m.......[0m] - extract:validator: [7msill[0m [35mextract[0m validator@^9.4.1 extracted to /home/gd/Desktop/find-geeks/[0m[K[[7m           [27m[90m.......[0m] - extract:validator: [7msill[0m [35mextract[0m validator@^9.4.1 extracted to /home/gd/Desktop/find-geeks/[0m[K[[7m           [27m[90m.......[0m] - extract:validator: [7msill[0m [35mextract[0m validator@^9.4.1 extracted to /home/gd/Desktop/find-geeks/[0m[K[[7m           [27m[90m.......[0m] - extract:validator: [7msill[0m [35mextract[0m validator@^9.4.1 extracted to /home/gd/Desktop/find-geeks/[0m[K[[7m           [27m[90m.......[0m] - extract:validator: [7msill[0m [35mextract[0m validator@^9.4.1 extracted to /home/gd/Desktop/find-geeks/[0m[K[[7m           [27m[90m.......[0m] - extract:validator: [7msill[0m [35mextract[0m validator@^9.4.1 extracted to /home/gd/Desktop/find-geeks/[0m[K[[7m           [27m[90m.......[0m] - extract:validator: [7msill[0m [35mextract[0m validator@^9.4.1 extracted to /home/gd/Desktop/find-geeks/[0m[K[[7m           [27m[90m.......[0m] \ extract:validator: [7msill[0m [35mextract[0m validator@^9.4.1 extracted to /home/gd/Desktop/find-geeks/[0m[K[[7m            [27m[90m......[0m] / remove:validator: [7msill[0m [35mdoSerial[0m remove 422[0m[K[[7m            [27m[90m......[0m] | finalize:has-unicode: [7msill[0m [35mfinalize[0m /home/gd/Desktop/find-geeks/node_modules/fsevents/node[0m[K[[7m            [27m[90m......[0m] - finalize:rc: [7msill[0m [35mfinalize[0m /home/gd/Desktop/find-geeks/node_modules/fsevents/node_modules/[0m[K[[7m            [27m[90m......[0m] | finalize:nan: [7msill[0m [35mfinalize[0m /home/gd/Desktop/find-geeks/node_modules/nan[0m[K[[7m            [27m[90m......[0m] / refresh-package-json:validator: [32;40mtiming[0m [35maction:finalize[0m Completed in 154ms[0m[K[[7m            [27m[90m......[0m] / refresh-package-json:validator: [32;40mtiming[0m [35maction:finalize[0m Completed in 154ms[0m[K[[7m            [27m[90m......[0m] / refresh-package-json:validator: [32;40mtiming[0m [35maction:finalize[0m Completed in 154ms[0m[K[[7m            [27m[90m......[0m] | refresh-package-json:needle: [7msill[0m [35mrefresh-package-json[0m /home/gd/Desktop/find-geeks/node_mo[0m[K[[7m            [27m[90m......[0m] \ install:validator: [7msill[0m [35mdoSerial[0m install 422[0m[K[[7m            [27m[90m......[0m] - postinstall: [32minfo[0m [35mlifecycle[0m validator@9.4.1~postinstall: validator@9.4.1[0m[K[[7m            [27m[90m......[0m] - postinstall: [32minfo[0m [35mlifecycle[0m validator@9.4.1~postinstall: validator@9.4.1[0m[K[[7m            [27m[90m......[0m] - postinstall: [32minfo[0m [35mlifecycle[0m validator@9.4.1~postinstall: validator@9.4.1[0m[K[[7m              [27m[90m....[0m] / prepare:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~prepare: find-geeks@1.0.0[0m[K[[7m              [27m[90m....[0m] / prepare:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~prepare: find-geeks@1.0.0[0m[K[[7m              [27m[90m....[0m] | prepare:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~prepare: find-geeks@1.0.0[0m[K[[7m              [27m[90m....[0m] | prepare:find-geeks: [32minfo[0m [35mlifecycle[0m find-geeks@1.0.0~prepare: find-geeks@1.0.0[0m[K[K[?25h[37;40mnpm[0m [0m[30;43mWARN[0m [0m[35moptional[0m SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules/fsevents):
+[0m[37;40mnpm[0m [0m[30;43mWARN[0m [0m[35mnotsup[0m SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+[0m
+updated 1 package and audited 1652 packages in 4.852s
+found [92m0[0m vulnerabilities
+
+gd@gd10:~/Desktop/find-geeks$ npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+	^C
+gd@gd10:~/Desktop/find-geeks$ ^C
+gd@gd10:~/Desktop/find-geeks$ exit
+exit
+
+Script done on 2018-08-22 12:56:50+0530

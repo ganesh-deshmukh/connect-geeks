@@ -36,7 +36,7 @@ mongoose
 // Passport middleware after connect and before using routes
 app.use(passport.initialize());
 
-// Passport Config file
+// Passport Config file call function and pass argument as function() passport
 require("./config/passport")(passport);
 
 // Use following routes from apis imported.
