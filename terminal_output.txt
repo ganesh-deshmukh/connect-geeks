@@ -4742,4 +4742,66 @@ Commit contents options
     --amend               amend previous commit
     --no-post-rewrite     bypass post-rewrite hook
     -u, --untracked-files[=<mode>]
-                          show untracked files, optional modes: all, normal, no. 
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+gd@gd10:~/Desktop/find-geeks$ git commit -am : ""e"r"r"o"r" "i"<ind-geeks$ git commit -am "error in"                  "a"u"t"h"o"r"i"z"a"t"i"o"n" "u"s"<mit -am "error in authorization usi"                 n"g" "h"e"a"d"e"r"
+[master d61423e] error in authorization using header
+ 3 files changed, 455 insertions(+), 7 deletions(-)
+gd@gd10:~/Desktop/find-geeks$ git push -u origin mast<ind-geeks$ git push -u origin maste                 r
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  14% (1/7)   Writing objects:  28% (2/7)   Writing objects:  42% (3/7)   Writing objects:  57% (4/7)   Writing objects:  71% (5/7)   Writing objects:  85% (6/7)   Writing objects: 100% (7/7)   Writing objects: 100% (7/7), 7.53 KiB | 701.00 KiB/s, done.
+Total 7 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/5)   [Kremote: Resolving deltas:  20% (1/5)   [Kremote: Resolving deltas:  40% (2/5)   [Kremote: Resolving deltas:  60% (3/5)   [Kremote: Resolving deltas:  80% (4/5)   [Kremote: Resolving deltas: 100% (5/5)   [Kremote: Resolving deltas: 100% (5/5), completed with 5 local objects.[K
+To github.com:ganeshdeshmukh1612/connect-geeks.git
+   3d2ccce..d61423e  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+gd@gd10:~/Desktop/find-geeks$ <nd-geeks$ git push -u origin master<rror in authorization using header"gd@gd10:~/Desktop/find-geeks$ git commit -am snap install postmannpm run server      
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/node_modules/passport-jwt/lib/strategy.js:45
+        throw new TypeError('JwtStrategy requires a secret or key');
+        ^
+
+TypeError: JwtStrategy requires a secret or key
+    at new JwtStrategy (/home/gd/Desktop/find-geeks/node_modules/passport-jwt/lib/strategy.js:45:15)
+    at module.exports.passport (/home/gd/Desktop/find-geeks/config/passport.js:48:5)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/server.js:40:29)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+    at startup (internal/bootstrap/node.js:236:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:560:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/config/passport.js:28
+          console.log('can't find user.id)
+                      ^^^^^
+
+SyntaxError: missing ) after argument list
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Object.Module._

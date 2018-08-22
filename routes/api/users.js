@@ -92,7 +92,7 @@ router.post("/login", (req, res) => {
 
         jwt.sign(
           payload,
-          keys.secreteOrKey,
+          keys.secretOrKey,
           { expiresIn: 1800 },
           (err, token) => {
             res.json({ success: true, token: "bearer " + token });
@@ -114,7 +114,7 @@ router.get(
   "/current",
   passport.authenticate("jwt", { session: false }),
   (req, res) => {
-    res.json({ msg: "Success" });
+    res.json(req.user);
   }
 );
 
