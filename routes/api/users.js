@@ -85,7 +85,7 @@ router.post("/login", (req, res) => {
       if (isMatch) {
         // user pswd matched => then return JWT token back for authentication
         // res.json({ msg: "Success" });
-        const payload = { it: user.id, name: user.name, avatar: user.avatar };
+        const payload = { id: user.id, name: user.name, avatar: user.avatar };
 
         // created JWT token
         // now sign token
