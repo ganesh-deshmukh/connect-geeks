@@ -8,6 +8,9 @@ const keys = require("../../config/keys");
 const jwt = require("jsonwebtoken");
 const passport = require("passport");
 
+// Load Input Validation for checking errors on sending blank data
+const validationRegisterInput = require("../../validation/register");
+
 // Load User Model to check existing email is used for registration or not?
 const User = require("../../models/User");
 
@@ -21,6 +24,14 @@ router.get("/test", (req, res) => res.json({ msg: "Users Works" }));
 // @access      Public, without login first register
 
 router.post("/register", (req, res) => {
+  // send all body-params and get feedback as either success/error due to incompletion
+  const { errors, isValid } = validationRegisterInput(req.body);
+
+  if (!isValid) {
+    // eg. input is empty
+    return res.status(400).json(errors);
+  }
+
   User.findOne({ email: req.body.email }).then(user => {
     if (user) {
       return res.status(400).json({ email: "Email value exists already." });
