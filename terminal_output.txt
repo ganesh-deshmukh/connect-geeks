@@ -4900,3 +4900,227 @@ gd@gd10:~/Desktop/find-geeks$ exit
 exit
 
 Script done on 2018-08-22 12:56:50+0530
+Script started on 2018-09-02 21:00:43+0530
+gd@gd10:~/Desktop/find-geeks$ npm start
+
+> find-geeks@1.0.0 start /home/gd/Desktop/find-geeks
+> node server.js
+
+Server is running at port no 5000
+MongoDB connected
+^C
+gd@gd10:~/Desktop/find-geeks$ npm start
+
+> find-geeks@1.0.0 start /home/gd/Desktop/find-geeks
+> node server.js
+
+Server is running at port no 5000
+MongoDB connected
+^C
+gd@gd10:~/Desktop/find-geeks$ node run          npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+ReferenceError: en is not defined
+    at validateRegisterInput (/home/gd/Desktop/find-geeks/validation/register.js:44:47)
+    at router.post (/home/gd/Desktop/find-geeks/routes/api/users.js:28:31)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at /home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:317:13)
+    at /home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:275:10)
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+ReferenceError: en is not defined
+    at validateRegisterInput (/home/gd/Desktop/find-geeks/validation/register.js:44:47)
+    at router.post (/home/gd/Desktop/find-geeks/routes/api/users.js:28:31)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at /home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:317:13)
+    at /home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:275:10)
+ReferenceError: en is not defined
+    at validateRegisterInput (/home/gd/Desktop/find-geeks/validation/register.js:44:47)
+    at router.post (/home/gd/Desktop/find-geeks/routes/api/users.js:28:31)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at /home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:317:13)
+    at /home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:275:10)
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+ReferenceError: en is not defined
+    at validateRegisterInput (/home/gd/Desktop/find-geeks/validation/register.js:44:48)
+    at router.post (/home/gd/Desktop/find-geeks/routes/api/users.js:28:31)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at /home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:317:13)
+    at /home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:275:10)
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+ReferenceError: locale is not defined
+    at validateRegisterInput (/home/gd/Desktop/find-geeks/validation/register.js:44:56)
+    at router.post (/home/gd/Desktop/find-geeks/routes/api/users.js:28:31)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at /home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:317:13)
+    at /home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:275:10)
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+/home/gd/Desktop/find-geeks/validation/register.js:44
+  if (Validator.isAlphanumeric(data.password[(,'en-US')])) {
+                                              ^
+
+SyntaxError: Unexpected token ,
+    at new Script (vm.js:74:7)
+    at createScript (vm.js:246:10)
+    at Object.runInThisContext (vm.js:298:10)
+    at Module._compile (internal/modules/cjs/loader.js:657:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (/home/gd/Desktop/find-geeks/routes/api/users.js:12:33)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+TypeError: This library (validator.js) validates strings only
+    at assertString (/home/gd/Desktop/find-geeks/node_modules/validator/lib/util/assertString.js:11:11)
+    at Object.isAlphanumeric (/home/gd/Desktop/find-geeks/node_modules/validator/lib/isAlphanumeric.js:19:30)
+    at validateRegisterInput (/home/gd/Desktop/find-geeks/validation/register.js:44:18)
+    at router.post (/home/gd/Desktop/find-geeks/routes/api/users.js:28:31)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at /home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:317:13)
+    at /home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:284:7
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+TypeError: This library (validator.js) validates strings only
+    at assertString (/home/gd/Desktop/find-geeks/node_modules/validator/lib/util/assertString.js:11:11)
+    at Object.isAlphanumeric (/home/gd/Desktop/find-geeks/node_modules/validator/lib/isAlphanumeric.js:19:30)
+    at validateRegisterInput (/home/gd/Desktop/find-geeks/validation/register.js:44:18)
+    at router.post (/home/gd/Desktop/find-geeks/routes/api/users.js:28:31)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at /home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:317:13)
+    at /home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:284:7
+TypeError: This library (validator.js) validates strings only
+    at assertString (/home/gd/Desktop/find-geeks/node_modules/validator/lib/util/assertString.js:11:11)
+    at Object.isAlphanumeric (/home/gd/Desktop/find-geeks/node_modules/validator/lib/isAlphanumeric.js:19:30)
+    at validateRegisterInput (/home/gd/Desktop/find-geeks/validation/register.js:44:18)
+    at router.post (/home/gd/Desktop/find-geeks/routes/api/users.js:28:31)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at /home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:317:13)
+    at /home/gd/Deskto
