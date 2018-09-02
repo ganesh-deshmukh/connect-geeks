@@ -5123,4 +5123,59 @@ TypeError: This library (validator.js) validates strings only
     at router (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:47:12)
     at Layer.handle [as handle_request] (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/layer.js:95:5)
     at trim_prefix (/home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:317:13)
-    at /home/gd/Deskto
+    at /home/gd/Desktop/find-geeks/node_modules/express/lib/router/index.js:284:7
+^C
+gd@gd10:~/Desktop/find-geeks$ git add .
+gd@gd10:~/Desktop/find-geeks$ git commit -a m "
+> TypeError: This library (validator.js) validates strings only"
+[master 0c671ab] TypeError: This library (validator.js) validates strings only
+ 2 files changed, 241 insertions(+), 13 deletions(-)
+gd@gd10:~/Desktop/find-geeks$ git commit -m "^JTypeError: This library (validator.js) validates strings only"gd@gd10:~/Desktop/find-geeks$ git commit -m "gd@gd10:~/Desktop/find-geeks$ git commit -m "^Jgd@gd10:~/Desktop/find-geeks$ git commit -m "^JTTypeError: This library (validator.js) validates strings only"  gd@gd10:~/Desktop/find-geeks$ git commit -m "ETypeError: This library (validator.js) validates strings only"gd@gd10:~/Desktop/find-geeks$ git commit -m "ErTypeError: This library (validator.js) validates strings only"gd@gd10:~/Desktop/find-geeks$ git commit -m "EroTypeError: This library (validator.js) validates strings only"gd@gd10:~/Desktop/find-geeks$ git commit -m "EroTypeError: This library (validator.js) validates strings only" gd@gd10:~/Desktop/find-geeks$ git commit -m "ErrTypeError: This library (validator.js) validates strings only"gd@gd10:~/Desktop/find-geeks$ git commit -m "ErroTypeError: This library (validator.js) validates strings only"gd@gd10:~/Desktop/find-geeks$ git commit -m "ErrorTypeError: This library (validator.js) validates strings only"gd@gd10:~/Desktop/find-geeks$ git commit -m "Error TypeError: This library (validator.js) validates strings only"gd@gd10:~/Desktop/find-geeks$ git commit -m "Error 
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gd@gd10:~/Desktop/find-geeks$ git push -u origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 1.31 KiB | 148.00 KiB/s, done.
+Total 5 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/4)   [Kremote: Resolving deltas:  25% (1/4)   [Kremote: Resolving deltas:  50% (2/4)   [Kremote: Resolving deltas:  75% (3/4)   [Kremote: Resolving deltas: 100% (4/4)   [Kremote: Resolving deltas: 100% (4/4), completed with 4 local objects.[K
+To github.com:ganeshdeshmukh1612/connect-geeks.git
+   d230365..0c671ab  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+gd@gd10:~/Desktop/find-geeks$ npm run server
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.

@@ -10,6 +10,7 @@ const passport = require("passport");
 
 // Load Input Validation for checking errors on sending blank data
 const validationRegisterInput = require("../../validation/register");
+const validationLoginInput = require("../../validation/login");
 
 // Load User Model to check existing email is used for registration or not?
 const User = require("../../models/User");
@@ -79,6 +80,13 @@ router.post("/register", (req, res) => {
 // @access      Public
 
 router.post("/login", (req, res) => {
+  // send all body-params and get feedback as either success/error due to incompletion
+  const { errors, isValid } = validationLoginInput(req.body);
+
+  if (!isValid) {
+    // eg. input is empty
+    return res.status(400).json(errors);
+  }
   const email = req.body.email;
   const password = req.body.password;
 
@@ -86,7 +94,9 @@ router.post("/login", (req, res) => {
   User.findOne({ email: req.body.email }).then(user => {
     //check if no user
     if (!user) {
-      return res.status(404).json({ email: "User's email   found." });
+      errors.email = "User's email   found.";
+
+      return res.status(404).json(errors);
     }
 
     // else if do this..
@@ -117,7 +127,8 @@ router.post("/login", (req, res) => {
         );
       } else {
         // pswd doesn't matched
-        return res.status(400).json({ password: "Password didn't match" });
+        errors.password = "Password didn't match";
+        return res.status(400).json(password);
       }
     });
   });
