@@ -109,5 +109,30 @@ const ProfileSchema = new Schema({
         type: String
       }
     }
-  ]
+  ],
+
+  // add social media account links
+  social: {
+    twitter: {
+      type: String
+    },
+    linkedin: {
+      type: String
+    },
+    stackoverflow: {
+      type: String
+    },
+    facebook: {
+      type: String
+    },
+    youtube: {
+      type: String
+    }
+  },
+
+  // add current date of joining
+  date: {
+    type: Date,
+    default: Date.now
+  }
 });
