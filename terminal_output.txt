@@ -5178,4 +5178,53 @@ MongoDB connected
 Server is running at port no 5000
 MongoDB connected
 [32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node server.
+[32m[nodemon] starting `node server.Script started on 2018-09-03 12:46:42+0530
+gd@gd10:~/Desktop/find-geeks$ 
+gd@gd10:~/Desktop/find-geeks$ 
+gd@gd10:~/Desktop/find-geeks$ cls
+
+Command 'cls' not found, but there are 17 similar ones.
+
+gd@gd10:~/Desktop/find-geeks$ clear
+'dump': unknown terminal type.
+gd@gd10:~/Desktop/find-geeks$                                                                                                                  gd@gd10:~/Desktop/find-geeks$                                                                                                                  gd@gd10:~/Desktop/find-geeks$                                                                                                                  gd@gd10:~/Desktop/find-geeks$ ^C
+gd@gd10:~/Desktop/find-geeks$ 
+gd@gd10:~/Desktop/find-geeks$ git add .
+gd@gd10:~/Desktop/find-geeks$ git commit -am   "added Proj file model        Schema to so tore detaile s of usr eer  r"
+[master a3ac9f0] added ProfileSchema to store details of user
+ 1 file changed, 78 insertions(+)
+ create mode 100644 models/Profile.js
+gd@gd10:~/Desktop/find-geeks$ git commit        add .
+gd@gd10:~/Desktop/find-geeks$ git commit -m "added education field to store education details to    in                             in Profile.js"
+[master f991521] added education field in Profile.js
+ 1 file changed, 35 insertions(+)
+gd@gd10:~/Desktop/find-geeks$ git add .
+gd@gd10:~/Desktop/find-geeks$ git commit -m "added sc odc  cialmedia field and date  ofJoining"  in proj    Profile model"
+[master a4de4eb] added socialmedia field and dateofJoining in Profile model
+ 1 file changed, 26 insertions(+), 1 deletion(-)
+gd@gd10:~/Desktop/find-geeks$ git add .
+gd@gd10:~/Desktop/find-geeks$ git commit -m "added       Completed ProfileSchema-model"
+[master 249c267] Completed ProfileSchema-model
+ 1 file changed, 3 insertions(+)
+gd@gd10:~/Desktop/find-geeks$ git push -u origin master
+Counting objects: 16, done.
+Delta compression using up to 4 threads.
+Compressing objects:   6% (1/16)   Compressing objects:  12% (2/16)   Compressing objects:  18% (3/16)   Compressing objects:  25% (4/16)   Compressing objects:  31% (5/16)   Compressing objects:  37% (6/16)   Compressing objects:  43% (7/16)   Compressing objects:  50% (8/16)   Compressing objects:  56% (9/16)   Compressing objects:  62% (10/16)   Compressing objects:  68% (11/16)   Compressing objects:  75% (12/16)   Compressing objects:  81% (13/16)   Compressing objects:  87% (14/16)   Compressing objects:  93% (15/16)   Compressing objects: 100% (16/16)   Compressing objects: 100% (16/16), done.
+Writing objects:   6% (1/16)   Writing objects:  12% (2/16)   Writing objects:  18% (3/16)   Writing objects:  25% (4/16)   Writing objects:  31% (5/16)   Writing objects:  37% (6/16)   Writing objects:  43% (7/16)   Writing objects:  50% (8/16)   Writing objects:  56% (9/16)   Writing objects:  62% (10/16)   Writing objects:  68% (11/16)   Writing objects:  75% (12/16)   Writing objects:  81% (13/16)   Writing objects:  87% (14/16)   Writing objects:  93% (15/16)   Writing objects: 100% (16/16)   Writing objects: 100% (16/16), 2.16 KiB | 1.08 MiB/s, done.
+Total 16 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/7)   [Kremote: Resolving deltas:  42% (3/7)   [Kremote: Resolving deltas: 100% (7/7)   [Kremote: Resolving deltas: 100% (7/7), completed with 1 local object.[K
+To github.com:ganeshdeshmukh1612/connect-geeks.git
+   41e0457..249c267  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+gd@gd10:~/Desktop/find-geeks$ npm run serev  ver
+
+> find-geeks@1.0.0 server /home/gd/Desktop/find-geeks
+> nodemon server.js
+
+[33m[nodemon] 1.18.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node server.js`[39m
+Server is running at port no 5000
+MongoDB connected
+dd
