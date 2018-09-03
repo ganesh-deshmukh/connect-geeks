@@ -136,3 +136,6 @@ const ProfileSchema = new Schema({
     default: Date.now
   }
 });
+
+// 'profile' is exported from a ProfileSchema
+mongoose.exports = Profile = mongoose.model("profile", ProfileSchema);
