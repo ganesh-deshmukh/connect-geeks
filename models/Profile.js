@@ -74,5 +74,40 @@ const ProfileSchema = new Schema({
         type: String
       }
     }
+  ],
+
+  // add education also
+  education: [
+    // array of objects
+    {
+      school: {
+        type: String,
+        required: true
+      },
+      degree: {
+        type: String,
+        required: true
+      },
+      fieldofstudy: {
+        type: String,
+        required: true
+      },
+      from: {
+        type: Date,
+        required: true
+      },
+      to: {
+        type: Date
+        // required: true
+        // choose from checkbox
+      },
+      current: {
+        type: Boolean,
+        default: false
+      },
+      description: {
+        type: String
+      }
+    }
   ]
 });
