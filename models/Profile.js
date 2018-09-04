@@ -138,4 +138,4 @@ const ProfileSchema = new Schema({
 });
 
 // 'profile' is exported from a ProfileSchema
-mongoose.exports = Profile = mongoose.model("profile", ProfileSchema);
+module.exports = Profile = mongoose.model("profile", ProfileSchema);

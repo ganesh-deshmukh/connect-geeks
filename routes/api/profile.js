@@ -21,25 +21,50 @@ router.get("/test", (req, res) => res.json({ msg: "Profile works" }));
 // @access      Private , needed to  login. after login you send token with request.
 
 // router.get('/') => means router.get('/api/profile/') as this is default setup relatively.
+
+// router.get(
+//   "/",
+//   passport.authenticate("jwt", { session: false }),
+//   (req, res) => {
+//     // make errors array to send, if any occurs.
+//     const errors = {};
+
+//     Profile.findOne({ user: req.user.id })
+//       .then(profile => {
+//         if (!profile) {
+//           errors.noprofile = "There is no any profile of this username";
+//           return res.status(404).json(errors);
+//         }
+//         // else
+//         res.json(profile);
+//       })
+//       .catch(err => {
+//         res.status(404).json(err);
+//       });
+//   }
+// );
+
 router.get(
   "/",
   passport.authenticate("jwt", { session: false }),
   (req, res) => {
-    // make errors array to send, if any occurs.
     const errors = {};
 
     Profile.findOne({ user: req.user.id })
+      .populate("user", ["name", "avatar"])
       .then(profile => {
         if (!profile) {
-          res.status(404).json(errors);
+          errors.noprofile = "There is no profile for this user";
+          return res.status(404).json(errors);
         }
-        // else
         res.json(profile);
       })
-      .catch(err => {
-        res.send(400).json(err);
-      });
+      .catch(err => res.status(404).json(err));
   }
 );
+
+//
+//
+//
 
 module.exports = router;
