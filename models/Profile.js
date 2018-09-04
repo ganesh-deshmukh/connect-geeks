@@ -2,15 +2,19 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema; // Schema is property/function in module-mongoose
 
 // create profile schema specifing what contents to inclued in table=collection
+
 const ProfileSchema = new Schema({
   // associate user with profile- store details in profile model
   // but import some details from user
+
+  // experience, skills, education are arrays
+
   user: {
     type: Schema.Types.ObjectId,
     ref: "users" //collection rerence to import data from users collection to profile info
   },
   handle: {
-    // seo friendly url, handle=name in url
+    // seo friendly url, handle = name of user in url
     type: String,
     required: true,
     // we have already done validation
@@ -139,3 +143,8 @@ const ProfileSchema = new Schema({
 
 // 'profile' is exported from a ProfileSchema
 module.exports = Profile = mongoose.model("profile", ProfileSchema);
+
+// once you register then, it will take you to dashboard, you get only user not profile.
+// then you have to make your own geek-developer account using 'post' request
+
+// remember we have user collection and also profile one.
