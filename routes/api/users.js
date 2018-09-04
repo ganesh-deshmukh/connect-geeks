@@ -37,7 +37,9 @@ router.post("/register", (req, res) => {
     if (user) {
       return res.status(400).json({ email: "Email value exists already." });
     } else {
-      console.log("no user found of this email in DB");
+      console.log(
+        "no user found of this email in DB\n so adding this user in Collection "
+      );
       const avatar = gravatar.url(req.body.email, {
         s: "200", //Size of gravatar in pixels
         r: "pg", //rating,

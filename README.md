@@ -22,3 +22,11 @@ by importing express,calling express by variable app, app.get, listening to requ
 15.then create hash using that salt.
 
 16.If 'unhandled error: listen EADDR_IN_USE:::5000' occurs then run 'killall node'
+
+17.create model of Profile to save details of Profile
+
+18.create current user profile route
+
+19.Update profile routes creation
+
+20.validate profile details,eg. handle
