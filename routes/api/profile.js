@@ -44,7 +44,7 @@ router.get(
 );
 
 // @route       POST request to api/profile/tokenID-encrypted- secured instead of profile-id
-// @description Create new user's  profile
+// @description Create new user's or Update-Edit  profile
 // @access      Private , needed to  login. after login you send token with request.
 
 router.post(
@@ -79,7 +79,35 @@ router.post(
       profileFields.social.stackoverflow = req.body.stackoverflow;
     if (req.body.facebook) profileFields.social.facebook = req.body.facebook;
     if (req.body.youtube) profileFields.social.youtube = req.body.youtube;
+
+    Profile.findOne({ user: req.user.id }).then(profile => {
+      if (profile) {
+        // means you are updating og profile
+        Profile.findOneAndUpdate(
+          { user: req.user.id },
+          { $set: profileFields },
+          { new: true } // new- flag to return or not new object or old object
+        ).then(profile => res.json(profile));
+      } else {
+        // create new profile, as it was not found
+        // check new handle(name), must be different than registered for SEO purpose
+        Profile.findOne({ handle: profileFields.handle }).then(profile => {
+          if (profile) {
+            // old profile is existed alredy
+            errors.handle =
+              "Sorry, same profileurl/ handle is registered already";
+
+            res.status(400).json(errors);
+          }
+
+          // save profile either edited or new
+          new Profile(profileFields).save().then(profile => res.json(profile));
+        });
+      }
+    });
   }
 );
+
+//  experience and education are separate form
 
 module.exports = router;
