@@ -5,6 +5,9 @@ const router = express.Router();
 const mongoose = require("mongoose");
 const passport = require("passport");
 
+// Import validation file for profile-validation
+const validateProfileInput = require("../../validation/profile");
+
 // Load Profile model from db
 const Profile = require("../../models/Profile");
 
@@ -51,6 +54,14 @@ router.post(
   "/",
   passport.authenticate("jwt", { session: false }),
   (req, res) => {
+    const { errors, isValid } = validateProfileInput(req.body); // pass input data
+
+    // Check Validation output
+    if (!isValid) {
+      // Return any errors with 400 status
+      return res.status(400).json(errors);
+    }
+
     // Get all fields through req.body -
     // to edit specific and return others as it must return unchanged values.
     const profileFields = {}; // empty object
