@@ -78,8 +78,8 @@ router.post(
       profileFields.githubusername = req.body.githubusername;
 
     // skills is array of vales as csv-comma separated values
-    if (typeof req.body.skills !== undefined) {
-      profileFields.skills = req.body.skills.split(","); // remove commas
+    if (typeof req.body.skills !== "undefined") {
+      profileFields.skills = req.body.skills.split(",");
     }
     // else
     ///Social
@@ -112,6 +112,7 @@ router.post(
           }
 
           // save profile either edited or new
+
           new Profile(profileFields).save().then(profile => res.json(profile));
         });
       }

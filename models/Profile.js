@@ -1,42 +1,31 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema; // Schema is property/function in module-mongoose
+const Schema = mongoose.Schema;
 
-// create profile schema specifing what contents to inclued in table=collection
-
+// Create Schema
 const ProfileSchema = new Schema({
-  // associate user with profile- store details in profile model
-  // but import some details from user
-
-  // experience, skills, education are arrays
-
   user: {
     type: Schema.Types.ObjectId,
-    ref: "users" //collection rerence to import data from users collection to profile info
+    ref: "users"
   },
   handle: {
-    // seo friendly url, handle = name of user in url
     type: String,
     required: true,
-    // we have already done validation
     max: 40
   },
   company: {
-    type: String,
-    required: false // students can't have companies
+    type: String
   },
   website: {
-    type: String // not required always
+    type: String
   },
   location: {
     type: String
   },
   status: {
-    // options like developer, student, trainer
     type: String,
     required: true
   },
   skills: {
-    // comma separeted values, csv and then store as array.
     type: [String],
     required: true
   },
@@ -44,11 +33,9 @@ const ProfileSchema = new Schema({
     type: String
   },
   githubusername: {
-    type: String,
-    required: false
+    type: String
   },
   experience: [
-    // array of objects
     {
       title: {
         type: String,
@@ -67,8 +54,6 @@ const ProfileSchema = new Schema({
       },
       to: {
         type: Date
-        // required: true
-        // choose from checkbox
       },
       current: {
         type: Boolean,
@@ -79,10 +64,7 @@ const ProfileSchema = new Schema({
       }
     }
   ],
-
-  // add education also
   education: [
-    // array of objects
     {
       school: {
         type: String,
@@ -102,8 +84,6 @@ const ProfileSchema = new Schema({
       },
       to: {
         type: Date
-        // required: true
-        // choose from checkbox
       },
       current: {
         type: Boolean,
@@ -114,37 +94,27 @@ const ProfileSchema = new Schema({
       }
     }
   ],
-
-  // add social media account links
   social: {
+    youtube: {
+      type: String
+    },
     twitter: {
-      type: String
-    },
-    linkedin: {
-      type: String
-    },
-    stackoverflow: {
       type: String
     },
     facebook: {
       type: String
     },
-    youtube: {
+    linkedin: {
+      type: String
+    },
+    instagram: {
       type: String
     }
   },
-
-  // add current date of joining
   date: {
     type: Date,
     default: Date.now
   }
 });
 
-// 'profile' is exported from a ProfileSchema
 module.exports = Profile = mongoose.model("profile", ProfileSchema);
-
-// once you register then, it will take you to dashboard, you get only user not profile.
-// then you have to make your own geek-developer account using 'post' request
-
-// remember we have user collection and also profile one.
