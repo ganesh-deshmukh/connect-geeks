@@ -83,7 +83,7 @@ router.post(
     }
     // else
     ///Social
-    profilesfields.social = {};
+    profileFields.social = {};
     if (req.body.twitter) profileFields.social.twitter = req.body.twitter;
     if (req.body.linkedin) profileFields.social.linkedin = req.body.linkedin;
     if (req.body.stackoverflow)
