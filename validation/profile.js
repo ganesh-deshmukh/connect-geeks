@@ -5,28 +5,28 @@
 const Validator = require("validator");
 const isEmpty = require("./is-empty");
 
+// validate handle,status, skills
 module.exports = function validateLoginInput(data) {
   let errors = {};
 
-  data.email = !isEmpty(data.email) ? data.email : "";
-  data.password = !isEmpty(data.password) ? data.password : "";
+  data.handle = !isEmpty(data.handle) ? data.handle : "";
+  data.status = !isEmpty(data.status) ? data.status : "";
+  data.skills = !isEmpty(data.skills) ? data.skills : "";
 
-  if (!Validator.isEmail(data.email)) {
-    errors.email = "Email is invalid";
+  if (!Validator.isLength(data.handle, { min: 2, max: 40 })) {
+    errors.handle = 'Handle must between length 2 and 4 characters';
   }
 
-  if (Validator.isEmpty(data.email)) {
-    errors.email = "Email field is required";
+  if (Validator.isEmpty(data.handle)) {
+    errors.handle = 'Profile handle is compulsory';
   }
 
-  if (Validator.isEmpty(data.password)) {
-    errors.password = "Password field is required";
+  if (Validator.isEmpty(data.status)) {
+    errors.status = 'Status field is compulsory';
   }
 
-  return {
-    errors,
-    isValid: isEmpty(errors)
-  };
-};
+  if (Validator.isEmpty(data.skills)) {
+    errors.skills = 'Skills field is compulsory';
+  }
 
 // it will be valid if there are no errors. i.e. only if errors object is empty
