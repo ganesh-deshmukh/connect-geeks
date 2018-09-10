@@ -19,12 +19,52 @@ const User = require("../../models/User");
 // @access      Private , needed to  login. after login you send token with request.
 router.get("/test", (req, res) => res.json({ msg: "Profile works" }));
 
+// @route       GET request to api/profile/handle/:handle
+// @description get handle-info without login
+// @access      Public, no need to login.
+router.get("/handle/:handle", (req, res) => {
+  const errors = {};
+  Profile.findOne({ handle: req.params.handle })
+    .populate("user", ["name", "avatar"])
+    .then(profile => {
+      if (!profile) {
+        errors.noprofile = "No any Profile found on this handle";
+        res.status(404).json(errors);
+      }
+      res.json(profile);
+    })
+    .catch(error => {
+      res.status(404).json(error);
+    });
+});
+
+// @route       GET request to api/profile/user/:user_id
+// @description get handle-info without login, by using user-id
+// @access      Public, no need to login.
+router.get("/user/:user_id", (req, res) => {
+  const errors = {};
+
+  Profile.findOne({ user: req.params.user_id })
+    .populate("user", ["name", "avatar"])
+    .then(profile => {
+      if (!profile) {
+        errors.noprofile = "No any Profile found on this user-ID";
+        res.status(404).json(errors);
+      }
+      res.json(profile);
+    })
+    .catch(error => {
+      res
+        .status(404)
+        .json({ profile: "There is no profile found for this ID" });
+    });
+});
+
 // @route       GET request to api/profile/tokenID-encrypted- secured instead of profile-id
 // @description get current user's  profile route
 // @access      Private , needed to  login. after login you send token with request.
 
 // router.get('/') => means router.get('/api/profile/') as this is default setup relatively.
-
 router.get(
   "/",
   passport.authenticate("jwt", { session: false }),
