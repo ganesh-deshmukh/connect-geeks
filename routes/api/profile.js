@@ -19,25 +19,6 @@ const User = require("../../models/User");
 // @access      Private , needed to  login. after login you send token with request.
 router.get("/test", (req, res) => res.json({ msg: "Profile works" }));
 
-// @route       GET request to api/profile/handle/:handle
-// @description get handle-info without login
-// @access      Public, no need to login.
-router.get("/handle/:handle", (req, res) => {
-  const errors = {};
-  Profile.findOne({ handle: req.params.handle })
-    .populate("user", ["name", "avatar"])
-    .then(profile => {
-      if (!profile) {
-        errors.noprofile = "No any Profile found on this handle";
-        res.status(404).json(errors);
-      }
-      res.json(profile);
-    })
-    .catch(error => {
-      res.status(404).json(error);
-    });
-});
-
 // @route       GET request to api/profile/user/:user_id
 // @description get handle-info without login, by using user-id
 // @access      Public, no need to login.
@@ -57,6 +38,45 @@ router.get("/user/:user_id", (req, res) => {
       res
         .status(404)
         .json({ profile: "There is no profile found for this ID" });
+    });
+});
+
+// @route       GET request to api/profile/all
+// @description get all profiles without login
+// @access      Public, no need to login.
+router.get("/all", (req, res) => {
+  const errors = {};
+  Profile.find()
+    .populate("user", ["name", "avatar"])
+    .then(profiles => {
+      if (!profiles) {
+        errors.noprofile = "There is no any profile";
+        return res.status(404).json(errors);
+      } else {
+        res.json(profiles);
+      }
+    })
+    .catch(err => {
+      res.status(404).json({ profile: "There is no any profile" });
+    });
+});
+
+// @route       GET request to api/profile/handle/:handle
+// @description get handle-info without login
+// @access      Public, no need to login.
+router.get("/handle/:handle", (req, res) => {
+  const errors = {};
+  Profile.findOne({ handle: req.params.handle })
+    .populate("user", ["name", "avatar"])
+    .then(profile => {
+      if (!profile) {
+        errors.noprofile = "No any Profile found on this handle";
+        res.status(404).json(errors);
+      }
+      res.json(profile);
+    })
+    .catch(error => {
+      res.status(404).json(error);
     });
 });
 
