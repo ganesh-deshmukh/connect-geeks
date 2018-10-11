@@ -182,4 +182,25 @@ router.post(
 
 //  experience and education are separate form
 
+// @route       POST request to api/experience route
+// @description Add experience details to your profile
+// @access      Private , needed to  login. after login you send token with request.
+router.post(
+  "/experience",
+  passport.authenticate("jwt", { session: false }),
+  (req, res) => {
+    Profile.findOne({ user: req.user.id }).then(profile => {
+      // create newExp as Object and later add that object to profile-details array.
+      const newExp = {
+        title: req.body.title,
+        company: req.body.company,
+        location: req.body.location,
+        from: req.body.from,
+        to: req.body.to,
+        current: req.body.current,
+        description: req.body.description
+      };
+    });
+  }
+);
 module.exports = router;
