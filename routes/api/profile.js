@@ -200,6 +200,11 @@ router.post(
         current: req.body.current,
         description: req.body.description
       };
+
+      // no collection named as 'Experience', we will add it in our profile-collection Exp-array.
+      // add at begginning by unshift
+      profile.experience.unshift(newExp);
+      profile.save().then(profile => res.json(profile));
     });
   }
 );
