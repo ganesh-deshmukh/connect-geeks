@@ -219,6 +219,30 @@ router.post(
   }
 );
 
+// @route       DELETE request to api/experience/:exp_id route
+// @description Delete the experience details of your profile
+// @access      Private , needed to  login. after login you send token with request.
+router.delete(
+  "/experience/:exp_id",
+  passport.authenticate("jwt", { session: false }),
+  (req, res) => {
+    Profile.findOne({ user: req.user.id })
+      .then(profile => {
+        // first get that index to remove it, using map()
+        const removeIndex = profile.experience
+          .map(item => item.id)
+          .indexOf(req.params.exp_id);
+
+        // now, splice your array and take that element-out of your array.
+        profile.experience.splice(removeIndex);
+
+        // save remaining array and return that profile through json()
+        profile.save().then(profile => res.json(profile));
+      })
+      .catch(err => res.status(404).json(err));
+  }
+);
+
 // @route       POST request to api/education route
 // @description Add education details to your profile
 // @access      Private , needed to  login. after login you send token with request.
