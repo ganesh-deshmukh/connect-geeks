@@ -16,13 +16,22 @@ const validatePostInput = require("../../validation/post");
 // @access      Public, without login
 router.get("/test", (req, res) => res.json({ msg: "Posts Works" }));
 
-// @route       GET request to api/posts/test
+// @route       GET request to api/posts/
 // @description Tests posts route
 // @access      Public, without login
 router.get("/", (req, res) => {
   Post.find()
     .sort({ date: -1 })
     .then(posts => res.json(posts))
+    .catch(err => res.status(404));
+});
+
+// @route       GET request to api/posts/:id
+// @description Tests posts route for post of specific user
+// @access      Public, without login
+router.get("/:id", (req, res) => {
+  Post.findById(req.params.id)
+    .then(post => res.json(post))
     .catch(err => res.status(404));
 });
 
