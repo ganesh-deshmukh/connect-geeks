@@ -181,7 +181,7 @@ router.post(
   }
 );
 
-//  experience and education are separate form
+//  experience and education are separate form each other and they are arrays not collections.
 
 // @route       POST request to api/experience route
 // @description Add experience details to your profile
@@ -213,6 +213,41 @@ router.post(
       // no collection named as 'Experience', we will add it in our profile-collection Exp-array.
       // add at begginning by unshift
       profile.experience.unshift(newExp);
+      profile.save().then(profile => res.json(profile));
+    });
+  }
+);
+
+// @route       POST request to api/education route
+// @description Add education details to your profile
+// @access      Private , needed to  login. after login you send token with request.
+router.post(
+  "/education",
+  passport.authenticate("jwt", { session: false }),
+  (req, res) => {
+    const { errors, isValid } = validateEducationInput(req.body); // pass input data
+
+    // Check Validation
+    if (!isValid) {
+      // Return any errors with 400 status
+      return res.status(400).json(errors);
+    }
+
+    Profile.findOne({ user: req.user.id }).then(profile => {
+      // create newExp as Object and later add that object to profile-details array.
+      const newExp = {
+        school: req.body.school,
+        degree: req.body.degree,
+        fieldofstudy: req.body.fieldofstudy,
+        from: req.body.from,
+        to: req.body.to,
+        current: req.body.current,
+        description: req.body.description
+      };
+
+      // no collection named as 'Education', we will add it in our profile-collection Education-array.
+      // add at begginning by unshift
+      profile.education.unshift(newExp);
       profile.save().then(profile => res.json(profile));
     });
   }
