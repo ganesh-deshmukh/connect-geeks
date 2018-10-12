@@ -15,7 +15,16 @@ const validatePostInput = require("../../validation/post");
 // @description Tests posts route
 // @access      Public, without login
 router.get("/test", (req, res) => res.json({ msg: "Posts Works" }));
-module.exports = router;
+
+// @route       GET request to api/posts/test
+// @description Tests posts route
+// @access      Public, without login
+router.get("/", (req, res) => {
+  Post.find()
+    .sort({ date: -1 })
+    .then(posts => res.json(posts))
+    .catch(err => res.status(404));
+});
 
 // @route       POST request to api/posts
 // @description Create Posts
@@ -41,3 +50,5 @@ router.post(
     newPost.save().then(post => res.json(post));
   }
 );
+
+module.exports = router;
