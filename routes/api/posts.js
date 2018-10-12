@@ -131,4 +131,44 @@ router.post(
   }
 );
 
+// @route       POST request to api/unlike/:id
+// @description Unlike post by id
+// @access      Private post, need to login
+
+router.post(
+  "/unlike/:id",
+  passport.authenticate("jwt", { session: false }),
+  (req, res) => {
+    Profile.findOne({ user: req.user.id }).then(profile => {
+      Post.findById(req.params.id)
+        .then(post => {
+          // first check user has already liked this post or not
+          // we have only option to like and unlike, but not for dislike
+
+          if (
+            post.likes.filter(like => like.user.toString() === req.user.id)
+              .length === 0
+          ) {
+            return res
+              .status(400)
+              .json({ notyetliked: "You haven't  liked this post" });
+          }
+          // means user haven't liked this post, then add user's id to array of posts.
+
+          // Get remove index from likes-array
+          const removeIndex = post.likes
+            .map(item => item.user.toString())
+            .indexOf(req.user.id);
+
+          // splice index from array to remove one element.
+          post.likes.splice(removeIndex, 1);
+
+          // save newly spliced array to disk now,
+          post.save().then(post => res.json(post));
+        })
+        .catch(err => res.status(404).json({ postnotfound: "No post found" }));
+    });
+  }
+);
+
 module.exports = router;
