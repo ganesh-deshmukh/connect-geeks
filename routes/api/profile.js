@@ -302,4 +302,19 @@ router.delete(
   }
 );
 
+// @route       Delete-Profile route from '/api/profile' or relative path= '/'.
+// @description Remove Profile and User as well, after finding from db.
+// @access      Private , needed to  login. after login you send token with request.
+router.delete(
+  "/",
+  passport.authenticate("jwt", { session: false }),
+  (req, res) => {
+    Profile.findOneAndRemove({ user: req.user.id }) // Profile model has field user
+      .then(() => {
+        User.findOneAndRemove({ _id: req.user.id }) // User model has field _id
+          .then(() => res.json({ success: true }));
+      });
+  }
+);
+
 module.exports = router;
