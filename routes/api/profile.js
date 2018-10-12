@@ -7,6 +7,7 @@ const passport = require("passport");
 
 // Import validation file for profile-validation
 const validateProfileInput = require("../../validation/profile");
+const validateExperienceInput = require("../../validation/experience");
 
 // Load Profile model from db
 const Profile = require("../../models/Profile");
@@ -189,6 +190,14 @@ router.post(
   "/experience",
   passport.authenticate("jwt", { session: false }),
   (req, res) => {
+    const { errors, isValid } = validateExperienceInput(req.body); // pass input data
+
+    // Check Validation
+    if (!isValid) {
+      // Return any errors with 400 status
+      return res.status(400).json(errors);
+    }
+
     Profile.findOne({ user: req.user.id }).then(profile => {
       // create newExp as Object and later add that object to profile-details array.
       const newExp = {
