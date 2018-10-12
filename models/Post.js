@@ -21,47 +21,46 @@ const PostSchema = new Schema({
   avator: {
     type: String
   },
-  likes: {
+  likes:
     // likes is not just a number, we should show who liked post.
-    likes: [
+    [
       {
+        // if user likes post then user's ID is stored in likes array, to show who liked this post.
         user: {
           type: Schema.Types.ObjectId,
           ref: "users"
         }
       }
     ],
+  comments: [
+    {
+      // commments will have details of sender or name+avator of Commentator.
 
-    comments: [
-      {
-        // commments will have details of sender or name+avator of Commentator.
-
-        user: {
-          type: Schema.Types.ObjectId,
-          ref: "users"
-        },
-        text: {
-          type: String,
-          required: true
-        },
-        name: {
-          type: String
-        },
-        avator: {
-          type: String
-        },
-        date: {
-          type: Date,
-          default: Date.now
-        }
+      user: {
+        type: Schema.Types.ObjectId,
+        ref: "users"
+      },
+      text: {
+        type: String,
+        required: true
+      },
+      name: {
+        type: String
+      },
+      avator: {
+        type: String
+      },
+      date: {
+        type: Date,
+        default: Date.now
       }
-    ],
-
-    // post also have date of posting
-    date: {
-      type: Date,
-      default: Date.now
     }
+  ],
+
+  // post also have date of posting
+  date: {
+    type: Date,
+    default: Date.now
   }
 });
 
