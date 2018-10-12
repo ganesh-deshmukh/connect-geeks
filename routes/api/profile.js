@@ -8,6 +8,7 @@ const passport = require("passport");
 // Import validation file for profile-validation
 const validateProfileInput = require("../../validation/profile");
 const validateExperienceInput = require("../../validation/experience");
+const validateEducationInput = require("../../validation/education");
 
 // Load Profile model from db
 const Profile = require("../../models/Profile");
