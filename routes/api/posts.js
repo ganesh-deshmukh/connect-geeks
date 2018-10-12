@@ -212,23 +212,29 @@ router.post(
   "/comment/:id/:comment_id",
   passport.authenticate("jwt", { session: false }),
   (req, res) => {
-    Post.findById(req.params.id).then(post => {
-      // check if previous comment exist or not
-      if (
-        post.comments.filter(
-          comment => comment._id.toString() === req.params.comment_id
-        ).length === 0
-      ) {
-        return res
-          .status(404)
-          .json({ commentnotexist: "Comment with this id doesn't exist" });
-      } else {
+    Post.findById(req.params.id)
+      .then(post => {
+        // check if previous comment exist or not
+        if (
+          post.comments.filter(
+            comment => comment._id.toString() === req.params.comment_id
+          ).length === 0
+        ) {
+          return res
+            .status(404)
+            .json({ commentnotexist: "Comment with this id doesn't exist" });
+        }
         // Remove Index then
         const removeIndex = post.comments
           .map(item => item._id.toString())
           .indexOf(req.params.comment_id);
-      }
-    });
+
+        // Splice comment out of array
+        post.comments.splice(removeIndex, 1);
+
+        post.save().then(post => res.json(post));
+      })
+      .catch(err => res.status(404).json({ postnotfound: "No post found" }));
   }
 );
 
