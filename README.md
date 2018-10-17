@@ -44,3 +44,23 @@ by importing express,calling express by variable app, app.get, listening to requ
 19.Update profile routes creation
 
 20.validate profile details,eg. handle
+
+21.added route 'profile/experience' in 'api/profile.js'
+
+22.added 'experience-validator' file for exp-details validatin
+
+23.added 'delete-experience' route for profile.
+
+24.created model for storing posts, as 'api/profile/posts'
+
+25.added validation to user's post-field.
+
+26.added route to see all posts by get rqst to 'api/posts'
+
+27.added route to like post by its id.
+
+28.added route '/api/posts/comment/:id' to comment on posts.
+
+29.completed backend and added route to delete comments in post
+
+30.completed front-end theme using Bootstrap-4.0
