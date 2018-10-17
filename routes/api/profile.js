@@ -1,4 +1,4 @@
-// contains indivisual's profile info and every other details.
+// contains indivisual's profile success and every other details.
 
 const express = require("express");
 const router = express.Router();
@@ -22,7 +22,7 @@ const User = require("../../models/User");
 router.get("/test", (req, res) => res.json({ msg: "Profile works" }));
 
 // @route       GET request to api/profile/user/:user_id
-// @description get handle-info without login, by using user-id
+// @description get handle-success without login, by using user-id
 // @access      Public, no need to login.
 router.get("/user/:user_id", (req, res) => {
   const errors = {};
@@ -64,7 +64,7 @@ router.get("/all", (req, res) => {
 });
 
 // @route       GET request to api/profile/handle/:handle
-// @description get handle-info without login
+// @description get handle-success without login
 // @access      Public, no need to login.
 router.get("/handle/:handle", (req, res) => {
   const errors = {};
