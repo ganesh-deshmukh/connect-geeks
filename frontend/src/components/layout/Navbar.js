@@ -4,7 +4,7 @@ class Navbar extends Component {
   render() {
     // life cycle method
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark bg-primary mb-4">
+      <nav className="navbar navbar-expand-sm navbar-dark bg-primary mb-3">
         <div className="container">
           <a className="navbar-brand" href="landing.html">
             Find-Geeks

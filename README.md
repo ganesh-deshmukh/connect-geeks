@@ -83,3 +83,5 @@ client and backend using single command,
 ![Screenshot](./outputs/rundevserver.png)
 
 ![Screenshot](./outputs/twoservers.png)
+
+34.added React-Components. Navbar-smart component, Header & Footer are Dumb components.
