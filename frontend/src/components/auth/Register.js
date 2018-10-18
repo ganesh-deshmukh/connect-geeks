@@ -14,6 +14,7 @@ export default class Register extends Component {
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
+
   onChange(event) {
     this.setState({
       [event.target.name]: event.target.value
@@ -33,6 +34,7 @@ export default class Register extends Component {
     // currently output this object, later save this values to database.
     console.log(newUser);
   }
+
   render() {
     return (
       <div>
