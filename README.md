@@ -90,4 +90,4 @@ client and backend using single command,
 
 install `react-router-dom`(v4), previously it was just `react-router`.
 
-36.added routing for Login, SignUp, path='/' using `BrowserRouter`.
+36.added routing for Login, SignUp, path='/' using `BrowserRouter` and added pages for respective route.
