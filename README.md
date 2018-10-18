@@ -91,3 +91,11 @@ client and backend using single command,
 install `react-router-dom`(v4), previously it was just `react-router`.
 
 36.added routing for Login, SignUp, path='/' using `BrowserRouter` and added pages for respective route.
+
+37.Accepting input through register-form, by changing state from initial to new state using `setState()`.
+
+initial-state is empty, after typing state changes.
+
+![initial-state](./outputs/initial-state.png)
+
+![set-state](./outputs/set-state.png)

@@ -12,11 +12,26 @@ export default class Register extends Component {
       errors: {}
     };
     this.onChange = this.onChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
   }
   onChange(event) {
     this.setState({
       [event.target.name]: event.target.value
     });
+  }
+
+  onSubmit(event) {
+    event.preventDefault();
+    // we want to prevent origional behaviour of form. i.e. form-action= submit-values.
+
+    const newUser = {
+      name: this.state.name,
+      email: this.state.email,
+      password: this.state.password,
+      password2: this.state.password2
+    };
+    // currently output this object, later save this values to database.
+    console.log(newUser);
   }
   render() {
     return (
@@ -29,7 +44,7 @@ export default class Register extends Component {
                 <p className="lead text-center">
                   Create your Find-Geeks account
                 </p>
-                <form action="create-profile.html">
+                <form onSubmit={this.onSubmit}>
                   <div className="form-group">
                     <input
                       type="text"
