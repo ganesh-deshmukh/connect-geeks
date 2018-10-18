@@ -89,3 +89,5 @@ client and backend using single command,
 35.added Landing-page Component.
 
 install `react-router-dom`(v4), previously it was just `react-router`.
+
+36.added routing for Login, SignUp, path='/' using `BrowserRouter`.

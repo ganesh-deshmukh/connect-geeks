@@ -1,6 +1,7 @@
 // only functional component.
 
 import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 export default function Landing() {
   return (
@@ -17,12 +18,12 @@ export default function Landing() {
                   work, projects and <br /> grow Network with other Geeks.
                 </p>
                 <hr />
-                <a href="register.html" className="btn btn-lg btn-info mr-2">
+                <Link to="/register" className="btn btn-lg btn-info mr-2">
                   Sign Up
-                </a>
-                <a href="login.html" className="btn btn-lg btn-light">
+                </Link>
+                <Link to="/login" className="btn btn-lg btn-light">
                   Login
-                </a>
+                </Link>
               </div>
             </div>
           </div>
