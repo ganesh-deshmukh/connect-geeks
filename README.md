@@ -85,3 +85,7 @@ client and backend using single command,
 ![Screenshot](./outputs/twoservers.png)
 
 34.added React-Components. Navbar-smart component, Header & Footer are Dumb components.
+
+35.added Landing-page Component.
+
+install `react-router-dom`(v4), previously it was just `react-router`.
