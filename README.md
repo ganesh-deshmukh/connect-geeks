@@ -68,10 +68,18 @@ by importing express,calling express by variable app, app.get, listening to requ
 31.create-react-app `frontend`, to create client-side in ReactJS.
 which runs on port 3000.
 
-32.added npm module `concurrently` which allows to run simmultaneously both servers,
+32.added command `npm-install` to install front-end/client dependencies in `frontend-directory`.
+
+`--prefix` option allows us to implicitly go to mentioned directory as `cd frontend` internally.
+
+`"client-install": "npm install --prefix frontend"`
+
+33.added npm module `concurrently` which allows to run simmultaneously both servers,
 
 client and backend using single command,
 
-33.added command `npm-install` to install front-end/client dependencies in `frontend-directory`.
+`"dev": "concurrently \"npm run server\" \"npm run cliend\""`
 
-`--prefix` option allows us to implicitly go to mentioned directory as `cd frontend` internally.
+![Screenshot](./outputs/rundevserver.png)
+
+![Screenshot](./outputs/twoservers.png)
