@@ -110,3 +110,18 @@ alternative is `fetch-API`, but it's better to use axios, same as postman-but wi
 
 41.We won't make requests from react-forms, rather we would use Redux-actions,
 response to be sent through reducer.
+
+42.Though our application is not Huge, like Facebook, we actually don't need Redux,
+
+but, to share data between components and need Application-Level state,
+preserving Component-level state also.
+
+42.We will have states as authentication, user, profile, post, errors-reducers.
+
+43.Basic Redux flow is UI-> Action-> Reducer-> Single-Store-> Loop-UI.
+
+44.Provider is wrapper to wrap all React-Components.
+
+Redux-Thunk - ajax request asynchronous through thunk.
+
+45.Installed modules `react-redux, redux-thunk, redux` in `frontend` directory, not in root directory.
