@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import classnames from "classnames";
 
 export default class Register extends Component {
   // each field will have it's state.
@@ -37,10 +38,13 @@ export default class Register extends Component {
     axios
       .post("/api/users/register", newUser)
       .then(result => console.log(result.data))
-      .catch(error => console.log(error.response.data));
+      .catch(error => this.setState({ errors: error.response.data }));
   }
 
   render() {
+    const { errors } = this.state;
+    // const errors = this.state.errors;  // both syntax are same.
+
     return (
       <div>
         <div className="register">
@@ -55,12 +59,17 @@ export default class Register extends Component {
                   <div className="form-group">
                     <input
                       type="text"
-                      className="form-control form-control-lg"
+                      className={classnames("form-control form-control-lg", {
+                        "is-invalid": errors.name // add this class, only if you have name error
+                      })}
                       placeholder="Name"
                       name="name"
                       value={this.state.name}
                       onChange={this.onChange}
                     />
+                    {errors.name && (
+                      <div className="invalid-feedback">{errors.name} </div>
+                    )}
                   </div>
                   <div className="form-group">
                     <input

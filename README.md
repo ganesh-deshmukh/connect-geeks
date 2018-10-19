@@ -104,4 +104,6 @@ initial-state is empty, after typing state changes.
 
 alternative is `fetch-API`, but it's better to use axios, same as postman-but without UI.
 
-39.make request to database, where db is fresh and new, without old values.
+39.made request to database, where db is fresh and new, without old values.
+
+40.Installed `npm-package-classnames`, for adding classes dynamically to bootstrap-form-validation
