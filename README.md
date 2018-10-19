@@ -107,3 +107,6 @@ alternative is `fetch-API`, but it's better to use axios, same as postman-but wi
 39.made request to database, where db is fresh and new, without old values.
 
 40.Installed `npm-package-classnames`, for adding classes dynamically to bootstrap-form-validation
+
+41.We won't make requests from react-forms, rather we would use Redux-actions,
+response to be sent through reducer.

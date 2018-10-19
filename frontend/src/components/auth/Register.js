@@ -55,7 +55,7 @@ export default class Register extends Component {
                 <p className="lead text-center">
                   Create your Find-Geeks account
                 </p>
-                <form onSubmit={this.onSubmit}>
+                <form noValidate onSubmit={this.onSubmit}>
                   <div className="form-group">
                     <input
                       type="text"
@@ -74,35 +74,53 @@ export default class Register extends Component {
                   <div className="form-group">
                     <input
                       type="email"
-                      className="form-control form-control-lg"
+                      className={classnames("form-control form-control-lg", {
+                        "is-invalid": errors.email // add this class, only if you have email error
+                      })}
                       placeholder="Email Address"
                       value={this.state.email}
                       name="email"
                       onChange={this.onChange}
                     />
+                    {errors.email && (
+                      <div className="invalid-feedback">{errors.email} </div>
+                    )}
                     <small className="form-text text-muted">
-                      Preferably use
+                      Preferably use that email, which has Profile-Picture on
+                      Account.
                     </small>
                   </div>
                   <div className="form-group">
                     <input
                       type="password"
-                      className="form-control form-control-lg"
+                      className={classnames("form-control form-control-lg", {
+                        "is-invalid": errors.password // add this class, only if you have password error
+                      })}
                       placeholder="Password"
                       value={this.state.password}
                       name="password"
                       onChange={this.onChange}
                     />
+                    {errors.password && (
+                      <div className="invalid-feedback">{errors.password} </div>
+                    )}
                   </div>
                   <div className="form-group">
                     <input
                       type="password"
-                      className="form-control form-control-lg"
+                      className={classnames("form-control form-control-lg", {
+                        "is-invalid": errors.password2 // add this class, only if you have password2 error
+                      })}
                       placeholder="Confirm Password"
                       name="password2"
                       value={this.state.password2}
                       onChange={this.onChange}
                     />
+                    {errors.password2 && (
+                      <div className="invalid-feedback">
+                        {errors.password2}{" "}
+                      </div>
+                    )}
                   </div>
                   <input
                     type="submit"
