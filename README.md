@@ -125,3 +125,9 @@ preserving Component-level state also.
 Redux-Thunk - ajax request asynchronous through thunk.
 
 45.Installed modules `react-redux, redux-thunk, redux` in `frontend` directory, not in root directory.
+
+46.adding reducers, which takes old-actions and returns new action to store, to make changes in store.
+
+47.setup of Redux-dev-tools - chrome-extension for debugging redux-code.
+
+![Redux-dev-tools](./outputs/redux-setup.png)
