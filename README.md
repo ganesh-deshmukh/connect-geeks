@@ -88,7 +88,7 @@ client and backend using single command,
 
 35.added Landing-page Component.
 
-install `react-router-dom`(v4), previously it was just `react-router`.
+installed `react-router-dom`(v4), previously it was just `react-router`.
 
 36.added routing for Login, SignUp, path='/' using `BrowserRouter` and added pages for respective route.
 
@@ -99,3 +99,9 @@ initial-state is empty, after typing state changes.
 ![initial-state](./outputs/initial-state.png)
 
 ![set-state](./outputs/set-state.png)
+
+38.installed `axios-library` in frontend directory, to make request to backend.
+
+alternative is `fetch-API`, but it's better to use axios, same as postman-but without UI.
+
+39.make request to database, where db is fresh and new, without old values.

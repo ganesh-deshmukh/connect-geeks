@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 export default class Register extends Component {
   // each field will have it's state.
@@ -32,7 +33,11 @@ export default class Register extends Component {
       password2: this.state.password2
     };
     // currently output this object, later save this values to database.
-    console.log(newUser);
+    // console.log(newUser);
+    axios
+      .post("/api/users/register", newUser)
+      .then(result => console.log(result.data))
+      .catch(error => console.log(error.response.data));
   }
 
   render() {

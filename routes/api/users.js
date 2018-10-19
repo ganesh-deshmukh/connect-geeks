@@ -20,7 +20,7 @@ const User = require("../../models/User");
 // @access      Public, without login
 router.get("/test", (req, res) => res.json({ msg: "Users Works" }));
 
-// @route       GET request to api/users/register
+// @route       POST request to api/users/register
 // @description new registration of user.
 // @access      Public, without login first register
 
@@ -67,7 +67,7 @@ router.post("/register", (req, res) => {
           // Save new password in datebase, overriding plaintext;
           newUser
             .save()
-            .then(user => res.json(user)) // if yes,then send it as argument in brackets.
+            .then(user => res.json(user)) // on successfully creation of user, sent user back through json.
             .catch(err =>
               console.log("Error occured in saving hash password in DB\n")
             );
