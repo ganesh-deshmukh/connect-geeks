@@ -49,15 +49,14 @@ export const setCurrentUser = decoded => {
   };
 };
 
-
 // logout-user functionality- just by deleting local storage.
-export const logOutUser = () = dispatch => {
+export const logOutUser = () => dispatch => {
   // remove token form local storage
-  localStorage.removeItem(jwtToken);
+  localStorage.removeItem("jwtToken");
 
   // also remove auth-token and pass parameters=false, to delete it.
-  setAuthToken(false)
+  setAuthToken(false);
 
   // set current user to empty-object,which will set property `isAuthenticated` false
-  dispatch(setCurrentUser({}))
-}
+  dispatch(setCurrentUser({}));
+};
