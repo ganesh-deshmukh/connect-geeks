@@ -135,3 +135,9 @@ Redux-Thunk - ajax request asynchronous through thunk.
 48.creating actions for users, reducers and dispatching actions.
 
 fetching data from backend asynchronously, so use `thunk-middleware`.
+
+49.After succesfull signup, redirect user to login-page,
+
+else if error occures, then show errors, which came from redux-store.
+
+50.

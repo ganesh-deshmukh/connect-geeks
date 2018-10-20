@@ -4,10 +4,13 @@ import axios from "axios";
 // actual functions
 // Register function
 
-export const registerUser = userData => dispatch => {
+export const registerUser = (userData, history) => dispatch => {
   axios
     .post("/api/users/register", userData)
-    .then(result => console.log(result.data))
+    .then(result => {
+      history.push("/login");
+      console.log(result.data);
+    })
     .catch(error =>
       dispatch({
         type: GET_ERRORS,

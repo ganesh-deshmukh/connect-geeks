@@ -3,6 +3,7 @@ import classnames from "classnames";
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
 import PropTypes from "prop-types";
+import { withRouter } from "react-router-dom";
 
 class Register extends Component {
   // each field will have it's state.
@@ -43,7 +44,7 @@ class Register extends Component {
 
     // instead of making requests through `axios` library,
     //  we can make request to store through dispatching action
-    this.props.registerUser(newUser);
+    this.props.registerUser(newUser, this.props.history);
   }
 
   render() {
@@ -154,6 +155,6 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   { registerUser }
-)(Register);
+)(withRouter(Register));
 
 // registerUser is action to take and connect it with component Register.
