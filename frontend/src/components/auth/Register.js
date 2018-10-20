@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import classnames from "classnames";
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
+import PropTypes from "prop-types";
 
 class Register extends Component {
   // each field will have it's state.
@@ -143,6 +144,12 @@ class Register extends Component {
     );
   }
 }
+
+Register.propTypes = {
+  registerUser: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired
+};
+
 const mapStateToProps = state => ({
   auth: state.auth // props:store.state.value
 });
