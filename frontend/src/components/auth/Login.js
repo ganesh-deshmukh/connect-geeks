@@ -1,6 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import classnames from "classnames"; // for injecting errors after validation
+import { loginUser } from "../../actions/authActions";
 
-export default class Login extends React.Component {
+class Login extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -29,6 +33,7 @@ export default class Login extends React.Component {
   }
 
   render() {
+    const errors = this.state.errors;
     return (
       <div>
         <div className="login">
@@ -43,22 +48,32 @@ export default class Login extends React.Component {
                   <div className="form-group">
                     <input
                       type="email"
-                      className="form-control form-control-lg"
+                      className={classnames("form-control form-control-lg", {
+                        "is-invalid": errors.email // add this class, only if you have email error
+                      })}
                       placeholder="Email Address"
                       name="email"
                       value={this.state.email}
                       onChange={this.onChange}
                     />
+                    {errors.email && (
+                      <div className="invalid-feedback">{errors.email} </div>
+                    )}
                   </div>
                   <div className="form-group">
                     <input
                       type="password"
-                      className="form-control form-control-lg"
+                      className={classnames("form-control form-control-lg", {
+                        "is-invalid": errors.password // add this class, only if you have password error
+                      })}
                       placeholder="Password"
                       name="password"
                       value={this.state.password}
                       onChange={this.onChange}
                     />
+                    {errors.password && (
+                      <div className="invalid-feedback">{errors.password} </div>
+                    )}
                   </div>
                   <input
                     type="submit"
@@ -73,3 +88,18 @@ export default class Login extends React.Component {
     );
   }
 }
+
+Login.propTypes = {
+  loginUser: PropTypes.func.isRequired, //loginUser is action/function not object
+  auth: PropTypes.func.isRequired,
+  errors: PropTypes.func.isRequired
+};
+const mapStateToProps = state => ({
+  auth: state.auth,
+  errors: state.errors
+});
+
+export default connect(
+  null,
+  { loginUser }
+)(Login);
