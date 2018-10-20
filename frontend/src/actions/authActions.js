@@ -1,5 +1,7 @@
 import { GET_ERRORS } from "./types";
 import axios from "axios";
+import setAuthToken from "../utils/setAuthToken";
+import jwt_decode from "./jwt-decode";
 
 // actual functions
 // Register function
@@ -33,6 +35,12 @@ export const loginUser = userData => dispatch => {
 
       // set token to authorization
       setAuthToken(token);
+      // Decode token here to decrypt user's info
+      const decoded = jwt_decode(token);
+      // decode object will get all user information
+
+      // set current user
+      dispatch(setCurrentUser(decoded));
     })
     .catch(error =>
       dispatch({
