@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-import axios from "axios";
+// import axios from "axios";
 import classnames from "classnames";
+import { connect } from "react-redux";
+import { registerUser } from "../../actions/authActions";
 
-export default class Register extends Component {
+class Register extends Component {
   // each field will have it's state.
   constructor() {
     super();
@@ -33,21 +35,27 @@ export default class Register extends Component {
       password: this.state.password,
       password2: this.state.password2
     };
-    // currently output this object, later save this values to database.
-    // console.log(newUser);
-    axios
-      .post("/api/users/register", newUser)
-      .then(result => console.log(result.data))
-      .catch(error => this.setState({ errors: error.response.data }));
+
+    // instead of making requests through `axios` library,
+    //  we can make request to store through dispatching action
+    this.props.registerUser(newUser);
+
+    // axios- alternative way.
+    //   .post("/api/users/register", newUser)
+    //   .then(result => console.log(result.data))
+    //   .catch(error => this.setState({ errors: error.response.data }));
   }
 
   render() {
     const { errors } = this.state;
     // const errors = this.state.errors;  // both syntax are same.
 
+    const { user } = this.props.auth;
+
     return (
       <div>
         <div className="register">
+          {user ? user.name : null}
           <div className="container">
             <div className="row">
               <div className="col-md-8 m-auto border border-warning">
@@ -135,3 +143,12 @@ export default class Register extends Component {
     );
   }
 }
+const mapStateToProps = state => ({
+  auth: state.auth // props:store.state.value
+});
+export default connect(
+  mapStateToProps,
+  { registerUser }
+)(Register);
+
+// registerUser is action to take and connect it with component Register.

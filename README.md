@@ -131,3 +131,5 @@ Redux-Thunk - ajax request asynchronous through thunk.
 47.setup of Redux-dev-tools - chrome-extension for debugging redux-code.
 
 ![Redux-dev-tools](./outputs/redux-setup.png)
+
+48.creating actions for users.
