@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import axios from "axios";
 import classnames from "classnames";
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
@@ -20,6 +19,11 @@ class Register extends Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.errors) {
+      this.setState({ errors: nextProps.errors });
+    }
+  }
   onChange(event) {
     this.setState({
       [event.target.name]: event.target.value
@@ -40,23 +44,15 @@ class Register extends Component {
     // instead of making requests through `axios` library,
     //  we can make request to store through dispatching action
     this.props.registerUser(newUser);
-
-    // axios- alternative way.
-    //   .post("/api/users/register", newUser)
-    //   .then(result => console.log(result.data))
-    //   .catch(error => this.setState({ errors: error.response.data }));
   }
 
   render() {
     const { errors } = this.state;
     // const errors = this.state.errors;  // both syntax are same.
 
-    const { user } = this.props.auth;
-
     return (
       <div>
         <div className="register">
-          {user ? user.name : null}
           <div className="container">
             <div className="row">
               <div className="col-md-8 m-auto border border-warning">
@@ -147,11 +143,13 @@ class Register extends Component {
 
 Register.propTypes = {
   registerUser: PropTypes.func.isRequired,
-  auth: PropTypes.object.isRequired
+  auth: PropTypes.object.isRequired,
+  errors: PropTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({
-  auth: state.auth // props:store.state.value
+  auth: state.auth, // props:store.state.value
+  errors: state.errors
 });
 export default connect(
   mapStateToProps,

@@ -132,4 +132,6 @@ Redux-Thunk - ajax request asynchronous through thunk.
 
 ![Redux-dev-tools](./outputs/redux-setup.png)
 
-48.creating actions for users.
+48.creating actions for users, reducers and dispatching actions.
+
+fetching data from backend asynchronously, so use `thunk-middleware`.
