@@ -21,6 +21,16 @@ class Login extends React.Component {
     });
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.auth.isAuthenticated) {
+      this.props.history.push("/dashboard");
+    }
+    if (nextProps.errors) {
+      this.setState({
+        errors: nextProps.errors
+      });
+    }
+  }
   onSubmit(event) {
     event.preventDefault();
     // we want to prevent origional behaviour of form. i.e. form-action= submit-values.
@@ -29,6 +39,7 @@ class Login extends React.Component {
       email: this.state.email,
       password: this.state.password
     };
+    this.props.loginUser(user);
     console.log(user);
   }
 
@@ -72,7 +83,10 @@ class Login extends React.Component {
                       onChange={this.onChange}
                     />
                     {errors.password && (
-                      <div className="invalid-feedback">{errors.password} </div>
+                      <div className="invalid-feedback">
+                        Your Password-
+                        {errors.password} is incorrect{" "}
+                      </div>
                     )}
                   </div>
                   <input
@@ -100,6 +114,6 @@ const mapStateToProps = state => ({
 });
 
 export default connect(
-  null,
+  mapStateToProps,
   { loginUser }
 )(Login);
