@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import classnames from "classnames"; // for injecting errors after validation
 import { loginUser } from "../../actions/authActions";
+import TextFieldGroup from "../comman/TextFieldGroup";
 
 class Login extends React.Component {
   constructor() {
@@ -63,39 +64,23 @@ class Login extends React.Component {
                   Sign in to your Find-Geeks account
                 </p>
                 <form onSubmit={this.onSubmit}>
-                  <div className="form-group">
-                    <input
-                      type="email"
-                      className={classnames("form-control form-control-lg", {
-                        "is-invalid": errors.email // add this class, only if you have email error
-                      })}
-                      placeholder="Email Address"
-                      name="email"
-                      value={this.state.email}
-                      onChange={this.onChange}
-                    />
-                    {errors.email && (
-                      <div className="invalid-feedback">{errors.email} </div>
-                    )}
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="password"
-                      className={classnames("form-control form-control-lg", {
-                        "is-invalid": errors.password // add this class, only if you have password error
-                      })}
-                      placeholder="Password"
-                      name="password"
-                      value={this.state.password}
-                      onChange={this.onChange}
-                    />
-                    {errors.password && (
-                      <div className="invalid-feedback">
-                        Your Password-
-                        {errors.password} is incorrect{" "}
-                      </div>
-                    )}
-                  </div>
+                  <TextFieldGroup
+                    placeholder="Email Address"
+                    name="email"
+                    type="email"
+                    value={this.state.email}
+                    onChange={this.onChange}
+                    errors={errors.email}
+                  />
+                  <TextFieldGroup
+                    placeholder="Password min-6 characters"
+                    name="password"
+                    type="password"
+                    value={this.state.password}
+                    onChange={this.onChange}
+                    errors={errors.password}
+                  />
+
                   <input
                     type="submit"
                     className="btn btn-info btn-block mt-4"
