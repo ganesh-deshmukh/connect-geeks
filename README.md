@@ -140,4 +140,6 @@ fetching data from backend asynchronously, so use `thunk-middleware`.
 
 else if error occures, then show errors, which came from redux-store.
 
-50.
+50.Login using user and get token, to store it in local storage and for each request add that token in header.
+
+after logout delete that token.

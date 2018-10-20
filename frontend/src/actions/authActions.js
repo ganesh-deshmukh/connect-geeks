@@ -18,3 +18,26 @@ export const registerUser = (userData, history) => dispatch => {
       })
     );
 };
+
+// Login user and get token to store it in local storage
+
+export const loginUser = userData => dispatch => {
+  axios
+    .post("/api/users/login", userData)
+    .then(results => {
+      // save token to local storage
+      const { token } = res.data;
+
+      // set token to ls-only stores strings
+      localStorage.setItem("jwtToken", token);
+
+      // set token to authorization
+      setAuthToken(token);
+    })
+    .catch(error =>
+      dispatch({
+        type: GET_ERRORS,
+        payload: error.response.data
+      })
+    );
+};
