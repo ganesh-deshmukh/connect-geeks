@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
 import PropTypes from "prop-types";
 import { withRouter } from "react-router-dom";
+import TextFieldGroup from "../common/TextFieldGroup";
 
 class Register extends Component {
   // each field will have it's state.
@@ -68,72 +69,39 @@ class Register extends Component {
                   Create your Find-Geeks account
                 </p>
                 <form noValidate onSubmit={this.onSubmit}>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className={classnames("form-control form-control-lg", {
-                        "is-invalid": errors.name // add this class, only if you have name error
-                      })}
-                      placeholder="Name"
-                      name="name"
-                      value={this.state.name}
-                      onChange={this.onChange}
-                    />
-                    {errors.name && (
-                      <div className="invalid-feedback">{errors.name} </div>
-                    )}
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="email"
-                      className={classnames("form-control form-control-lg", {
-                        "is-invalid": errors.email // add this class, only if you have email error
-                      })}
-                      placeholder="Email Address"
-                      value={this.state.email}
-                      name="email"
-                      onChange={this.onChange}
-                    />
-                    {errors.email && (
-                      <div className="invalid-feedback">{errors.email} </div>
-                    )}
-                    <small className="form-text text-muted">
-                      Preferably use that email, which has Profile-Picture on
-                      Account.
-                    </small>
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="password"
-                      className={classnames("form-control form-control-lg", {
-                        "is-invalid": errors.password // add this class, only if you have password error
-                      })}
-                      placeholder="Password"
-                      value={this.state.password}
-                      name="password"
-                      onChange={this.onChange}
-                    />
-                    {errors.password && (
-                      <div className="invalid-feedback">{errors.password} </div>
-                    )}
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="password"
-                      className={classnames("form-control form-control-lg", {
-                        "is-invalid": errors.password2 // add this class, only if you have password2 error
-                      })}
-                      placeholder="Confirm Password"
-                      name="password2"
-                      value={this.state.password2}
-                      onChange={this.onChange}
-                    />
-                    {errors.password2 && (
-                      <div className="invalid-feedback">
-                        {errors.password2}{" "}
-                      </div>
-                    )}
-                  </div>
+                  <TextFieldGroup
+                    placeholder="Name"
+                    name="name"
+                    value={this.state.name}
+                    onChange={this.onChange}
+                    error={errors.name}
+                  />
+                  <TextFieldGroup
+                    placeholder="Email"
+                    name="email"
+                    type="email"
+                    value={this.state.email}
+                    onChange={this.onChange}
+                    error={errors.email}
+                    info="Preferably use that email, which has Gravatar/Profile-Picture on
+                    Account."
+                  />
+                  <TextFieldGroup
+                    placeholder="Password"
+                    name="password"
+                    type="password"
+                    value={this.state.password}
+                    onChange={this.onChange}
+                    error={errors.password}
+                  />
+                  <TextFieldGroup
+                    placeholder="Confirm &amp; Match Password"
+                    name="password2"
+                    type="password"
+                    value={this.state.password2}
+                    onChange={this.onChange}
+                    error={errors.password2}
+                  />
                   <input
                     type="submit"
                     className="btn btn-info btn-block mt-4"
