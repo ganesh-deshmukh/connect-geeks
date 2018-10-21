@@ -10,9 +10,11 @@ import Footer from "./components/layout/Footer";
 import Landing from "./components/layout/Landing";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
+import Dashboard from "./components/dashboard/dashboard";
 import store from "./store";
 
 import "./App.css";
+import { clearCurrentProfile } from "./actions/profileActions";
 
 // check if token is stored in localstorage, if user has logged in.
 
@@ -30,8 +32,10 @@ if (localStorage.jwtToken) {
   const currentTime = Date.now() / 1000;
   if (decoded.exp < currentTime) {
     // exp should be greater to keep alive login
-    // Logout user
     store.dispatch(logOutUser());
+
+    // Logout user and clear it's profile
+    store.dispatch(clearCurrentProfile());
   }
 }
 
@@ -45,6 +49,7 @@ class App extends Component {
             <Route exact path="/" component={Landing} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/dashboard" component={Dashboard} />
             <Footer />
           </div>
         </Router>

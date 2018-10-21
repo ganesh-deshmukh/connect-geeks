@@ -1,6 +1,11 @@
 import axios from "axios";
 
-import { GET_PROFILE, PROFILE_LOADING, GET_ERRORS } from "./types";
+import {
+  GET_PROFILE,
+  PROFILE_LOADING,
+  GET_ERRORS,
+  CLEAR_CURRENT_PROFILE
+} from "./types";
 
 // get current profile of user
 export const getCurrentProfile = () => dispatch => {
@@ -19,4 +24,17 @@ export const getCurrentProfile = () => dispatch => {
         payload: {}
       })
     );
+};
+
+// set action type - Profile loading
+export const setProfileLoading = () => {
+  return {
+    type: PROFILE_LOADING
+  };
+};
+// set action type - clear user Profile
+export const clearCurrentProfile = () => {
+  return {
+    type: CLEAR_CURRENT_PROFILE
+  };
 };
