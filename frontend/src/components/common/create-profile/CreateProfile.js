@@ -42,6 +42,95 @@ class CreateProfile extends Component {
               <small className="d-block pb-3">
                 * marked fields are required.
               </small>
+              // {/* adding form */}
+              <form onSubmit={this.onSubmit}>
+                <TextFieldGroup
+                  placeholder="* Profile Handle"
+                  name="handle"
+                  value={this.state.handle}
+                  onChange={this.onChange}
+                  error={errors.handle}
+                  info="Specific handle/nickname for your profile URL."
+                />
+                <SelectListGroup
+                  placeholder="Status"
+                  name="status"
+                  value={this.state.status}
+                  onChange={this.onChange}
+                  options={options}
+                  error={errors.status}
+                  info="Your current status of Career- Job/Education/Internship"
+                />
+                <TextFieldGroup
+                  placeholder="Company"
+                  name="company"
+                  value={this.state.company}
+                  onChange={this.onChange}
+                  error={errors.company}
+                  info="Working Status"
+                />
+                <TextFieldGroup
+                  placeholder="Website"
+                  name="website"
+                  value={this.state.website}
+                  onChange={this.onChange}
+                  error={errors.website}
+                  info="Company's site or Your Personal-site"
+                />
+                <TextFieldGroup
+                  placeholder="Location"
+                  name="location"
+                  value={this.state.location}
+                  onChange={this.onChange}
+                  error={errors.location}
+                  info="Your Currently staying City"
+                />
+                <TextFieldGroup
+                  placeholder="* Skills"
+                  name="skills"
+                  value={this.state.skills}
+                  onChange={this.onChange}
+                  error={errors.skills}
+                  info="Please, Put values separated by comma-CSV. (eg.HTML,CSS,JavaScript,PHP)"
+                />
+                <TextFieldGroup
+                  placeholder="Github Username"
+                  name="githubusername"
+                  value={this.state.githubusername}
+                  onChange={this.onChange}
+                  error={errors.githubusername}
+                  info="Include your username,to show your latest repos, projects."
+                />
+                <TextAreaFieldGroup
+                  placeholder="Short Bio"
+                  name="bio"
+                  value={this.state.bio}
+                  onChange={this.onChange}
+                  error={errors.bio}
+                  info="Your Bio"
+                />
+
+                <div className="mb-3">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      this.setState(prevState => ({
+                        displaySocialInputs: !prevState.displaySocialInputs
+                      }));
+                    }}
+                    className="btn btn-light"
+                  >
+                    Add Social Network Links
+                  </button>
+                  <span className="text-muted">Optional</span>
+                </div>
+                {socialInputs}
+                <input
+                  type="submit"
+                  value="Submit"
+                  className="btn btn-info btn-block mt-4"
+                />
+              </form>
             </div>
           </div>
         </div>
