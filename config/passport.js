@@ -31,7 +31,7 @@ module.exports = passport => {
           console.log(err);
         });
 
-      console.log(jwt_payload);
+      // console.log(jwt_payload);
     })
   );
 };
