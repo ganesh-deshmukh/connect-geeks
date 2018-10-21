@@ -1,5 +1,6 @@
 import React from "react";
 import classnames from "classnames";
+import PropTypes from "prop-types";
 
 const InputGroup = ({
   name,
@@ -29,6 +30,20 @@ const InputGroup = ({
       {error && <div className="invalid-feedback">{error}</div>}
     </div>
   );
+};
+
+InputGroup.propTypes = {
+  onChange: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
+  error: PropTypes.string,
+  value: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  icon: PropTypes.string
+};
+
+InputGroup.defaultProps = {
+  type: "text"
 };
 
 export default InputGroup;
