@@ -21,7 +21,7 @@ class Navbar extends Component {
         <li className="nav-item">
           <a
             className="nav-link"
-            href="#"
+            href=""
             onClick={this.onLogoutClick.bind(this)}
           >
             <img
@@ -85,7 +85,7 @@ class Navbar extends Component {
 
 Navbar.propTypes = {
   logOutUser: PropTypes.func.isRequired,
-  aut: PropTypes.object.isRequired
+  auth: PropTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({
