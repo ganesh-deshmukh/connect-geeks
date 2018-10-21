@@ -1,11 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import classnames from "classnames"; // for injecting errors after validation
 import { loginUser } from "../../actions/authActions";
-import TextFieldGroup from "../comman/TextFieldGroup";
+import TextFieldGroup from "../common/TextFieldGroup";
 
-class Login extends React.Component {
+class Login extends Component {
   constructor() {
     super();
     this.state = {
@@ -13,13 +12,9 @@ class Login extends React.Component {
       password: "",
       errors: {}
     };
+
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
-  }
-  onChange(event) {
-    this.setState({
-      [event.target.name]: event.target.value
-    });
   }
 
   componentDidMount() {
@@ -32,61 +27,59 @@ class Login extends React.Component {
     if (nextProps.auth.isAuthenticated) {
       this.props.history.push("/dashboard");
     }
+
     if (nextProps.errors) {
-      this.setState({
-        errors: nextProps.errors
-      });
+      this.setState({ errors: nextProps.errors });
     }
   }
 
-  onSubmit(event) {
-    event.preventDefault();
-    // we want to prevent origional behaviour of form. i.e. form-action= submit-values.
+  onSubmit(e) {
+    e.preventDefault();
 
-    const user = {
+    const userData = {
       email: this.state.email,
       password: this.state.password
     };
-    this.props.loginUser(user);
-    console.log(user);
+
+    this.props.loginUser(userData);
+  }
+
+  onChange(e) {
+    this.setState({ [e.target.name]: e.target.value });
   }
 
   render() {
-    const errors = this.state.errors;
-    return (
-      <div>
-        <div className="login">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-8 m-auto border border-warning">
-                <h1 className="display-4 text-center">Log In</h1>
-                <p className="lead text-center">
-                  Sign in to your Find-Geeks account
-                </p>
-                <form onSubmit={this.onSubmit}>
-                  <TextFieldGroup
-                    placeholder="Email Address"
-                    name="email"
-                    type="email"
-                    value={this.state.email}
-                    onChange={this.onChange}
-                    errors={errors.email}
-                  />
-                  <TextFieldGroup
-                    placeholder="Password min-6 characters"
-                    name="password"
-                    type="password"
-                    value={this.state.password}
-                    onChange={this.onChange}
-                    errors={errors.password}
-                  />
+    const { errors } = this.state;
 
-                  <input
-                    type="submit"
-                    className="btn btn-info btn-block mt-4"
-                  />
-                </form>
-              </div>
+    return (
+      <div className="login">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8 m-auto">
+              <h1 className="display-4 text-center">Log In</h1>
+              <p className="lead text-center">
+                Sign in to your DevConnector account
+              </p>
+              <form onSubmit={this.onSubmit}>
+                <TextFieldGroup
+                  placeholder="Email Address"
+                  name="email"
+                  type="email"
+                  value={this.state.email}
+                  onChange={this.onChange}
+                  error={errors.email}
+                />
+
+                <TextFieldGroup
+                  placeholder="Password"
+                  name="password"
+                  type="password"
+                  value={this.state.password}
+                  onChange={this.onChange}
+                  error={errors.password}
+                />
+                <input type="submit" className="btn btn-info btn-block mt-4" />
+              </form>
             </div>
           </div>
         </div>
@@ -96,10 +89,11 @@ class Login extends React.Component {
 }
 
 Login.propTypes = {
-  loginUser: PropTypes.func.isRequired, //loginUser is action/function not object
-  auth: PropTypes.func.isRequired,
-  errors: PropTypes.func.isRequired
+  loginUser: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+  errors: PropTypes.object.isRequired
 };
+
 const mapStateToProps = state => ({
   auth: state.auth,
   errors: state.errors
