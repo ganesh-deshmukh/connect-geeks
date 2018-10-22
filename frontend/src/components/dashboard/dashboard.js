@@ -11,6 +11,9 @@ class Dashboard extends Component {
     this.props.getCurrentProfile();
   }
 
+  onDeleteClick(e) {
+    this.props.deleteAccount();
+  }
   render() {
     const { user } = this.props.auth;
     const { profile, loading } = this.props.profile;
@@ -31,6 +34,15 @@ class Dashboard extends Component {
                 <Link to={`/profile/${profile.handle}`}>{user.name}</Link>
               </p>
               <ProfileActions />
+              {/* todo- exp and eductn */}
+
+              <div style={{ marginBottom: "60px" }} />
+              <button
+                onClick={this.onDeleteClick.bind(this)}
+                className="btn btn-danger"
+              >
+                Delete My Account
+              </button>
             </div>
           );
         }
