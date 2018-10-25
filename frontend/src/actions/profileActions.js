@@ -4,7 +4,8 @@ import {
   GET_PROFILE,
   PROFILE_LOADING,
   CLEAR_CURRENT_PROFILE,
-  GET_ERRORS
+  GET_ERRORS,
+  SET_CURRENT_USER
 } from "./types";
 
 // Get current profile
@@ -39,7 +40,31 @@ export const createProfile = (profileData, history) => dispatch => {
     );
 };
 
-// Profile loading
+// Delete User & so that it's account as well.
+export const deleteAccount = () => dispatch => {
+  if (
+    window.confirm(
+      "You can't recover your account,\n because, for Providing Privacy we don't save older database entries."
+    )
+  ) {
+    axios
+      .delete("/api/profile")
+      .then(res =>
+        dispatch({
+          type: SET_CURRENT_USER,
+          payload: {}
+        })
+      )
+      .catch(err =>
+        dispatch({
+          type: GET_ERRORS,
+          payload: err.response.data
+        })
+      );
+  }
+};
+
+// LoadingProfile
 export const setProfileLoading = () => {
   return {
     type: PROFILE_LOADING

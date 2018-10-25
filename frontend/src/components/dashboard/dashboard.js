@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { getCurrentProfile } from "../../actions/profileActions";
+import { getCurrentProfile, deleteAccount } from "../../actions/profileActions";
 import Spinner from "../common/Spinner";
 import ProfileActions from "./ProfileActions";
 
@@ -14,6 +14,7 @@ class Dashboard extends Component {
   onDeleteClick(e) {
     this.props.deleteAccount();
   }
+
   render() {
     const { user } = this.props.auth;
     const { profile, loading } = this.props.profile;
@@ -26,26 +27,23 @@ class Dashboard extends Component {
       // Check if logged in user has created it's profile or not, by checking empty or null.
 
       if (Object.keys(profile).length > 0) {
-        {
-          dashboardContent = (
-            <div>
-              <p className="lead text-muted">
-                Welcome{" "}
-                <Link to={`/profile/${profile.handle}`}>{user.name}</Link>
-              </p>
-              <ProfileActions />
-              {/* todo- exp and eductn */}
+        dashboardContent = (
+          <div>
+            <p className="lead text-muted">
+              Welcome <Link to={`/profile/${profile.handle}`}>{user.name}</Link>
+            </p>
+            <ProfileActions />
+            {/* todo- exp and eductn */}
 
-              <div style={{ marginBottom: "60px" }} />
-              <button
-                onClick={this.onDeleteClick.bind(this)}
-                className="btn btn-danger"
-              >
-                Delete My Account
-              </button>
-            </div>
-          );
-        }
+            <div style={{ marginBottom: "60px" }} />
+            <button
+              onClick={this.onDeleteClick.bind(this)}
+              className="btn btn-danger"
+            >
+              Delete My Account
+            </button>
+          </div>
+        );
       } else {
         // User is logged in but hasn't  created profile, so create it now!
         dashboardContent = (
@@ -80,6 +78,7 @@ class Dashboard extends Component {
 // delcare proptypes
 Dashboard.propTypes = {
   getCurrentProfile: PropTypes.func.isRequired,
+  deleteAccount: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
   profile: PropTypes.object.isRequired
 };
@@ -93,5 +92,5 @@ const mapStateToProps = state => ({
 // connect Dashboard to Redux-store ()
 export default connect(
   mapStateToProps,
-  { getCurrentProfile }
+  { getCurrentProfile, deleteAccount }
 )(Dashboard);

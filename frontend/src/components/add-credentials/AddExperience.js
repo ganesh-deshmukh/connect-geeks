@@ -15,7 +15,7 @@ class AddExperience extends Component {
       location: "",
       from: "",
       to: "",
-      current: false,
+      current: false, // on clicking on current, "to"-attribute will be false
       description: "",
       errors: {},
       disabled: false
