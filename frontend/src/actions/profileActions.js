@@ -44,21 +44,21 @@ export const createProfile = (profileData, history) => dispatch => {
 export const deleteAccount = () => dispatch => {
   if (
     window.confirm(
-      "You can't recover your account,\n because, for Providing Privacy we don't save older database entries."
+      `You can't recover your account,\n because, for Providing Privacy we don't save older database entries.`
     )
   ) {
     axios
       .delete("/api/profile")
-      .then(res =>
+      .then(result =>
         dispatch({
           type: SET_CURRENT_USER,
           payload: {}
         })
       )
-      .catch(err =>
+      .catch(error =>
         dispatch({
           type: GET_ERRORS,
-          payload: err.response.data
+          payload: error.response.data
         })
       );
   }
