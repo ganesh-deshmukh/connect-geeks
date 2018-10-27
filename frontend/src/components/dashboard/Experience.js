@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import Moment from "react-moment";
 import { deleteExperience } from "../../actions/profileActions";
+import { deleteAction } from "../../actions/profileActions";
 
 class Experience extends Component {
   onDeleteClick(id) {
@@ -18,7 +19,13 @@ class Experience extends Component {
         <td>{exp.title}</td>
         <td>
           <Moment format="YYYY/MM/DD">{exp.from}</Moment>
-          To <Moment format="YYYY/MM/DD">{exp.to}</Moment>
+          &ndash;
+          {exp.to === null ? (
+            " Now "
+          ) : (
+            <Moment format="YYYY/MM/DD">{exp.to}</Moment>
+          )}
+          {/* check if finish-date is null, means coder is working at same company then show("Now") */}
         </td>
         <td>
           <button

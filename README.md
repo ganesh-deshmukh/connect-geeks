@@ -2,6 +2,10 @@
 
 #steps I took to build complete project
 
+always check your folder and then run `front-end` scripts and dependency-installation in same folder,
+
+also, scripts in backend should be run from mani-root-directory, to avoid `package-not-found` error.
+
 1.npm init
 
 2.installed required modules
