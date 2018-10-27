@@ -40,6 +40,19 @@ export const createProfile = (profileData, history) => dispatch => {
     );
 };
 
+// Add experience-action, using experience-data and then dispatch action
+export const addExperience = (expData, history) => dispatch => {
+  axios
+    .post("/api/profile/experience", expData)
+    .then(res => history.push("/dashboard"))
+    .catch(err =>
+      dispatch({
+        type: GET_ERRORS,
+        payload: err.response.data
+      })
+    );
+};
+
 // Delete User & so that it's account as well.
 export const deleteAccount = () => dispatch => {
   if (

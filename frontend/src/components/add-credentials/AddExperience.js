@@ -68,13 +68,15 @@ class AddExperience extends Component {
           <div className="row">
             <div className="col-md-8 m-auto">
               <Link to="/dashboard" className="btn btn-light">
-                Go Back
+                Back
               </Link>
               <h1 className="display-4 text-center">Add Experience</h1>
               <p className="lead text-center">
-                Add any job or position that you have had in the past or current
+                Add your current or past job or position that you have had.
               </p>
-              <small className="d-block pb-3">* = required fields</small>
+              <small className="d-block pb-3">
+                * marked fields are compulsory to be filled{" "}
+              </small>
               <form onSubmit={this.onSubmit}>
                 <TextFieldGroup
                   placeholder="* Company"
