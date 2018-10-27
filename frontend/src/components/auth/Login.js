@@ -55,8 +55,12 @@ class Login extends Component {
       <div className="login">
         <div className="container">
           <div className="row">
-            <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Log In</h1>
+            <div className="col-md-8 m-auto border border-warning">
+              <h1 className="display-4 text-center">
+                <i class="fas fa-sign-in-alt text-success " />
+                <br />
+                Log In
+              </h1>
               <p className="lead text-center">
                 Sign in to your Connect-Geeks account
               </p>
@@ -78,7 +82,10 @@ class Login extends Component {
                   onChange={this.onChange}
                   error={errors.password}
                 />
-                <input type="submit" className="btn btn-info btn-block mt-4" />
+                <input
+                  type="submit"
+                  className="btn btn-success btn-block mt-4"
+                />
               </form>
             </div>
           </div>

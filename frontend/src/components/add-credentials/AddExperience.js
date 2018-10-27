@@ -71,7 +71,10 @@ class AddExperience extends Component {
               <Link to="/dashboard" className="btn btn-success">
                 Back
               </Link>
-              <h1 className="display-4 text-center">Add Experience</h1>
+              <h1 className="display-4 text-center">
+                Add Experience
+                <i className="ml-2 fab fa-black-tie" />
+              </h1>
               <p className="lead text-center">
                 Add your current or past job or position that you have had.
               </p>
