@@ -10,8 +10,9 @@ class AddEducation extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      company: "",
-      title: "",
+      school: "",
+      degree: "",
+      fieldofstudy: "",
       location: "",
       from: "",
       to: "",
@@ -37,8 +38,9 @@ class AddEducation extends Component {
     e.preventDefault();
 
     const expData = {
-      company: this.state.company,
-      title: this.state.title,
+      school: this.state.school,
+      degree: this.state.degree,
+      fieldofstudy: this.state.fieldofstudy,
       location: this.state.location,
       from: this.state.from,
       to: this.state.to,
@@ -46,7 +48,7 @@ class AddEducation extends Component {
       description: this.state.description
     };
 
-    this.props.addEducation(expData, this.props.history); // experience data and history for redirecing
+    this.props.addEducation(expData, this.props.history); // education data and history for redirecing
   }
 
   onChange(e) {
@@ -64,14 +66,14 @@ class AddEducation extends Component {
     const { errors } = this.state;
 
     return (
-      <div className="add-experience">
+      <div className="add-education">
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <Link to="/dashboard" className="btn btn-light">
+              <Link to="/dashboard" className="btn btn-success">
                 Back
               </Link>
-              <h1 className="display-4 text-center">Add Experience</h1>
+              <h1 className="display-4 text-center">Add Education</h1>
               <p className="lead text-center">
                 Add your current or past job or position that you have had.
               </p>
@@ -80,27 +82,27 @@ class AddEducation extends Component {
               </small>
               <form onSubmit={this.onSubmit}>
                 <TextFieldGroup
-                  placeholder="* Company"
-                  name="company"
-                  value={this.state.company}
+                  placeholder="* School/College"
+                  name="school"
+                  value={this.state.school}
                   onChange={this.onChange}
-                  error={errors.company}
+                  error={errors.school}
                 />
                 <TextFieldGroup
-                  placeholder="* Job Title"
-                  name="title"
-                  value={this.state.title}
+                  placeholder="* Degree or Certification"
+                  name="degree"
+                  value={this.state.degree}
                   onChange={this.onChange}
-                  error={errors.title}
+                  error={errors.degree}
                 />
                 <TextFieldGroup
-                  placeholder="Location"
-                  name="location"
-                  value={this.state.location}
+                  placeholder="* Field of Study"
+                  name="fieldofstudy"
+                  value={this.state.fieldofstudy}
                   onChange={this.onChange}
-                  error={errors.location}
+                  error={errors.fieldofstudy}
                 />
-                <h6>From Date</h6>
+                <h6>Start Date</h6>
                 <TextFieldGroup
                   name="from"
                   type="date" // type=date, would give you calender-input-date.
@@ -108,7 +110,7 @@ class AddEducation extends Component {
                   onChange={this.onChange}
                   error={errors.from}
                 />
-                <h6>To Date</h6>
+                <h6>Finish Date</h6>
                 <TextFieldGroup
                   name="to"
                   type="date"
@@ -132,17 +134,17 @@ class AddEducation extends Component {
                   </label>
                 </div>
                 <TextAreaFieldGroup
-                  placeholder="Job Description"
+                  placeholder="Program Description"
                   name="description"
                   value={this.state.description}
                   onChange={this.onChange}
                   error={errors.description}
-                  info="Tell us about the the position"
+                  info="Tell us about the the program/course that you completed."
                 />
                 <input
                   type="submit"
                   value="Submit"
-                  className="btn btn-info btn-block mt-4"
+                  className="btn btn-success btn-block mt-4"
                 />
               </form>
             </div>
