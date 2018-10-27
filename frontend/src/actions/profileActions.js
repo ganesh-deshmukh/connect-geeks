@@ -8,6 +8,7 @@ import {
   SET_CURRENT_USER
 } from "./types";
 
+// Get current-user's profile
 export const getCurrentProfile = () => dispatch => {
   dispatch(setProfileLoading());
   axios
@@ -52,8 +53,8 @@ export const addExperience = (expData, history) => dispatch => {
     );
 };
 
-//  Both add-experience and education are same and arrays with same config.
-// Add experience-action, using experience-data , history-redirection and then dispatch action
+//  Both add-education and experience are same and arrays with same config.
+// Add education-action, using education-data , history-redirection and then dispatch action
 export const addEducation = (expData, history) => dispatch => {
   axios
     .post("/api/profile/education", expData)
@@ -66,10 +67,28 @@ export const addEducation = (expData, history) => dispatch => {
     );
 };
 
-// Delete Experience
+// Delete Experience-details
 export const deleteExperience = id => dispatch => {
   axios
     .delete(`/api/profile/experience/${id}`)
+    .then(res =>
+      dispatch({
+        type: GET_PROFILE,
+        payload: res.data
+      })
+    )
+    .catch(err =>
+      dispatch({
+        type: GET_ERRORS,
+        payload: err.response.data
+      })
+    );
+};
+
+// Delete Education-details
+export const deleteEducation = id => dispatch => {
+  axios
+    .delete(`/api/profile/education/${id}`)
     .then(res =>
       dispatch({
         type: GET_PROFILE,
@@ -93,22 +112,22 @@ export const deleteAccount = () => dispatch => {
   ) {
     axios
       .delete("/api/profile")
-      .then(result =>
+      .then(res =>
         dispatch({
           type: SET_CURRENT_USER,
           payload: {}
         })
       )
-      .catch(error =>
+      .catch(err =>
         dispatch({
           type: GET_ERRORS,
-          payload: error.response.data
+          payload: err.response.data
         })
       );
   }
 };
 
-// LoadingProfile
+// Loading user's Profile
 export const setProfileLoading = () => {
   return {
     type: PROFILE_LOADING

@@ -13,10 +13,9 @@ class AddEducation extends Component {
       school: "",
       degree: "",
       fieldofstudy: "",
-      location: "",
       from: "",
       to: "",
-      current: false, // on clicking on current, "to"-attribute will be false
+      current: false,
       description: "",
       errors: {},
       disabled: false
@@ -27,7 +26,6 @@ class AddEducation extends Component {
     this.onCheck = this.onCheck.bind(this);
   }
 
-  // Get current profile  componentWillReceiveProps(nextProps) {
   componentWillReceiveProps(nextProps) {
     if (nextProps.errors) {
       this.setState({ errors: nextProps.errors });
@@ -37,18 +35,17 @@ class AddEducation extends Component {
   onSubmit(e) {
     e.preventDefault();
 
-    const expData = {
+    const eduData = {
       school: this.state.school,
       degree: this.state.degree,
       fieldofstudy: this.state.fieldofstudy,
-      location: this.state.location,
       from: this.state.from,
       to: this.state.to,
       current: this.state.current,
       description: this.state.description
     };
 
-    this.props.addEducation(expData, this.props.history); // education data and history for redirecing
+    this.props.addEducation(eduData, this.props.history);
   }
 
   onChange(e) {
@@ -70,22 +67,17 @@ class AddEducation extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <Link to="/dashboard" className="btn btn-success">
-                Back
+              <Link to="/dashboard" className="btn btn-light">
+                Go Back
               </Link>
-              <h1 className="display-4 text-center">
-                Add Education
-                <i className="ml-2 fas fa-graduation-cap" />
-              </h1>
+              <h1 className="display-4 text-center">Add Education</h1>
               <p className="lead text-center">
-                Add your current or past job or position that you have had.
+                Add any school, bootcamp, etc that you have attended
               </p>
-              <small className="d-block pb-3">
-                * marked fields are compulsory to be filled{" "}
-              </small>
+              <small className="d-block pb-3">* = required fields</small>
               <form onSubmit={this.onSubmit}>
                 <TextFieldGroup
-                  placeholder="* School/College"
+                  placeholder="* School"
                   name="school"
                   value={this.state.school}
                   onChange={this.onChange}
@@ -105,15 +97,15 @@ class AddEducation extends Component {
                   onChange={this.onChange}
                   error={errors.fieldofstudy}
                 />
-                <h6>Start Date</h6>
+                <h6>From Date</h6>
                 <TextFieldGroup
                   name="from"
-                  type="date" // type=date, would give you calender-input-date.
+                  type="date"
                   value={this.state.from}
                   onChange={this.onChange}
                   error={errors.from}
                 />
-                <h6>Finish Date</h6>
+                <h6>To Date</h6>
                 <TextFieldGroup
                   name="to"
                   type="date"
@@ -133,7 +125,7 @@ class AddEducation extends Component {
                     id="current"
                   />
                   <label htmlFor="current" className="form-check-label">
-                    I am currently working here.
+                    I currently Study here.
                   </label>
                 </div>
                 <TextAreaFieldGroup
@@ -142,12 +134,12 @@ class AddEducation extends Component {
                   value={this.state.description}
                   onChange={this.onChange}
                   error={errors.description}
-                  info="Tell us about the the program/course that you completed."
+                  info="Tell us about the program that you were in"
                 />
                 <input
                   type="submit"
                   value="Submit"
-                  className="btn btn-success btn-block mt-4"
+                  className="btn btn-info btn-block mt-4"
                 />
               </form>
             </div>
@@ -158,20 +150,17 @@ class AddEducation extends Component {
   }
 }
 
-// Proptypes validation
 AddEducation.propTypes = {
   addEducation: PropTypes.func.isRequired,
   profile: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired
 };
 
-// mapping of state to props
 const mapStateToProps = state => ({
   profile: state.profile,
   errors: state.errors
 });
 
-// connect it to store
 export default connect(
   mapStateToProps,
   { addEducation }

@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import Moment from "react-moment";
 import { deleteExperience } from "../../actions/profileActions";
-import { deleteAction } from "../../actions/profileActions";
 
 class Experience extends Component {
   onDeleteClick(id) {
@@ -39,7 +38,10 @@ class Experience extends Component {
     ));
     return (
       <div>
-        <h4 className="mb-4">Experience Credentials</h4>
+        <h4 className="mb-4">
+          <i className="mr-2 fab fa-black-tie" />
+          Experience Details
+        </h4>
         <table className="table">
           <thead>
             <tr>
