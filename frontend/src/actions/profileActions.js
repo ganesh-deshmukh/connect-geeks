@@ -8,7 +8,6 @@ import {
   SET_CURRENT_USER
 } from "./types";
 
-// Get current profile
 export const getCurrentProfile = () => dispatch => {
   dispatch(setProfileLoading());
   axios
@@ -40,7 +39,7 @@ export const createProfile = (profileData, history) => dispatch => {
     );
 };
 
-// Add experience-action, using experience-data and then dispatch action
+// Add experience-action, using experience-data , history-redirection and then dispatch action
 export const addExperience = (expData, history) => dispatch => {
   axios
     .post("/api/profile/experience", expData)

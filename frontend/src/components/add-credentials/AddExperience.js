@@ -26,6 +26,7 @@ class AddExperience extends Component {
     this.onCheck = this.onCheck.bind(this);
   }
 
+  // Get current profile  componentWillReceiveProps(nextProps) {
   componentWillReceiveProps(nextProps) {
     if (nextProps.errors) {
       this.setState({ errors: nextProps.errors });
@@ -45,7 +46,7 @@ class AddExperience extends Component {
       description: this.state.description
     };
 
-    this.props.addExperience(expData, this.props.history);
+    this.props.addExperience(expData, this.props.history); // experience data and history for redirecing
   }
 
   onChange(e) {
@@ -102,7 +103,7 @@ class AddExperience extends Component {
                 <h6>From Date</h6>
                 <TextFieldGroup
                   name="from"
-                  type="date"
+                  type="date" // type=date, would give you calender-input-date.
                   value={this.state.from}
                   onChange={this.onChange}
                   error={errors.from}
@@ -127,7 +128,7 @@ class AddExperience extends Component {
                     id="current"
                   />
                   <label htmlFor="current" className="form-check-label">
-                    Current Job
+                    I am currently working here.
                   </label>
                 </div>
                 <TextAreaFieldGroup
