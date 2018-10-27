@@ -46,6 +46,20 @@ class AddEducation extends Component {
     };
 
     this.props.addEducation(eduData, this.props.history);
+
+    // after sending data to backend, clear form values, using set state.
+
+    this.setState({
+      school: "",
+      degree: "",
+      fieldofstudy: "",
+      from: "",
+      to: "",
+      current: false,
+      description: "",
+      errors: {},
+      disabled: false
+    });
   }
 
   onChange(e) {
