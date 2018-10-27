@@ -36,7 +36,7 @@ class AddExperience extends Component {
   onSubmit(e) {
     e.preventDefault();
 
-    const expData = {
+    let expData = {
       company: this.state.company,
       title: this.state.title,
       location: this.state.location,
@@ -47,6 +47,17 @@ class AddExperience extends Component {
     };
 
     this.props.addExperience(expData, this.props.history); // experience data and history for redirecing
+
+    // after sending data, make fields empty.
+    this.setState({
+      company: "",
+      title: "",
+      location: "",
+      from: "",
+      to: "",
+      current: "",
+      description: ""
+    });
   }
 
   onChange(e) {

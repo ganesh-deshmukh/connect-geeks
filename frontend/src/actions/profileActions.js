@@ -107,7 +107,7 @@ export const deleteEducation = id => dispatch => {
 export const deleteAccount = () => dispatch => {
   if (
     window.confirm(
-      `You can't recover your account,\n because, for Providing Privacy we don't save older database entries.`
+      `You can't recover your account,\nbecause, for Providing Privacy we don't save older database entries.`
     )
   ) {
     axios
