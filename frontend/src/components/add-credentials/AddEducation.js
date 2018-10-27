@@ -49,19 +49,19 @@ class AddEducation extends Component {
 
     // after sending data to backend, clear form values, using set state.
 
-    this.setState({
-      school: "",
-      degree: "",
-      fieldofstudy: "",
-      from: "",
-      to: "",
-      current: false,
-      description: "",
-      errors: {},
-      disabled: false
-    });
+    //   this.setState({
+    //     school: "",
+    //     degree: "",
+    //     fieldofstudy: "",
+    //     from: "",
+    //     to: "",
+    //     current: false,
+    //     description: "",
+    //     errors: {},
+    //     disabled: false
+    //   });
+    // }
   }
-
   onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
   }
@@ -81,7 +81,7 @@ class AddEducation extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
-              <Link to="/dashboard" className="btn btn-light">
+              <Link to="/dashboard" className="btn btn-success">
                 Go Back
               </Link>
               <h1 className="display-4 text-center">Add Education</h1>
@@ -153,7 +153,7 @@ class AddEducation extends Component {
                 <input
                   type="submit"
                   value="Submit"
-                  className="btn btn-info btn-block mt-4"
+                  className="btn btn-success btn-block mt-4"
                 />
               </form>
             </div>

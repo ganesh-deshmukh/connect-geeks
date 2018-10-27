@@ -40,8 +40,15 @@ class Login extends Component {
       email: this.state.email,
       password: this.state.password
     };
-
+    // make post request through redux-store-state passed as props to react-components
     this.props.loginUser(userData);
+
+    // after sending `post` request, please clear form-values, else
+    // it will add redundant data again-and-again.
+    // this.setState({
+    //   email: "",
+    //   password: ""
+    // });
   }
 
   onChange(e) {

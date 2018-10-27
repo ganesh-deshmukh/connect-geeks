@@ -111,7 +111,7 @@ class CreateProfile extends Component {
       youtube: this.state.youtube,
       instagram: this.state.instagram
     };
-
+    // make post request through redux-store
     this.props.createProfile(profileData, this.props.history);
   }
 

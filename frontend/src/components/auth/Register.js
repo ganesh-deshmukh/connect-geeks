@@ -14,7 +14,8 @@ class Register extends Component {
       email: "",
       password: "",
       password2: "",
-      errors: {}
+      errors: {},
+      submitbtn: "Submit"
     };
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
@@ -51,8 +52,15 @@ class Register extends Component {
     // instead of making requests through `axios` library,
     //  we can make request to store through dispatching action
     this.props.registerUser(newUser, this.props.history);
-  }
 
+    // clear values after sending-form
+
+    //   this.setState({
+    //     submitbtn: "Please Wait"
+    //   });
+    //   setTimeout(5000);
+    // }
+  }
   render() {
     const { errors } = this.state;
     // const errors = this.state.errors;  // both syntax are same.
@@ -107,6 +115,7 @@ class Register extends Component {
                   />
                   <input
                     type="submit"
+                    value={this.state.submitbtn}
                     className="btn btn-success btn-block mt-4"
                   />
                 </form>
