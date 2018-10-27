@@ -57,7 +57,7 @@ class Login extends Component {
           <div className="row">
             <div className="col-md-8 m-auto border border-warning">
               <h1 className="display-4 text-center">
-                <i class="fas fa-sign-in-alt text-success " />
+                <i className="fas fa-sign-in-alt text-success " />
                 <br />
                 Log In
               </h1>

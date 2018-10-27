@@ -26,8 +26,8 @@ class Navbar extends Component {
 
         <li className="nav-item">
           <a
-            className="nav-link" //eslint-disable-next-line
-            href=""
+            className="nav-link"
+            href="/"
             onClick={this.onLogoutClick.bind(this)}
           >
             <img
@@ -45,12 +45,13 @@ class Navbar extends Component {
     const guestLinks = (
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <Link className="nav-link" to="/register">
+          <Link className="nav-link text-warning  " to="/register">
             Sign Up
           </Link>
         </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/login">
+
+        <li className="nav-item ">
+          <Link className="nav-link  text-warning" to="/login">
             Login
           </Link>
         </li>
@@ -61,6 +62,7 @@ class Navbar extends Component {
       <nav className="navbar navbar-expand-sm navbar-dark bg-primary mb-3">
         <div className="container">
           <Link className="navbar-brand" to="/">
+            <i className="mr-2 fas fa-users text-warning" />
             Find-Geeks
           </Link>
           <button

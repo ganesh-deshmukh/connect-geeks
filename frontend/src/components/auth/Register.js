@@ -64,7 +64,7 @@ class Register extends Component {
             <div className="row">
               <div className="col-md-8 m-auto border border-warning">
                 <h1 className="display-4 text-center">
-                  <i class=" fas fa-user-plus text-success" />
+                  <i className=" fas fa-user-plus text-success" />
                   <br />
                   Sign Up
                 </h1>
