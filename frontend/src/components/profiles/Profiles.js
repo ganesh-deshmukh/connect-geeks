@@ -15,7 +15,7 @@ class Profiles extends Component {
     let profileItems;
 
     if (profiles === null || loading) {
-      profileItems = <Spinner />;
+      profileItems = <h1>No Profiles</h1>;
     } else {
       if (profiles.length > 0) {
         profileItems = profiles.map(profile => (
