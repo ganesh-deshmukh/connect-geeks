@@ -6,13 +6,13 @@ class ProfileAbout extends Component {
   render() {
     const { profile } = this.props;
 
-    // Get user's first name using first-index of full-name.
+    // Get first name
     const firstName = profile.user.name.trim().split(" ")[0];
 
-    // Map Skill List in one variable and display that variable as {skills}
-    const skills = profile.skills.map((item, index) => (
+    // Skill List
+    const skills = profile.skills.map((skill, index) => (
       <div key={index} className="p-3">
-        <i className="fa fa-check" /> {item}
+        <i className="fa fa-check" /> {skill}
       </div>
     ));
 
@@ -26,7 +26,7 @@ class ProfileAbout extends Component {
             </h3>
             <p className="lead">
               {isEmpty(profile.bio) ? (
-                <span>{firstName} haven't entered his/her Bio</span>
+                <span>{firstName} does not have a bio</span>
               ) : (
                 <span>{profile.bio}</span>
               )}
