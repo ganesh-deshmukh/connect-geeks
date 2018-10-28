@@ -28,7 +28,9 @@ export default function(state = initialState, action) {
     case GET_PROFILES:
       return {
         ...state,
-        profile: action.payload,
+        profiles: action.payload,
+        // getrid of all typos and have "focus"
+        // single character "s" has made huge difference from profile to profiles.
         loading: false
       };
 
