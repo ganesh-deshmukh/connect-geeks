@@ -50,7 +50,7 @@ export const setCurrentUser = decoded => {
 };
 
 // logout-user functionality- just by deleting local storage.
-export const logOutUser = () => dispatch => {
+export const logoutUser = () => dispatch => {
   // remove token form local storage
   localStorage.removeItem("jwtToken");
 
