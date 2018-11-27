@@ -9,6 +9,8 @@ import ProfileGithub from "./ProfileGithub";
 import Spinner from "../common/Spinner";
 import { getProfileByHandle } from "../../actions/profileActions";
 
+import { withRouter } from "react-router-dom";
+
 class Profile extends Component {
   componentDidMount() {
     if (this.props.match.params.handle) {
@@ -73,7 +75,14 @@ const mapStateToProps = state => ({
   profile: state.profile
 });
 
-export default connect(
-  mapStateToProps,
-  { getProfileByHandle }
-)(Profile);
+// export default connect(
+//   mapStateToProps,
+//   { getProfileByHandle }
+// )(Profile);
+
+export default withRouter(
+  connect(
+    mapStateToProps,
+    { getProfileByHandle }
+  )(Profile)
+);
