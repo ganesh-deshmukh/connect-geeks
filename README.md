@@ -1,5 +1,17 @@
 # connect-geeks
 
+#How to run on Local machine after cloning repo?
+
+1.cd `connect-geeks` then `npm install`
+
+2.cd `frontend` then `npm install`
+
+3.come outside of `frontend` directory, `cd ..`,
+
+run `npm run dev`, which has scripts to run simultaneously front-end and backend,
+
+4.goto url in browser as `localhost:3000`
+
 #steps I took to build complete project
 
 always check your folder and then run `front-end` scripts and dependency-installation in same folder,
