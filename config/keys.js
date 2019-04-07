@@ -1,8 +1,5 @@
-module.exports = {
-  mongoURI: "mongodb://gdgeek:gd%40123@ds225382.mlab.com:25382/findgeeks",
-
-  // mongoURI: "mongodb://localhost:27017/findgeeks",
-
-  secretOrKey: "secretForJWT"
-  // jwt token encryption key
-};
+if (process.env.NODE_ENV === "production") {
+  module.exports = require("./keys_prod");
+} else {
+  module.exports = require("./keys_dev");
+}
