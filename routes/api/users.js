@@ -69,7 +69,7 @@ router.post("/register", (req, res) => {
             .save()
             .then(user => res.json(user)) // on successfully creation of user, sent user back through json.
             .catch(err =>
-              console.log("Error occured in saving hash password in DB\n")
+              console.log("Error occured in saving hash password in DB\n", err)
             );
         });
       });
@@ -93,7 +93,7 @@ router.post("/login", (req, res) => {
   const password = req.body.password;
 
   // find user to match it's password
-  User.findOne({ email: req.body.email }).then(user => {
+  User.findOne({ email }).then(user => {
     //check if no user
     if (!user) {
       errors.email = "User's email Not found.";

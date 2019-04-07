@@ -28,6 +28,25 @@ export const getCurrentProfile = () => dispatch => {
     );
 };
 
+// Get profile by handle
+export const getProfileByHandle = handle => dispatch => {
+  dispatch(setProfileLoading());
+  axios
+    .get(`/api/profile/handle/${handle}`)
+    .then(res =>
+      dispatch({
+        type: GET_PROFILE,
+        payload: res.data
+      })
+    )
+    .catch(err =>
+      dispatch({
+        type: GET_PROFILE,
+        payload: null
+      })
+    );
+};
+
 // Create Profile
 export const createProfile = (profileData, history) => dispatch => {
   axios
@@ -123,32 +142,9 @@ export const getProfiles = () => dispatch => {
     );
 };
 
-// Get profile by handle eg. /profile/ganeshcoder
-export const getProfileByHandle = handle => dispatch => {
-  dispatch(setProfileLoading());
-  axios
-    .get(`/api/profile/handle/${handle}`)
-    .then(res =>
-      dispatch({
-        type: GET_PROFILE,
-        payload: res.data
-      })
-    )
-    .catch(err =>
-      dispatch({
-        type: GET_PROFILE,
-        payload: null
-      })
-    );
-};
-
-// Delete User & so that it's account as well.
+// Delete account & profile
 export const deleteAccount = () => dispatch => {
-  if (
-    window.confirm(
-      `You can't recover your account,\nbecause, for Providing Privacy we don't save older database entries.`
-    )
-  ) {
+  if (window.confirm("Are you sure? This can NOT be undone!")) {
     axios
       .delete("/api/profile")
       .then(res =>

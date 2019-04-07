@@ -10,8 +10,9 @@ const validateProfileInput = require("../../validation/profile");
 const validateExperienceInput = require("../../validation/experience");
 const validateEducationInput = require("../../validation/education");
 
-// Load Profile model from db
+// Load Profile Model
 const Profile = require("../../models/Profile");
+// Load User Model
 
 // Load User model from db
 const User = require("../../models/User");
@@ -24,24 +25,25 @@ router.get("/test", (req, res) => res.json({ msg: "Profile works" }));
 // @route       GET request to api/profile/user/:user_id
 // @description get handle-success without login, by using user-id
 // @access      Public, no need to login.
-router.get("/user/:user_id", (req, res) => {
-  const errors = {};
 
-  Profile.findOne({ user: req.params.user_id })
-    .populate("user", ["name", "avatar"])
-    .then(profile => {
-      if (!profile) {
-        errors.noprofile = "No any Profile found on this user-ID";
-        res.status(404).json(errors);
-      }
-      res.json(profile);
-    })
-    .catch(error => {
-      res
-        .status(404)
-        .json({ profile: "There is no profile found for this ID" });
-    });
-});
+router.get(
+  "/",
+  passport.authenticate("jwt", { session: false }),
+  (req, res) => {
+    const errors = {};
+
+    Profile.findOne({ user: req.user.id })
+      .populate("user", ["name", "avatar"])
+      .then(profile => {
+        if (!profile) {
+          errors.noprofile = "No any Profile found on this user-ID";
+          return res.status(404).json(errors);
+        }
+        res.json(profile);
+      })
+      .catch(err => res.status(404).json(err));
+  }
+);
 
 // @route       GET request to api/profile/all
 // @description get all profiles without login
@@ -54,13 +56,11 @@ router.get("/all", (req, res) => {
       if (!profiles) {
         errors.noprofile = "There is no any profile";
         return res.status(404).json(errors);
-      } else {
-        res.json(profiles);
       }
+
+      res.json(profiles);
     })
-    .catch(err => {
-      res.status(404).json({ profile: "There is no any profile" });
-    });
+    .catch(err => res.status(404).json({ profile: "There is no any profile" }));
 });
 
 // @route       GET request to api/profile/handle/:handle
@@ -77,36 +77,30 @@ router.get("/handle/:handle", (req, res) => {
       }
       res.json(profile);
     })
-    .catch(error => {
-      res.status(404).json(error);
-    });
+    .catch(err => res.status(404).json(err));
 });
 
-// @route       GET request to api/profile/tokenID-encrypted- secured instead of profile-id
-// @description get current user's  profile route
-// @access      Private , needed to  login. after login you send token with request.
+// @route   GET api/profile/user/:user_id
+// @desc    Get profile by user ID
+// @access  Public
 
-// router.get('/') => means router.get('/api/profile/') as this is default setup relatively.
-router.get(
-  "/",
-  passport.authenticate("jwt", { session: false }),
-  (req, res) => {
-    // make errors array to send, if any occurs.
+router.get("/user/:user_id", (req, res) => {
+  const errors = {};
 
-    const errors = {};
+  Profile.findOne({ user: req.params.user_id })
+    .populate("user", ["name", "avatar"])
+    .then(profile => {
+      if (!profile) {
+        errors.noprofile = "There is no profile for this user";
+        res.status(404).json(errors);
+      }
 
-    Profile.findOne({ user: req.user.id })
-      .populate("user", ["name", "avatar"])
-      .then(profile => {
-        if (!profile) {
-          errors.noprofile = "There is no profile for this user";
-          return res.status(404).json(errors);
-        }
-        res.json(profile);
-      })
-      .catch(err => res.status(404).json(err));
-  }
-);
+      res.json(profile);
+    })
+    .catch(err =>
+      res.status(404).json({ profile: "There is no profile for this user" })
+    );
+});
 
 // @route       POST request to api/profile/tokenID-encrypted- secured instead of profile-id
 // @description Create new user's or Update-Edit  profile
@@ -138,7 +132,6 @@ router.post(
     if (req.body.status) profileFields.status = req.body.status;
     if (req.body.githubusername)
       profileFields.githubusername = req.body.githubusername;
-
     // skills is array of vales as csv-comma separated values
     if (typeof req.body.skills !== "undefined") {
       profileFields.skills = req.body.skills.split(",");
@@ -146,12 +139,11 @@ router.post(
     // else
     ///Social
     profileFields.social = {};
-    if (req.body.twitter) profileFields.social.twitter = req.body.twitter;
-    if (req.body.linkedin) profileFields.social.linkedin = req.body.linkedin;
-    if (req.body.stackoverflow)
-      profileFields.social.stackoverflow = req.body.stackoverflow;
-    if (req.body.facebook) profileFields.social.facebook = req.body.facebook;
     if (req.body.youtube) profileFields.social.youtube = req.body.youtube;
+    if (req.body.twitter) profileFields.social.twitter = req.body.twitter;
+    if (req.body.facebook) profileFields.social.facebook = req.body.facebook;
+    if (req.body.linkedin) profileFields.social.linkedin = req.body.linkedin;
+    if (req.body.instagram) profileFields.social.instagram = req.body.instagram;
 
     Profile.findOne({ user: req.user.id }).then(profile => {
       if (profile) {
@@ -214,6 +206,7 @@ router.post(
       // no collection named as 'Experience', we will add it in our profile-collection Exp-array.
       // add at begginning by unshift
       profile.experience.unshift(newExp);
+
       profile.save().then(profile => res.json(profile));
     });
   }
@@ -236,7 +229,7 @@ router.post(
 
     Profile.findOne({ user: req.user.id }).then(profile => {
       // create newExp as Object and later add that object to profile-details array.
-      const newExp = {
+      const newEdu = {
         school: req.body.school,
         degree: req.body.degree,
         fieldofstudy: req.body.fieldofstudy,
@@ -248,7 +241,8 @@ router.post(
 
       // no collection named as 'Education', we will add it in our profile-collection Education-array.
       // add at begginning by unshift
-      profile.education.unshift(newExp);
+      profile.education.unshift(newEdu);
+
       profile.save().then(profile => res.json(profile));
     });
   }
