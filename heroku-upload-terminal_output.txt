@@ -1,0 +1,156 @@
+
+(base) gd@gd10:~/Desktop/imp/connect-geeks$ heroku login
+heroku: Press any key to open up the browser to login or q to exit: 
+Opening browser to https://cli-auth.heroku.com/auth/browser/dd74170c-58f0-4392-bd04-9e8f60dd5c54
+Logging in... done
+Logged in as gads1612@gmail.com
+(base) gd@gd10:~/Desktop/imp/connect-geeks$ heroku create
+Creating app... !
+ ▸    You've reached the limit of 5 apps for unverified accounts. Delete some apps or add a credit card to verify your
+(base) gd@gd10:~/Desktop/imp/connect-geeks$ heroku git:remote -a connectgeeks
+set git remote heroku to https://git.heroku.com/connectgeeks.git
+(base) gd@gd10:~/Desktop/imp/connect-geeks$ cd frontend
+(base) gd@gd10:~/Desktop/imp/connect-geeks/frontend$ npm run build
+
+> frontend@0.1.0 build /home/gd/Desktop/imp/connect-geeks/frontend
+> react-scripts build
+
+Creating an optimized production build...
+Compiled successfully.
+
+File sizes after gzip:
+
+  99.4 KB  build/static/js/main.3e39496d.js
+  533 B    build/static/css/main.35ecc290.css
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  npm install -g serve
+  serve -s build
+
+Find out more about deployment here:
+
+  http://bit.ly/2vY88Kr
+
+(base) gd@gd10:~/Desktop/imp/connect-geeks/frontend$ cd ..
+(base) gd@gd10:~/Desktop/imp/connect-geeks$ git add .
+(base) gd@gd10:~/Desktop/imp/connect-geeks$ git commit -am "added CI/CD auto-build reactAppln in server as 'heroku-postbuild' command"
+[master dec9368] added CI/CD auto-build reactAppln in server as 'heroku-postbuild' command
+ 2 files changed, 12 insertions(+), 1 deletion(-)
+(base) gd@gd10:~/Desktop/imp/connect-geeks$ git push heroku master
+Counting objects: 1436, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (507/507), done.
+Writing objects: 100% (1436/1436), 1.53 MiB | 265.00 KiB/s, done.
+Total 1436 (delta 849), reused 1414 (delta 834)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Node.js app detected
+remote:        
+remote: -----> Creating runtime environment
+remote:        
+remote:        NPM_CONFIG_LOGLEVEL=error
+remote:        NODE_ENV=production
+remote:        NODE_MODULES_CACHE=true
+remote:        NODE_VERBOSE=false
+remote:        
+remote: -----> Installing binaries
+remote:        engines.node (package.json):  unspecified
+remote:        engines.npm (package.json):   unspecified (use default)
+remote:        
+remote:        Resolving node version 10.x...
+remote:        Downloading and installing node 10.15.3...
+remote:        Using default npm version: 6.4.1
+remote:        
+remote: -----> Installing dependencies
+remote:        Installing node modules (package.json + package-lock)
+remote:        
+remote:        > nodemon@1.17.3 postinstall /tmp/build_63f3d7d7ec6cfd66457abdada64574ac/node_modules/nodemon
+remote:        > node -e "console.log('\u001b[32mLove nodemon? You can now support the project via the open collective:\u001b[22m\u001b[39m\n > \u001b[96m\u001b[1mhttps://opencollective.com/nodemon/donate\u001b[0m\n')" || exit 0
+remote:        
+remote:        Love nodemon? You can now support the project via the open collective:
+remote:         > https://opencollective.com/nodemon/donate
+remote:        
+remote:        added 388 packages from 226 contributors and audited 2559 packages in 8.923s
+remote:        found 0 vulnerabilities
+remote:        
+remote:        
+remote: -----> Build
+remote:        Running heroku-postbuild
+remote:        
+remote:        > find-geeks@1.0.0 heroku-postbuild /tmp/build_63f3d7d7ec6cfd66457abdada64574ac
+remote:        > NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend
+remote:        
+remote:        
+remote:        > uglifyjs-webpack-plugin@0.4.6 postinstall /tmp/build_63f3d7d7ec6cfd66457abdada64574ac/frontend/node_modules/uglifyjs-webpack-plugin
+remote:        > node lib/post_install.js
+remote:        
+remote:        added 1338 packages from 736 contributors and audited 13576 packages in 27.474s
+remote:        found 37 vulnerabilities (29 low, 6 moderate, 2 high)
+remote:          run `npm audit fix` to fix them, or `npm audit` for details
+remote:        
+remote:        > frontend@0.1.0 build /tmp/build_63f3d7d7ec6cfd66457abdada64574ac/frontend
+remote:        > react-scripts build
+remote:        
+remote:        Creating an optimized production build...
+remote:        Compiled successfully.
+remote:        
+remote:        File sizes after gzip:
+remote:        
+remote:          99.4 KB  build/static/js/main.3e39496d.js
+remote:          533 B    build/static/css/main.35ecc290.css
+remote:        
+remote:        The project was built assuming it is hosted at the server root.
+remote:        You can control this with the homepage field in your package.json.
+remote:        For example, add this to build it for GitHub Pages:
+remote:        
+remote:          "homepage" : "http://myname.github.io/myapp",
+remote:        
+remote:        The build folder is ready to be deployed.
+remote:        You may serve it with a static server:
+remote:        
+remote:          npm install -g serve
+remote:          serve -s build
+remote:        
+remote:        Find out more about deployment here:
+remote:        
+remote:          http://bit.ly/2vY88Kr
+remote:        
+remote:        
+remote: -----> Caching build
+remote:        - node_modules
+remote:        
+remote: -----> Pruning devDependencies
+remote:        removed 220 packages and audited 323 packages in 3.529s
+remote:        found 0 vulnerabilities
+remote:        
+remote:        
+remote: -----> Build succeeded!
+remote: 
+remote: -----> Change to Node.js build process 
+remote:        Heroku has begun executing the "build" script defined in package.json
+remote:        during Node.js builds.
+remote: 
+remote:        Read more: https://devcenter.heroku.com/changelog-items/1573
+remote: 
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 54.4M
+remote: -----> Launching...
+remote:        Released v5
+remote:        https://connectgeeks.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/connectgeeks.git
+ * [new branch]      master -> master
